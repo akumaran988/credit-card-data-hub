@@ -1,0 +1,99 @@
+{
+    "card_info": {
+        "card_name": "Axis Bank Neo Credit Card",
+        "bank": "AXIS BANK",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the context.",
+            "Could not find information about finance charges in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Neo",
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not extract 'domestic_lounges' from the context as there is no information about domestic lounge access.",
+            "Could not extract 'international_lounges' from the context as there is no information about international lounge access.",
+            "Could not extract 'free_lounge_visits' from the context as there is no information about free lounge visits.",
+            "Could not extract 'eligibility_criteria' for free night awards from the context as there is no information about free night awards.",
+            "Could not extract 'partner_hotels' for free night awards from the context as there is no information about free night awards.",
+            "Could not extract 'value_cap' for free night awards from the context as there is no information about free night awards."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "cashback",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 300,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": {
+                    "type": "array",
+                    "items": [
+                        "MCC Code 4814",
+                        "MCC Code 4812",
+                        "MCC Code 4899",
+                        "MCC Code 4900"
+                    ],
+                    "description": "MCC Codes eligible for the benefit (utility)"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": {
+                    "unit": "days",
+                    "value": 30
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Cashback will be processed within 5 days of eligible transaction",
+                "processingTime": "5 days"
+            },
+            "rewardDescription": "100 % instant cashback credit up to INR 300 on first utility bill payment within 30 days of card issuance. This is a one-time only offer and is valid only for first 30 days of card issuance.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "transaction_type",
+                            "fieldDescription": "Type of transaction",
+                            "value": "utility bill payment",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "range",
+                            "field": "days_since_card_issuance",
+                            "fieldDescription": "Number of days since card issuance",
+                            "range": {
+                                "lte": 30
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

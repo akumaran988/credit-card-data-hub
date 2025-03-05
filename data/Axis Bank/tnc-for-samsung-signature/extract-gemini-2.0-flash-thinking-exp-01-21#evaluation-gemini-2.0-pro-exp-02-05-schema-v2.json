@@ -1,0 +1,228 @@
+{
+    "card_info": {
+        "card_name": "SAMSUNG AXIS BANK SIGNATURE Credit Card",
+        "bank": "AXIS BANK",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": [
+            "Could not find the effective date of the credit card terms and conditions in the provided context.",
+            "Could not find the last updated or publication date for the terms and conditions in the provided context."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the context.",
+            "Could not find information about finance charges in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Signature",
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not find information about domestic airport lounges access.",
+            "Could not find information about international airport lounges access.",
+            "Could not find information about free lounge visits.",
+            "Could not find information about eligibility criteria for free night awards.",
+            "Could not find information about partner hotels for free night awards.",
+            "Could not find information about value cap for free night awards."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 2500,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "minSpend": "3 card transactions for spends of any value within 30 days of credit card issuance"
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Cardholders can redeem the EDGE REWARDS by logging into www.edgerewards.axisbank.co.in or on Mobile app, open, under EDGE REWARDS section."
+            },
+            "rewardDescription": "2500 EDGE REWARDS shall be credited to cardholders’ EDGE Loyalty account upon successful completion of 3 card transactions for spends of any value within 30 days of credit card issuance.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "range",
+                            "field": "activation_period_days",
+                            "fieldDescription": "Activation period in days from card issuance",
+                            "range": {
+                                "lte": 30
+                            }
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "transaction_count",
+                            "fieldDescription": "Number of transactions",
+                            "value": 3,
+                            "comparison_operator": "gte"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 10,
+                "unit": "percentage",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Physical stores under ‘Brand EMI’ on Pinelabs terminals and Benow Soft POS",
+                    "Samsung eStore https://www.samsung.com/in/",
+                    "Samsung Shop App",
+                    "Samsung service centre payments made on PayU Soft POS",
+                    "Amazon (Application or website)"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "Flipkart"
+                ],
+                "cap": {
+                    "amount": 2500,
+                    "period": "monthly"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Cashback shall be credited in the next card statement cycle i.e., the card cycle following the cycle in which the transaction was made"
+            },
+            "rewardDescription": "10% cashback will be applicable on Samsung purchases capped to INR 2500 in a month and INR 10,000 in a year from date of card issuance.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "range",
+                            "field": "monthly_cap_amount_inr",
+                            "fieldDescription": "Maximum cashback amount per month in INR",
+                            "range": {
+                                "lte": 2500
+                            }
+                        },
+                        {
+                            "type": "range",
+                            "field": "yearly_cap_amount_inr",
+                            "fieldDescription": "Maximum cashback amount per year in INR",
+                            "range": {
+                                "lte": 10000
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "multiplier"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Domestic Spends",
+                    "International Spends"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "Fuel Spends",
+                    "Wallet loading transactions",
+                    "Jewellery",
+                    "Government Services payments",
+                    "Education related payments",
+                    "Utility payments",
+                    "Rental Payments and rental brokerage",
+                    "Insurance Services",
+                    "Cash Advances",
+                    "Spends on purchases of Samsung products and services",
+                    "EMI transactions on non-Samsung purchases",
+                    "Purchases converted to EMI post facto on non-Samsung spends",
+                    "Payment of card fees and other card charges"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Cardholders can redeem the EDGE REWARD by logging into www.edgerewards.axisbank.co.in or on Mobile Banking app, open, under EDGE REWARDS section."
+            },
+            "rewardDescription": "Earn 5 EDGE REWARD Points on all domestic & international spends per INR 100 spent",
+            "customConditions": null
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 10,
+                "unit": "multiplier"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Zomato",
+                    "Big Basket",
+                    "Myntra",
+                    "Tata 1mg",
+                    "Urban Clap"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "Fuel Spends",
+                    "Wallet loading transactions",
+                    "Jewellery",
+                    "Government Services payments",
+                    "Education related payments",
+                    "Utility payments",
+                    "Rental Payments and rental brokerage",
+                    "Insurance Services",
+                    "Cash Advances",
+                    "Spends on purchases of Samsung products and services",
+                    "EMI transactions on non-Samsung purchases",
+                    "Purchases converted to EMI post facto on non-Samsung spends",
+                    "Payment of card fees and other card charges"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Cardholders can redeem the EDGE REWARD by logging into www.edgerewards.axisbank.co.in or on Mobile Banking app, open, under EDGE REWARDS section."
+            },
+            "rewardDescription": "Earn 10 EDGE REWARD Points on all spends on preferred merchants per INR 100 spent",
+            "customConditions": null
+        }
+    ]
+}

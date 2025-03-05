@@ -1,0 +1,73 @@
+{
+    "card_info": {
+        "card_name": "Axis Bank NEO Credit Card",
+        "bank": "Axis Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": [
+            "effective_date is a required field in the schema but was not found in the provided context. Please provide the context with the effective date of the credit card terms and conditions to extract this information.",
+            "last_updated is a field in the schema but was not found in the provided context. Please provide the context with the last updated or publication date of the credit card terms and conditions to extract this information."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Late payment charges information is not found in the context.",
+            "Finance charges information is not found in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not extract 'elite_status_level' because there is no information about the elite status tier of the card in the provided context.",
+            "Could not extract 'airport_lounge_access' details because there is no information about airport lounge access privileges in the provided context.",
+            "Could not extract 'domestic_lounges' because there is no information about domestic lounges accessible in the provided context.",
+            "Could not extract 'international_lounges' because there is no information about international lounges accessible in the provided context.",
+            "Could not extract 'free_lounge_visits' because there is no information about free lounge visits allowed in a year in the provided context.",
+            "Could not extract 'free_night_awards' details because there is no information about free night benefits applicable at partner hotels in the provided context.",
+            "Could not extract 'eligibility_criteria' for free night awards because there is no information about spends or usage criteria to earn free night vouchers in the provided context.",
+            "Could not extract 'partner_hotels' for free night awards because there is no information about list of hotels where free nights can be redeemed in the provided context.",
+            "Could not extract 'value_cap' for free night awards because there is no information about maximum room value eligible for redemption in the provided context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "discount",
+            "Category": "Dining",
+            "rewardValue": {
+                "amount": 40,
+                "unit": "percentage"
+            },
+            "conditions": {
+                "minSpend": 200,
+                "cap": {
+                    "amount": 120,
+                    "period": "monthly"
+                },
+                "applicableMerchantsOrDomains": [
+                    "Zomato"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Enter the promo code ‘AXISNEO’ under ‘View all coupons’ at the time of checkout."
+            },
+            "rewardDescription": "40% off on Zomato orders with Axis Bank NEO Credit Card, up to Rs. 120 off, minimum spend Rs. 200. Use code AXISNEO. Valid twice per month.",
+            "customConditions": null
+        }
+    ]
+}

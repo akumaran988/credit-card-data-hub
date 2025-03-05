@@ -1,0 +1,277 @@
+{
+    "card_info": {
+        "card_name": "Emirates Skywards ICICI Bank Emeralde Credit Card",
+        "bank": "ICICI Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find detailed information about the late payment charges structure, such as outstanding amount slabs and corresponding charges, in the provided context. While 'Late payment charges' are mentioned as excluded from milestone benefits in Section V, point 3, sub-point 3 and Section IV, point 5, sub-point 4, part 3, the specific fee amounts or slabs are not detailed.",
+            "Could not find the specific monthly percentage rate for finance charges in the provided context. While 'Service charge or interest levied for non-payment or part payment' is mentioned as excluded from milestone benefits in Section V, point 3, sub-point 2, the exact percentage rate for finance charges is not provided.",
+            "Could not find information about fuel surcharge waiver in the provided context. Section IV, point 4 mentions that Skywards Miles will not be earned for fuel, but there is no mention of any fuel surcharge waiver benefits.",
+            "Could not find any information about special transaction fees for specific transaction types like rent payments or utility purchases in the provided context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Silver",
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": [
+                "airport lounges across 115 countries around the world"
+            ],
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not find specific names of domestic lounges accessible through the card. The context only mentions 'domestic and international airport lounge visits and spa sessions at selected airports in India every year, through complimentary Dreamfolks membership'.",
+            "Could not find the exact number of free lounge visits allowed per year. The context mentions 'every year' but not a specific number of visits.",
+            "Could not find eligibility criteria for free night awards. The context does not provide any information on free night awards.",
+            "Could not find list of partner hotels for free night redemption. The context does not provide any information on free night awards.",
+            "Could not find the maximum room value eligible for free night redemption. The context does not provide any information on free night awards."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 10000,
+                "unit": "fixed",
+                "currency": null
+            },
+            "conditions": {
+                "minSpend": "joining membership fee"
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "10,000 Skywards Miles on payment of Joining Fee",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "feeType",
+                    "fieldDescription": "Type of fee paid",
+                    "value": "Joining Fee",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": "Silver Tier",
+                "unit": "certificate"
+            },
+            "conditions": {
+                "minSpend": "joining membership fee"
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "Complimentary Emirates Skywards Silver Tier membership till Credit Card is active, subject to the payment of Joining Fee.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "feeType",
+                    "fieldDescription": "Type of fee paid",
+                    "value": "Joining Fee",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": "Silver Tier",
+                "unit": "certificate"
+            },
+            "conditions": {
+                "minSpend": "renewal membership fee"
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "Emirates Skywards Silver tier membership upon payment of Annual Fee.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "feeType",
+                    "fieldDescription": "Type of fee paid",
+                    "value": "Annual Fee",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 2.5,
+                "unit": "multiplier"
+            },
+            "conditions": {},
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "2.5 Skywards Miles per ₹ 100 spent on all categories excluding Fuel, Cash advance, ATM withdrawal, Expenditure in form of EMI, Balance transfer, PLCC, Fees and other charges which earn 0 Skywards Miles.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "spendCategory",
+                    "fieldDescription": "Category of spend",
+                    "value": "All Categories",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "multiplier"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Insurance",
+                    "Utility"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "1 Skywards Mile per ₹ 100 spent on Insurance and Utility excluding Fuel, Cash advance, ATM withdrawal, Expenditure in form of EMI, Balance transfer, PLCC, Fees and other charges which earn 0 Skywards Miles.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "spendCategory",
+                    "fieldDescription": "Category of spend",
+                    "value": "Insurance and Utility",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service upgrade",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": "Gold Tier",
+                "unit": "certificate"
+            },
+            "conditions": {
+                "minSpend": 1500000,
+                "applicableMerchantsOrDomains": [
+                    "Emirates"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "Emirates Skywards Gold Tier membership on spends of INR Rs. 15 lakhs overall and INR 50,000 spend on Emirates. Upgrade will only happen post completion of 1 year from card issuance date & upon payment of the annual fee in subsequent year.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "totalSpend",
+                            "fieldDescription": "Total spend on card",
+                            "value": 1500000,
+                            "comparison_operator": "gte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "emiratesSpend",
+                            "fieldDescription": "Spend on Emirates",
+                            "value": 50000,
+                            "comparison_operator": "gte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "timeAfterCardIssuance",
+                            "fieldDescription": "Time elapsed after card issuance",
+                            "value": 1,
+                            "unit": "year",
+                            "comparison_operator": "gte"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": "Airport Lounge Access",
+                "unit": "service"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Airport Lounges"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Through Dreamfolks membership"
+            },
+            "rewardDescription": "Access to airport lounges across 115 countries through Dreamfolks Lounge Access Programme",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "accessType",
+                    "fieldDescription": "Type of access",
+                    "value": "Airport Lounge Access",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Health and Wellness",
+            "rewardValue": {
+                "amount": "Airport Lounge and Spa Access",
+                "unit": "service"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Selected Airports in India"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Through Dreamfolks membership"
+            },
+            "rewardDescription": "Access to domestic and international airport lounge visits and spa sessions at selected airports in India through complimentary Dreamfolks membership",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "accessType",
+                    "fieldDescription": "Type of access",
+                    "value": "Airport Lounge and Spa Access",
+                    "comparison_operator": "eq"
+                }
+            }
+        }
+    ]
+}

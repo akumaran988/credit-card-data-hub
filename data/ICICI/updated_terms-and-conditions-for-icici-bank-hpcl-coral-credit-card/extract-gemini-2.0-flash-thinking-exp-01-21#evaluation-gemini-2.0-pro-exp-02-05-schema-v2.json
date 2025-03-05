@@ -1,0 +1,282 @@
+{
+    "card_info": {
+        "card_name": "ICICI Bank HPCL Coral Credit Card",
+        "bank": "ICICI Bank",
+        "effective_date": null,
+        "last_updated": "2024-09-10",
+        "extraction_errors": [
+            "Could not find the effective date of the terms and conditions in the provided context."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 400,
+            "maximum_transaction": 4000,
+            "maximum_waiver": null
+        },
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "late_payment_charges information is missing in the context.",
+            "finance_charges information is missing in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "elite_status_level: Information about elite status level is not found in the context.",
+            "airport_lounge_access.domestic_lounges: Information about domestic lounges access is not found in the context.",
+            "airport_lounge_access.international_lounges: Information about international lounges access is not found in the context.",
+            "airport_lounge_access.free_lounge_visits: Information about free lounge visits is not found in the context.",
+            "free_night_awards.eligibility_criteria: Information about eligibility criteria for free night awards is not found in the context.",
+            "free_night_awards.partner_hotels: Information about partner hotels for free night awards is not found in the context.",
+            "free_night_awards.value_cap: Information about value cap for free night awards is not found in the context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "cashback",
+            "Category": "Fuel",
+            "rewardValue": {
+                "amount": 2.5,
+                "unit": "percentage",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": 500,
+                "cap": {
+                    "amount": 100,
+                    "period": "monthly"
+                },
+                "applicableMerchantsOrDomains": [
+                    "HPCL fuel pumps"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "The Cardholder(s) are entitled to 2.5% cashback on fuel purchases, where such cashback shall be capped at ₹100 per month.\n- Minimum amount threshold is required to qualify for this cashback benefit i.e., ₹500.\n- Spends on fuel at HPCL fuel pumps using the Credit Card, qualify for cashback. The Credit Card used at HPCL outlets using any bank POS machine shall be considered while calculating the total spends. However, the benefit is applicable on spends at HPCL fuel pumps only.\n- The transactions eligible for cashback in the Statement cycle shall be tracked based on the posting date of the transaction(s). Transaction(s) that are carried out in the last 2 (two) days before the Statement generation, will receive cashback in the subsequent Statement cycle.\n- Spends on both the Primary and the Add-on Credit Card shall be considered, while calculating total spends on the Credit Card.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Fuel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": 400,
+                "maxSpend": 4000,
+                "applicableMerchantsOrDomains": [
+                    "HPCL outlets using ICICI Bank POS Machine"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "1% Savings on fuel surcharge shall be over and above the 2.5% cashback benefit.\n- Transactions carried out using your Credit Card at HPCL outlets using ICICI Bank POS Machine shall qualify for surcharge waiver.\n- Minimum amount threshold for surcharge waiver is ₹400 and maximum amount is ₹4000.\n- Transactions below ₹400 and above ₹4000 will not get the benefit of surcharge waiver.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 0,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "minSpend": 50000,
+                "customConditions": null
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "Primary Cardholders are eligible for an Annual Fee waiver from the 2ⁿᵈ Anniversary Year onwards, if the total spends on the Credit Card are equal to or more than ₹50,000 during the previous Anniversary Year. In such a case, the Annual Fee applicable on the Credit Card for the subsequent year shall be reversed.\n- If the total spends on the Credit Card are less than ₹50,000 during an Anniversary Year, the Annual Fee applicable on the Credit Card for the subsequent year shall not get reversed.\n- Spends through Equated Monthly Instalment (EMI) transactions on the Credit Card shall not be included in the total spends calculation.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "multiplier",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "fuel",
+                    "utility",
+                    "departmental store purchase",
+                    "groceries",
+                    "telecom",
+                    "government",
+                    "tax",
+                    "Cash Advance",
+                    "Service charge or interest levied for non-payment or part payment of the amount due on the Credit Card.",
+                    "Late payment charges and any other fees/charges with respect to the Credit Card.",
+                    "Joining fee and the renewal fee for the Primary/Add-on Credit Cards if any.",
+                    "Expenditure in the form of EMI transactions, Balance Transfer (BT) or Personal Loan on Credit Cards (PLCC)."
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "pointsRounding",
+                                    "fieldDescription": "ICICI Bank reward points earned for every qualifying retail spend transaction shall be rounded off to the nearest integer.",
+                                    "value": "nearest integer",
+                                    "comparison_operator": "eq"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "noPointsOnReversedTxn",
+                                    "fieldDescription": "The Cardholder(s) shall however not be entitled to earn ICICI Bank reward points on retail transactions that have been subsequently reversed.",
+                                    "value": false,
+                                    "comparison_operator": "eq"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "pointsCreditingTimelineDays",
+                                    "fieldDescription": "ICICI Bank reward points earned on the Credit Card shall be added to the Primary Cardholder’s ICICI Bank Rewards Account within 45 business days of Statement generation",
+                                    "value": 45,
+                                    "comparison_operator": "lte"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "addOnCardPointsToPrimary",
+                                    "fieldDescription": "Reward points generated on account of qualifying retail spend transactions undertaken by the Add-on Cardholder shall also be credited in the Primary Cardholder’s ICICI Bank Rewards Account.",
+                                    "value": true,
+                                    "comparison_operator": "eq"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "cardAccountStatus",
+                                    "fieldDescription": "Status of the Cardholder's Account at the time of reward point crediting",
+                                    "value": "active",
+                                    "comparison_operator": "eq"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": null,
+            "rewardDescription": "2 ICICI Bank reward points on every ₹100 spent on all other retail spends [except fuel, utility (groceries, telecom, government, tax) and departmental store purchase]:\n|Category|Earn rate per ₹100|\n|---|---|\n|Domestic transactions|2 ICICI Bank reward points|\n|International transactions|2 ICICI Bank reward points|\n- The Cardholder(s) shall qualify to earn ICICI Bank reward points upon fulfilling the qualifying retail spend transactions criteria, prescribed by ICICI Bank from time to time.\n- ICICI Bank reward points earned for every qualifying retail spend transaction shall be rounded off to the nearest integer.\n- The Cardholder(s) shall however not be entitled to earn ICICI Bank reward points on retail transactions that have been subsequently reversed.\n- ICICI Bank reward points earned on the Credit Card shall be added to the Primary Cardholder’s ICICI Bank Rewards Account within 45 business days of Statement generation, as per the existing cycle, provided the Cardholder’s Account is not delinquent or cancelled at the time of such credit.\n- Reward points generated on account of qualifying retail spend transactions undertaken by the Add-on Cardholder shall also be credited in the Primary Cardholder’s ICICI Bank Rewards Account.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "points",
+            "Category": "Groceries",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "multiplier",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "utility",
+                    "groceries",
+                    "telecom",
+                    "government",
+                    "tax",
+                    "departmental store"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "Cash Advance",
+                    "Service charge or interest levied for non-payment or part payment of the amount due on the Credit Card.",
+                    "Late payment charges and any other fees/charges with respect to the Credit Card.",
+                    "Joining fee and the renewal fee for the Primary/Add-on Credit Cards if any.",
+                    "Expenditure in the form of EMI transactions, Balance Transfer (BT) or Personal Loan on Credit Cards (PLCC).",
+                    "Fuel transactions carried out using the Credit Card."
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "pointsRounding",
+                                    "fieldDescription": "ICICI Bank reward points earned for every qualifying retail spend transaction shall be rounded off to the nearest integer.",
+                                    "value": "nearest integer",
+                                    "comparison_operator": "eq"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "noPointsOnReversedTxn",
+                                    "fieldDescription": "The Cardholder(s) shall however not be entitled to earn ICICI Bank reward points on retail transactions that have been subsequently reversed.",
+                                    "value": false,
+                                    "comparison_operator": "eq"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "pointsCreditingTimelineDays",
+                                    "fieldDescription": "ICICI Bank reward points earned on the Credit Card shall be added to the Primary Cardholder’s ICICI Bank Rewards Account within 45 business days of Statement generation",
+                                    "value": 45,
+                                    "comparison_operator": "lte"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "addOnCardPointsToPrimary",
+                                    "fieldDescription": "Reward points generated on account of qualifying retail spend transactions undertaken by the Add-on Cardholder shall also be credited in the Primary Cardholder’s ICICI Bank Rewards Account.",
+                                    "value": true,
+                                    "comparison_operator": "eq"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "cardAccountStatus",
+                                    "fieldDescription": "Status of the Cardholder's Account at the time of reward point crediting",
+                                    "value": "active",
+                                    "comparison_operator": "eq"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": null,
+            "rewardDescription": "- The Cardholder(s) shall qualify to earn 1 ICICI Bank reward point on every ₹100 spent on utility (groceries, telecom, government, tax) and departmental store transactions.\n- The Cardholder(s) shall qualify to earn ICICI Bank reward points upon fulfilling the qualifying retail spend transactions criteria, prescribed by ICICI Bank from time to time.\n- ICICI Bank reward points earned for every qualifying retail spend transaction shall be rounded off to the nearest integer.\n- The Cardholder(s) shall however not be entitled to earn ICICI Bank reward points on retail transactions that have been subsequently reversed.\n- ICICI Bank reward points earned on the Credit Card shall be added to the Primary Cardholder’s ICICI Bank Rewards Account within 45 business days of Statement generation, as per the existing cycle, provided the Cardholder’s Account is not delinquent or cancelled at the time of such credit.\n- Reward points generated on account of qualifying retail spend transactions undertaken by the Add-on Cardholder shall also be credited in the Primary Cardholder’s ICICI Bank Rewards Account.",
+            "customConditions": null
+        }
+    ]
+}

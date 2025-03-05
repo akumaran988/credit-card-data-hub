@@ -1,0 +1,96 @@
+{
+    "card_info": {
+        "card_name": "AURA Credit Card",
+        "bank": "Axis Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the context.",
+            "Could not find information about finance charges in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not extract 'elite_status_level' because there is no information about elite status tier mentioned in the context for this card.",
+            "Could not extract 'airport_lounge_access' details because there is no information about airport lounge access benefits in the context.",
+            "Could not extract 'domestic_lounges' as part of 'airport_lounge_access' because there is no information about domestic lounges mentioned in the context.",
+            "Could not extract 'international_lounges' as part of 'airport_lounge_access' because there is no information about international lounges mentioned in the context.",
+            "Could not extract 'free_lounge_visits' as part of 'airport_lounge_access' because there is no information about free lounge visits in the context.",
+            "Could not extract 'free_night_awards' details because there is no information about free night awards benefits in the context.",
+            "Could not extract 'eligibility_criteria' as part of 'free_night_awards' because there is no information about eligibility criteria for free night awards in the context.",
+            "Could not extract 'partner_hotels' as part of 'free_night_awards' because there is no information about partner hotels for free night awards in the context.",
+            "Could not extract 'value_cap' as part of 'free_night_awards' because there is no information about value cap for free night awards in the context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "voucher",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 750,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": null,
+                "maxSpend": null,
+                "cap": null,
+                "applicableMerchantsOrDomains": [
+                    "Decathlon"
+                ],
+                "excludedMerchantsOrDomains": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": {
+                    "unit": "days",
+                    "value": 60
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Vouchers can only be redeemed at www.decathlon.in or Decathlon app or offline stores.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "www.decathlon.in",
+                    "Decathlon app",
+                    "offline stores"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": null,
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": null
+            },
+            "rewardDescription": "Welcome Decathlon OMNI Gift Card worth INR 750",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "transaction_count",
+                    "fieldDescription": "Condition applies to the first transaction made with the Axis Bank Aura Credit Card",
+                    "value": 1,
+                    "comparison_operator": "eq"
+                }
+            },
+            "extraction_errors": null
+        }
+    ]
+}

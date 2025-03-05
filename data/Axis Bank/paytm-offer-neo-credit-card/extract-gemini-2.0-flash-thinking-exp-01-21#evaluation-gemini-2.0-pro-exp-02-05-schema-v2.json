@@ -1,0 +1,93 @@
+{
+    "card_info": {
+        "card_name": "Axis Bank NEO Credit Card",
+        "bank": "Axis Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late_payment_charges in the provided context.",
+            "Could not find information about finance_charges in the provided context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not extract 'elite_status_level' because there is no information about the elite status level of the card in the provided context.",
+            "Could not extract 'airport_lounge_access' because there is no information about airport lounge access privileges in the provided context.",
+            "Could not extract 'domestic_lounges' because there is no information about domestic lounges accessible in the provided context.",
+            "Could not extract 'international_lounges' because there is no information about international lounges accessible in the provided context.",
+            "Could not extract 'free_lounge_visits' because there is no information about the number of free lounge visits allowed in a year in the provided context.",
+            "Could not extract 'free_night_awards' because there is no information about free night benefits applicable at partner hotels in the provided context.",
+            "Could not extract 'eligibility_criteria' because there is no information about spends or usage criteria to earn free night vouchers in the provided context.",
+            "Could not extract 'partner_hotels' because there is no information about the list of hotels where free nights can be redeemed in the provided context.",
+            "Could not extract 'value_cap' because there is no information about the maximum room value eligible for redemption in the provided context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "discount",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": 299,
+                "cap": {
+                    "amount": 150,
+                    "period": "monthly"
+                },
+                "applicableMerchantsOrDomains": [
+                    "Paytm"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "UPI payments using Neo RuPay Credit Card"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Enter the promo code AXISNEO under ‘All Offers for you’ at the time of checkout. Make the payment in full using an eligible Axis Bank Neo Credit Card.",
+                "eligibleChannels": [
+                    "www.paytm.com",
+                    "Paytm mobile app"
+                ],
+                "redemptionLimit": {
+                    "limitCount": 1,
+                    "timePeriod": "monthly"
+                }
+            },
+            "rewardDescription": "Get 5% off on Mobile Recharge/Broadband Payment/DTH Recharge done through Paytm. Maximum discount of Rs. 150 per card per month. Minimum transaction value is Rs. 299. Use promo code AXISNEO.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "paymentMethod",
+                    "fieldDescription": "Payment method used for the transaction",
+                    "value": "Axis Bank Neo Credit Card",
+                    "comparison_operator": "eq"
+                }
+            },
+            "extraction_errors": null
+        }
+    ]
+}

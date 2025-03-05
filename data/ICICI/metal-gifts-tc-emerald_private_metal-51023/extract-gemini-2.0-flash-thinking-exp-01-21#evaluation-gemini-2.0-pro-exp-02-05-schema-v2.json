@@ -1,0 +1,1192 @@
+{
+    "card_info": {
+        "card_name": "Emeralde Private Metal Credit Card",
+        "bank": "ICICI Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": null,
+            "maximum_transaction": null,
+            "maximum_waiver": 1000.0
+        },
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "late_payment_charges information is not found in the context.",
+            "finance_charges information is not found in the context.",
+            "special_transaction_fees information is not found in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Private Metal",
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": "Taj Epicure Membership enrollment",
+            "partner_hotels": [
+                "Taj Hotels"
+            ],
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not extract specific names of domestic airport lounges. Please refer to the link provided in the context for the list of lounges.",
+            "Could not extract specific names of international airport lounges. Please refer to www.prioritypass.com for the list of lounges.",
+            "The number of free lounge visits is described as 'unlimited complimentary lounge access' in the context, which is not a numerical value as expected in the schema. Represented as null.",
+            "Could not find information about the value cap for free night awards at partner hotels."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "service",
+            "Category": "Subscriptions and Memberships",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Taj Hotels"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Visit tajhotels.com/en-in/epicureprogram/bank/icicibank, Click on ‘ENROL NOW’, Fill details, Enter Voucher Code and Voucher PIN."
+            },
+            "rewardDescription": "Complimentary 1-year Taj Epicure Membership with exclusive benefits like complimentary night stay, discounts, perks and much more!",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "cardholder_type",
+                            "fieldDescription": "Cardmember type",
+                            "value": "Primary Cardmembers",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "membership_validity",
+                            "fieldDescription": "Membership validity",
+                            "value": "1 year",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "redemption_validity",
+                            "fieldDescription": "Redemption validity",
+                            "value": "within voucher validity",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 12500,
+                "unit": "fixed"
+            },
+            "conditions": {},
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Redeem through iMobile app, Internet Banking, or call Customer Care at 1800 1080."
+            },
+            "rewardDescription": "12,500 ICICI Bank Reward Points as Joining and Annual Bonus.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "bonus_type",
+                            "fieldDescription": "Bonus type",
+                            "value": "Joining and Annual",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "credit_timing",
+                            "fieldDescription": "Points credit timing",
+                            "value": "once every year upon 45 days of fee realisation and card activation",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Subscriptions and Memberships",
+            "rewardValue": {
+                "amount": 12,
+                "unit": "year"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "EazyDiner"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Download EazyDiner app, Sign up/login, Select 12-month Prime Membership, Apply coupon code."
+            },
+            "rewardDescription": "Complimentary 12-month EazyDiner Prime Membership",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "cardholder_type",
+                            "fieldDescription": "Cardmember type",
+                            "value": "Primary Cardmember",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "membership_validity",
+                            "fieldDescription": "Membership validity",
+                            "value": "1 year",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Dining",
+            "rewardValue": {
+                "amount": 25,
+                "unit": "percentage"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Prime Restaurants on EazyDiner"
+                ]
+            },
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Discount applied by restaurant on bill amount at Prime restaurants."
+            },
+            "rewardDescription": "Minimum 25% discount at Prime restaurants on EazyDiner.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "restaurant_type",
+                    "fieldDescription": "Restaurant type",
+                    "value": "Prime Restaurants",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Dining",
+            "rewardValue": {
+                "amount": 25,
+                "unit": "percentage",
+                "referenceValue": 1000
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "PayEazy Restaurants on EazyDiner"
+                ]
+            },
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Extra 25% off up to ₹ 1,000 at PayEazy restaurants on EazyDiner."
+            },
+            "rewardDescription": "Extra 25% off up to ₹ 1,000 at PayEazy restaurants on EazyDiner.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "restaurant_type",
+                    "fieldDescription": "Restaurant type",
+                    "value": "PayEazy Restaurants",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "offers",
+            "Category": "Dining",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "multiplier"
+            },
+            "conditions": {
+                "minSpend": 2,
+                "applicableMerchantsOrDomains": [
+                    "Prime Restaurants on EazyDiner"
+                ]
+            },
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "1+1 deals as part of Prime Membership when a minimum of 2 guests are dining."
+            },
+            "rewardDescription": "1+1 deals on dining at Prime restaurants on EazyDiner.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "deal_type",
+                    "fieldDescription": "Deal type",
+                    "value": "1+1",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 3000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 400000,
+                "applicableMerchantsOrDomains": [
+                    "EaseMyTrip"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Go to www.easemytrip.com or app, Select flight, Book Now, Enter voucher code."
+            },
+            "rewardDescription": "EaseMyTrip Air Travel Voucher worth ₹ 3,000 on spending ₹ 4 lakh annually.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "voucher_type",
+                            "fieldDescription": "Voucher type",
+                            "value": "Air Travel",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "merchant",
+                            "fieldDescription": "Merchant",
+                            "value": "EaseMyTrip",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "spend_milestone",
+                            "fieldDescription": "Spend milestone",
+                            "value": "₹ 4 lakh",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 3000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 800000,
+                "applicableMerchantsOrDomains": [
+                    "EaseMyTrip"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Go to www.easemytrip.com or app, Select flight, Book Now, Enter voucher code."
+            },
+            "rewardDescription": "EaseMyTrip Air Travel Voucher worth ₹ 3,000 on spending ₹ 8 lakh annually.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "voucher_type",
+                            "fieldDescription": "Voucher type",
+                            "value": "Air Travel",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "merchant",
+                            "fieldDescription": "Merchant",
+                            "value": "EaseMyTrip",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "spend_milestone",
+                            "fieldDescription": "Spend milestone",
+                            "value": "₹ 8 lakh",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 6,
+                "unit": "multiplier",
+                "referenceValue": 200
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Redeem through Internet Banking or iMobile app."
+            },
+            "rewardDescription": "6 ICICI Bank Reward Points on every ₹ 200 spent on retail transactions.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "transaction_type",
+                            "fieldDescription": "Transaction type",
+                            "value": "retail transactions",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "spend_amount",
+                            "fieldDescription": "Spend amount for points",
+                            "value": "₹ 200",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Value of 1 ICICI Bank Reward Point for Flights and Hotel vouchers, Apple, Tanishq, Tumi, Coach, Brooks Brothers, Emporio Armani, Jimmy Choo, G-Star Raw, Canali and Mother Care vouchers."
+            },
+            "rewardDescription": "Value of 1 Reward Point is ₹ 1 for select vouchers.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "redemption_category",
+                    "fieldDescription": "Redemption category",
+                    "value": "Flights and Hotel vouchers, Select Brand vouchers",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 0.6,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Value of 1 Reward Point is ₹ 0.6 for Rewards Catalogue - other products."
+            },
+            "rewardDescription": "Value of 1 Reward Point is ₹ 0.6 for Rewards Catalogue - other products.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "redemption_category",
+                    "fieldDescription": "Redemption category",
+                    "value": "Rewards Catalogue - other products",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 0.4,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Value of 1 Reward Point is ₹ 0.4 for Statement Credit."
+            },
+            "rewardDescription": "Value of 1 Reward Point is ₹ 0.4 for Statement Credit.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "redemption_category",
+                    "fieldDescription": "Redemption category",
+                    "value": "Statement Credit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Fuel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Fuel Surcharge waiver on all fuel transactions."
+            },
+            "rewardDescription": "1% Fuel Surcharge waiver on all fuel transactions.",
+            "cap": {
+                "amount": 1000,
+                "period": "monthly"
+            },
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "transaction_category",
+                    "fieldDescription": "Transaction category",
+                    "value": "Fuel",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": "unlimited",
+                "unit": "fixed"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Unlimited International Lounge access with Priority Pass Membership for Primary and Add-on Cardmembers."
+            },
+            "rewardDescription": "Unlimited International Lounge access with Priority Pass Membership.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "lounge_type",
+                    "fieldDescription": "Lounge type",
+                    "value": "International",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": "unlimited",
+                "unit": "fixed"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Unlimited Domestic Lounge access through Emeralde Private Metal Credit Card for Primary and Add-on Cardmembers."
+            },
+            "rewardDescription": "Unlimited Domestic Lounge access.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "lounge_type",
+                    "fieldDescription": "Lounge type",
+                    "value": "Domestic",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 12000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "maxSpend": 12000,
+                "applicableMerchantsOrDomains": [
+                    "Air Travel",
+                    "Hotel",
+                    "Movie Bookings"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "Convenience charges"
+                ]
+            },
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim process via Call Centre or E-mail (ihealthcare@icicilombard.com)."
+            },
+            "rewardDescription": "No cancellation charges on Air Travel, Hotel and Movie Bookings up to ₹ 12000 per transaction/card.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "booking_type",
+                            "fieldDescription": "Booking type",
+                            "value": "Air Travel, Hotel, Movie",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_limit_per_transaction",
+                            "fieldDescription": "Coverage limit per transaction",
+                            "value": "₹ 12000",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_limit_per_card",
+                            "fieldDescription": "Coverage limit per card",
+                            "value": "₹ 12000",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "cancellation_window",
+                            "fieldDescription": "Cancellation window",
+                            "value": "up to 24 hours before travel/stay date",
+                            "comparison_operator": "lte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "hotel_star_rating",
+                            "fieldDescription": "Hotel star rating",
+                            "value": "4 Star/5 Star",
+                            "comparison_operator": "gte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "booking_location",
+                            "fieldDescription": "Booking location",
+                            "value": "India",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "cancellation_count",
+                            "fieldDescription": "Cancellation count",
+                            "value": "first two cancellations",
+                            "comparison_operator": "lte"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Entertainment",
+            "rewardValue": {
+                "amount": 750,
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": "second ticket"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "BookMyShow"
+                ]
+            },
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Buy one ticket and get up to ₹ 750 off on the second ticket on BookMyShow."
+            },
+            "rewardDescription": "Buy one ticket get up to ₹ 750 off on the second ticket on BookMyShow, up to 2 times a month.",
+            "cap": {
+                "amount": 2,
+                "period": "monthly"
+            },
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "ticket_type",
+                            "fieldDescription": "Ticket type",
+                            "value": "movies/sport events/theatre/concert",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "merchant",
+                            "fieldDescription": "Merchant",
+                            "value": "BookMyShow",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Entertainment",
+            "rewardValue": {
+                "amount": "unlimited",
+                "unit": "fixed"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Book golf games through Golftripz website or i-Assist concierge."
+            },
+            "rewardDescription": "Unlimited complimentary Golf games.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardholder_type",
+                    "fieldDescription": "Cardmember type",
+                    "value": "Primary Cardmembers",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 30000000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim process via Call Centre or E-mail (ihealthcare@icicilombard.com)."
+            },
+            "rewardDescription": "Personal Accident due to Air Accident (Death only) cover of ₹ 3,00,00,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "insurance_type",
+                            "fieldDescription": "Insurance type",
+                            "value": "Personal Accident due to Air Accident (Death only)",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_amount",
+                            "fieldDescription": "Coverage amount",
+                            "value": "₹ 3,00,00,000",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 140000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim process via Call Centre or E-mail (ihealthcare@icicilombard.com)."
+            },
+            "rewardDescription": "Purchase Protection cover of ₹ 1,40,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "insurance_type",
+                            "fieldDescription": "Insurance type",
+                            "value": "Purchase Protection",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_amount",
+                            "fieldDescription": "Coverage amount",
+                            "value": "₹ 1,40,000",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 100000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim process via Call Centre or E-mail (ihealthcare@icicilombard.com)."
+            },
+            "rewardDescription": "Credit Shield cover of ₹ 1,00,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "insurance_type",
+                            "fieldDescription": "Insurance type",
+                            "value": "Credit Shield",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_amount",
+                            "fieldDescription": "Coverage amount",
+                            "value": "₹ 1,00,000",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 84000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim process via Call Centre or E-mail (ihealthcare@icicilombard.com)."
+            },
+            "rewardDescription": "Loss of checked-in baggage cover of ₹ 84,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "insurance_type",
+                            "fieldDescription": "Insurance type",
+                            "value": "Loss of checked-in baggage",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_amount",
+                            "fieldDescription": "Coverage amount",
+                            "value": "₹ 84,000",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 75000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim process via Call Centre or E-mail (ihealthcare@icicilombard.com)."
+            },
+            "rewardDescription": "Plane Hijacking cover of ₹ 75,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "insurance_type",
+                            "fieldDescription": "Insurance type",
+                            "value": "Plane Hijacking",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_amount",
+                            "fieldDescription": "Coverage amount",
+                            "value": "₹ 75,000",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 50000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim process via Call Centre or E-mail (ihealthcare@icicilombard.com)."
+            },
+            "rewardDescription": "Card Liability Cover (Lost Card Liability, Counterfeit/Skimming/Phishing and Online Fraud Protection) of ₹ 50,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "insurance_type",
+                            "fieldDescription": "Insurance type",
+                            "value": "Card Liability Cover",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_amount",
+                            "fieldDescription": "Coverage amount",
+                            "value": "₹ 50,000",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Health and Wellness",
+            "rewardValue": {
+                "amount": 50000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim process via Call Centre or E-mail (ihealthcare@icicilombard.com)."
+            },
+            "rewardDescription": "Medical expenses for bodily injury caused by and arising out of Rail/Road accident cover of ₹ 50,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "insurance_type",
+                            "fieldDescription": "Insurance type",
+                            "value": "Medical expenses for Rail/Road accident",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_amount",
+                            "fieldDescription": "Coverage amount",
+                            "value": "₹ 50,000",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 35000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim process via Call Centre or E-mail (ihealthcare@icicilombard.com)."
+            },
+            "rewardDescription": "Loss of Passport and travel related documents cover of ₹ 35,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "insurance_type",
+                            "fieldDescription": "Insurance type",
+                            "value": "Loss of Passport and travel related documents",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_amount",
+                            "fieldDescription": "Coverage amount",
+                            "value": "₹ 35,000",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 25000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim process via Call Centre or E-mail (ihealthcare@icicilombard.com)."
+            },
+            "rewardDescription": "Baggage Insurance cover of ₹ 25,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "insurance_type",
+                            "fieldDescription": "Insurance type",
+                            "value": "Baggage Insurance",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_amount",
+                            "fieldDescription": "Coverage amount",
+                            "value": "₹ 25,000",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 21000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim process via Call Centre or E-mail (ihealthcare@icicilombard.com)."
+            },
+            "rewardDescription": "Delay of checked-in baggage cover of ₹ 21,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "insurance_type",
+                            "fieldDescription": "Insurance type",
+                            "value": "Delay of checked-in baggage",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_amount",
+                            "fieldDescription": "Coverage amount",
+                            "value": "₹ 21,000",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 21000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim process via Call Centre or E-mail (ihealthcare@icicilombard.com)."
+            },
+            "rewardDescription": "Missing a Connecting International Flight during transit cover of ₹ 21,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "insurance_type",
+                            "fieldDescription": "Insurance type",
+                            "value": "Missing a Connecting International Flight",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_amount",
+                            "fieldDescription": "Coverage amount",
+                            "value": "₹ 21,000",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 17500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim process via Call Centre or E-mail (ihealthcare@icicilombard.com)."
+            },
+            "rewardDescription": "Delay in flight cover of ₹ 17,500.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "insurance_type",
+                            "fieldDescription": "Insurance type",
+                            "value": "Delay in flight",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "coverage_amount",
+                            "fieldDescription": "Coverage amount",
+                            "value": "₹ 17,500",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": "various",
+                "unit": "fixed"
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Contact i-Assist team at 1800 26 70731 (Toll-free) or 022 6787 2016 (Standard)."
+            },
+            "rewardDescription": "Concierge Services: Restaurant referral and reservation, Flower and gift assistance, Flight and Hotel referral and reservation, Car rental and Limousine service, Booking and delivery of movie tickets, Medical concierge privileges, Emergency auto assistance.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "service_type",
+                    "fieldDescription": "Service type",
+                    "value": "Concierge Services",
+                    "comparison_operator": "eq"
+                }
+            }
+        }
+    ]
+}

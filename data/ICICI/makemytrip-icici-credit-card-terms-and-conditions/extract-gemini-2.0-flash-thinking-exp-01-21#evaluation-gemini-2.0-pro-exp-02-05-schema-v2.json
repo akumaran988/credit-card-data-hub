@@ -1,0 +1,975 @@
+{
+    "card_info": {
+        "card_name": "MakeMyTrip ICICI Bank Credit Card",
+        "bank": "ICICI Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": [],
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "The context mentions 'Late payment charges', confirming their existence, but does not provide details about the fee structure, such as outstanding amount slabs and corresponding charges.",
+            "The context mentions 'any other fees or charges', which includes finance charges, confirming their existence, but does not provide the monthly percentage rate.",
+            "Fuel surcharge waiver information is not mentioned in the context.",
+            "The context mentions 'Rent payment related transactions' as not qualifying for myCash, suggesting potential special transaction fees, but does not specify the fee type, value, or maximum cap."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "MMTBLACK Gold",
+        "airport_lounge_access": {
+            "domestic_lounges": [],
+            "international_lounges": [],
+            "free_lounge_visits": 9
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not extract the list of domestic lounges as the context only mentions 'Domestic Lounge List' without providing specific names.",
+            "Could not extract the list of international lounges as the context only mentions 'International Lounge List' without providing specific names or details.",
+            "Could not extract eligibility criteria for free night awards as there is no mention of free night awards in the context.",
+            "Could not extract partner hotels for free night awards as there is no mention of free night awards in the context.",
+            "Could not extract value cap for free night awards as there is no mention of free night awards in the context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "voucher",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 1000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": "joining membership fee",
+                "applicableMerchantsOrDomains": [
+                    "MakeMyTrip"
+                ]
+            },
+            "schedule": {
+                "rewardExpiry": {
+                    "unit": "months",
+                    "value": 12
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Redeemable on MakeMyTrip platform (website/apps) by selecting 'Gift Card' as payment mode and entering voucher details.",
+                "eligibleChannels": [
+                    "www.makemytrip.com",
+                    "MakeMyTrip apps on Android & iOS"
+                ]
+            },
+            "rewardDescription": "MakeMyTrip Voucher worth ₹ 1000 as a joining benefit, applicable for flights, hotels, holiday packages, bus and cab bookings on MakeMyTrip platform. Valid for 12 months from issuance.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "voucher_validity_period",
+                            "fieldDescription": "Validity of the voucher",
+                            "value": 12,
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "voucher_applicable_platform",
+                            "fieldDescription": "Platform where voucher is applicable",
+                            "value": "MakeMyTrip",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "voucher_applicable_bookings",
+                            "fieldDescription": "Types of bookings where voucher is applicable",
+                            "value": [
+                                "flights",
+                                "hotels",
+                                "holiday packages",
+                                "bus",
+                                "cab"
+                            ],
+                            "comparison_operator": "includes"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 1000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": "renewal membership fee",
+                "applicableMerchantsOrDomains": [
+                    "MakeMyTrip"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "flights",
+                    "holiday packages",
+                    "buses",
+                    "cabs",
+                    "trains",
+                    "activities/ experiences",
+                    "Visas"
+                ]
+            },
+            "schedule": {
+                "rewardExpiry": {
+                    "unit": "months",
+                    "value": 3
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Redeemable on MakeMyTrip platform (website/apps) by selecting 'Gift Card' as payment mode and entering voucher details.",
+                "eligibleChannels": [
+                    "www.makemytrip.com",
+                    "MakeMyTrip apps on Android & iOS"
+                ]
+            },
+            "rewardDescription": "MakeMyTrip Hotel Voucher worth ₹ 1000 as a renewal benefit, applicable for hotel and homestay bookings on MakeMyTrip platform. Valid for 3 months from issuance.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "voucher_validity_period",
+                            "fieldDescription": "Validity of the voucher",
+                            "value": 3,
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "voucher_applicable_platform",
+                            "fieldDescription": "Platform where voucher is applicable",
+                            "value": "MakeMyTrip",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "voucher_applicable_bookings",
+                            "fieldDescription": "Types of bookings where voucher is applicable",
+                            "value": [
+                                "hotel",
+                                "homestay"
+                            ],
+                            "comparison_operator": "includes"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "voucher_non_applicable_bookings",
+                            "fieldDescription": "Types of bookings where voucher is not applicable",
+                            "value": [
+                                "flights",
+                                "holiday packages",
+                                "buses",
+                                "cabs",
+                                "trains",
+                                "activities/ experiences",
+                                "Visas"
+                            ],
+                            "comparison_operator": "includes"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "currency": "membership"
+            },
+            "conditions": {
+                "minSpend": "joining membership fee"
+            },
+            "schedule": {
+                "rewardExpiry": {
+                    "unit": "years",
+                    "value": 1
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Complimentary MMTBLACK Gold membership will be provided within 45 business days of payment of Joining Fee."
+            },
+            "rewardDescription": "Complimentary MMTBLACK Gold Membership as a joining benefit, providing travel related benefits for 12 months.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "membership_tier",
+                            "fieldDescription": "Tier of the membership",
+                            "value": "Gold",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "membership_validity_period",
+                            "fieldDescription": "Validity of the membership",
+                            "value": 12,
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": null,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 300000,
+                "applicableMerchantsOrDomains": [
+                    "MakeMyTrip ICICI Bank Credit Card"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee waiver from 2nd Anniversary Year onwards if annual spends criteria is met."
+            },
+            "rewardDescription": "Annual Fee waiver from 2nd Anniversary Year onwards if total spends on the MakeMyTrip ICICI Bank Credit Card are equal to or more than ₹ 3,00,000 during the previous Anniversary Year.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "spend_required_for_waiver",
+                            "fieldDescription": "Minimum spend required for annual fee waiver",
+                            "value": 300000,
+                            "comparison_operator": "gte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "waiver_start_year",
+                            "fieldDescription": "Anniversary year from which waiver is applicable",
+                            "value": 2,
+                            "comparison_operator": "gte"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 3,
+                "unit": "percentage",
+                "currency": "myCash",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "MakeMyTrip"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "myCash will be credited to MakeMyTrip wallet within 45 business days from monthly statement generation date."
+            },
+            "rewardDescription": "<3>% myCash on Flight bookings made on MakeMyTrip platform. No cap on myCash earnings.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "booking_category",
+                            "fieldDescription": "Category of booking",
+                            "value": "Flight",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "booking_platform",
+                            "fieldDescription": "Platform for booking",
+                            "value": "MakeMyTrip",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 6,
+                "unit": "percentage",
+                "currency": "myCash",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "MakeMyTrip"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "myCash will be credited to MakeMyTrip wallet within 45 business days from monthly statement generation date."
+            },
+            "rewardDescription": "<6>% myCash on Hotel bookings made on MakeMyTrip platform. No cap on myCash earnings.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "booking_category",
+                            "fieldDescription": "Category of booking",
+                            "value": "Hotel",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "booking_platform",
+                            "fieldDescription": "Platform for booking",
+                            "value": "MakeMyTrip",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 3,
+                "unit": "percentage",
+                "currency": "myCash",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "MakeMyTrip"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "myCash will be credited to MakeMyTrip wallet within 45 business days from monthly statement generation date."
+            },
+            "rewardDescription": "<3>% myCash on Holiday bookings made on MakeMyTrip platform. No cap on myCash earnings.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "booking_category",
+                            "fieldDescription": "Category of booking",
+                            "value": "Holiday",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "booking_platform",
+                            "fieldDescription": "Platform for booking",
+                            "value": "MakeMyTrip",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 3,
+                "unit": "percentage",
+                "currency": "myCash",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "MakeMyTrip"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "myCash will be credited to MakeMyTrip wallet within 45 business days from monthly statement generation date."
+            },
+            "rewardDescription": "<3>% myCash on Cab bookings made on MakeMyTrip platform. No cap on myCash earnings.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "booking_category",
+                            "fieldDescription": "Category of booking",
+                            "value": "Cab",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "booking_platform",
+                            "fieldDescription": "Platform for booking",
+                            "value": "MakeMyTrip",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 3,
+                "unit": "percentage",
+                "currency": "myCash",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "MakeMyTrip"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "myCash will be credited to MakeMyTrip wallet within 45 business days from monthly statement generation date."
+            },
+            "rewardDescription": "<3>% myCash on Bus bookings made on MakeMyTrip platform. No cap on myCash earnings.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "booking_category",
+                            "fieldDescription": "Category of booking",
+                            "value": "Bus",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "booking_platform",
+                            "fieldDescription": "Platform for booking",
+                            "value": "MakeMyTrip",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 25,
+                "unit": "fixed",
+                "currency": "myCash"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "MakeMyTrip"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "myCash will be credited to MakeMyTrip wallet within 45 business days from monthly statement generation date."
+            },
+            "rewardDescription": "25 myCash on every Train booking made on MakeMyTrip platform.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "booking_category",
+                            "fieldDescription": "Category of booking",
+                            "value": "Train",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "booking_platform",
+                            "fieldDescription": "Platform for booking",
+                            "value": "MakeMyTrip",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "booking_frequency",
+                            "fieldDescription": "Frequency of booking",
+                            "value": "every",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "currency": "myCash",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "MakeMyTrip"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "myCash will be credited to MakeMyTrip wallet within 45 business days from monthly statement generation date."
+            },
+            "rewardDescription": "<1>% myCash on other retail spends on MakeMyTrip platform.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "spend_category",
+                            "fieldDescription": "Category of spend",
+                            "value": "retail",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "spend_platform",
+                            "fieldDescription": "Platform for spend",
+                            "value": "MakeMyTrip",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "spend_type",
+                            "fieldDescription": "Type of spend",
+                            "value": "other",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "currency": "myCash",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "Rent payments",
+                    "EMI payments"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "myCash will be credited to MakeMyTrip wallet within 45 business days from monthly statement generation date."
+            },
+            "rewardDescription": "<1>% myCash on Domestic spends outside MakeMyTrip, excluding rent and EMI payments.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "spend_location",
+                            "fieldDescription": "Location of spend",
+                            "value": "Domestic",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "spend_platform",
+                            "fieldDescription": "Platform for spend",
+                            "value": "outside MakeMyTrip",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "excluded_spend_categories",
+                            "fieldDescription": "Excluded categories of spend",
+                            "value": [
+                                "rent",
+                                "EMI"
+                            ],
+                            "comparison_operator": "includes"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "excluded_merchant_or_domains",
+                            "fieldDescription": "Excluded Merchant or Domains",
+                            "value": [
+                                "Rent payments",
+                                "EMI payments"
+                            ],
+                            "comparison_operator": "includes"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "currency": "myCash",
+                "referenceValue": 100
+            },
+            "conditions": {},
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "myCash will be credited to MakeMyTrip wallet within 45 business days from monthly statement generation date."
+            },
+            "rewardDescription": "<1>% myCash on International spends outside MakeMyTrip.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "spend_location",
+                            "fieldDescription": "Location of spend",
+                            "value": "International",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "spend_platform",
+                            "fieldDescription": "Platform for spend",
+                            "value": "outside MakeMyTrip",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "currency": "myCash",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "cap": {
+                    "amount": 1000,
+                    "period": "yearly"
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "myCash will be credited to MakeMyTrip wallet within 45 business days from monthly statement generation date."
+            },
+            "rewardDescription": "<1>% myCash on Spends on Insurance, capped at a maximum of <1,000> myCash per Anniversary Year.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "spend_category",
+                            "fieldDescription": "Category of spend",
+                            "value": "Insurance",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "reward_cap_period",
+                            "fieldDescription": "Period for reward cap",
+                            "value": "Anniversary Year",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "reward_cap_amount",
+                            "fieldDescription": "Maximum reward amount",
+                            "value": 1000,
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "reward_cap",
+                            "fieldDescription": "Reward Cap",
+                            "value": {
+                                "amount": 1000,
+                                "period": "yearly"
+                            },
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "fixed",
+                "currency": "accesses"
+            },
+            "conditions": {},
+            "schedule": {
+                "rewardAccrualFrequency": "Quarterly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Swipe Credit Card at domestic airport lounges to avail complimentary access.",
+                "eligibilityCriteria": "Primary Cardholder only"
+            },
+            "rewardDescription": "2 complimentary domestic lounge accesses per quarter for Primary Cardholder.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "lounge_type",
+                            "fieldDescription": "Type of lounge",
+                            "value": "Domestic",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "accesses_per_period",
+                            "fieldDescription": "Number of accesses per period",
+                            "value": 2,
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "access_period",
+                            "fieldDescription": "Period for accesses",
+                            "value": "Quarterly",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "cardholder_type",
+                            "fieldDescription": "Type of cardholder eligible",
+                            "value": "Primary",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "reward_accrual_frequency",
+                            "fieldDescription": "Reward Accrual Frequency",
+                            "value": "Quarterly",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "currency": "accesses"
+            },
+            "conditions": {},
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Use Priority Pass for international lounge access.",
+                "eligibilityCriteria": "Primary Cardholder only"
+            },
+            "rewardDescription": "1 complimentary international lounge access per calendar year for Primary Cardholder.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "lounge_type",
+                            "fieldDescription": "Type of lounge",
+                            "value": "International",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "accesses_per_period",
+                            "fieldDescription": "Number of accesses per period",
+                            "value": 1,
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "access_period",
+                            "fieldDescription": "Period for accesses",
+                            "value": "Calendar Year",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "cardholder_type",
+                            "fieldDescription": "Type of cardholder eligible",
+                            "value": "Primary",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "reward_accrual_frequency",
+                            "fieldDescription": "Reward Accrual Frequency",
+                            "value": "Annually",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Entertainment",
+            "rewardValue": {
+                "amount": 25,
+                "unit": "percentage",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "maxSpend": 150,
+                "applicableMerchantsOrDomains": [
+                    "BookMyShow",
+                    "INOX"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit www.bookmyshow.com or download the app to book movie tickets.",
+                "eligibleChannels": [
+                    "www.bookmyshow.com",
+                    "BookMyShow app"
+                ],
+                "redemptionLimit": {
+                    "limitCount": 1,
+                    "timePeriod": "monthly"
+                }
+            },
+            "rewardDescription": "Buy one movie ticket and get 25% off up to ₹ 150 on the second ticket on BookMyShow and INOX, once a month each on Mastercard and RuPay variants.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "discount_percentage",
+                            "fieldDescription": "Discount percentage on second ticket",
+                            "value": 25,
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "discount_max_amount",
+                            "fieldDescription": "Maximum discount amount",
+                            "value": 150,
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "merchant_platforms",
+                            "fieldDescription": "Merchant platforms for movie ticket booking",
+                            "value": [
+                                "BookMyShow",
+                                "INOX"
+                            ],
+                            "comparison_operator": "includes"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "redemption_frequency",
+                            "fieldDescription": "Redemption frequency",
+                            "value": "monthly",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "max_spend",
+                            "fieldDescription": "Maximum spend for discount",
+                            "value": 150,
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "redemption_limit_count",
+                            "fieldDescription": "Redemption limit count",
+                            "value": 1,
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "redemption_limit_period",
+                            "fieldDescription": "Redemption limit period",
+                            "value": "monthly",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

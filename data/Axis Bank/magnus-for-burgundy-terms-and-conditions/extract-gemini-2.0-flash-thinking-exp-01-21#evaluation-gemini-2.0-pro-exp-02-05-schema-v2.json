@@ -1,0 +1,344 @@
+{
+    "card_info": {
+        "card_name": "MAGNUS for Burgundy Credit Card",
+        "bank": "Axis Bank",
+        "effective_date": "2024-04-20",
+        "last_updated": "2024-04-20",
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the context.",
+            "Could not find information about finance charges in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Burgundy",
+        "airport_lounge_access": {
+            "domestic_lounges": [],
+            "international_lounges": [],
+            "free_lounge_visits": 4
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": [],
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not find specific names of domestic lounges accessible through the program in the context. However, the context mentions 'Revision of Domestic Lounge Program' indicating a domestic lounge program exists, and access is based on spends.",
+            "Could not find specific names or details of international lounges accessible through the program in the context. However, the context mentions 'International Lounge' and 'Priority Pass' access, indicating an international lounge program exists.",
+            "Could not find eligibility criteria for free night awards in the context. The context does not mention any free night awards benefit.",
+            "Could not find partner hotels for free night awards in the context. The context does not mention any free night awards benefit.",
+            "Could not find value cap for free night awards in the context. The context does not mention any free night awards benefit."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "multiplier"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    {
+                        "domain": "Insurance"
+                    },
+                    {
+                        "domain": "Gold & Jewelry"
+                    },
+                    {
+                        "domain": "Fuel"
+                    }
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Miles Transfer Program to Group A and Group B partners",
+                "eligibleChannels": [
+                    "Miles Transfer Partners"
+                ],
+                "redemptionCapPeriod": "Annually"
+            },
+            "rewardDescription": "EDGE REWARD Points are not applicable for spends done on Insurance, Gold & Fuel MCC. Maximum of 2 lakh EDGE REWARD Points cumulatively can be transferred to Group A partners and maximum of 8 lakh EDGE REWARD Points cumulatively to Group B partners per calendar year. Capping applicable from 20th Apr’24 to 31st Dec’24 for current calendar year and from 1st Jan’25 to 31st Dec’25 for next calendar year onwards.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "merchantCategoryCode",
+                                "fieldDescription": "Merchant Category Code for spends",
+                                "comparison_operator": "not in",
+                                "value": [
+                                    6300,
+                                    6381,
+                                    5960,
+                                    6051,
+                                    6012,
+                                    5541,
+                                    5542,
+                                    5983,
+                                    5094,
+                                    5944
+                                ]
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "range",
+                                "field": "milesTransferProgramGroupA",
+                                "fieldDescription": "Maximum EDGE REWARD Points cumulatively transferable to Group A partners via Miles Transfer Program",
+                                "range": {
+                                    "gte": 0,
+                                    "lte": 200000
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "range",
+                                "field": "milesTransferProgramGroupB",
+                                "fieldDescription": "Maximum EDGE REWARD Points cumulatively transferable to Group B partners via Miles Transfer Program",
+                                "range": {
+                                    "gte": 0,
+                                    "lte": 800000
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "logical",
+                                "logical_operator": "or",
+                                "conditions": [
+                                    {
+                                        "condition": {
+                                            "type": "range",
+                                            "field": "rewardCappingPeriodCurrentYear",
+                                            "fieldDescription": "Reward points capping period for current calendar year",
+                                            "range": {
+                                                "gte": "2024-04-20",
+                                                "lte": "2024-12-31"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": {
+                                            "type": "range",
+                                            "field": "rewardCappingPeriodNextYear",
+                                            "fieldDescription": "Reward points capping period for next calendar year onwards",
+                                            "range": {
+                                                "gte": "2025-01-01",
+                                                "lte": "2025-12-31"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    {
+                        "domain": "Insurance"
+                    },
+                    {
+                        "domain": "Gold & Jewelry"
+                    },
+                    {
+                        "domain": "Fuel"
+                    }
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee Waiver"
+            },
+            "rewardDescription": "Spends on Insurance, Gold & Fuel are excluded for annual fee waiver threshold.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "annualFeeWaiverSpendCategory",
+                    "fieldDescription": "Spend category exclusions for annual fee waiver",
+                    "comparison_operator": "not in",
+                    "value": [
+                        "Insurance",
+                        "Gold & Jewelry",
+                        "Fuel"
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 4,
+                "unit": "year"
+            },
+            "conditions": {},
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Airport Meet & Assist Program",
+                "eligibleChannels": [
+                    "Airport"
+                ]
+            },
+            "rewardDescription": "Complimentary 4 airport meet & assist services per calendar year, effective from 20th April 2024.",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "airportMeetAndAssistServices",
+                    "fieldDescription": "Number of complimentary airport meet & assist services",
+                    "range": {
+                        "gte": 0,
+                        "lte": 4
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "minSpend": 50000,
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "Domestic Airport Lounges"
+                    }
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Domestic airport lounge access based on spends",
+                "eligibleChannels": [
+                    "Domestic Airport Lounges"
+                ]
+            },
+            "rewardDescription": "Complimentary domestic airport lounge access based on spends in previous 3 calendar months. Minimum spends required Rs. 50,000 in previous 3 calendar months. For new cards, minimum spend criteria is waived for the month of issuance and next 3 calendar months. Lounge access benefit changes effective from 1st May 2024.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "or",
+                    "conditions": [
+                        {
+                            "condition": {
+                                "type": "range",
+                                "field": "cardIssuanceDate",
+                                "fieldDescription": "Card issuance date for new cards - lounge access spend waiver period",
+                                "range": {
+                                    "gte": "card_issuance_date",
+                                    "lte": "card_issuance_date + 3 months"
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "spendPrevious3Months",
+                                "fieldDescription": "Minimum spend in previous 3 calendar months for lounge access",
+                                "comparison_operator": "gte",
+                                "value": 50000
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 4,
+                "unit": "year"
+            },
+            "conditions": {},
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Complimentary guest visits for domestic lounges",
+                "eligibleChannels": [
+                    "Domestic Lounges"
+                ]
+            },
+            "rewardDescription": "4 complimentary guest visits for domestic lounges per calendar year, effective from 20th April 2024.",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "complimentaryDomesticGuestVisits",
+                    "fieldDescription": "Number of complimentary guest visits for domestic lounges",
+                    "range": {
+                        "gte": 0,
+                        "lte": 4
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 4,
+                "unit": "year"
+            },
+            "conditions": {},
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Complimentary guest visits for international lounges",
+                "eligibleChannels": [
+                    "International Lounges"
+                ]
+            },
+            "rewardDescription": "4 complimentary guest visits for international lounges per card anniversary year, effective from 20th April 2024.",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "complimentaryInternationalGuestVisits",
+                    "fieldDescription": "Number of complimentary guest visits for international lounges",
+                    "range": {
+                        "gte": 0,
+                        "lte": 4
+                    }
+                }
+            }
+        }
+    ]
+}

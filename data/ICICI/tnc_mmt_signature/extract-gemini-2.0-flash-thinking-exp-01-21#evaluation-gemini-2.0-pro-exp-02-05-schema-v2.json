@@ -1,0 +1,1019 @@
+{
+    "card_info": {
+        "card_name": "MakeMyTrip ICICI Bank Signature Credit Card",
+        "bank": "ICICI Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the provided context.",
+            "Could not find information about finance charges in the provided context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Exclusive Tier",
+        "airport_lounge_access": {
+            "domestic_lounges": [
+                "Selected Domestic Lounges in India"
+            ],
+            "international_lounges": [
+                "Airport lounges across 115 countries around the world"
+            ],
+            "free_lounge_visits": 5
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "No information about free night awards eligibility criteria found in the context.",
+            "No information about free night awards partner hotels found in the context.",
+            "No information about free night awards value cap found in the context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "cashback",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 1500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Credited to My Wallet",
+                "processingTime": "within <45> business days of payment of the Joining Fee (except MakeMyTrip holiday voucher, which is part of the Primary Card Welcome Kit)"
+            },
+            "rewardDescription": "Rs <1,500> My Cash (100% usable MakeMyTrip cash in My Wallet)*",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardholder_type",
+                    "fieldDescription": "Type of cardholder",
+                    "value": "primary",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 2500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {},
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "MakeMyTrip holiday voucher",
+                "processingTime": "part of the Primary Card Welcome Kit"
+            },
+            "rewardDescription": "Avail MakeMyTrip holiday voucher worth Rs <2,500>*",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardholder_type",
+                    "fieldDescription": "Type of cardholder",
+                    "value": "primary",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Subscriptions and Memberships",
+            "rewardValue": null,
+            "conditions": {},
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Complimentary MMBLACK Exclusive membership",
+                "processingTime": "Welcome Kit"
+            },
+            "rewardDescription": "Get a Complimentary MMBLACK Exclusive membership",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardholder_type",
+                    "fieldDescription": "Type of cardholder",
+                    "value": "primary",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 1500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "joiningFeePaymentDueDate": "before the 2nd statement cycle due date",
+                "paymentAmountCondition": "greater than or equal to the Joining Fee excluding applicable taxes"
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Credited to My Wallet",
+                "processingTime": "within <45> business days post payment of the Joining Fee"
+            },
+            "rewardDescription": "Rs <1,500> My Cash as a Joining Benefit",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardholder_type",
+                    "fieldDescription": "Type of cardholder",
+                    "value": "primary",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 2500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "bookingType": "domestic and international bookings made within the validity period",
+                "bookingChannel": "www.makemytrip.com under the ‘Holidays’ section (or) externalsales.holidays@makemytrip.com",
+                "bookingExecutive": "MakeMyTrip’s executive",
+                "excludedBookings": "individual flight, hotel, bus, rail and cab bookings",
+                "nonCombinableOffers": "any other ongoing Bank cashback / Bank promotion run by MakeMyTrip",
+                "minSpend": null
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "MakeMyTrip Holiday Voucher",
+                "processingTime": "Welcome Kit"
+            },
+            "rewardDescription": "MakeMyTrip Holiday Voucher",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "percentage",
+                "referenceValue": null
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "hotels"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": null,
+            "rewardDescription": "<5>% additional discount on select participating hotels applicable over and above other discounts.",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "lt": 100000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 0.5,
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "flight bookings"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "My Cash in My Wallet"
+            },
+            "rewardDescription": "Earn My Cash worth Re <0.5> for every Rs <100> spent on flight bookings",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "lt": 100000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "all other bookings (rail, metro and VISA not included)"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "My Cash in My Wallet"
+            },
+            "rewardDescription": "and My Cash worth Re <1> for every Rs 100 spent on all other bookings (rail, metro and VISA not included).",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "lt": 100000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 10,
+                "unit": "percentage",
+                "referenceValue": null
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "hotels"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": null,
+            "rewardDescription": "Get <10>% additional discount on select participating hotels",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 100000,
+                        "lt": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Luxury",
+            "rewardValue": null,
+            "conditions": {},
+            "schedule": null,
+            "redemptionMethod": null,
+            "rewardDescription": "Enjoy MMTBLACK Hotel Privileges such as free room upgrades, early check-ins and hotel specific discounts on food, beverages, spas and other offerings (subject to availability).",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 100000,
+                        "lt": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 0.63,
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "flight bookings"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "My Cash in My Wallet"
+            },
+            "rewardDescription": "Get My Cash worth Re <0.63> for every Rs <100> spent on flight bookings",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 100000,
+                        "lt": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 1.25,
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "all other bookings (Rail, Metro and VISA not included)"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "My Cash in My Wallet"
+            },
+            "rewardDescription": "and My Cash worth Rs <1.25> for every Rs <100> spent on all other bookings (Rail, Metro and VISA not included).",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 100000,
+                        "lt": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 10,
+                "unit": "percentage",
+                "referenceValue": null
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "hotels"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": null,
+            "rewardDescription": "Avail <10>% or <15>% additional discount on select participating hotels",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 15,
+                "unit": "percentage",
+                "referenceValue": null
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "hotels"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": null,
+            "rewardDescription": "Avail <10>% or <15>% additional discount on select participating hotels",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Luxury",
+            "rewardValue": null,
+            "conditions": {},
+            "schedule": null,
+            "redemptionMethod": null,
+            "rewardDescription": "Enjoy MMTBLACK Hotel Privileges such as free room upgrades, early check-ins and hotel specific discounts on food, beverages, spas and other offerings (subject to availability).",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 0.75,
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "flight bookings"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "My Cash in My Wallet"
+            },
+            "rewardDescription": "Earn My Cash worth Re <0.75> for every Rs <100> spent on flight bookings",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 1.5,
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "all other bookings (Rail, Metro and VISA not included)"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "My Cash in My Wallet"
+            },
+            "rewardDescription": "and My Cash worth Rs <1.50> for every Rs <100> spent on all other bookings (Rail, Metro and VISA not included).",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 20000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 150000
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "MakeMyTrip Holiday Voucher"
+            },
+            "rewardDescription": "Avail MakeMyTrip Holiday Voucher worth Rs <20,000> (valid for 1 year).",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Financial Services",
+            "rewardValue": null,
+            "conditions": {},
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Exclusive Care - premium Customer Care helpline"
+            },
+            "rewardDescription": "Exclusive Care - a premium Customer Care helpline.",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "offers",
+            "Category": "Shopping",
+            "rewardValue": null,
+            "conditions": {},
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Year-round benefits from MakeMyTrip Partners"
+            },
+            "rewardDescription": "Year-round benefits from MakeMyTrip Partners.",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Luxury",
+            "rewardValue": null,
+            "conditions": {},
+            "schedule": null,
+            "redemptionMethod": null,
+            "rewardDescription": "discounted airport transfers",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Luxury",
+            "rewardValue": null,
+            "conditions": {},
+            "schedule": null,
+            "redemptionMethod": null,
+            "rewardDescription": "free Meals at Airports (at select restaurants)",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Luxury",
+            "rewardValue": null,
+            "conditions": {},
+            "schedule": null,
+            "redemptionMethod": null,
+            "rewardDescription": "free seat selection.",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "mmt_spend_last_12_months",
+                    "fieldDescription": "Customer spends at MakeMyTrip in the last 12 months",
+                    "range": {
+                        "gte": 200000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 1.25,
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": 200
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "Domestic spends outside MakeMyTrip"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "My Cash in My Wallet"
+            },
+            "rewardDescription": "My Cash on Domestic spends outside MakeMyTrip (Rs <1.25> per Rs 200 spent)",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 1.5,
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": 200
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "International spends outside MakeMyTrip"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "My Cash in My Wallet"
+            },
+            "rewardDescription": "My Cash on International spends outside MakeMyTrip (Rs <1.50> per Rs 200 spent)",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 2.0,
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": 200
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "flight bookings"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "My Cash in My Wallet"
+            },
+            "rewardDescription": "My Cash worth Rs <2.00> for every Rs 200 spent on flight bookings.",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 4.0,
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": 200
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "Spends on hotel/holiday bookings on MakeMyTrip"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "My Cash in My Wallet"
+            },
+            "rewardDescription": "My Cash on spends on hotel/holiday bookings on MakeMyTrip (Rs <4.00> per Rs 200 spent)",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 1100,
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": null
+            },
+            "conditions": {
+                "minSpend": 250000,
+                "maxSpend": 500000,
+                "cap": {
+                    "amount": 1100,
+                    "period": "yearly"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "My Cash in My Wallet",
+                "processingTime": "45 business days post anniversary cycle completion"
+            },
+            "rewardDescription": "Milestone 1: Spend Rs <2.5> lakh using the MakeMyTrip ICICI Bank Signature Credit Card and earn <1,100> My Cash each anniversary year.",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 4000,
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": null
+            },
+            "conditions": {
+                "minSpend": 500000,
+                "cap": {
+                    "amount": 4000,
+                    "period": "yearly"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "My Cash in My Wallet",
+                "processingTime": "45 business days post anniversary cycle completion"
+            },
+            "rewardDescription": "Milestone 2: Spend Rs <5> lakh using the MakeMyTrip ICICI Bank Signature Credit Card and earn <4,000> My Cash each anniversary year.",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 100,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "airport ride"
+                    }
+                ],
+                "maxSpend": 100,
+                "cap": {
+                    "amount": 3,
+                    "period": "monthly"
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "MakeMyTrip ICICI Bank Signature Credit Card Coupon Code: MMTCAB1",
+                "eligibleChannels": [
+                    "MakeMyTrip mobile site",
+                    "MakeMyTrip Android App",
+                    "MakeMyTrip iOS App"
+                ]
+            },
+            "rewardDescription": "Flat Rs <100> instant discount on every airport ride (MMTCAB1).",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 250,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "outstation ride (one-way)"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "MakeMyTrip ICICI Bank Signature Credit Card Coupon Code: MMTCAB2",
+                "eligibleChannels": [
+                    "mobile site",
+                    "Android App",
+                    "iOS App"
+                ]
+            },
+            "rewardDescription": "Flat Rs <250> instant discount on every outstation ride (one-way) (MMTCAB2).",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "outstation ride (round trip)"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "MakeMyTrip ICICI Bank Signature Credit Card Coupon Code: MMTCAB3",
+                "eligibleChannels": [
+                    "mobile site",
+                    "Android App",
+                    "iOS App"
+                ]
+            },
+            "rewardDescription": "Flat Rs <500> instant discount on every outstation ride (round trip) (MMTCAB3).",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 1500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "international flights / hotels / holidays"
+                    }
+                ],
+                "cap": {
+                    "amount": 1,
+                    "period": "quarterly"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Quarterly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Credited to My Wallet",
+                "processingTime": "post date of travel or after <45> days of booking, whichever is later"
+            },
+            "rewardDescription": "Rs <1,500> My Cash on booking international flights / hotels / holidays",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Entertainment",
+            "rewardValue": {
+                "amount": 150,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": "purchase of a minimum of two tickets",
+                "applicableMerchantsOrDomains": [
+                    "BookMyShow",
+                    "INOX"
+                ],
+                "cap": {
+                    "amount": 2,
+                    "period": "monthly"
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "25% discount up to Rs 150 per transaction on purchase of a minimum of two tickets"
+            },
+            "rewardDescription": "Offer on BookMyShow & INOX of 25% discount of a maximum of up to Rs 150 on the purchase of a minimum of two tickets per transaction.",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "service",
+            "Category": "Luxury",
+            "rewardValue": null,
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "International airport lounges"
+                ],
+                "cap": {
+                    "amount": 1,
+                    "period": "yearly"
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "DreamFolks Lounge Access Programme for International airport lounges",
+                "processingTime": "Visit www.dreamfolks.in for details on DreamFolks Lounge Access Programme, please"
+            },
+            "rewardDescription": "International airport lounge access (1 per year)",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "service",
+            "Category": "Luxury",
+            "rewardValue": null,
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Domestic airport lounges"
+                ],
+                "cap": {
+                    "amount": 1,
+                    "period": "quarterly"
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "DreamFolks Lounge Access Programme for Domestic airport lounges",
+                "processingTime": "Visit www.dreamfolks.in for details on DreamFolks Lounge Access Programme, please"
+            },
+            "rewardDescription": "Domestic airport lounge access (1 per quarter)",
+            "customConditions": {}
+        },
+        {
+            "rewardType": "service",
+            "Category": "Health and Wellness",
+            "rewardValue": null,
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Airport spas"
+                ],
+                "cap": {
+                    "amount": 1,
+                    "period": "yearly"
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "DreamFolks Lounge Access Programme for Airport spa access",
+                "processingTime": "Visit www.dreamfolks.in for details on DreamFolks Lounge Access Programme, please"
+            },
+            "rewardDescription": "Airport spa access (1 per year)",
+            "customConditions": {}
+        }
+    ]
+}

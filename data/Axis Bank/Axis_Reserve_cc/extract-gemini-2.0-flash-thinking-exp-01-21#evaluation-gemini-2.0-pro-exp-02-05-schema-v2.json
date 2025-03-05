@@ -1,0 +1,417 @@
+{
+    "card_info": {
+        "card_name": "Axis Bank Reserve Credit Card",
+        "bank": "Axis Bank",
+        "effective_date": "2023-09-01",
+        "last_updated": null,
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the provided context. The 'late_payment_charges' field is required as per the schema, but no details regarding outstanding amount slabs and corresponding charges were mentioned in the text.",
+            "Could not find information about finance charges in the provided context. The 'finance_charges' field is required as per the schema, but no details regarding monthly percentage rate applied for revolving credit were mentioned in the text.",
+            "Could not find information about special transaction fees in the provided context. While the context mentions exclusions for certain transaction types regarding rewards and fee waivers, it does not specify any 'special transaction fees' as defined in the schema for transactions like rent payments or utility purchases. Therefore, no information could be extracted for the 'special_transaction_fees' field."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Reserve",
+        "airport_lounge_access": {
+            "domestic_lounges": [
+                "Primus Lounge",
+                "Zesto Executive lounge",
+                "Costa Coffee",
+                "Primus Lounge",
+                "Earth Lounge",
+                "Primus Lounge",
+                "The Lounge",
+                "Pearl Lounge Domestic",
+                "Primus Lounge",
+                "Take Off Bar"
+            ],
+            "international_lounges": [
+                "Priority Pass Lounges"
+            ],
+            "free_lounge_visits": 12
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "The 'free_lounge_visits' field in the schema expects a numerical value for free lounge visits per year. The context states 'unlimited complimentary domestic lounge visits' and 'unlimited complimentary international lounge visits' for Primary and Add-on card holders. For accompanying guests, 12 complimentary visits are allowed per year for both domestic and international lounges. The value '12' is extracted and put in 'free_lounge_visits' field, representing the number of free visits for guests. The unlimited visits for cardholders cannot be represented as a numerical value in this field.",
+            "The context mentions 'For accessing rest of the domestic lounges in India, please use your Reserve Credit Card. List of participating domestic lounges can be found at this link.' but the link is not provided in the context, hence the list of 'rest of the domestic lounges' could not be extracted.",
+            "The 'eligibility_criteria' for free_night_awards is missing in the context.",
+            "The 'partner_hotels' for free_night_awards is missing in the context.",
+            "The 'value_cap' for free_night_awards is missing in the context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "fixed",
+                "referenceValue": 5
+            },
+            "conditions": {
+                "cap": {
+                    "amount": 500000,
+                    "period": "yearly"
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "transfer EDGE Reward points to domestic and international partners across airlines and hotels",
+                "eligibleChannels": [
+                    "airlines",
+                    "hotels"
+                ]
+            },
+            "rewardDescription": "Transfer EDGE Reward points to domestic and international partners across airlines and hotels as per the revised transfer ratio of 5:2",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "condition": {
+                                "type": "range",
+                                "field": "EDGE Reward Points",
+                                "fieldDescription": "EDGE Reward Points",
+                                "value": {
+                                    "gte": 5
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "temporal_range",
+                                "field": "Conversion Period for 2023",
+                                "fieldDescription": "Conversion Period for 2023",
+                                "value": {
+                                    "gte": "2023-09-01",
+                                    "lte": "2023-12-31"
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "waiting_period",
+                                "field": "Partner Loyalty ID Update",
+                                "fieldDescription": "Waiting period after updating partner loyalty ID",
+                                "value": {
+                                    "duration": 60,
+                                    "unit": "days"
+                                }
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "Partner Program Loyalty ID Count",
+                                "fieldDescription": "Number of Partner Program Loyalty ID linked per partner",
+                                "value": 1,
+                                "comparison_operator": "eq"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": null,
+                "unit": "fixed"
+            },
+            "conditions": null,
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "accessible through Reserve Credit Card",
+                "eligibleChannels": [
+                    "domestic lounges"
+                ]
+            },
+            "rewardDescription": "Unlimited complimentary domestic lounge visits in a year for both Primary and Add-on card holders using your Reserve Credit Card",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "Card Type",
+                    "fieldDescription": "Reserve Credit Card",
+                    "value": "Reserve Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 12,
+                "unit": "year"
+            },
+            "conditions": null,
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "accessible through Reserve Credit Card",
+                "eligibleChannels": [
+                    "domestic lounges"
+                ]
+            },
+            "rewardDescription": "12 complimentary domestic lounge visits in a year for accompanying guests using your Reserve Credit Card",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "Card Type",
+                                "fieldDescription": "Reserve Credit Card",
+                                "value": "Reserve Credit Card",
+                                "comparison_operator": "eq"
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "Guest Type",
+                                "fieldDescription": "Accompanying Guests",
+                                "value": "Accompanying Guests",
+                                "comparison_operator": "eq"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": null,
+                "unit": "fixed"
+            },
+            "conditions": null,
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "accessible through Priority Pass membership",
+                "eligibleChannels": [
+                    "international lounges"
+                ]
+            },
+            "rewardDescription": "Unlimited complimentary international lounge visits in a year for Primary card holders using Priority Pass membership",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "Card Holder Type",
+                                "fieldDescription": "Primary card holders",
+                                "value": "Primary card holders",
+                                "comparison_operator": "eq"
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "Membership",
+                                "fieldDescription": "Priority Pass membership",
+                                "value": "Priority Pass membership",
+                                "comparison_operator": "eq"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 12,
+                "unit": "year"
+            },
+            "conditions": null,
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "accessible through Priority Pass membership",
+                "eligibleChannels": [
+                    "international lounges"
+                ]
+            },
+            "rewardDescription": "12 complimentary international lounge guest visits in a calendar year using Priority Pass membership",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "Guest Type",
+                                "fieldDescription": "Guest visits",
+                                "value": "Guest visits",
+                                "comparison_operator": "eq"
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "Membership",
+                                "fieldDescription": "Priority Pass membership",
+                                "value": "Priority Pass membership",
+                                "comparison_operator": "eq"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 50000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 3500000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "fee waiver"
+            },
+            "rewardDescription": "Annual fee waiver of INR 50,000 on spends of INR 35,00,000 for Customers on-boarded from 1st September 2023",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "Customer Onboarding Date",
+                    "fieldDescription": "Customers on-boarded from 1st September 2023",
+                    "value": "2023-09-01",
+                    "comparison_operator": "gte"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 50000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 2500000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "fee waiver"
+            },
+            "rewardDescription": "Annual fee waiver of INR 50,000 on spends of INR 25,00,000 for customers onboarded before 1st September 2023, for card anniversary dates before 1st September 2024",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "Customer Onboarding Date",
+                                "fieldDescription": "Customers onboarded before 1st September 2023",
+                                "value": "2023-09-01",
+                                "comparison_operator": "lt"
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "Card Anniversary Date",
+                                "fieldDescription": "card anniversary dates before 1st September 2024",
+                                "value": "2024-09-01",
+                                "comparison_operator": "lt"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 50000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 3500000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "fee waiver"
+            },
+            "rewardDescription": "Annual fee waiver of INR 50,000 on spends of INR 35,00,000 for customers onboarded before 1st September 2023, for card anniversary dates after 1st September 2024",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "Customer Onboarding Date",
+                                "fieldDescription": "Customers onboarded before 1st September 2023",
+                                "value": "2023-09-01",
+                                "comparison_operator": "lt"
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "Card Anniversary Date",
+                                "fieldDescription": "card anniversary dates after 1st September 2024",
+                                "value": "2024-09-01",
+                                "comparison_operator": "gte"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

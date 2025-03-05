@@ -1,0 +1,967 @@
+{
+    "card_info": {
+        "card_name": "Accelero ICICI Bank Credit Card",
+        "bank": "ICICI Bank",
+        "effective_date": null,
+        "last_updated": "2023-02-03",
+        "extraction_errors": [
+            "Could not find the effective date of the credit card terms and conditions in the provided context."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": null,
+            "maximum_transaction": 4000,
+            "maximum_waiver": null
+        },
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges structure (outstanding amount slabs and charges).",
+            "Could not find information about monthly percentage rate for finance charges.",
+            "Could not find explicit minimum transaction amount for fuel surcharge waiver.",
+            "Could not find explicit maximum waived amount per billing cycle for fuel surcharge waiver.",
+            "Could not find information about special transaction fees for transactions like rent payments or utility purchases."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not find information about the elite status level of the Accelero ICICI Bank Credit Card in the provided context.",
+            "Could not find information about airport lounge access benefits for the Accelero ICICI Bank Credit Card in the provided context.",
+            "Could not find information about free night awards benefits for the Accelero ICICI Bank Credit Card in the provided context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 1500,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "fee_payment",
+                        "fieldDescription": "annual fee payment",
+                        "value": true,
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Reward points will be credited to the customer's account.",
+                "processingTime": "within 45 working days of fee payment",
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Annual fee payment",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "1,500 ICICI Bank Reward Points as Annual Gift. Annual gift shall be provided to the Customer(s) within 45 working days of fee payment. This is applicable on annual fee payment only. If the Customer(s) gets an annual fee waiver on spending more than INR 1.25 lac per annum, this annual benefit shall not be applicable.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "not",
+                    "conditions": [
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "annual_spend",
+                                "fieldDescription": "annual spend",
+                                "value": 125000,
+                                "comparison_operator": "gt"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 100,
+                "unit": "percentage"
+            },
+            "conditions": {
+                "minSpend": 125000,
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "anniversary_year",
+                        "fieldDescription": "year of card anniversary",
+                        "value": 2,
+                        "comparison_operator": "gte"
+                    }
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual fee reversal",
+                "processingTime": "Subsequent year",
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Total eligible spends on the Accelero ICICI Bank Credit Card is equal to or more than INR 1,25,000 during an anniversary year.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Customer(s) is eligible for annual fee waiver from year 2 onwards if total eligible spends on the Accelero ICICI Bank Credit Card is equal to or more than INR 1,25,000 during an anniversary year. Annual fee applicable on the Accelero ICICI Bank Credit Card for the subsequent year shall be reversed in this case. If total eligible spends on the Accelero ICICI Bank Credit Card is less than INR 1,25,000 during an anniversary year, the Annual Fee applicable on the Accelero ICICI Bank Credit Card for the subsequent year shall not get reversed.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "multiplier",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Domestic transactions"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "Cash advance/withdrawal at ATMs",
+                    "Fuel transactions",
+                    "Service charge or interest",
+                    "Late payment charges",
+                    "Joining fee and renewal fee",
+                    "EMI transactions, Balance Transfer (BT), Personal Loan on Credit Cards (PLCC)"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "ICICI Bank Reward Points will be credited to the Primary Customer(s)’s ICICI Bank Reward account.",
+                "processingTime": "within 45 business days of monthly credit card statement generation",
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Qualifying retail spends transactions",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "2 ICICI Bank Reward Points earned on Domestic transactions for every INR 100 spent. Customer(s) will qualify to earn ICICI Bank Reward Points upon undertaking qualifying retail spends transactions. ICICI Bank Reward Points earned for every qualifying retail spend transaction will be rounded off to the nearest integer at the time of posting. Customer(s) shall however not be entitled to earn ICICI Bank Reward Points on retail transactions that have been subsequently reversed. The following spends shall not be considered as qualifying spends for the purpose of earning ICICI Bank Reward Points: Cash advance/withdrawal at ATMs including but not limited to such other transaction which may be considered as cash advance(s) to the sole discretion of ICICI Bank. Fuel transactions done on the Accelero ICICI Bank Credit Card. Service charge or interest levied for non-payment or part payment of the amount due on the Accelero ICICI Bank Credit Card. Late payment charges and any other fees/charges in relation to and/or connected with the Accelero ICICI Bank Credit Card. Joining fee and renewal fee for the Accelero ICICI Bank Credit Cards and supplementary Accelero ICICI Bank Credit Cards, if any; Expenditure in the form of equated monthly installments (EMI) transactions, balance transfer (BT), personal loan on credit cards (PLCC). ICICI Bank Reward Points earned on Accelero ICICI Bank Credit Card will be added to the Primary Customer(s)’s ICICI Bank Reward account within 45 business days of monthly credit card statement generation as per the existing cycle if the Customer(s)’s account is not delinquent or cancelled at the time of such credit. Qualifying retail spends transactions undertaken by the supplementary cardholder will also be credited in the Primary Cardholder’s ICICI Bank Reward account as per the method followed for the Primary Customer (ICICI Bank Reward Points earned against qualifying spends transactions).",
+            "customConditions": null
+        },
+        {
+            "rewardType": "points",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "multiplier",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "International transactions"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "Cash advance/withdrawal at ATMs",
+                    "Fuel transactions",
+                    "Service charge or interest",
+                    "Late payment charges",
+                    "Joining fee and renewal fee",
+                    "EMI transactions, Balance Transfer (BT), Personal Loan on Credit Cards (PLCC)"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "ICICI Bank Reward Points will be credited to the Primary Customer(s)’s ICICI Bank Reward account.",
+                "processingTime": "within 45 business days of monthly credit card statement generation",
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Qualifying retail spends transactions",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "2 ICICI Bank Reward Points earned on International transactions for every INR 100 spent. Customer(s) will qualify to earn ICICI Bank Reward Points upon undertaking qualifying retail spends transactions. ICICI Bank Reward Points earned for every qualifying retail spend transaction will be rounded off to the nearest integer at the time of posting. Customer(s) shall however not be entitled to earn ICICI Bank Reward Points on retail transactions that have been subsequently reversed. The following spends shall not be considered as qualifying spends for the purpose of earning ICICI Bank Reward Points: Cash advance/withdrawal at ATMs including but not limited to such other transaction which may be considered as cash advance(s) to the sole discretion of ICICI Bank. Fuel transactions done on the Accelero ICICI Bank Credit Card. Service charge or interest levied for non-payment or part payment of the amount due on the Accelero ICICI Bank Credit Card. Late payment charges and any other fees/charges in relation to and/or connected with the Accelero ICICI Bank Credit Card. Joining fee and renewal fee for the Accelero ICICI Bank Credit Cards and supplementary Accelero ICICI Bank Credit Cards, if any; Expenditure in the form of equated monthly installments (EMI) transactions, balance transfer (BT), personal loan on credit cards (PLCC). ICICI Bank Reward Points earned on Accelero ICICI Bank Credit Card will be added to the Primary Customer(s)’s ICICI Bank Reward account within 45 business days of monthly credit card statement generation as per the existing cycle if the Customer(s)’s account is not delinquent or cancelled at the time of such credit. Qualifying retail spends transactions undertaken by the supplementary cardholder will also be credited in the Primary Cardholder’s ICICI Bank Reward account as per the method followed for the Primary Customer (ICICI Bank Reward Points earned against qualifying spends transactions).",
+            "customConditions": null
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Fuel",
+            "rewardValue": {
+                "amount": 2.5,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "HPCL petrol pumps"
+                ],
+                "cap": {
+                    "amount": 200,
+                    "period": "cycle"
+                },
+                "excludedMerchantsOrDomains": null
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Cashback will be credited to the customer's account.",
+                "processingTime": "cycle",
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Fuel purchases at HPCL petrol pumps swiped on ICICI Merchant Services swipe machines.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "2.5% cashback will be applicable on fuel purchases only at HPCL petrol pumps. It can be availed when the Accelero ICICI Bank Credit Card is swiped on ICICI Merchant Services swipe machines. The fuel cashback is capped at INR 200 per cycle at a Customer level.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Fuel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage"
+            },
+            "conditions": {
+                "maxSpend": 4000,
+                "applicableMerchantsOrDomains": [
+                    "all petrol pumps"
+                ],
+                "excludedMerchantsOrDomains": null
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "1% fuel surcharge will not be applicable on fuel transactions of up to INR 4000 on all petrol pumps.",
+                "processingTime": "Immediate",
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Fuel transactions up to INR 4000 on all petrol pumps. It can be availed when the Accelero ICICI Bank Credit Card is swiped.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "1% fuel surcharge will not be applicable on fuel transactions of up to INR 4000 on all petrol pumps. It can be availed when the Accelero ICICI Bank Credit Card is swiped.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Call 24*7 Toll Free support for roadside assistance. In the event of the Customer(s) calling for support related to any vehicle problem, the service provider shall understand the basic problem prior to offering solutions. Some minor and/or recurring issues can be supported over the phone and the service provider shall try to resolve and guide the Customer(s) for phone resolution. 24*7 Toll Free support: the service provider shall provide roadside assistance services round the clock including public holidays.",
+                "processingTime": "24*7",
+                "eligibleChannels": [
+                    "Phone"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Valid Accelero ICICI Bank Credit Card holder.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "24*7 Roadside Assistance including Assistance over phone, On Site Repair of the Vehicle, Replacement/ Locked or Lost Keys assistance, Flat Tyre Support, Battery Jumpstart service, Towing in case of Breakdown, Towing in case of an Accident, Towing in case of incorrect fueling, Customer conference calling for service updates.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": {
+                "cap": {
+                    "amount": 50,
+                    "period": "per incident",
+                    "description": "Taxi service upto 50 km will be covered"
+                },
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "vehicle_immobilized",
+                        "fieldDescription": "vehicle is immobilized",
+                        "value": true,
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Assistance for arrangement of alternate mode of transport (Taxi) by calling 24*7 Toll Free support. Taxi service upto 50 km will be covered and any additional cost will be borne by customer on actuals. The cost will be informed to customer in advance. Only the base fare is covered and any toll, taxes, entry fee, parking, waiting and any such charges to be borne by Customer on actual basis.",
+                "processingTime": "24*7",
+                "eligibleChannels": [
+                    "Phone"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Vehicle immobilization.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Taxi Support up to 50 km in case vehicle is immobilized. Taxi service upto 50 km will be covered and any additional cost will be borne by customer on actuals. Only the base fare is covered and any toll, taxes, entry fee, parking, waiting and any such charges to be borne by Customer on actual basis.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "breakdown_location_distance_from_home_city",
+                                    "fieldDescription": "breakdown location distance from home city",
+                                    "value": 100,
+                                    "comparison_operator": "gt"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "repair_time",
+                                    "fieldDescription": "vehicle repair time",
+                                    "value": 2,
+                                    "unit": "days",
+                                    "comparison_operator": "gt"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Vehicle Repatriation can be arranged on chargeable basis by calling 24*7 Toll Free support. Free repatriation benefit up to 100 kms from authorized OEM workshop to customer home city. Any distance beyond 100kms will be charged to the customer at INR 65/- per km on a one-way basis.",
+                "processingTime": "2 working days repair time",
+                "eligibleChannels": [
+                    "Phone"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Vehicle breakdown more than 100 km from customer’s home city and repair requires more than 2 working days.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Free Vehicle Repatriation up to 100 kms if breakdown location is more than 100 km from home city and repair takes more than 2 working days. Any distance beyond 100kms will be charged to the customer at INR 65/- per km on a one-way basis.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "customer_hurry",
+                                    "fieldDescription": "customer is in hurry",
+                                    "value": true,
+                                    "comparison_operator": "eq"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "customer_wait_for_towing",
+                                    "fieldDescription": "customer does not want to wait for towing vehicle",
+                                    "value": false,
+                                    "comparison_operator": "eq"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Custody Services for vehicle can be availed by calling 24*7 Toll Free support.",
+                "processingTime": "24*7",
+                "eligibleChannels": [
+                    "Phone"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Customer doesn't want to wait for towing vehicle and is in hurry.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Custody Services for vehicle if customer doesn't want to wait for towing. In case Customer(s) are in hurry and does not want to wait for towing vehicle to arrive, they can seek the custody services for vehicle. The service provider shall send its service provider to take custody of vehicle from the Customer(s) and relieve him so that they can carry on their journey.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "offers",
+            "Category": "Automobile",
+            "rewardValue": {
+                "amount": 5000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "condition": {
+                                    "type": "logical",
+                                    "logical_operator": "or",
+                                    "conditions": [
+                                        {
+                                            "condition": {
+                                                "type": "comparison",
+                                                "field": "mechanical_part_issue",
+                                                "fieldDescription": "mechanical part issue",
+                                                "value": "engine overheating",
+                                                "comparison_operator": "eq"
+                                            }
+                                        },
+                                        {
+                                            "condition": {
+                                                "type": "comparison",
+                                                "field": "mechanical_part_issue",
+                                                "fieldDescription": "mechanical part issue",
+                                                "value": "clutch burn",
+                                                "comparison_operator": "eq"
+                                            }
+                                        },
+                                        {
+                                            "condition": {
+                                                "type": "comparison",
+                                                "field": "mechanical_part_issue",
+                                                "fieldDescription": "mechanical part issue",
+                                                "value": "fuel pump not working",
+                                                "comparison_operator": "eq"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "towing_location",
+                                    "fieldDescription": "vehicle towed to location",
+                                    "value": "service provider preferred garage",
+                                    "comparison_operator": "eq"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Financial assistance on parts as mentioned above maximum up to INR 5000 for engine overheating claims, clutch burn or fuel pump not working. Claim entitlement and file a claim only if vehicle is immobilized and towed by the service provider to its preferred garage by following the process as follows: RSA to be activated by the Customer(s). Towing services to be provided by the service provider and vehicle dropped to the service provider preferred workshop. Detailed workshop diagnostic report to be submitted with the service provider by the Customer(s) or directly by garage. The service provider has right to conduct a survey before approval of the claim. Prior approval from the service provider is required before start of repair. In case Customer(s) gets the repair done without the service provider’s approval, the service provider shall not be liable to pay for claim. Repair/replacement should be done for approved part and Customer(s) to submit tax invoice for same. Post submission of tax invoice eligible amount to be paid to the Customer(s).",
+                "processingTime": "Post submission of tax invoice eligible amount to be paid to the Customer(s).",
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Vehicle immobilized due to Engine overheating, Clutch Burn or Fuel Pump not working and towed by the service provider to its preferred garage.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Financial assistance on mechanical parts (engine overheating, clutch burn, fuel pump) up to INR 5000. The service provider shall provide assistance services and provide financial assistance on parts as mentioned above maximum up to INR 5000 for engine overheating claims, clutch burn or fuel pump not working.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": {
+                "cap": {
+                    "amount": 1,
+                    "period": "yearly",
+                    "description": "complimentary car wash and general checkup"
+                },
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "card_validity_period",
+                        "fieldDescription": "annual validity period of card",
+                        "value": true,
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Call the service provider to book the desired services for complimentary car wash and general checkup. Steps to avail complimentary car wash and general check-up: Customer(s) need to call the service provider and request for services by sharing his/her location details. Basis customer(s)’ location, the service provider team will connect with nearest preferred garage and book an appointment for car wash. The service provider to provide the details of appointment within 24 working hours after the request submission. Any additional services availed by the Customer(s) will be charged directly by garage to Customer(s) on actual basis.",
+                "processingTime": "The service provider to provide the details of appointment within 24 working hours after the request submission.",
+                "eligibleChannels": [
+                    "Phone"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "During the annual validity period of card.",
+                "redemptionLimit": {
+                    "limitCount": 1,
+                    "timePeriod": "yearly"
+                },
+                "redemptionCapPeriod": "Annually",
+                "isTransferable": false
+            },
+            "rewardDescription": "One complimentary car wash and general checkup during the annual validity period of card. In case customer want to avail services more than once they will be charged a discounted rate which can vary from garage to garage. Any additional services availed by the Customer(s) will be charged directly by garage to Customer(s) on actual basis.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "offers",
+            "Category": "Financial Services",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Benefits which can be availed by Accelero ICICI Bank Credit Card on applying for auto loan.",
+                "processingTime": "On car loan application",
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "The primary Accelero ICICI Bank Credit Card should be active to be eligible for the loan under this offer.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Attractive interest rates on ICICI Bank car loans. Benefits which can be availed by Accelero ICICI Bank Credit Card on applying for auto loan.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 50,
+                "unit": "percentage"
+            },
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "50% waiver on the processing fees for car loan.",
+                "processingTime": "On car loan application",
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Applying for auto loan with Accelero ICICI Bank Credit Card.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "50% waiver on the processing fees for car loan. 50% waiver on the processing fees for car loan.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Financial Services",
+            "rewardValue": null,
+            "conditions": {
+                "minSpend": 24,
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "loan_seasoning_period",
+                        "fieldDescription": "car loan seasoning period",
+                        "value": 24,
+                        "unit": "months",
+                        "comparison_operator": "gte"
+                    }
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Foreclose your car loan after 24 months of seasoning without any charges",
+                "processingTime": "After 24 months of loan seasoning",
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Car loan seasoning period of 24 months.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Foreclose car loan after 24 months of seasoning without any charges. Foreclose your car loan after 24 months of seasoning without any charges",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "transactions_count_first_3_months",
+                                    "fieldDescription": "number of transactions in first 3 months",
+                                    "value": 3,
+                                    "comparison_operator": "gte"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "transaction_value",
+                                    "fieldDescription": "value of each transaction",
+                                    "value": 1000,
+                                    "currency": "INR",
+                                    "comparison_operator": "gte"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "joining_fee_payment",
+                                    "fieldDescription": "joining fee payment",
+                                    "value": true,
+                                    "comparison_operator": "eq"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "On eligibility, your contact details will be sent to the Allianz Partner, post which the service provider will send a confirmation SMS on your registered mobile number with instructions for utilizing the service.",
+                "processingTime": null,
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "3 transactions of at least INR 1,000 each within the first 3 months of card issuance, and payment of joining fee.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Customer(s) will be eligible to avail the roadside assistance, other related services, car wash and general checkup services for the first year on making 3 transactions of at least INR 1,000 each within the first 3 months of card issuance, and payment of joining fee. On eligibility, your contact details will be sent to the Allianz Partner, post which the service provider will send a confirmation SMS on your registered mobile number with instructions for utilizing the service. After the first year, you shall be automatically registered for the second year on payment of annual fee. This service in the first year will be provided by the service provider which may be subject to change every year.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "On Site Repair of the Vehicle. If a vehicle is immobilized due to a mechanical breakdown, only that could be repaired on site within 30 minutes and during the process of which there will not be disassembly or demolition of parts. Partners shall dispatch a technician or service provider. In case rectification of the fault is not possible on the spot, Partners the service provider will tow the vehicle from the spot of immobilization to the nearest authorized OEM workshop. Customer(s) shall pay the cost of any parts used during the repair process.",
+                "processingTime": null,
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Vehicle immobilized due to a mechanical breakdown",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "“On Site” Repair of the Vehicle. If a vehicle is immobilized due to a mechanical breakdown, only that could be repaired on site within 30 minutes and during the process of which there will not be disassembly or demolition of parts.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Replacement/ Locked or Lost Keys. In event that the Customer(s) inadvertently locks himself out of the vehicle or loses or breaks his/her keys, with the Customer(s)’ consent (verbal or written) the service provider will provide locksmith dispatch service. Any consequential damage will be the sole responsibility of the Customer(s). Alternatively, the service provider can arrange to recuperate the spare key at a place designated by the Customer(s) and deliver it to the place where the vehicle is immobilized. This service is limited to delivery within the same city, and the distance between the place that the spare keys stored and the delivery location specified by the Customer(s) or the parking location of the vehicle is less than 50 KMs. Customer(s) may be asked to prove the ownership of vehicle or authorized to drive the vehicle in case it is required by the service provider’s team. Any expenses related to new key to be made or part used will be charged to Customer(s) on actual basis.",
+                "processingTime": null,
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Customer(s) inadvertently locks himself out of the vehicle or loses or breaks his/her keys",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Replacement/ Locked or Lost Keys assistance. In event that the Customer(s) inadvertently locks himself out of the vehicle or loses or breaks his/her keys, with the Customer(s)’ consent (verbal or written) the service provider will provide locksmith dispatch service.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Flat Tyre Support. In the event that the vehicle is immobilized because of flat tyre, the service provider shall dispatch the service provider that will change the tyre for the Customer(s). The Customer(s) should have a spare tyre in the vehicle as well as necessary tools when such tools are needed for special types and wheels.",
+                "processingTime": null,
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "vehicle is immobilized because of flat tyre",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Flat Tyre Support. In the event that the vehicle is immobilized because of flat tyre, the service provider shall dispatch the service provider that will change the tyre for the Customer(s).",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Battery Jumpstart service. In the event that the vehicle is immobilized because of battery problem, the service provider shall offer charging service to jumpstart the vehicle. Customer(s) shall pay for any parts used.",
+                "processingTime": null,
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "vehicle is immobilized because of battery problem",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Battery Jumpstart service. In the event that the vehicle is immobilized because of battery problem, the service provider shall offer charging service to jumpstart the vehicle.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Battery Replacement service. In the event if the battery is dead and needs replacement, the service provider shall provide battery replacement service at Customer’s location. Customer(s) shall pay for the new battery and any other parts used during replacement.",
+                "processingTime": null,
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "vehicle battery is dead and needs replacement",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Battery Replacement service. In the event if the battery is dead and needs replacement, the service provider shall provide battery replacement service at Customer’s location. Customer(s) shall pay for the new battery and any other parts used during replacement.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Towing in case of Breakdown. In the event vehicle is immobilized due to a mechanical or electrical fault which cannot be repaired on the spot, Customer(s) will get the assistance in towing the vehicle to the nearest garage in the service provider’s network, using the best available towing mechanism.",
+                "processingTime": null,
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "vehicle is immobilized due to a mechanical or electrical fault which cannot be repaired on the spot",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Towing in case of Breakdown. In the event vehicle is immobilized due to a mechanical or electrical fault which cannot be repaired on the spot, Customer(s) will get the assistance in towing the vehicle to the nearest garage in the service provider’s network, using the best available towing mechanism.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Towing in case of an Accident. In the event vehicle is immobilized due to an accident, Customer(s) will get the assistance in towing the vehicle to the nearest garage in the service provider’s network, using the appropriate towing mechanism.",
+                "processingTime": null,
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "vehicle is immobilized due to an accident",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Towing in case of an Accident. In the event vehicle is immobilized due to an accident, Customer(s) will get the assistance in towing the vehicle to the nearest garage in the service provider’s network, using the appropriate towing mechanism.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Towing in case of incorrect fueling. In the event vehicle is immobilized due to incorrect fueling, the Customer(s) will get assistance in making the arrangement for the vehicle to be towed to the nearest garage in the service provider’s network using the appropriate towing mechanism.",
+                "processingTime": null,
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "vehicle is immobilized due to incorrect fueling",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Towing in case of incorrect fueling. In the event vehicle is immobilized due to incorrect fueling, the Customer(s) will get assistance in making the arrangement for the vehicle to be towed to the nearest garage in the service provider’s network using the appropriate towing mechanism.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Fuel Delivery. In the event the vehicle runs out of fuel, the service provider can arrange the delivery of fuel up to a maximum of 5 litres of fuel. Customer(s) shall pay for the cost of fuel to the service provider according to the price of petrol station of that day.",
+                "processingTime": null,
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "vehicle runs out of fuel",
+                "redemptionLimit": {
+                    "limitCount": 5,
+                    "timePeriod": "per incident",
+                    "description": "litres of fuel"
+                },
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Fuel Delivery. In the event the vehicle runs out of fuel, the service provider can arrange the delivery of fuel up to a maximum of 5 litres of fuel. Customer(s) shall pay for the cost of fuel to the service provider according to the price of petrol station of that day.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Customer conference calling. For seamless and speedy services a conference call (wherever required) between the Customer(s), the assistance provider and the service provider will be arranged. Customer(s) will be kept updated on regular basis about the status of service.",
+                "processingTime": null,
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Valid Accelero ICICI Bank Credit Card holder for seamless and speedy services",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Customer conference calling for service updates. For seamless and speedy services a conference call (wherever required) between the Customer(s), the assistance provider and the service provider will be arranged.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Hotel Accommodation assistance. In the event vehicle is immobilized, Customer(s) will get the assistance in organizing for Hotel accommodation near the location of the breakdown event. Customer(s) shall pay for the charges on actuals.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Phone"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "vehicle is immobilized",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Hotel Accommodation assistance. In the event vehicle is immobilized, Customer(s) will get the assistance in organizing for Hotel accommodation near the location of the breakdown event. Customer(s) shall pay for the charges on actuals.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Medical Assistance. In the event the vehicle meets with an accident or occupant of vehicle need ambulance for medical emergencies, customer will get assistance related to ambulatory services and medical services, if required. Customer(s) shall pay the charges for these services on actuals to medical service providers.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Phone"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "vehicle meets with an accident or occupant of vehicle need ambulance for medical emergencies",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Medical Assistance. In the event the vehicle meets with an accident or occupant of vehicle need ambulance for medical emergencies, customer will get assistance related to ambulatory services and medical services, if required. ",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Automobile",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Replacement / Courtesy Car. In case vehicle is immobilized and the Customer(s) needs replacement vehicle for local mobility then replacement vehicle will be arranged on higher category or best available vehicle basis. Customer(s) shall have to pay the charges related to replacement vehicle on actual basis.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Phone"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "vehicle is immobilized and the Customer(s) needs replacement vehicle for local mobility",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Replacement / Courtesy Car. In case vehicle is immobilized and the Customer(s) needs replacement vehicle for local mobility then replacement vehicle will be arranged on higher category or best available vehicle basis. Customer(s) shall have to pay the charges related to replacement vehicle on actual basis.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "offers",
+            "Category": "Financial Services",
+            "rewardValue": null,
+            "conditions": null,
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Car Loan Offer benefits include attractive interest rates, 50% waiver on processing fees and foreclosure after 24 months without charges.",
+                "processingTime": "On car loan application and after 24 months of loan seasoning",
+                "eligibleChannels": [],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "The primary Accelero ICICI Bank Credit Card should be active to be eligible for the Car Loan Offer.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Car Loan Offer: Attractive interest rates, 50% waiver on processing fees and Foreclose car loan after 24 months of seasoning without any charges.",
+            "customConditions": null
+        }
+    ]
+}

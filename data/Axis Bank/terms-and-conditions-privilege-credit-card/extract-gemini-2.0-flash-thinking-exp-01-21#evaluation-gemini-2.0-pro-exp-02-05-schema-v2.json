@@ -1,0 +1,177 @@
+{
+    "card_info": {
+        "card_name": "Axis Bank PRIVILEGE Credit Card",
+        "bank": "Axis Bank",
+        "effective_date": "2024-04-20",
+        "last_updated": null,
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the context.",
+            "Could not find information about finance charges in the context.",
+            "Could not find information about fuel surcharge waiver details such as minimum transaction, maximum transaction, and maximum waiver amount in the context.",
+            "Could not find information about special transaction fees for transactions like rent payments or utility purchases, including transaction type, fee type, fee value, and maximum cap in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Privilege",
+        "airport_lounge_access": {
+            "domestic_lounges": [],
+            "international_lounges": [],
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": [],
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not extract domestic lounge names as no specific domestic lounge names are mentioned in the context.",
+            "Could not extract international lounge details as no information about international lounges is provided in the context.",
+            "Could not extract the number of free lounge visits as the lounge access is based on spends in the previous 3 calendar months, with a minimum spend of Rs. 50,000 required in the previous 3 calendar months for Axis Bank Privilege Credit Card, effective from 1st May 2024.",
+            "Could not extract eligibility criteria for free night awards as there is no mention of free night awards in the context.",
+            "Could not extract partner hotels for free night awards as there is no mention of free night awards in the context.",
+            "Could not extract value cap for free night awards as there is no mention of free night awards in the context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 10000,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "minSpend": 250000
+            },
+            "schedule": null,
+            "redemptionMethod": null,
+            "rewardDescription": "Customers achieving milestone spends of Rs. 2.5 lakh in a card anniversary year will be eligible for additional 10,000 EDGE REWARD Points worth Rs 2,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "milestone_spend",
+                    "fieldDescription": "Milestone spends in a card anniversary year",
+                    "value": 250000,
+                    "comparison_operator": "gte"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 1500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 500000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "Fee waiver of Rs. 1500 on the spends of Rs. 5 lakhs in the preceding card anniversary year for customers on-boarded from 20th April 2024.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "onboarding_date",
+                    "fieldDescription": "Customer onboarding date",
+                    "value": "2024-04-20",
+                    "comparison_operator": "gte"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 1500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 250000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "Annual fee waiver will be applicable on cumulative spends of Rs. 2.5 lakhs in preceding card anniversary year for customers on-boarded before 20th April 2024, for card anniversary dates before 20th April 2025.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "onboarding_date",
+                            "fieldDescription": "Customer onboarding date",
+                            "value": "2024-04-20",
+                            "comparison_operator": "lt"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "card_anniversary_date",
+                            "fieldDescription": "Card anniversary date",
+                            "value": "2025-04-20",
+                            "comparison_operator": "lt"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 1500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 500000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "Annual fee waiver will be applicable on cumulative spends of Rs. 5 lakhs in preceding card anniversary year for customers on-boarded before 20th April 2024, on card anniversary dates after 20th April 2025.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "onboarding_date",
+                            "fieldDescription": "Customer onboarding date",
+                            "value": "2024-04-20",
+                            "comparison_operator": "lt"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "card_anniversary_date",
+                            "fieldDescription": "Card anniversary date",
+                            "value": "2025-04-20",
+                            "comparison_operator": "gte"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

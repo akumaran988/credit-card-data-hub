@@ -1,0 +1,178 @@
+{
+    "card_info": {
+        "card_name": "AXIS BANK VISTARA INFINITE Credit Card",
+        "bank": "AXIS BANK",
+        "effective_date": "2024-04-20",
+        "last_updated": null,
+        "extraction_errors": [
+            "Could not find the last updated or publication date for the terms and conditions of the credit card in the provided context. Please provide a context that includes the last updated date to extract this information."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late_payment_charges in the context.",
+            "Could not find information about finance_charges in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Infinite",
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not find specific names of domestic lounges accessible with the card in the provided context.",
+            "Could not find details about international lounge access in the provided context.",
+            "Could not find a fixed number of free lounge visits. Lounge access is based on card spends. Minimum spend of Rs. 50,000 in the previous 3 calendar months is required for lounge access. For newly issued cards, this spend criteria is waived for the month of issuance and the next 3 calendar months.",
+            "Could not find eligibility criteria for free night awards in the provided context.",
+            "Could not find a list of partner hotels for free night redemption in the provided context.",
+            "Could not find information about the value cap for free night redemption in the provided context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "currency": null
+            },
+            "conditions": {
+                "minSpend": 50000,
+                "maxSpend": null,
+                "cap": null,
+                "applicableMerchantsOrDomains": null,
+                "excludedMerchantsOrDomains": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Lounge access based on meeting spend criteria.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spends in previous 3 calendar months.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": null
+            },
+            "rewardDescription": "Complimentary domestic lounge access based on spends in the previous 3 calendar months. Minimum spends required Rs. 50,000 in previous 3 calendar months.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "or",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "card_spend_3_calendar_months",
+                            "fieldDescription": "Credit card spends in the previous 3 calendar months",
+                            "comparison_operator": "gte",
+                            "value": 50000
+                        },
+                        {
+                            "type": "logical",
+                            "logical_operator": "and",
+                            "conditions": [
+                                {
+                                    "type": "comparison",
+                                    "field": "card_issuance_date",
+                                    "fieldDescription": "Credit card issuance date",
+                                    "comparison_operator": "is_recent",
+                                    "value": "within_3_months_plus_issuance_month"
+                                },
+                                {
+                                    "type": "comparison",
+                                    "field": "card_issuance_type",
+                                    "fieldDescription": "Type of card issuance",
+                                    "comparison_operator": "eq",
+                                    "value": "new_additional_card"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "points",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": null,
+                "unit": null,
+                "currency": null
+            },
+            "conditions": {
+                "minSpend": null,
+                "maxSpend": null,
+                "cap": null,
+                "applicableMerchantsOrDomains": null,
+                "excludedMerchantsOrDomains": [
+                    "5960",
+                    "6012",
+                    "6051",
+                    "6300",
+                    "6381",
+                    "5094",
+                    "5944"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": null,
+                "details": null,
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Excluding Insurance and Gold / Jewellery transactions",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": null
+            },
+            "rewardDescription": "Earning Club Vistara points on spends excluding Insurance and Gold / Jewellery transactions.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "not",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "merchant_category_code",
+                            "fieldDescription": "Merchant Category Code",
+                            "comparison_operator": "in",
+                            "value": [
+                                "5960",
+                                "6012",
+                                "6051",
+                                "6300",
+                                "6381",
+                                "5094",
+                                "5944"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "extraction_errors": [
+                "rewardValue is missing in the context for Club Vistara points."
+            ]
+        }
+    ]
+}

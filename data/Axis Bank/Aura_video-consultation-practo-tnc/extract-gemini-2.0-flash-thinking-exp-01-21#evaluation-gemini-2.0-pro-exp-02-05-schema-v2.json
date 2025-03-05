@@ -1,0 +1,157 @@
+{
+    "card_info": {
+        "card_name": "AURA Credit Card",
+        "bank": "AXIS BANK",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": [
+            "effective_date: Could not find the effective date of the credit card terms and conditions in the provided context.",
+            "last_updated: Could not find the last updated or publication date of the credit card terms and conditions in the provided context."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the provided context.",
+            "Could not find information about finance charges in the provided context.",
+            "Could not find information about fuel surcharge waiver in the provided context.",
+            "Could not find information about special transaction fees in the provided context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not extract 'elite_status_level' because there is no information about elite status tier mentioned in the context.",
+            "Could not extract 'airport_lounge_access.domestic_lounges' because there is no information about domestic airport lounge access mentioned in the context.",
+            "Could not extract 'airport_lounge_access.international_lounges' because there is no information about international airport lounge access mentioned in the context.",
+            "Could not extract 'airport_lounge_access.free_lounge_visits' because there is no information about free airport lounge visits mentioned in the context.",
+            "Could not extract 'free_night_awards.eligibility_criteria' because there is no information about eligibility criteria for free night awards mentioned in the context.",
+            "Could not extract 'free_night_awards.partner_hotels' because there is no information about partner hotels for free night awards mentioned in the context.",
+            "Could not extract 'free_night_awards.value_cap' because there is no information about the value cap for free night awards mentioned in the context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "service",
+            "Category": "Health and Wellness",
+            "rewardValue": {
+                "amount": 4,
+                "unit": "fixed",
+                "currency": null
+            },
+            "conditions": {
+                "cap": {
+                    "amount": 48,
+                    "period": "yearly"
+                },
+                "applicableMerchantsOrDomains": [
+                    "Practo App (chat/audio/video)"
+                ],
+                "additionalConditions": [
+                    "No carryover of unused doctor consultations",
+                    "Total of 4 Video consultations/month, inclusive of card holder and 3 family members",
+                    "Family Member can be added after plan activation and cannot be deleted thereafter",
+                    "Only 1 Practo Plus health plan can be activated per user"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "1. Please login into https://axisbankaura.poshvine.com\n2. Enter your RMN used for the card program\n3. You will get secret OTP\n4. Please enter your secret OTP to validate and login\n5. Post successful login all the benefits will be visible to you for usage\n6. Click on the option for ‘video consultation’\n7. You will be prompted to download Practo App (for non-registered Practo users)",
+                "eligibleChannels": [
+                    "Practo App (chat/audio/video)"
+                ],
+                "processingTime": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Axis Bank ‘AURA’ Credit Card holder",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": null
+            },
+            "rewardDescription": "Get 4 free video consultations free per month (annually 48 free consultations). Validity: Cardholder can avail upto 4 free consultation free per month.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "card_name",
+                    "fieldDescription": "Name of the credit card",
+                    "value": "AURA",
+                    "comparison_operator": "eq",
+                    "conditions": [
+                        "If a Cardholder's Axis Bank AURA credit card is terminated at any time for any reason, whether by the primary Cardholder or the Bank, the primary Cardholder will forthwith be disqualified from using the benefits and all unused benefits shall automatically be forfeited immediately after voluntary or involuntary cancellation of the Axis Bank AURA credit card.",
+                        "Any ongoing benefits usage for example fitness sessions, doctor consultations etc. shall immediately cease to be valid upon the occurrence of the following:",
+                        "- a) The cancellation of the Axis Bank AURA credit card; or",
+                        "- b) The conversion of the Axis Bank AURA credit card to any other Axis Bank credit card",
+                        "- c) In the event of a default i.e. if the Minimum Amount Due is not paid by the Payment Due Date or",
+                        "- d) Breach of any clause of the Card Member Agreement and no refund, extension or compensation shall be given by Axis Bank even if the card member’s membership is reinstated.",
+                        "The bank may temporarily prohibit any customer from using any features of the program.",
+                        "The terms contained in this document shall be in addition to and not in derogation of the Most Important Terms and Conditions document.",
+                        "The proposition is made available at the pleasure of Axis Bank and Axis Bank expressly reserves the right at any time and with notice to Card members, to add to and/or alter, modify, change or vary all or any of these Terms and Conditions or to replace wholly or in part, the Cashback Scheme by another scheme, or to withdraw it altogether.",
+                        "Without prejudice to anything contained in the Terms and Conditions, all disputes, if any, arising out of or in connection with or as a result of the Scheme or otherwise relating hereto shall be subject to the exclusive jurisdiction of the competent courts / tribunals at Mumbai."
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Health and Wellness",
+            "rewardValue": {
+                "amount": 20,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": null
+            },
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "User will get flat 20% off on all Prescription medicine orders, lab tests, and health check-ups ordered via the Plus membership section inside the Practo app. Delivery charges applicable.",
+                "eligibleChannels": [
+                    "Plus membership section inside the Practo app"
+                ],
+                "processingTime": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": null,
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": null
+            },
+            "rewardDescription": "flat 20% off on all Prescription medicine orders, lab tests, and health check-ups ordered via the Plus membership section inside the Practo app.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "card_name",
+                    "fieldDescription": "Name of the credit card",
+                    "value": "AURA",
+                    "comparison_operator": "eq",
+                    "conditions": [
+                        "If a Cardholder's Axis Bank AURA credit card is terminated at any time for any reason, whether by the primary Cardholder or the Bank, the primary Cardholder will forthwith be disqualified from using the benefits and all unused benefits shall automatically be forfeited immediately after voluntary or involuntary cancellation of the Axis Bank AURA credit card.",
+                        "Any ongoing benefits usage for example fitness sessions, doctor consultations etc. shall immediately cease to be valid upon the occurrence of the following:",
+                        "- a) The cancellation of the Axis Bank AURA credit card; or",
+                        "- b) The conversion of the Axis Bank AURA credit card to any other Axis Bank credit card",
+                        "- c) In the event of a default i.e. if the Minimum Amount Due is not paid by the Payment Due Date or",
+                        "- d) Breach of any clause of the Card Member Agreement and no refund, extension or compensation shall be given by Axis Bank even if the card member’s membership is reinstated.",
+                        "The bank may temporarily prohibit any customer from using any features of the program.",
+                        "The terms contained in this document shall be in addition to and not in derogation of the Most Important Terms and Conditions document.",
+                        "The proposition is made available at the pleasure of Axis Bank and Axis Bank expressly reserves the right at any time and with notice to Card members, to add to and/or alter, modify, change or vary all or any of these Terms and Conditions or to replace wholly or in part, the Cashback Scheme by another scheme, or to withdraw it altogether.",
+                        "Without prejudice to anything contained in the Terms and Conditions, all disputes, if any, arising out of or in connection with or as a result of the Scheme or otherwise relating hereto shall be subject to the exclusive jurisdiction of the competent courts / tribunals at Mumbai."
+                    ]
+                }
+            }
+        }
+    ]
+}

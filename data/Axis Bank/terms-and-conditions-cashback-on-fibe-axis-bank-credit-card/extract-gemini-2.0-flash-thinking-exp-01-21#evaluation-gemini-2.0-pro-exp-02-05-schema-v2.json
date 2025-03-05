@@ -1,0 +1,484 @@
+{
+    "card_info": {
+        "card_name": "Fibe Axis Bank Credit Card",
+        "bank": "Axis Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": [
+            "The effective date of the credit card terms and conditions is not found in the provided context.",
+            "The last updated date or publication date of the terms and conditions is not found in the provided context."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the provided context.",
+            "Could not find information about finance charges in the provided context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "The 'elite_status_level' is missing in the context. The context does not provide information about the elite status tier of the card.",
+            "The 'airport_lounge_access' details are missing in the context. The context does not provide any information about airport lounge access privileges.",
+            "The 'domestic_lounges' details are missing in the context. The context does not provide names of domestic lounges accessible.",
+            "The 'international_lounges' details are missing in the context. The context does not provide details or names of international lounges accessible.",
+            "The 'free_lounge_visits' details are missing in the context. The context does not provide the number of free lounge visits allowed in a year.",
+            "The 'free_night_awards' details are missing in the context. The context does not provide any information about free night benefits applicable at partner hotels.",
+            "The 'eligibility_criteria' for free night awards is missing in the context. The context does not provide spends or usage criteria to earn free night vouchers.",
+            "The 'partner_hotels' for free night awards is missing in the context. The context does not provide a list of hotels where free nights can be redeemed.",
+            "The 'value_cap' for free night awards is missing in the context. The context does not provide the maximum room value eligible for redemption."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "cashback",
+            "Category": "Dining",
+            "rewardValue": {
+                "amount": 3,
+                "unit": "percentage",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Online Food Delivery"
+                ],
+                "cap": {
+                    "amount": 1500,
+                    "period": "monthly"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Cashback earned on purchases during the current billing cycle will be credited in customer’s account on T+3 days basis, from the statement generation date"
+            },
+            "rewardDescription": "3% cashback on Online Food Delivery spends. Cashback earned will be computed based on spends during the statement period minus any returns or refunds during the same period. Capping of Rs. 1500/- per statement cycle will be applicable",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "mcc_code",
+                            "fieldDescription": "Merchant Category Codes for Online Food Delivery cashback eligibility",
+                            "value": [
+                                5499,
+                                5812,
+                                5814
+                            ],
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "rule",
+                            "field": "cashbackCalculation",
+                            "fieldDescription": "Cashback calculation rule",
+                            "value": "Cashback earned will be computed based on spends during the statement period minus any returns or refunds during the same period."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "cashbackCapping",
+                            "fieldDescription": "Cashback capping rule",
+                            "value": "Capping of Rs. 1500/- per statement cycle will be applicable"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Entertainment",
+            "rewardValue": {
+                "amount": 3,
+                "unit": "percentage",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Online Entertainment"
+                ],
+                "cap": {
+                    "amount": 1500,
+                    "period": "monthly"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Cashback earned on purchases during the current billing cycle will be credited in customer’s account on T+3 days basis, from the statement generation date"
+            },
+            "rewardDescription": "3% cashback on Online Entertainment spends. Cashback earned will be computed based on spends during the statement period minus any returns or refunds during the same period. Capping of Rs. 1500/- per statement cycle will be applicable",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "mcc_code",
+                            "fieldDescription": "Merchant Category Codes for Online Entertainment cashback eligibility",
+                            "value": [
+                                7841,
+                                7829,
+                                7832,
+                                7922
+                            ],
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "rule",
+                            "field": "cashbackCalculation",
+                            "fieldDescription": "Cashback calculation rule",
+                            "value": "Cashback earned will be computed based on spends during the statement period minus any returns or refunds during the same period."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "cashbackCapping",
+                            "fieldDescription": "Cashback capping rule",
+                            "value": "Capping of Rs. 1500/- per statement cycle will be applicable"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 3,
+                "unit": "percentage",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Online Local Commute"
+                ],
+                "cap": {
+                    "amount": 1500,
+                    "period": "monthly"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Cashback earned on purchases during the current billing cycle will be credited in customer’s account on T+3 days basis, from the statement generation date"
+            },
+            "rewardDescription": "3% cashback on Online Local Commute spends. Cashback earned will be computed based on spends during the statement period minus any returns or refunds during the same period. Capping of Rs. 1500/- per statement cycle will be applicable",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "mcc_code",
+                            "fieldDescription": "Merchant Category Codes for Online Local Commute cashback eligibility",
+                            "value": [
+                                4121,
+                                4131,
+                                4111,
+                                7512
+                            ],
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "rule",
+                            "field": "cashbackCalculation",
+                            "fieldDescription": "Cashback calculation rule",
+                            "value": "Cashback earned will be computed based on spends during the statement period minus any returns or refunds during the same period."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "cashbackCapping",
+                            "fieldDescription": "Cashback capping rule",
+                            "value": "Capping of Rs. 1500/- per statement cycle will be applicable"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "currency": "INR",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "Wallet Load",
+                    "Fuel Spends",
+                    "Cash Withdrawal",
+                    "Purchase of Gold Items",
+                    "Jewellery transactions",
+                    "Purchase of Gift Cards",
+                    "EMI transactions",
+                    "Purchases converted to EMI post facto",
+                    "Rental Payments",
+                    "Repayments",
+                    "Insurance",
+                    "Education",
+                    "Govt Services",
+                    "CC on UPI transactions less than Rs.2000",
+                    "CC on UPI transactions on small merchants"
+                ],
+                "cap": {
+                    "amount": 1500,
+                    "period": "monthly"
+                },
+                "minSpend": 100
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Cashback earned on purchases during the current billing cycle will be credited in customer’s account on T+3 days basis, from the statement generation date",
+                "processingTime": "T+3 days basis, from the statement generation date"
+            },
+            "rewardDescription": "1% cashback on Other Spends, capped at Rs. 1500 per statement cycle. Cashback is not applicable on transactions less than Rs. 100. Cashback earned will be computed based on spends during the statement period minus any returns or refunds during the same period.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "mcc_code",
+                            "fieldDescription": "Excluded Merchant Category Codes for cashback eligibility",
+                            "value": [
+                                6012,
+                                6051,
+                                5541,
+                                5983,
+                                5542,
+                                5944,
+                                6011,
+                                6540,
+                                6513,
+                                6300,
+                                6381,
+                                5960,
+                                8211,
+                                8220,
+                                8241,
+                                8244,
+                                8249,
+                                8299,
+                                8111,
+                                9211,
+                                9222,
+                                9223,
+                                9311,
+                                9399,
+                                9402,
+                                9405
+                            ],
+                            "comparison_operator": "neq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "transaction_amount",
+                            "fieldDescription": "Minimum transaction amount for cashback eligibility. Cashback is not applicable on transactions less than Rs. 100",
+                            "value": 100,
+                            "comparison_operator": "gte"
+                        },
+                        {
+                            "type": "rule",
+                            "field": "cashbackCalculation",
+                            "fieldDescription": "Cashback calculation rule",
+                            "value": "Cashback earned will be computed based on spends during the statement period minus any returns or refunds during the same period."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "mcc_6513_description",
+                            "fieldDescription": "Detailed description for MCC 6513 exclusion for Rental Payments",
+                            "value": "Rental Payments (payment of management fees, rental commissions or any such rent related payments through MCC 6513)"
+                        },
+                        {
+                            "type": "rule",
+                            "field": "statement_generation_date_condition",
+                            "fieldDescription": "Condition for cashback calculation post statement generation date for returned/cancelled/reversed transactions",
+                            "value": "In case the purchase/ transaction is returned/ cancelled/ reversed post statement generation date, cashback calculation will be calculated for the subsequent period taking the returned/reversed amount into consideration."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "emi_conversion_condition",
+                            "fieldDescription": "Condition for cashback eligibility for transactions converted to EMI",
+                            "value": "In case of conversion of a transaction to EMI at a later date in the same period, such transaction will not be eligible for a cashback."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "customer_transaction_reversal_condition",
+                            "fieldDescription": "Condition for cashback reversal in case of customer transaction reversal",
+                            "value": "In case the customer reverses a transaction, the corresponding cashback earned on the transaction will also be reversed and in case the customer has an outstanding balance on credit card in the form of negative cashback, the same will be treated as an ordinary outstanding balance and the customer will be liable to pay for such outstanding amount, failing which the said amount will attract the fees & charges as per the schedule of charges defined in the Most Important Terms and Conditions."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "card_termination_condition",
+                            "fieldDescription": "Condition for cashback forfeiture upon card termination",
+                            "value": "If a Cardholder’s Fibe Axis Bank Credit Card is terminated at any time for any reason, whether by the primary Cardholder or the Bank, the primary Cardholder will forthwith be disqualified from earning the Cash backs and all unused Cash backs then accrued shall automatically be forfeited immediately after voluntary or involuntary cancellation of the Fibe Axis Bank Credit Card."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "cashback_cease_condition_on_card_cancellation_or_conversion",
+                            "fieldDescription": "Condition for cashback invalidation upon card cancellation or conversion",
+                            "value": "Any remaining Cash back including Cash backs pending credit into the account of the Cardholder shall immediately cease to be valid upon the occurrence of the following: The cancellation of the Fibe Axis Bank Credit Card; or The conversion of the Fibe Axis Bank Credit Card to any other Axis Bank credit card"
+                        },
+                        {
+                            "type": "rule",
+                            "field": "default_condition",
+                            "fieldDescription": "Condition for no cashback, refund, extension or compensation in case of default or breach of agreement",
+                            "value": "In the event of a default i.e. if the Minimum Amount Due is not paid by the Payment Due Date or Breach of any clause of the Card Member Agreement and no refund, extension or compensation shall be given by Axis Bank even if the card member’s membership is reinstated."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "personal_use_condition",
+                            "fieldDescription": "Condition for card usage for personal expenses only",
+                            "value": "The Credit Card is issued for personal expenses and purposes only. The Cardholder must not use the Credit Card to purchase anything for resale, for commercial or business purposes. The Credit Card should be used only for lawful, bona fide personal purposes and must not be used for any money laundering, anti-social or speculative activities or must not be exploited commercially in business (e.g. for working capital purposes)."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "prohibited_use_condition",
+                            "fieldDescription": "Condition for Axis Bank's right to cancel card and withhold cashback for prohibited use",
+                            "value": "If the Credit Card is found to be used for prohibited, restricted, commercial purposes or any purposes as mentioned above, Axis Bank may, at its sole discretion, exercise its right to cancel the concerned Credit Card and additional/add-on cards thereof and withhold/cancel the Cashback earned, without any notice to the Cardholder. Axis Bank may enquire with you over phone or through any other means of formal communication and seek details, information, proofs, etc., about the Credit Card transactions, pattern of usage, etc. Non-satisfactory responses or no responses from the Cardholder may lead to blocking/closure of the Credit Card by Axis Bank."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "credit_limit_condition",
+                            "fieldDescription": "Condition for card usage limited by credit limit",
+                            "value": "Use of the Card at Merchant Establishment will be limited by the credit limit assigned to each Card Account by the Bank."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "authorization_refusal_condition",
+                            "fieldDescription": "Condition for Bank's right to refuse authorization, restrict card usage, or suspend/cancel card",
+                            "value": "The Bank may, at any time without prior notice, or stating any reason whatsoever, refuse authorization for a Charge at a Merchant Establishment, and / or restrict or defer the Card member's ability to use the Card and / or suspend or cancel the Card. The Bank through the ATM, Merchant Establishment, by itself may repossess / retain the Credit Card, if it reasonably believes that it is necessary to do so for proper management of credit or business risk, or if the Card or Card Account is being misused or likely to be misused."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "scheme_continuation_condition",
+                            "fieldDescription": "Condition for no obligation to continue cashback scheme",
+                            "value": "Nothing contained in the cashback proposition shall be construed as a binding obligation on Axis Bank or any participating Merchant Partner to continue the Cashback Scheme after the Scheme Termination Date or to substitute the Cashback Scheme by a new or similar scheme."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "minimum_transaction_amount_condition",
+                            "fieldDescription": "Condition for minimum transaction amount for cashback eligibility",
+                            "value": "Cashback is not applicable on transactions less than Rs. 100."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "temporary_prohibition_condition",
+                            "fieldDescription": "Condition for temporary prohibition from earning cashback or using program features",
+                            "value": "The bank may temporarily prohibit any customer from earning cashback or using any features of the program."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "emi_cancellation_customer_care_condition",
+                            "fieldDescription": "Condition for customer care contact for EMI cancellation",
+                            "value": "For customers who want to cancel their EMI transactions, customers need to call up Axis Bank customer care at 18604195555/18605005555 for the same."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "emi_cancellation_double_debit_condition",
+                            "fieldDescription": "Condition for potential double debit of cashback on EMI cancellation and service request requirement",
+                            "value": "For EMI transactions that are cancelled by the customer/bank, the cashback in the customer’s statement for that respective cycle might get debited twice, the customer would need to raise a service request by calling the Axis Bank customer care mentioning that cashback has been incorrectly debited with the date and amount of transaction for correction of the same."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "no_cashback_on_emi_condition",
+                            "fieldDescription": "Condition for no cashback on EMI transactions even with foreclosure or cancellation",
+                            "value": "Since there is no cashback on EMI transactions, once a transaction is converted in to EMI, the customer will not earn any cashback on the transaction even if the customer opts for foreclosure or cancellation of the EMI and pays the full amount on the same."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "emi_foreclosure_customer_care_condition",
+                            "fieldDescription": "Condition for customer care contact for EMI foreclosure",
+                            "value": "For customers who wish to foreclose their EMI transactions, customers would need to call up Axis Bank customer care and place a request for the same."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "cashback_rounding_condition",
+                            "fieldDescription": "Condition for cashback rounding down for each transaction",
+                            "value": "The cashback will be rounded down for each individual transaction."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "excluded_mccs_description",
+                            "fieldDescription": "Detailed description for excluded MCCs for cashback eligibility",
+                            "value": "The following MCCs have been excluded from cashback eligibility (for fuel, rent, wallet load and Jewelry transactions, etc): 6012, 6051, 5541, 5983, 5542, 5944, 6011, 6540, 6513 (payment of management fees, rental commissions, rental payments or any such payments through MCC 6513). Please view the table on first page of this T&C document for list of excluded categories."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "terms_and_conditions_revision_condition",
+                            "fieldDescription": "Condition for revision or termination of terms and conditions with prior notice",
+                            "value": "The terms and conditions mentioned in the document can be revised or terminated at any time with 30 days prior notice."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "cashback_ineligibility_condition_on_card_withdrawal_cancellation_or_delinquency",
+                            "fieldDescription": "Condition for cashback ineligibility if card is withdrawn, cancelled, or account is delinquent",
+                            "value": "The cashback shall not be applicable if the Card has been withdrawn or cancelled or is liable to be cancelled or the account of the Card member is a delinquent Account."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "axis_bank_computation_final_condition",
+                            "fieldDescription": "Condition for Axis Bank's cashback computation to be final and binding",
+                            "value": "Axis Bank’s computation of the Cashback shall be final, conclusive and binding on a Card member and will not be liable to be disputed or questioned."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "terms_in_addition_to_mitc_condition",
+                            "fieldDescription": "Condition for terms being in addition to Most Important Terms and Conditions document",
+                            "value": "The terms contained in this document shall be in addition to and not in derogation of the Most Important Terms and Conditions document."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "cashback_proposition_discretion_condition",
+                            "fieldDescription": "Condition for cashback proposition being at the pleasure of Axis Bank with right to modify or withdraw",
+                            "value": "The cashback proposition is made available at the pleasure of Axis Bank and Axis Bank expressly reserves the right at any time and with notice to Card members, to add to and/or alter, modify, change or vary all or any of these Terms and Conditions or to replace wholly or in part, the Cashback Scheme by another scheme, or to withdraw it altogether."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "disputes_jurisdiction_condition",
+                            "fieldDescription": "Condition for exclusive jurisdiction of Mumbai courts for disputes",
+                            "value": "Without prejudice to anything contained in the Terms and Conditions, all disputes, if any, arising out of or in connection with or as a result of the Rewards Scheme or otherwise relating hereto shall be subject to the exclusive jurisdiction of the competent courts / tribunals at Mumbai."
+                        },
+                        {
+                            "type": "rule",
+                            "field": "cashbackCapping",
+                            "fieldDescription": "Cashback capping rule",
+                            "value": "Capping of Rs. 1500/- per statement cycle will be applicable"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

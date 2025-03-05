@@ -1,0 +1,446 @@
+{
+    "card_info": {
+        "card_name": "ICICI Bank HPCL Super Saver Credit Card",
+        "bank": "ICICI Bank",
+        "effective_date": null,
+        "last_updated": "2024-09-11",
+        "extraction_errors": [
+            "Could not find the effective date of the terms and conditions for the credit card. Please check the document for details on when these terms became effective."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 400,
+            "maximum_transaction": 4000,
+            "maximum_waiver": null
+        },
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "The 'late_payment_charges' details are not found in the context provided.",
+            "The 'finance_charges' details are not found in the context provided.",
+            "The 'maximum_waiver' for fuel surcharge is not explicitly mentioned in the context. While a 1% surcharge waiver is mentioned, the maximum waived amount is not specified."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not find information about the elite status level of the credit card in the provided context.",
+            "Could not find information about domestic airport lounge access in the provided context.",
+            "Could not find information about international airport lounge access in the provided context.",
+            "Could not find information about free lounge visits in a year in the provided context.",
+            "Could not find information about eligibility criteria for free night awards in the provided context.",
+            "Could not find information about partner hotels for free night awards in the provided context.",
+            "Could not find information about the value cap for free night awards in the provided context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 2000,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "minSpend": 5000
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "Joining benefit of 2000 ICICI Bank Reward Points on payment of joining fee within 2 statement cycles and spending INR 5,000 or more within 45 days of card issuance. Only Primary Cardholders are eligible for this benefit.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "payment_of_joining_fee_statement_cycles",
+                            "fieldDescription": "Payment of joining fee within 2 statement cycles",
+                            "comparison_operator": "lte",
+                            "value": 2
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "spend_within_days_of_issuance",
+                            "fieldDescription": "Transactions of INR 5,000 and above within 45 days of card issuance",
+                            "comparison_operator": "gte",
+                            "value": 5000
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Financial Services",
+            "rewardValue": null,
+            "conditions": {
+                "minSpend": 150000
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "Annual Fee waiver from the 2nd Anniversary Year onwards if total spends are INR 150,000 or more in the previous Anniversary Year. Spends through EMI transactions are not included.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "annual_spend_previous_anniversary_year",
+                    "fieldDescription": "Total spends on the Credit Card during the previous Anniversary Year",
+                    "comparison_operator": "gte",
+                    "value": 150000
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Fuel",
+            "rewardValue": {
+                "amount": 4,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "cap": {
+                    "amount": 200,
+                    "period": "monthly"
+                },
+                "applicableMerchantsOrDomains": [
+                    "HPCL fuel pumps",
+                    "HP Pay app"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "4% cashback on fuel purchases at HPCL fuel pumps and on HP Pay app, capped at INR 200 per month. No minimum amount threshold is required.",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "monthly_cashback_amount",
+                    "fieldDescription": "Monthly cashback amount",
+                    "range": {
+                        "lte": 200
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Fuel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 400,
+                "maxSpend": 4000,
+                "applicableMerchantsOrDomains": [
+                    "HPCL outlets"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "Surcharge waiver on fuel purchases at HPCL outlets for transactions between INR 400 and INR 4000, resulting in savings of 1% on fuel surcharge. Transactions below INR 400 and above INR 4000 are not eligible for surcharge waiver.",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "transaction_amount_fuel_surcharge_waiver",
+                    "fieldDescription": "Transaction amount for fuel surcharge waiver",
+                    "range": {
+                        "gte": 400,
+                        "lte": 4000
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Fuel",
+            "rewardValue": {
+                "amount": 1.5,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "HPCL retail outlets"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "payment_method",
+                        "fieldDescription": "Payment method",
+                        "comparison_operator": "eq",
+                        "value": "HP Pay app"
+                    }
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "Additional 1.5% cashback, in the form of 6 loyalty points in HP Pay App wallet on every Rs 100 spent using the HP Pay app on all fuel purchases at HPCL retail outlets.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "payment_method_hp_pay_app",
+                    "fieldDescription": "Payment method for HP Pay app cashback",
+                    "comparison_operator": "eq",
+                    "value": "HP Pay app"
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Groceries",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "cap": {
+                    "amount": 400,
+                    "period": "monthly"
+                },
+                "applicableMerchantsOrDomains": [
+                    "utility and departmental stores"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "5% cashback as Accelerated ICICI Bank Reward Points on utility (groceries, telecom, government, tax) and departmental stores, capped at 400 ICICI Bank Reward Points per statement cycle. Cardholders earn 20 points for every INR 100 spent in these categories.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "or",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "merchant_category",
+                            "fieldDescription": "Merchant category for cashback",
+                            "comparison_operator": "eq",
+                            "value": "departmental stores"
+                        },
+                        {
+                            "type": "logical",
+                            "logical_operator": "and",
+                            "conditions": [
+                                {
+                                    "type": "comparison",
+                                    "field": "merchant_category",
+                                    "fieldDescription": "Merchant category for cashback",
+                                    "comparison_operator": "eq",
+                                    "value": "utility"
+                                },
+                                {
+                                    "type": "comparison",
+                                    "field": "merchant_subcategory",
+                                    "fieldDescription": "Merchant subcategory for utility cashback",
+                                    "comparison_operator": "enum",
+                                    "value": [
+                                        "groceries",
+                                        "telecom",
+                                        "government",
+                                        "tax"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "fixed",
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "fuel",
+                    "utility",
+                    "departmental store",
+                    "cash advances",
+                    "service charge or interest",
+                    "late payment charges",
+                    "joining fee",
+                    "renewal fee",
+                    "EMI transactions",
+                    "Balance Transfer (BT)",
+                    "Personal Loan on Credit Cards (PLCC)"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic"
+            },
+            "rewardDescription": "2 ICICI Bank Reward Points on every INR 100 spent on all other retail purchases (domestic and international), excluding fuel, utility, departmental store purchases, cash advances, service charge or interest, late payment charges, joining fee and renewal fee, EMI transactions, Balance Transfer (BT) or Personal Loan on Credit Cards (PLCC).",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "not",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "merchant_category_exclusion",
+                            "fieldDescription": "Merchant category exclusion for reward points",
+                            "comparison_operator": "enum",
+                            "value": [
+                                "fuel",
+                                "utility",
+                                "departmental store",
+                                "cash advances",
+                                "service charge or interest",
+                                "late payment charges",
+                                "joining fee",
+                                "renewal fee",
+                                "EMI transactions",
+                                "Balance Transfer (BT)",
+                                "Personal Loan on Credit Cards (PLCC)"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 200000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "card_variant",
+                        "fieldDescription": "Card variant for personal accident cover",
+                        "comparison_operator": "eq",
+                        "value": "RuPay"
+                    }
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim intimation should be sent within 90 days from the date of the accident to general.claims@tataaig.com & rupay@tataaig.com. Refer to the provided link for further details and claim process."
+            },
+            "rewardDescription": "Personal Accident Cover of up to INR 2 lakh, valid only on RuPay variants. Claim intimation required within 90 days of accident.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "card_variant_personal_accident_cover",
+                    "fieldDescription": "Card variant for personal accident cover",
+                    "comparison_operator": "eq",
+                    "value": "RuPay"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Others",
+            "rewardValue": null,
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "card_variant",
+                        "fieldDescription": "Card variant for concierge service",
+                        "comparison_operator": "eq",
+                        "value": "RuPay"
+                    }
+                }
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "For gift and flower delivery, restaurant referrals, car and limousine rentals, courier services, golf reservations, movie ticket sourcing assistance, IT Return filling and investment consultations, lost passport, luggage services and agreement for hospital admission, please call 1800-26-78729. Refer to the provided link for further details.",
+                "eligibleChannels": [
+                    "phone"
+                ]
+            },
+            "rewardDescription": "24x7 Concierge Service for various needs like gift delivery, restaurant referrals, etc., valid only on RuPay variants. Contact 1800-26-78729.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "card_variant_concierge_service",
+                    "fieldDescription": "Card variant for concierge service",
+                    "comparison_operator": "eq",
+                    "value": "RuPay"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Others",
+            "rewardValue": null,
+            "conditions": {},
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "24x7 Roadside Assistance services including phone assistance, on-site repair, key assistance, tyre support, jumpstart, battery replacement, fuel delivery (up to 5 litres, fuel cost payable), towing, taxi support (up to 50km, additional cost payable).",
+                "eligibleChannels": [
+                    "phone"
+                ]
+            },
+            "rewardDescription": "24x7 Roadside Assistance services for Primary Cardholders, including phone assistance, on-site repair, key assistance, tyre support, jumpstart, battery replacement, fuel delivery, towing, and taxi support. Applicable upon payment of joining/annual fee and not waived annual fee. Only for Primary Cardholders.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "card_holder_type",
+                            "fieldDescription": "Card holder type for roadside assistance",
+                            "comparison_operator": "eq",
+                            "value": "Primary"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "annual_fee_condition_roadside_assistance",
+                            "fieldDescription": "Annual fee condition for roadside assistance",
+                            "comparison_operator": "enum",
+                            "value": [
+                                "annual fee paid",
+                                "annual fee not waived"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

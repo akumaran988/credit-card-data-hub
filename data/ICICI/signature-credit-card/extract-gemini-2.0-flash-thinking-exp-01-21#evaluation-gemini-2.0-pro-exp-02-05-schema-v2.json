@@ -1,0 +1,480 @@
+{
+    "card_info": {
+        "card_name": "Adani One ICICI Bank Signature Credit Card",
+        "bank": "ICICI Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": [
+            "Could not find the effective date for the credit card terms and conditions in the provided context. The document does not explicitly mention when these terms became effective.",
+            "Could not find the last updated date for the credit card terms and conditions in the provided context. The document does not explicitly mention when it was last modified or published."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": null,
+            "maximum_transaction": 4000,
+            "maximum_waiver": null
+        },
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the context.",
+            "Could not find information about finance charges in the context.",
+            "Could not find explicit minimum transaction amount for fuel surcharge waiver, assuming it to be zero or not specified.",
+            "Could not determine the maximum waiver amount for fuel surcharge waiver in currency units, only percentage (1%) is mentioned.",
+            "Could not find information about special transaction fees for rent payments or utility purchases in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Signature",
+        "airport_lounge_access": {
+            "domestic_lounges": [
+                "4 complimentary domestic airport lounge accesses per quarter"
+            ],
+            "international_lounges": [
+                "2 complimentary international airport lounge accesses per year"
+            ],
+            "free_lounge_visits": 18
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not extract domestic lounge names because the provided link to the lounge list is a PDF and cannot be accessed programmatically. Link: www.icicibank.com/content/dam/icicibank/managed-assets/docs/personal/cards/credit-cards/lounges/domestic_consolidated_lounge_list-1.pdf. Please manually review the PDF to get the list of domestic lounges.",
+            "Could not extract international lounge names as no specific list or details of international lounges were provided in the context. Only the number of complimentary accesses (2 per year) is mentioned."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "voucher",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 5000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 25000
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Book tickets using the Adani One platform with the Adani Rewards Membership Account credentials.",
+                "eligibleChannels": [
+                    "Adani One platform"
+                ]
+            },
+            "rewardDescription": "Flight voucher worth ₹ 5,000 on spending ₹ 25,000 within the first 60 days of card activation",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "card_activation_days",
+                    "fieldDescription": "Number of days after card activation",
+                    "range": {
+                        "lte": 60
+                    }
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 2000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": "joining membership fee"
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Book using the Adani One platform with the Adani Rewards Membership Account credentials.",
+                "eligibleChannels": [
+                    "Adani One platform"
+                ]
+            },
+            "rewardDescription": "Hotel voucher worth ₹ 2,000 on activation of the Credit Card",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "card_activation",
+                    "fieldDescription": "Card activation status",
+                    "value": true,
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "offers",
+            "Category": "Fuel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "maxSpend": 4000
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Fuel surcharge waiver on all fuel transactions",
+                "eligibleChannels": [
+                    "fuel outlets"
+                ]
+            },
+            "rewardDescription": "1% fuel surcharge waiver on all fuel transactions up to ₹ 4,000 at any fuel outlet.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 7,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "participating merchants"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Adani Reward Points added to Adani Rewards Membership Account",
+                "processingTime": "within 45 business days of Statement generation"
+            },
+            "rewardDescription": "7 Adani Reward Points on every ₹ 100 spent at participating merchants",
+            "customConditions": null
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 1.5,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "domestic spends"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Adani Reward Points added to Adani Rewards Membership Account",
+                "processingTime": "within 45 business days of Statement generation"
+            },
+            "rewardDescription": "1.5 Adani Reward Points on every ₹ 100 spent on domestic spends",
+            "customConditions": null
+        },
+        {
+            "rewardType": "points",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "international transactions"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Adani Reward Points added to Adani Rewards Membership Account",
+                "processingTime": "within 45 business days of Statement generation"
+            },
+            "rewardDescription": "2 Adani Reward Points on every ₹ 100 spent on international transactions",
+            "customConditions": null
+        },
+        {
+            "rewardType": "points",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 0.5,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "utility and insurance"
+                    }
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Adani Reward Points added to Adani Rewards Membership Account",
+                "processingTime": "within 45 business days of Statement generation"
+            },
+            "rewardDescription": "0.5 Adani Reward Points on every ₹ 100 spent on Utility and Insurance",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "year"
+            },
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "logical_operator": "or",
+                        "type": "logical",
+                        "conditions": [
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "card_activation",
+                                    "fieldDescription": "Card activation status",
+                                    "value": true,
+                                    "comparison_operator": "eq"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "spends",
+                                    "fieldDescription": "Spends on card",
+                                    "value": 300000,
+                                    "comparison_operator": "gte"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Book using the Adani One platform with the Adani Rewards Membership Account credentials. Voucher-linked 100% discount on 1 Pranaam Meet & Greet Service per booking at Adani managed and operated airports.",
+                "eligibleChannels": [
+                    "Adani One platform"
+                ]
+            },
+            "rewardDescription": "2 Pranaam Meet & Greet services per year (1 on Card activation and 1 on spends of ₹ 3 lakh)",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 8,
+                "unit": "year"
+            },
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "range",
+                        "field": "spends",
+                        "fieldDescription": "Spends on card",
+                        "range": {
+                            "gte": 100000,
+                            "lte": 400000
+                        }
+                    }
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Porter Service",
+                "eligibleChannels": [
+                    "Adani One platform"
+                ]
+            },
+            "rewardDescription": "Porter Service per year - 8 times a year, 2 services on every ₹ 1 lakh spent until a total of ₹ 4 lakh is spent.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 4,
+                "unit": "year"
+            },
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "card_activation",
+                        "fieldDescription": "Card activation status",
+                        "value": true,
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Book using the Adani One platform with the Adani Rewards Membership Account credentials. Voucher-linked discount offer of 100%, applicable on 24-hour booking at Adani managed and operated airports.",
+                "eligibleChannels": [
+                    "Adani One platform"
+                ]
+            },
+            "rewardDescription": "Premium car parking services per year - 4 on Credit Card activation.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 4,
+                "unit": "year"
+            },
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "card_activation",
+                        "fieldDescription": "Card activation status",
+                        "value": true,
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Book using the Adani One platform with the Adani Rewards Membership Account credentials. Voucher-linked discount offer of 100%, applicable on 24-hour booking at Adani managed and operated airports.",
+                "eligibleChannels": [
+                    "Adani One platform"
+                ]
+            },
+            "rewardDescription": "Valet car parking services per year - 4 on Credit Card activation.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service upgrade",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 4,
+                "unit": "quarter"
+            },
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "card_activation",
+                        "fieldDescription": "Card activation status",
+                        "value": true,
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Quarterly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Upgraded to premium lounge section at Adani-managed and operated airports post access authorisation based on ICICI Bank Terms & Conditions.",
+                "eligibleChannels": [
+                    "Adani-managed and operated airports"
+                ]
+            },
+            "rewardDescription": "Premium domestic lounge upgrade benefits per quarter - 4 on Credit Card activation.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 4,
+                "unit": "quarter"
+            },
+            "conditions": null,
+            "schedule": {
+                "rewardAccrualFrequency": "Quarterly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Swipe Credit Card to avail complimentary lounge access.",
+                "eligibleChannels": [
+                    "domestic airport lounges"
+                ]
+            },
+            "rewardDescription": "4 complimentary domestic airport lounge accesses per quarter.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "year"
+            },
+            "conditions": null,
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Swipe Credit Card to avail complimentary lounge access.",
+                "eligibleChannels": [
+                    "international airport lounges"
+                ]
+            },
+            "rewardDescription": "2 complimentary international airport lounge accesses per year.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Entertainment",
+            "rewardValue": {
+                "amount": 50,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": 2,
+                "cap": {
+                    "amount": 500,
+                    "period": "monthly"
+                },
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "ticket_count",
+                        "fieldDescription": "Number of movie tickets purchased",
+                        "value": 2,
+                        "comparison_operator": "gte"
+                    }
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Book movie tickets through BookMyShow.",
+                "eligibleChannels": [
+                    "BookMyShow"
+                ]
+            },
+            "rewardDescription": "Get 50% off up to ₹ 500 on the purchase of a minimum of 2 movie tickets, twice every month through BookMyShow.",
+            "customConditions": null
+        }
+    ]
+}

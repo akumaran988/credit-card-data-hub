@@ -1,0 +1,447 @@
+{
+    "card_info": {
+        "card_name": "Manchester United Credit Card",
+        "bank": "ICICI Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": [
+            "Could not find the effective date of the credit card terms and conditions in the provided context.",
+            "Could not find the last updated or publication date for the credit card terms and conditions in the provided context."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": [],
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charge slabs and their corresponding fees in the context.",
+            "Could not find the monthly percentage rate for finance charges in the provided context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not extract 'elite_status_level' from the context as there is no explicit mention of the elite status tier of the card. While the context mentions 'Manchester United Platinum and Signature Credit Cards', these are card names and not necessarily elite status tiers like 'gold' or 'silver' as expected by the schema.",
+            "Could not extract 'domestic_lounges' from the context as there is no information about domestic airport lounge access benefits mentioned in the provided text.",
+            "Could not extract 'international_lounges' from the context as there is no information about international airport lounge access benefits mentioned in the provided text.",
+            "Could not extract 'free_lounge_visits' from the context as there is no information about the number of free lounge visits provided with the card.",
+            "Could not extract 'eligibility_criteria' for free night awards from the context as there is no mention of free night benefits or any criteria to earn them.",
+            "Could not extract 'partner_hotels' for free night awards from the context as there is no mention of free night benefits or partner hotels where they can be redeemed.",
+            "Could not extract 'value_cap' for free night awards from the context as there is no mention of free night benefits or any value cap associated with them."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "Category": "Others",
+            "rewardValue": {
+                "unit": "multiplier",
+                "amount": 3,
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Domestic Transactions",
+                    "International Transactions"
+                ],
+                "schedule": {
+                    "matchDay": "Manchester United plays an English Premier League match"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Match Day",
+                "rewardAccrualDetails": "Bonus Match Day Points will be credited to the cardholder’s account, before the start of the next English Premier League season. Points earned on match day are same as points earned on any other day."
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Credited to the cardholder’s account, before the start of the next English Premier League season"
+            },
+            "rewardDescription": "Bonus Match Day Points will be earned on days when Manchester United plays an English Premier League match. Bonus Match Day Points are defined as ICICI Bank Reward Points earned on domestic or international transactions over and above the regular ICICI Bank Reward Points earned on spends",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "event_type",
+                            "fieldDescription": "Type of event",
+                            "value": "Manchester United English Premier League match",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "transaction_type",
+                            "fieldDescription": "Type of transaction",
+                            "value": "domestic or international transactions",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "unit": "multiplier",
+                "amount": 3,
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "fuel transactions"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Per Transaction"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "ICICI Bank Reward Points redemption details are available on www.icicibank.com"
+            },
+            "rewardDescription": "Earn 3 ICICI Bank Reward Points on every Rs 100 spent on retail purchases, except fuel transactions on Manchester United Platinum Credit Card by ICICI Bank.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "card_type",
+                            "fieldDescription": "Type of credit card",
+                            "value": "Manchester United Platinum Credit Card",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "purchase_type",
+                            "fieldDescription": "Type of purchase",
+                            "value": "retail purchases",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "merchant_category",
+                            "fieldDescription": "Merchant category",
+                            "value": "fuel transactions",
+                            "comparison_operator": "neq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "unit": "multiplier",
+                "amount": 5,
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "fuel transactions"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Per Transaction"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "ICICI Bank Reward Points redemption details are available on www.icicibank.com"
+            },
+            "rewardDescription": "Earn 5 ICICI Bank Reward Points on every Rs 100 spent on retail purchases, except fuel transactions on Manchester United Signature Credit Card by ICICI Bank.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "card_type",
+                            "fieldDescription": "Type of credit card",
+                            "value": "Manchester United Signature Credit Card",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "purchase_type",
+                            "fieldDescription": "Type of purchase",
+                            "value": "retail purchases",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "merchant_category",
+                            "fieldDescription": "Merchant category",
+                            "value": "fuel transactions",
+                            "comparison_operator": "neq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "offers",
+            "Category": "Others",
+            "rewardValue": {
+                "unit": "gift"
+            },
+            "conditions": {
+                "minSpend": 1000,
+                "applicableMerchantsOrDomains": [
+                    "Retail Transactions"
+                ],
+                "fulfillmentCriteria": "at least three retail transactions of an amount greater than or equal to Rs 1,000 in the first three months from the card setup. Months will be calculated as <30> days each.",
+                "monthCalculationDetails": "Months will be calculated as <30> days each",
+                "paymentCriteria": "payment of the joining fee"
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "One-time",
+                "rewardExpiry": {
+                    "unit": "days",
+                    "value": 90
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Welcome gift will be dispatched within 90 days from the day the customer becomes eligible",
+                "processingTime": "90 days"
+            },
+            "rewardDescription": "Manchester United Platinum cardholders will receive a welcome gift on payment of the joining fees and post carrying out at least three retail transactions of an amount greater than or equal to Rs 1,000 in the first three months from the card setup",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "card_type",
+                            "fieldDescription": "Type of credit card",
+                            "value": "Manchester United Platinum Credit Card",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "payment_status",
+                            "fieldDescription": "Payment status",
+                            "value": "payment of the joining fee",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "transaction_count",
+                            "fieldDescription": "Number of retail transactions",
+                            "value": 3,
+                            "comparison_operator": "gte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "transaction_amount",
+                            "fieldDescription": "Amount of each retail transaction",
+                            "value": 1000,
+                            "comparison_operator": "gte"
+                        },
+                        {
+                            "type": "range",
+                            "field": "card_setup_duration",
+                            "fieldDescription": "Duration from card setup",
+                            "range": {
+                                "lte": 3
+                            },
+                            "unit": "months"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "offers",
+            "Category": "Others",
+            "rewardValue": {
+                "unit": "gift"
+            },
+            "conditions": {
+                "paymentCriteria": "payment of the joining fee"
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "One-time",
+                "rewardExpiry": {
+                    "unit": "days",
+                    "value": 60
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Welcome gift for Manchester United Signature cardholders will be dispatched within 60 working days from the date of payment of the joining fee.",
+                "processingTime": "60 working days"
+            },
+            "rewardDescription": "A welcome gift for Manchester United Signature cardholders will be dispatched within 60 working days from the date of payment of the joining fee.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "card_type",
+                            "fieldDescription": "Type of credit card",
+                            "value": "Manchester United Signature Credit Card",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "payment_status",
+                            "fieldDescription": "Payment status",
+                            "value": "payment of the joining fee",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "offers",
+            "Category": "Shopping",
+            "rewardValue": {
+                "unit": "merchandise"
+            },
+            "conditions": {
+                "minSpend": 200000,
+                "period": "monthly",
+                "eligibilityCriteria": "Top 100 spenders each month. Spends made on add-on cards will be counted towards total spends for the Primary Card Member. Only the Primary Card Member will be considered for the offer.",
+                "excludedTransactions": [
+                    "Cash advance",
+                    "Service charge or interest",
+                    "Late payment charges",
+                    "Joining fee and renewal fee",
+                    "EMI payments",
+                    "Balance Transfer (BT)",
+                    "Personal Loan on Credit Cards (PLCC)",
+                    "Cancelled transactions",
+                    "cash withdrawals at ATMs",
+                    "void transactions",
+                    "fuel payment",
+                    "tax payments",
+                    "Mutual Fund purchases",
+                    "Insurance",
+                    "gambling",
+                    "wallet transactions",
+                    "transactions done for commercial or business purposes"
+                ],
+                "addOnCardSpendIncluded": "Spends made on add-on cards will be counted towards total spends for the Primary Card Member",
+                "primaryCardHolderEligibility": "Only the Primary Card Member will be considered for the offer"
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Manchester United branded merchandise will be delivered to top 100 spenders each month. The top <100> spenders’ t-shirt sizes will be based on availability.",
+                "processingTime": "90 working days from the end of the month",
+                "merchandiseDeliveryDetails": "The top <100> spenders’ t-shirt sizes will be based on availability. Notwithstanding anything, ICICI Bank will have the final authority with respect to the size and delivery of the t-shirts.",
+                "authorityOnMerchandise": "ICICI Bank will have the final authority with respect to the size and delivery of the t-shirts."
+            },
+            "rewardDescription": "Each month, top 100 spenders among the Manchester United Credit Card customers will win Manchester United branded merchandise. The top most spending cardholder will get a Manchester United branded and signed jersey.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "spending_rank_monthly",
+                            "fieldDescription": "Monthly spending rank among cardholders",
+                            "value": 100,
+                            "comparison_operator": "lte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "monthly_spend",
+                            "fieldDescription": "Monthly spending amount",
+                            "value": 200000,
+                            "comparison_operator": "gte"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "unit": "trip"
+            },
+            "conditions": {
+                "minSpend": 200000,
+                "eligibilityCriteria": "First 18 top spending cardholders during the offer period. The cardholder should make himself/herself available during specified periods to avail the benefits of the said offer by ICICI Bank. The cardholder should be available in person and on call as required by ICICI Bank, between specified periods for visa and ticketing formalities or any other dates as ICICI Bank may prescribe",
+                "passportRequirement": "Valid Indian passport with minimum 6 months validity",
+                "excludedTransactions": [
+                    "Cash advance",
+                    "Service charge or interest",
+                    "Late payment charges",
+                    "Joining fee and renewal fee",
+                    "EMI payments",
+                    "Balance Transfer (BT)",
+                    "Personal Loan on Credit Cards (PLCC)"
+                ],
+                "cardholderAvailability": "The cardholder should make himself/herself available during specified periods to avail the benefits of the said offer by ICICI Bank",
+                "visaAndTicketingAvailability": "The cardholder should be available in person and on call as required by ICICI Bank, between specified periods for visa and ticketing formalities or any other dates as ICICI Bank may prescribe"
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Offer Period"
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Opportunity to watch a Manchester United match at Old Trafford, Manchester, UK including economy flight tickets (round-trip) and accommodation, Manchester United Museum and Old Trafford Stadium tour, and chance to attend a training session.",
+                "processingTime": "Next season, as and when declared by the Manchester United team"
+            },
+            "rewardDescription": "The first 18 top spending cardholders will get an opportunity to watch a Manchester United match at Old Trafford, Manchester, UK during the offer period. This will be inclusive of economy flight tickets (round-trip) and accommodation and take place in the next season, as and when declared by the Manchester United team. It will include: 1. The Manchester United Museum and Old Trafford Stadium tour. 2. The top spenders will be given the chance to attend a training session, subject to availability, at the sole discretion of ICICI Bank.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "spending_rank_offer_period",
+                            "fieldDescription": "Spending rank during offer period",
+                            "value": 18,
+                            "comparison_operator": "lte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "offer_period_spend",
+                            "fieldDescription": "Spending amount during offer period",
+                            "value": 200000,
+                            "comparison_operator": "gte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "passport_validity",
+                            "fieldDescription": "Passport validity",
+                            "value": 6,
+                            "comparison_operator": "gte",
+                            "unit": "months"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

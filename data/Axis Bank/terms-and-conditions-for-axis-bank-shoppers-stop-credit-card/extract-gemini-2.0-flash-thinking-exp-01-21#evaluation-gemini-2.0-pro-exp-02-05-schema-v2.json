@@ -1,0 +1,411 @@
+{
+    "card_info": {
+        "card_name": "Axis Bank Shoppers Stop Credit Card",
+        "bank": "AXIS BANK",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": [
+            "effective_date: The effective date of the card's terms and conditions is not found in the context.",
+            "last_updated: The last updated or publication date for the terms and conditions is not found in the context."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 400,
+            "maximum_transaction": 5000,
+            "maximum_waiver": 400
+        },
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the context.",
+            "Could not find information about finance charges in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Golden Glow Membership",
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Required field 'airport_lounge_access.domestic_lounges' not found in the context.",
+            "Required field 'airport_lounge_access.international_lounges' not found in the context.",
+            "Required field 'airport_lounge_access.free_lounge_visits' not found in the context.",
+            "Required field 'free_night_awards.eligibility_criteria' not found in the context.",
+            "Required field 'free_night_awards.partner_hotels' not found in the context.",
+            "Required field 'free_night_awards.value_cap' not found in the context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 300,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": "first Transaction within 30 days of Card issuance"
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "auto-credited post first Transaction"
+            },
+            "rewardDescription": "First Citizen Reward Points worth INR 300 shall be awarded to the Cardholder on the first Transaction within 30 days of Card issuance.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 5000,
+                "applicableMerchantsOrDomains": [
+                    "Shoppers Stop",
+                    "Homestop"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "vouchers in the welcome kit"
+            },
+            "rewardDescription": "3 Shoppers Stop vouchers of INR 500 each redeemable at Shoppers Stop & Homestop will be awarded and redeemable on a minimum Target spend of INR 5000 at Shoppers Stop and/or Homestop stores.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "voucherCount",
+                    "fieldDescription": "Number of vouchers",
+                    "value": 3,
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 2500,
+                "applicableMerchantsOrDomains": [
+                    "Shoppers Stop Exclusive Brands"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "voucher in the welcome kit"
+            },
+            "rewardDescription": "1 Shoppers Stop voucher of INR 500 will be awarded and can be redeemed at Shoppers Stop outlets against a minimum spend of INR 2500 on Shoppers stop Exclusive Brands only",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "voucherCount",
+                    "fieldDescription": "Number of vouchers",
+                    "value": 1,
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 250,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "shoppersstop.com"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "ShoppersStop online voucher"
+            },
+            "rewardDescription": "ShoppersStop online voucher will be redeemable on https://www.shoppersstop.com/ for savings of INR 250 on any purchase made using the Credit Card.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Subscriptions and Memberships",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "minSpend": "first Transaction after Card issuance"
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "eligible for a complimentary Golden Glow Membership post first Transaction"
+            },
+            "rewardDescription": "The Cardholder will also become eligible for a complimentary Golden Glow Membership post first Transaction after Card issuance.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "multiplier",
+                "referenceValue": 200
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "Shoppers Stop",
+                    "Homestop",
+                    "Arcelia",
+                    "MAC",
+                    "Clinique",
+                    "Estee Lauder",
+                    "Bobbi Brown",
+                    "Jo Malone",
+                    "Smashbox"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "transferred to your First Citizen Account with Shoppers Stop after every statement cycle"
+            },
+            "rewardDescription": "2 FC reward points on every INR 200 spent for all other spends apart from spends at Shoppers Stop brands.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 20,
+                "unit": "multiplier",
+                "referenceValue": 200
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Shoppers Stop Exclusive Brands"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "points will be credited in a split of 12 points from Shoppers Stop + 8 points from Axis Bank"
+            },
+            "rewardDescription": "20 FC reward points on every INR 200 spent on Shoppers Stop Exclusive Brands",
+            "customConditions": null
+        },
+        {
+            "rewardType": "points",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 12,
+                "unit": "multiplier",
+                "referenceValue": 200
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Shoppers Stop (other brands)"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "points will be credited in a split of 4 points from Shoppers Stop + 8 points from Axis Bank"
+            },
+            "rewardDescription": "12 FC reward points on every INR 200 spent at Shoppers Stop (in-store, website or mobile app) for other brands",
+            "customConditions": null
+        },
+        {
+            "rewardType": "offers",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 3,
+                "unit": "year"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Shoppers Stop"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Enjoy exclusive access to two end of season sale and one festive sale per year at Shoppers Stop."
+            },
+            "rewardDescription": "Enjoy exclusive access to two end of season sale and one festive sale per year at Shoppers Stop.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "service",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 45,
+                "unit": "days"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Shoppers Stop outlets"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Extended exchange period of 45 days at all Shoppers Stop outlets upon payment made using Credit Card."
+            },
+            "rewardDescription": "Extended exchange period of 45 days at all Shoppers Stop outlets upon payment made using Credit Card.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 15,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Shoppers Stop Exclusive brands-apparel category"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "or",
+                        "conditions": [
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "transactionMonth",
+                                    "fieldDescription": "Month of transaction",
+                                    "value": "birthdayMonth",
+                                    "comparison_operator": "eq"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "transactionMonth",
+                                    "fieldDescription": "Month of transaction",
+                                    "value": "anniversaryMonth",
+                                    "comparison_operator": "eq"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Flat 15% off on birthday and anniversary month"
+            },
+            "rewardDescription": "Flat 15% off on birthday and anniversary month on Transactions made on Exclusive brands-apparel category using Credit Card.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "or",
+                    "conditions": [
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "transactionMonth",
+                                "fieldDescription": "Month of transaction",
+                                "value": "birthdayMonth",
+                                "comparison_operator": "eq"
+                            }
+                        },
+                        {
+                            "condition": {
+                                "type": "comparison",
+                                "field": "transactionMonth",
+                                "fieldDescription": "Month of transaction",
+                                "value": "anniversaryMonth",
+                                "comparison_operator": "eq"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Shoppers Stop in-store",
+                    "Shoppers Stop online"
+                ]
+            },
+            "schedule": null,
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Free home delivery for in-store or online purchase upon payment made using Credit Card."
+            },
+            "rewardDescription": "Free home delivery for in-store or online purchase upon payment made using Credit Card.",
+            "customConditions": null
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Fuel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": 400,
+                "maxSpend": 5000,
+                "applicableMerchantsOrDomains": [
+                    "Fuel"
+                ],
+                "cap": {
+                    "amount": 400,
+                    "period": "monthly"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "1% fuel surcharge waiver"
+            },
+            "rewardDescription": "1% fuel surcharge waiver on all fuel Transactions between INR 400 to INR 5000, with a max cap of INR 400 on waiver in the statement Month.",
+            "customConditions": null
+        }
+    ]
+}

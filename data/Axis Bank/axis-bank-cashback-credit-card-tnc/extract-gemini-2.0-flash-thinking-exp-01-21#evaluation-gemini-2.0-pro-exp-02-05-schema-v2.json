@@ -1,0 +1,610 @@
+{
+    "card_info": {
+        "card_name": "Cashback Credit Card",
+        "bank": "Axis Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": [
+            "effective_date: Could not find the effective date of the credit card terms and conditions in the provided context.",
+            "last_updated: Could not find the last updated or publication date of the credit card terms and conditions in the provided context."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": null,
+            "maximum_transaction": null,
+            "maximum_waiver": null
+        },
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the provided context.",
+            "Could not find information about finance charges in the provided context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not find information about the elite status level of the credit card.",
+            "Could not find information about airport lounge access benefits.",
+            "Could not find information about free night awards benefits."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 5000,
+                "unit": "fixed"
+            },
+            "conditions": {
+                "minSpend": null,
+                "maxSpend": null,
+                "cap": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "EDGE Reward Points will be auto-credited and can be redeemed via https://www.axisbank.com/axis-edge-rewards.",
+                "processingTime": "immediate",
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Customer must have paid the joining fee and make first spend transaction within 30 days of card issuance. Applicable to primary cardholders only. The first transaction to be considered for both primary or the add-on card to obtain the welcome benefit.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "5000 EDGE Reward Points worth INR 1000 on the first spend transaction within 30 days of card issuance for customers who have paid the joining fee. Valid only once for primary cardholder.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "customer_type",
+                            "fieldDescription": "Type of customer",
+                            "value": "new to card customers",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "first_transaction_within_days",
+                            "fieldDescription": "First transaction within days of card issuance",
+                            "value": 30,
+                            "comparison_operator": "lte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "fee_payment",
+                            "fieldDescription": "Joining fee payment condition",
+                            "value": "paid",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "card_type",
+                            "fieldDescription": "Card type",
+                            "value": "primary",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            },
+            "extraction_errors": null
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 0.75,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": null,
+                "maxSpend": null,
+                "cap": null,
+                "excludedMerchantsOrDomains": {
+                    "type": "array",
+                    "items": [
+                        "Transportation & Tolls (4111, 4121, 4131, 4784)",
+                        "Insurance (6300, 6381, 5960, 6012, 6051)",
+                        "Educational Institutions (8211, 8241, 8244, 8249, 8299)",
+                        "Jewellery, Precious Metals and Watches (5944, 5094)",
+                        "Govt. Institutions (9211, 9222, 9311, 9399, 9402, 9405, 8220)",
+                        "Wallet (6540)",
+                        "Rent (6513)",
+                        "Fuel (5541, 5542, 5983)"
+                    ]
+                },
+                "applicableMerchantsOrDomains": [
+                    "Offline Spends (POS/card present transactions)",
+                    "Travel (both online and offline). Please refer page 10 to see full list of MCCs considered under Travel."
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly",
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Cashback will be provided automatically as statement credit before next statement date.",
+                "processingTime": "immediate",
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": null,
+                "redemptionLimit": null,
+                "redemptionCapPeriod": "monthly",
+                "isTransferable": false
+            },
+            "rewardDescription": "0.75% base cashback on offline spends (POS/card present transactions) or spends on travel (both online and offline). No capping on cashback. Cashback is provided as statement credit.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "transaction_channel",
+                            "fieldDescription": "Transaction channel",
+                            "value": [
+                                "offline",
+                                "travel"
+                            ],
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            },
+            "extraction_errors": null
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": null,
+                "maxSpend": 5000,
+                "cap": {
+                    "amount": 100,
+                    "period": "monthly"
+                },
+                "excludedMerchantsOrDomains": {
+                    "type": "array",
+                    "items": [
+                        "Travel MCCs",
+                        "Transportation & Tolls (4111, 4121, 4131, 4784)",
+                        "Insurance (6300, 6381, 5960, 6012, 6051)",
+                        "Educational Institutions (8211, 8241, 8244, 8249, 8299)",
+                        "Jewellery, Precious Metals and Watches (5944, 5094)",
+                        "Govt. Institutions (9211, 9222, 9311, 9399, 9402, 9405, 8220)",
+                        "Wallet (6540)",
+                        "Rent (6513)",
+                        "Fuel (5541, 5542, 5983)"
+                    ]
+                },
+                "applicableMerchantsOrDomains": [
+                    "Online Spends (card not present) except travel MCCs and other MCC exclusions"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly",
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Cashback will be provided automatically as statement credit before next statement date.",
+                "processingTime": "immediate",
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": null,
+                "redemptionLimit": null,
+                "redemptionCapPeriod": "monthly",
+                "isTransferable": false
+            },
+            "rewardDescription": "2% cashback on net spends up to INR 5,000 on eligible online spends. Total cap on accelerated cashback for this tier is INR 100 per statement month. Cashback is provided as statement credit. Tiered cashback structure is applicable for online spends.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "transaction_channel",
+                            "fieldDescription": "Transaction channel",
+                            "value": "online",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "logical",
+                            "logical_operator": "not",
+                            "conditions": [
+                                {
+                                    "type": "comparison",
+                                    "field": "mcc_category",
+                                    "fieldDescription": "Merchant Category Code Category",
+                                    "value": "travel",
+                                    "comparison_operator": "eq"
+                                },
+                                {
+                                    "type": "comparison",
+                                    "field": "excluded_mccs",
+                                    "fieldDescription": "Excluded Merchant Category Codes",
+                                    "value": [
+                                        "Transportation & Tolls (4111, 4121, 4131, 4784)",
+                                        "Insurance (6300, 6381, 5960, 6012, 6051)",
+                                        "Educational Institutions (8211, 8241, 8244, 8249, 8299)",
+                                        "Jewellery, Precious Metals and Watches (5944, 5094)",
+                                        "Govt. Institutions (9211, 9222, 9311, 9399, 9402, 9405, 8220)",
+                                        "Wallet (6540)",
+                                        "Rent (6513)",
+                                        "Fuel (5541, 5542, 5983)"
+                                    ],
+                                    "comparison_operator": "in"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "range",
+                            "field": "net_spend_amount",
+                            "fieldDescription": "Net spend amount for the month",
+                            "range": {
+                                "lte": 5000
+                            }
+                        }
+                    ]
+                }
+            },
+            "extraction_errors": null
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": 5001,
+                "maxSpend": 40000,
+                "cap": {
+                    "amount": 1750,
+                    "period": "monthly"
+                },
+                "excludedMerchantsOrDomains": {
+                    "type": "array",
+                    "items": [
+                        "Travel MCCs",
+                        "Transportation & Tolls (4111, 4121, 4131, 4784)",
+                        "Insurance (6300, 6381, 5960, 6012, 6051)",
+                        "Educational Institutions (8211, 8241, 8244, 8249, 8299)",
+                        "Jewellery, Precious Metals and Watches (5944, 5094)",
+                        "Govt. Institutions (9211, 9222, 9311, 9399, 9402, 9405, 8220)",
+                        "Wallet (6540)",
+                        "Rent (6513)",
+                        "Fuel (5541, 5542, 5983)"
+                    ]
+                },
+                "applicableMerchantsOrDomains": [
+                    "Online Spends (card not present) except travel MCCs and other MCC exclusions"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly",
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Cashback will be provided automatically as statement credit before next statement date.",
+                "processingTime": "immediate",
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": null,
+                "redemptionLimit": null,
+                "redemptionCapPeriod": "monthly",
+                "isTransferable": false
+            },
+            "rewardDescription": "5% cashback on net spends between INR 5,001 and INR 40,000 on eligible online spends. Total cap on accelerated cashback for this tier is INR 1,750 per statement month. Cashback is provided as statement credit. Tiered cashback structure is applicable for online spends.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "transaction_channel",
+                            "fieldDescription": "Transaction channel",
+                            "value": "online",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "logical",
+                            "logical_operator": "not",
+                            "conditions": [
+                                {
+                                    "type": "comparison",
+                                    "field": "mcc_category",
+                                    "fieldDescription": "Merchant Category Code Category",
+                                    "value": "travel",
+                                    "comparison_operator": "eq"
+                                },
+                                {
+                                    "type": "comparison",
+                                    "field": "excluded_mccs",
+                                    "fieldDescription": "Excluded Merchant Category Codes",
+                                    "value": [
+                                        "Transportation & Tolls (4111, 4121, 4131, 4784)",
+                                        "Insurance (6300, 6381, 5960, 6012, 6051)",
+                                        "Educational Institutions (8211, 8241, 8244, 8249, 8299)",
+                                        "Jewellery, Precious Metals and Watches (5944, 5094)",
+                                        "Govt. Institutions (9211, 9222, 9311, 9399, 9402, 9405, 8220)",
+                                        "Wallet (6540)",
+                                        "Rent (6513)",
+                                        "Fuel (5541, 5542, 5983)"
+                                    ],
+                                    "comparison_operator": "in"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "range",
+                            "field": "net_spend_amount",
+                            "fieldDescription": "Net spend amount for the month",
+                            "range": {
+                                "gt": 5000,
+                                "lte": 40000
+                            }
+                        }
+                    ]
+                }
+            },
+            "extraction_errors": null
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 7,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": 40001,
+                "maxSpend": null,
+                "cap": {
+                    "amount": 2150,
+                    "period": "monthly"
+                },
+                "excludedMerchantsOrDomains": {
+                    "type": "array",
+                    "items": [
+                        "Travel MCCs",
+                        "Transportation & Tolls (4111, 4121, 4131, 4784)",
+                        "Insurance (6300, 6381, 5960, 6012, 6051)",
+                        "Educational Institutions (8211, 8241, 8244, 8249, 8299)",
+                        "Jewellery, Precious Metals and Watches (5944, 5094)",
+                        "Govt. Institutions (9211, 9222, 9311, 9399, 9402, 9405, 8220)",
+                        "Wallet (6540)",
+                        "Rent (6513)",
+                        "Fuel (5541, 5542, 5983)"
+                    ]
+                },
+                "applicableMerchantsOrDomains": [
+                    "Online Spends (card not present) except travel MCCs and other MCC exclusions"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly",
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Cashback will be provided automatically as statement credit before next statement date.",
+                "processingTime": "immediate",
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": null,
+                "redemptionLimit": null,
+                "redemptionCapPeriod": "monthly",
+                "isTransferable": false
+            },
+            "rewardDescription": "7% cashback on net spends above INR 40,000 on eligible online spends. Total cap on accelerated cashback for this tier is INR 2,150 per statement month. Cashback is provided as statement credit. Tiered cashback structure is applicable for online spends.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "transaction_channel",
+                            "fieldDescription": "Transaction channel",
+                            "value": "online",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "logical",
+                            "logical_operator": "not",
+                            "conditions": [
+                                {
+                                    "type": "comparison",
+                                    "field": "mcc_category",
+                                    "fieldDescription": "Merchant Category Code Category",
+                                    "value": "travel",
+                                    "comparison_operator": "eq"
+                                },
+                                {
+                                    "type": "comparison",
+                                    "field": "excluded_mccs",
+                                    "fieldDescription": "Excluded Merchant Category Codes",
+                                    "value": [
+                                        "Transportation & Tolls (4111, 4121, 4131, 4784)",
+                                        "Insurance (6300, 6381, 5960, 6012, 6051)",
+                                        "Educational Institutions (8211, 8241, 8244, 8249, 8299)",
+                                        "Jewellery, Precious Metals and Watches (5944, 5094)",
+                                        "Govt. Institutions (9211, 9222, 9311, 9399, 9402, 9405, 8220)",
+                                        "Wallet (6540)",
+                                        "Rent (6513)",
+                                        "Fuel (5541, 5542, 5983)"
+                                    ],
+                                    "comparison_operator": "in"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "range",
+                            "field": "net_spend_amount",
+                            "fieldDescription": "Net spend amount for the month",
+                            "range": {
+                                "gt": 40000
+                            }
+                        }
+                    ]
+                }
+            },
+            "extraction_errors": null
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Utilities",
+            "rewardValue": {
+                "amount": 0.5,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": null,
+                "maxSpend": null,
+                "cap": {
+                    "amount": 100,
+                    "period": "monthly"
+                },
+                "applicableMerchantsOrDomains": [
+                    "Utilities transactions"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly",
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Cashback will be provided automatically as statement credit before next statement date.",
+                "processingTime": "immediate",
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": null,
+                "redemptionLimit": null,
+                "redemptionCapPeriod": "monthly",
+                "isTransferable": false
+            },
+            "rewardDescription": "0.5% bonus cashback on Utilities transactions, capped at INR 100 per statement. Cashback is provided as statement credit.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "or",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "mcc",
+                            "fieldDescription": "Merchant Category Code",
+                            "value": "4816",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "mcc",
+                            "fieldDescription": "Merchant Category Code",
+                            "value": "4899",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "mcc",
+                            "fieldDescription": "Merchant Category Code",
+                            "value": "4900",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "note",
+                            "fieldDescription": "Note for MCC 4814",
+                            "value": "MCC 4814 (Telephone Bill Payment) eligible for base (offline/ PoS channels) & accelerated (online channel) cashback earn depending on which channel (online or offline) the customer makes the payment."
+                        }
+                    ]
+                }
+            },
+            "extraction_errors": null
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Dining",
+            "rewardValue": {
+                "amount": 25,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": 2500,
+                "maxSpend": null,
+                "cap": {
+                    "amount": 800,
+                    "period": "monthly"
+                },
+                "applicableMerchantsOrDomains": [
+                    "EazyDiner"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly",
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Instant discount on EazyDiner.",
+                "processingTime": "immediate",
+                "eligibleChannels": [
+                    "EazyDiner"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Minimum transaction value of INR 2500. Applicable once a calendar month per card.",
+                "redemptionLimit": {
+                    "limitCount": 1,
+                    "timePeriod": "monthly"
+                },
+                "redemptionCapPeriod": "monthly",
+                "isTransferable": false
+            },
+            "rewardDescription": "25% instant discount on EazyDiner up to INR 800 per month per card for a minimum transaction value of INR 2500. Applicable once a calendar month per card.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "merchant",
+                    "fieldDescription": "Merchant name",
+                    "value": "EazyDiner",
+                    "comparison_operator": "eq"
+                }
+            },
+            "extraction_errors": null
+        }
+    ]
+}

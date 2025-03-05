@@ -1,0 +1,1826 @@
+{
+    "card_info": {
+        "card_name": "Times Black ICICI Bank Credit Card",
+        "bank": "ICICI Bank",
+        "effective_date": null,
+        "last_updated": "2024-12-18",
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": null,
+            "maximum_transaction": null,
+            "maximum_waiver": 1000.0
+        },
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the context.",
+            "Could not find information about finance charges in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "premium",
+        "airport_lounge_access": {
+            "domestic_lounges": [
+                "Unlimited domestic lounge access through Times Black ICICI Bank Credit Card. Please swipe the Times Black ICICI Bank Credit Card to avail the complimentary lounge access. Click here for the list of lounges."
+            ],
+            "international_lounges": [
+                "Unlimited international lounge access with Priority Pass Membership. A Primary Cardholder and an Add-on Cardholder can enjoy unlimited international lounge access with Priority Pass Membership. Visit https://www.prioritypass.com/airport-lounges for the list of lounges."
+            ],
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not extract the exact number of 'free_lounge_visits'. The context mentions 'unlimited' access, which is not a numerical value as expected in the schema.",
+            "Could not find information about 'eligibility_criteria' for free night awards.",
+            "Could not find information about 'partner_hotels' for free night awards.",
+            "Could not find information about 'value_cap' for free night awards."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "discount",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 10000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Atlys"
+                ],
+                "rewardDescription": "Waiver of the Processing Fee for Travel Visa application up to a maximum amount of INR 10,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Voucher is redeemed at Atlys for visa processing fee waiver.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Atlys platform"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Waiver is applicable only on the Processing Fee charged by Atlys and can be availed only once by an Eligible Cardholder. For multi-country Visa applications, the Processing Fee waiver is applicable only for the primary country. To further clarify, ‘primary country’ shall mean only those countries where the Eligible Cardholder shall travel. In the event an Eligible Cardholder avails this offer, if such Eligible Cardholder shall not be able to Pay When on Time (PWON) i.e. in case any balance payment needs to be made after availing the waiver, the Eligible Cardholder will have to pay such amount in full at the time of application.",
+                "redemptionLimit": {
+                    "limitCount": 1,
+                    "timePeriod": "yearly"
+                },
+                "redemptionCapPeriod": "yearly",
+                "isTransferable": false
+            },
+            "rewardDescription": "Waiver of the Processing Fee for Travel Visa application up to a maximum amount of INR 10,000 with Atlys.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Joining Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 10000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "OneVasco"
+                ],
+                "rewardDescription": "Complimentary Visa at your Doorstep (VAYD) service up to a maximum of INR 10,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Voucher is redeemed at OneVasco for Visa at your Doorstep (VAYD) service.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Times Black App",
+                    "OneVasco platform"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Only one complimentary VAYD service can be availed by the Eligible Cardholder, provided sufficient balance is available in the Times Black Travel Visa Wallet. The Eligible Cardholder will need to submit details, excluding passport details, on the Times Black App. These details shall be shared with OneVasco. Once the above details are shared, the Eligible Cardholder will need to share the passport details separately with OneVasco at timesblack@onevasco.com. OneVasco will confirm the booking availability and send a confirmation e-mail to the Eligible Cardholder. In case of unavailability of the requested date, OneVasco will suggest the next available date. The Eligible Cardholder shall provide immediate confirmation to OneVasco due to limited availability of slots. Additional family members will be charged as per the applicable rates. The Cardholder will need to pay any additional fees associated with the service (Mission Fee, Visa Application Centre VFS Service Fee, Logistics/Courier Fee etc.) as applicable independently on the Times Black App. OneVasco does not cover Visa fees or any VAS1 or VAS2 charges on behalf of the Eligible Cardholder. For any issues or changes, please write to: timesblack@onevasco.com and mention your service type and booking details. For any additional service requests, please write to: timesblack1@onevasco.com.",
+                "redemptionLimit": {
+                    "limitCount": 1,
+                    "timePeriod": "yearly"
+                },
+                "redemptionCapPeriod": "yearly",
+                "isTransferable": false
+            },
+            "rewardDescription": "Complimentary Visa at your Doorstep (VAYD) service up to a maximum of INR 10,000 with OneVasco.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Joining Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 10000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "OneVasco"
+                ],
+                "rewardDescription": "Complimentary Visa Application Centre Premium Lounge (PL) access up to a maximum of INR 10,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Voucher is redeemed at OneVasco for Visa Application Centre Premium Lounge (PL) access.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Times Black App",
+                    "OneVasco platform"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "The Eligible Cardholder can avail more than 1 complimentary PL service if sufficient balance is available in the Times Black Travel Visa Wallet. The Eligible Cardholder will need to submit the details on the Times Black App. These details will be forwarded to OneVasco. Once the above details are shared, the Eligible Cardholder will need to share the Visa appointment date and time separately with OneVasco at timesblack@onevasco.com. OneVasco will make a note of the request and will inform the respective Visa application centre about the PL service request one day prior to the Visa appointment date and accordingly send confirmation to the Eligible Cardholder. Additional family members will be charged as per applicable rates. The Eligible Cardholder will need to pay the additional fees associated with the service (Mission Fee, Visa Application Centre Service Fee, Logistics/Courier Fee etc.) as applicable independently on the Times Black App. In case Cardholder wishes to avail Visa Concierge services in addition to this service, the charges for these services will need to be paid as per the applicable rates on the Times Black App, if sufficient credits are not available in the Times Black Travel Visa Wallet. No refunds are available for cancellations made within 48 hours of the scheduled service. Pricing for the service is subject to change. The Cardholder will be requested to provide the Invoice-cum-Receipt (ICR) copy to OneVasco once the Visa application is submitted. For any issues or changes, please write to: timesblack@onevasco.com and mention your service type and booking details. For any additional service requests, please write to: timesblack1@onevasco.com.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Complimentary Visa Application Centre Premium Lounge (PL) access up to a maximum of INR 10,000 with OneVasco.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Joining Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 10000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "OneVasco"
+                ],
+                "rewardDescription": "Complimentary Visa Concierge Services (VC) up to a maximum of INR 10,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Voucher is redeemed at OneVasco for Visa Concierge Services (VC).",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Times Black App",
+                    "OneVasco platform"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "The Eligible Cardholder can avail more than 1 complimentary VC, provided sufficient balance is available in the Times Black Travel Visa Wallet. The Eligible Cardholder will need to submit the details, excluding passport details, on the Times Black App. These details will be forwarded to OneVasco. Once the above details are shared, the Eligible Cardholder will need to share the passport details separately with OneVasco at timesblack@onevasco.com. OneVasco will reach out to the Eligible Cardholder for service fulfilment and support. These services cover only assistance with respect to Visa application filling. Checklist with step-by-step guide will be provided by OneVasco to the Eligible Cardholder. Additional family members will be charged as per the applicable rates. In case a Cardholder wishes to avail Premium Lounge services in addition to this service, the charges for these services will need to be paid as per the applicable rates on the Times Black App, if sufficient credits are not available in the Times Black Travel Visa Wallet. In case the Visa application is declined, no refund will be issued. Pricing for the service is subject to change. The Cardholder will be requested to provide the Invoice-cum-Receipt (ICR) copy to OneVasco once the Visa application is submitted. For any issues or changes, please reach out via the dedicated e-mail ID: timesblack@onevasco.com and mention your service type and booking details. For any additional service requests, please reach out via the dedicated e-mail ID: timesblack1@onevasco.com.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Complimentary Visa Concierge Services (VC) up to a maximum of INR 10,000 with OneVasco.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Joining Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Subscriptions and Memberships",
+            "rewardValue": {
+                "amount": 20,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "The Quorum Club"
+                ],
+                "rewardDescription": "Flat 20% off on joining fees on the standard memberships at The Quorum Club."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": {
+                    "unit": "months",
+                    "value": 6
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Contact The Quorum Club directly and pay using the credit card.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "The Quorum Club outlets"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "The offer is valid till Jun 30, 2025 only. The offer is applicable on new memberships only. For cancellation policy and refunds, please contact The Quorum Club directly. The Cardholder needs to contact The Quorum Club in case of any service-related issues. Membership price list is decided by The Quorum Club and is subject to change. The Eligible Cardholder is advised to check the membership fee applicable at the time of enrolment. Payment of membership fee should be initiated using Credit Card only, to avail the offer. 18% GST will be applicable over and above the membership fee. Final fee must be paid by the Cardholder. The payment of the membership fee will be triggered once the membership procedure of the Cardholder is completed. The Cardholder will be notified via e-mail or phone call. The offer will be applicable on the amount that is exclusive of taxes. This offer will be applicable only for the period mentioned above. Each membership provides full access to the Eligible Cardholder and the partner. Partner means a legal spouse or a partner residing at the same residence. The Cardholder will have to adhere to The Quorum Club’s membership approval process. The Quorum Club reserves the right to deny membership (without the need for an explanation) at the time of application. The payment will be processed only after the membership is accepted by The Quorum Club.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Flat 20% off on joining fees on the standard memberships at The Quorum Club.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "benefit_availability",
+                            "fieldDescription": "Benefit availability",
+                            "value": "Joining Benefit",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "offer_validity_date",
+                            "fieldDescription": "Offer validity date",
+                            "value": "Jun 30, 2025",
+                            "comparison_operator": "lte"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Subscriptions and Memberships",
+            "rewardValue": {
+                "amount": 15,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "The Quorum Club"
+                ],
+                "rewardDescription": "15% off on joining fees on other categories of memberships at The Quorum Club."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": {
+                    "unit": "months",
+                    "value": 6
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Contact The Quorum Club directly and pay using the credit card.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "The Quorum Club outlets"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "The offer is valid till Jun 30, 2025 only. The offer is applicable on new memberships only. For cancellation policy and refunds, please contact The Quorum Club directly. The Cardholder needs to contact The Quorum Club in case of any service-related issues. Membership price list is decided by The Quorum Club and is subject to change. The Eligible Cardholder is advised to check the membership fee applicable at the time of enrolment. Payment of membership fee should be initiated using Credit Card only, to avail the offer. 18% GST will be applicable over and above the membership fee. Final fee must be paid by the Cardholder. The payment of the membership fee will be triggered once the membership procedure of the Cardholder is completed. The Cardholder will be notified via e-mail or phone call. The offer will be applicable on the amount that is exclusive of taxes. This offer will be applicable only for the period mentioned above. Each membership provides full access to the Eligible Cardholder and the partner. Partner means a legal spouse or a partner residing at the same residence. The Cardholder will have to adhere to The Quorum Club’s membership approval process. The Quorum Club reserves the right to deny membership (without the need for an explanation) at the time of application. The payment will be processed only after the membership is accepted by The Quorum Club.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "15% off on joining fees on other categories of memberships at The Quorum Club.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "benefit_availability",
+                            "fieldDescription": "Benefit availability",
+                            "value": "Joining Benefit",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "offer_validity_date",
+                            "fieldDescription": "Offer validity date",
+                            "value": "Jun 30, 2025",
+                            "comparison_operator": "lte"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Dining",
+            "rewardValue": {
+                "amount": 20,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": 5000,
+                "applicableMerchantsOrDomains": [
+                    "Cafe Reed",
+                    "Zila",
+                    "Six80Nine"
+                ],
+                "rewardDescription": "20% discount and access to the restaurants of The Quorum Club – Cafe Reed in Mumbai, Zila in Hyderabad, Six80Nine in Gurgaon. To avail this offer, Cardholder needs to spend a minimum of INR 5,000. The offer is valid at the following restaurants:",
+                "restaurantLocations": [
+                    {
+                        "restaurantName": "Cafe Reed",
+                        "location": "The Quorum Mumbai 8th Floor, Tower 2A, One World Centre, Lower Parel, Mumbai 400013"
+                    },
+                    {
+                        "restaurantName": "Six80Nine",
+                        "location": "The Quorum Gurgaon Two Horizon Centre, First Floor, Golf Course Road, DLF Phase 5, Sector 43, Gurugram, Haryana 122002"
+                    },
+                    {
+                        "restaurantName": "Zila",
+                        "location": "The Quorum Hyderabad District 150, Gate 6, Elixir Tower, 4th Floor, Knowledge City Road, Madhapur, Hyderabad, Telangana 500081"
+                    }
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Inform staff about the offer before placing order/bill generation and pay using credit card.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Participating Restaurants of The Quorum Club"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "This offer cannot be availed with any other offer or discount programme and is not valid on Happy Hours. Prior reservation is mandatory to avail the offer. It is the responsibility of the eligible Cardholder to inform the staff about the intention to avail the offer while making the reservation. In case of any dietary needs please check with the restaurant while making the reservation. The offer shall not be available to walk-in Cardholders. Table reservation must be done 48 hours in advance. Alcoholic beverages will not be served to anyone below 21 years of age. This offer is applicable on a table reservation for up to 10 people only. Blackout dates: The offer is not applicable on special promotions, if there is an event or a private booking at the restaurant or during festivals. Please contact the restaurant directly for blackout dates. For further clarification, blackout dates shall mean the dates when the offer is not applicable and the same is decided by the respective restaurant. All disputes relating to billing, offer, services etc. shall be resolved at the outlet-level only. The offer can be availed multiple times during the offer period. To avail the offer, the Eligible Cardholder needs to inform the staff about the offer before the order is placed/bill is generated. It is the responsibility of the Eligible Cardholder to inform the staff that the payment will be made via Credit Card. The offer cannot be exchanged for cash. The offer is applicable on the amount which is inclusive of taxes. The offer is only applicable on dine-in and not valid on deliveries and take-away orders. All queries should be raised within 15 days from the offer end date. The offer is not applicable on alcohol bottles. Discount is only applicable on alcohol by the glass/peg.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "20% discount at select restaurants of The Quorum Club with a minimum spend of INR 5,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "benefit_availability",
+                            "fieldDescription": "Benefit availability",
+                            "value": "Joining Benefit",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "offer_validity_date",
+                            "fieldDescription": "Offer validity date",
+                            "value": "Jun 30, 2025",
+                            "comparison_operator": "lte"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 30,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "District 150 (The Quorum Club)"
+                ],
+                "rewardDescription": "30% off on all meeting rooms at District 150 and complimentary access to paid co-working areas."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": {
+                    "unit": "months",
+                    "value": 6
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Prior reservation is mandatory, pay advance using credit card to confirm booking.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "District 150 (The Quorum Club)"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Complimentary access to the co-working spaces and meeting rooms will be subject to availability. Eligible Cardholder needs to show a proof of identification along with a physical Credit Card at the venue, to avail the offer. Prior reservation is mandatory to avail the offer and is not available to walk-in Cardholders. For meeting room bookings, eligible Cardholder needs to pay an advance using the Credit Card to confirm the booking. All disputes relating to billing, offer, services etc. shall be resolved at the outlet level only. This offer is valid till Jun 30, 2025 only. The offer can be used multiple times during the offer period. The offer cannot be combined with any other offer or discount programme.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "30% off on all meeting rooms at District 150 and complimentary access to paid co-working areas.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "benefit_availability",
+                            "fieldDescription": "Benefit availability",
+                            "value": "Joining Benefit",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "offer_validity_date",
+                            "fieldDescription": "Offer validity date",
+                            "value": "Jun 30, 2025",
+                            "comparison_operator": "lte"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "currency": "NA"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "District 150 (The Quorum Club)"
+                ],
+                "rewardDescription": "Complimentary access to paid co-working areas at District 150"
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": {
+                    "unit": "months",
+                    "value": 6
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Prior reservation is mandatory.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "District 150 (The Quorum Club)"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Complimentary access to the co-working spaces and meeting rooms will be subject to availability. Eligible Cardholder needs to show a proof of identification along with a physical Credit Card at the venue, to avail the offer. Prior reservation is mandatory to avail the offer and is not available to walk-in Cardholders. This offer is valid till Jun 30, 2025 only.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Complimentary access to paid co-working areas at District 150.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "benefit_availability",
+                            "fieldDescription": "Benefit availability",
+                            "value": "Joining Benefit",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "offer_validity_date",
+                            "fieldDescription": "Offer validity date",
+                            "value": "Jun 30, 2025",
+                            "comparison_operator": "lte"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 10000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "EaseMyTrip"
+                ],
+                "rewardDescription": "Luxury stay gift voucher worth INR 10,000 for hotel bookings on Easemytrip.com."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Apply/quote the unique voucher number at the time of booking on Easemytrip.com.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Easemytrip.com"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "The voucher is valid for hotel bookings only on Easemytrip.com. The Cardholder must apply/quote the unique voucher number at the time of booking to avail the benefits. Any applicable convenience fee/processing fee/excess tour cost/Government taxes shall be payable at the time of booking (only if the package cost exceeds the voucher value). If a voucher is lost or stolen, EaseMyTrip will not be liable for replacement or compensation. The voucher cannot be clubbed with any other ongoing offer, discount/cashback/Bank offers or promotion. If the value of a purchase is less than the value of the voucher, then the eligible Cardholder can avail the discount up to the value of the purchase only. The balance voucher amount will be forfeited. If the value of a purchase is more than the value of the voucher then the balance amount can be paid through Internet Banking, Cards (Debit Cards/Credit Cards) and Mobile Wallet. Confirmation of any booking will be subject to availability at the time of booking and will be governed by the standard booking Terms & Conditions of Easemytrip.com. Easemytrip.com is not liable to pay for any difference in fare/tariff between the date of placing the redemption request and the date of using the voucher at the time of booking. No change or cash can be taken in exchange of this voucher. In case of cancellations, the voucher amount will not be refunded to the Cardholder.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Luxury stay gift voucher worth INR 10,000 from EaseMyTrip.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Joining Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Dining",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "currency": "NA"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Zomato"
+                ],
+                "rewardDescription": "Gift voucher for free annual membership - Zomato Gold."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Redemption of voucher code can only be done on the Zomato app for activating Zomato Gold membership.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Zomato app"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "The voucher will be valid for 3 months from the date of issuance of the voucher. Redemption of voucher code can only be done on the Zomato app for the purpose of activating the Zomato Gold membership. The voucher code can only be used once. The voucher code is only applicable in cities where Zomato Gold is available. The voucher code cannot be clubbed with any other ongoing offer. The voucher code once issued, will not be extended beyond expiry date. Renewal of membership will be available as per the standard Zomato Gold usage & user-based pricing as applicable otherwise on Zomato. For further details on Zomato Gold membership, visit the FAQs section on the Zomato app. Other Zomato Gold Terms and Conditions can be checked here.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Gift voucher for free annual membership - Zomato Gold.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Joining Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Health and Wellness",
+            "rewardValue": {
+                "amount": 3000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Toni&Guy"
+                ],
+                "rewardDescription": "Gift voucher worth INR 3,000 for Toni&Guy outlets across North, Central, West and North-East regions of India."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Prior appointment must be taken. Voucher applicable on all hair, beauty, makeup and nail services.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Toni&Guy outlets"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "The voucher cannot be used to purchase memberships, packages or loyalty points. The voucher value is inclusive of all taxes. Prior appointment must be taken by the eligible Cardholder or related persons. The voucher can be availed at Toni&Guy outlets across North, Central, West and North-East regions of India. This voucher is applicable on all hair, beauty, makeup and nail services. The discount is applicable only on services (not products).",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Gift voucher worth INR 3,000 from Toni&Guy.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Joining Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 1000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Interflora"
+                ],
+                "rewardDescription": "Gift voucher worth INR 1000 for Interflora app."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": {
+                    "unit": "years",
+                    "value": 1
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Voucher can be availed only on the Interflora app, by applying it at the checkout page.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Interflora app"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "The voucher is valid only for the Eligible Cardholder. The voucher can be availed only on the Interflora app, by applying it at the checkout page. The voucher can be availed across all Interflora products. The voucher code is valid for a period of one year from the date of issuance of the voucher. Any query regarding the usage of the voucher will be entertained only till the validity of the voucher. No query will be entertained after the expiry date. The voucher value will not be settled in cash under any circumstances. Any person availing this voucher shall be deemed to have accepted all the Terms and Conditions. In case of any disputes, the decision of Interflora will be final and binding.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Gift voucher worth INR 1000 from Interflora.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Joining Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 10000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 200000,
+                "applicableMerchantsOrDomains": [
+                    "Klook"
+                ],
+                "rewardDescription": "Gift voucher worth INR 10,000 on spends of a minimum of INR 2,00,000 with Klook."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Voucher is valid for bookings made through Klook’s website and mobile app.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Klook website",
+                    "Klook mobile app"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "This offer is valid from the date of issuance of the voucher until fully redeemed. This offer is valid only for bookings made through Klook’s website and mobile app, excluding listings from and on third party platforms. This offer does not apply to activities in the non-applicable activity list, including flights, Klook Gift Cards etc., unless otherwise stated. Promotions Terms and Conditions: The Promotions are limited and may differ in each city or country. The Promotions may be subject to Additional Terms and Conditions including but not limited to the validity period. Discount will be applied on the final price and displayed on the payment page if any Promotion is applied. No discount will be given if a Promotion fails to apply. Coupons featured on the page are valid only for an Indian Cardholder with an Indian phone number. Prices listed may be subject to service charges and prevailing government taxes where applicable. The Promotions cannot be exchanged for cash or used in conjunction with other promotional programmes, offers, discount cards, vouchers or VIP privileges unless otherwise stated. Klook reserves the right to require payment of fees or charges for any services offered by Klook. The Cardholder will pay all applicable fees or charges as described on Klook’s website and mobile app in connection with such services selected by the Cardholder. Klook reserves the right to suspend, cancel or modify any part of the Promotions (including but not limited to any amendment of these Additional Terms and Conditions) at any time without prior notice. All decisions by Klook in conjunction with the Promotions including but not limited to the offers, deals, terms of redemption and conduct are final and binding and no discussions will be entered into or correspondences entertained in this regard. By participating in the Promotions, the Cardholder hereby expressly acknowledges to be bound by these Terms and Conditions, Klook’s General Terms of Use (https://www.klook.com/en-IN/conditions/) and Klook’s Privacy Policy (https://www.klook.com/en-IN/policy/) as may be amended or modified from time to time at Klook’s sole discretion.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Gift voucher worth INR 10,000 from Klook on spends of a minimum of INR 2,00,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Milestone Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "fixed",
+                "currency": "NA"
+            },
+            "conditions": {
+                "minSpend": 500000,
+                "applicableMerchantsOrDomains": [
+                    "Avis"
+                ],
+                "rewardDescription": "Complimentary luxury airport transfers through Sedan on spends of a minimum of INR 5,00,000. Each Eligible Cardholder will be entitled to a maximum of 2 free rides."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Bookings through Times Black App, fulfilled by Avis.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Times Black App"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Each Eligible Cardholder will be entitled to a maximum of 2 free rides subject to fleet availability provided sufficient balance is available in the Times Black Mobility Wallet. Applicable cities for the offer - Bengaluru/ Hyderabad/ Noida/ Greater Noida/ Faridabad/ Ghaziabad/ Ahmedabad/ Pune/ Mumbai/ Delhi/ Gurgaon/ Vadodara/ Chandigarh/ Bhubaneswar/ Cochin/ Jaipur/ Udaipur/ Kolkata/ Agra. Municipal city limit: The distance from the customer's pick-up location to his/ her destination is restricted to: Bengaluru/ Hyderabad: 50 km, Rest of the cities: <40> km. The standard car offered to the Cardholder will be a Toyota Innova Hycross subject to availability. If the Toyota Innova Hycross is not available, Toyota Innova Crysta will be provided. Detailed Terms & Conditions for an Eligible Cardholder - https://www.avis.co.in/avis-terms-and-conditions-chauffur-drive. Cancellations are governed as per the cancellation policy of Avis. Points will be credited back to the Times Black Mobility Wallet as per the cancellation policy. Call Centre contact details - The Cardholder can send an e-mail to webreservations@avis.co.in or dial +91 124 4724850 or +91 8826782828.",
+                "redemptionLimit": {
+                    "limitCount": 2,
+                    "timePeriod": "yearly"
+                },
+                "redemptionCapPeriod": "yearly",
+                "isTransferable": false
+            },
+            "rewardDescription": "2 Complimentary luxury airport transfers through Sedan from Avis on spends of a minimum of INR 5,00,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Milestone Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "currency": "NA"
+            },
+            "conditions": {
+                "minSpend": 500000,
+                "applicableMerchantsOrDomains": [
+                    "Indian Travel House"
+                ],
+                "rewardDescription": "Complimentary luxury airport transfer through Sedan on spends of a minimum of INR 5,00,000. Each Eligible Cardholder will be entitled to 1 free car ride."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Bookings through ITH Centralised Reservation Desk at bookings@indiantravelhouse.com.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Email booking"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Each Eligible Cardholder will be entitled to 1 free car ride subject to fleet availability provided sufficient balance is available in the Times Black Mobility Wallet. For airport transfers, no deviations or waiting times are allowed. The one-way airport transfer rate applies only within the municipal limits of the respective city (up to <40> km one way). All car bookings are subject to availability. Indian Travel House (ITH) is not responsible for the loss of any belongings left by the Cardholder in the vehicle. Cancellation Policy: i. Before 24 hours of booking confirmation – No charge. Times Black Mobility Wallet points will be credited back for reuse in the Times Black App. ii. Before 4 hours of reporting time – No charge. Times Black Mobility Wallet points will be credited back for reuse in the Times Black App. iii. After the car is dispatched and before the reporting time – Times Black Mobility Wallet points will not be credited back for reuse in the Times Black App.1. After the car has been reported to the reporting address – Times Black Mobility Wallet points will not be credited back for reuse. 2. In case of ‘No Show’, Times Black Mobility Wallet points will not be credited back for reuse in the Times Black App. All bookings must be addressed only to the ITH Centralised Reservation Desk at bookings@indiantravelhouse.com which operates 24x7x365. For assistance, contact +91 9773890483/ 9773890485.",
+                "redemptionLimit": {
+                    "limitCount": 1,
+                    "timePeriod": "yearly"
+                },
+                "redemptionCapPeriod": "yearly",
+                "isTransferable": false
+            },
+            "rewardDescription": "1 Complimentary luxury airport transfer through Sedan from Indian Travel House on spends of a minimum of INR 5,00,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Milestone Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "currency": "NA"
+            },
+            "conditions": {
+                "minSpend": 500000,
+                "applicableMerchantsOrDomains": [
+                    "BLADE India"
+                ],
+                "rewardDescription": "Complimentary luxury airport transfer through air on spends of a minimum of INR 5,00,000. Only 1 complimentary airport transfer can be availed by the Eligible Cardholder."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Bookings through the Times Black App, fulfilled by BLADE India.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Times Black App"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Only 1 complimentary airport transfer can be availed by the Eligible Cardholder provided sufficient balance is available in the Times Black Mobility Wallet. All bookings have to be made at least 48 hours prior to departure. BLADE India will issue tickets promptly on confirmation of the request subject to availability. Issued tickets cannot be cancelled. Eligible Cardholder can avail this benefit one time only. Additional passenger requests to be sent to BLADE India directly, which can be booked by the Eligible Cardholder at prevailing rates. Point of contact for reservations - Name: Kanchan, Designation: Charter Manager, Contact Number: 18001025233, E-mail ID: kanchan@flyblade.in. For cancellations before ticket issuance, a Cardholder can connect with the Blade Customer Support: Phone no. 18001025233, E-mail ID - customerservice@flyblade.in.",
+                "redemptionLimit": {
+                    "limitCount": 1,
+                    "timePeriod": "yearly"
+                },
+                "redemptionCapPeriod": "yearly",
+                "isTransferable": false
+            },
+            "rewardDescription": "1 Complimentary luxury airport transfer through air from BLADE India on spends of a minimum of INR 5,00,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Milestone Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Luxury",
+            "rewardValue": {
+                "amount": 10000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 1000000,
+                "applicableMerchantsOrDomains": [
+                    "Tata CLiQ Luxury"
+                ],
+                "rewardDescription": "Gift voucher worth INR 10,000 on spends of a minimum of INR 10,00,000 for Tata CLiQ Luxury."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Register as a customer and register the Gift Card to avail the same on www.tatacliq.com.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "www.tatacliq.com"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "It is mandatory to register as a customer and register the Gift Card to avail the same. The registration process is mandated by the Reserve Bank of India for all customers of Tata CLiQ Gift Cards prior to redemption of the same. Every holder of a Gift Card shall be required to add the value stored on such Gift Card into the Tata CLiQ customer account as a pre-requisite to the redemption of.The loading of the Gift Card onto the Tata CLiQ customer account shall constitute registration of the customer. Tata CLiQ shall honour and consider requests for blocking of Gift Cards only from the customers who have registered as per the terms above. Please refer to the Customer Grievance policy for liability, dispute and unauthorised transaction related aspects on https://www.qwikcilver.com/grievance-policy/. The conditions of use at https://www.tatacliq.com/cliq-cash-tnc apply to a Gift Card.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Gift voucher worth INR 10,000 from Tata CLiQ Luxury on spends of a minimum of INR 10,00,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Milestone Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 20000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 2000000,
+                "applicableMerchantsOrDomains": [
+                    "Ayatana Resorts"
+                ],
+                "rewardDescription": "Gift voucher worth INR 20,000 on spends of a minimum of INR 20,00,000 for Ayatana Coorg and Ayatana Ooty properties."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Redeem the voucher only once, applicable only on Ayatana Coorg and Ayatana Ooty properties.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Ayatana Coorg",
+                    "Ayatana Ooty"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Cardholder can redeem the voucher only once. The voucher is applicable only on Ayatana Coorg and Ayatana Ooty properties. Once booked, the dates of the stay can be postponed only once if the intimation reaches us up to at least 14 days prior to the booked check-in date. Cancellation is not applicable once the booking is made. Cottages/ chalets/ villas are subject to availability at the time of confirming the dates. The voucher is redeemable only on non-blackout dates. The blackout dates are: - i. Christmas & New Year - Dec 20, 2024 to Jan 02, 2025 - ii. Dussehra – Sep 30, 2025 to Oct 04, 2025 - iii. Diwali – Oct 20, 2025 to Oct 24, 2025. The giveaway will be on the breakfast plan (Continental Plan) only for 2 adults for one room night. All Food and Beverages besides breakfast for 2 adults (only once) will be charged on actuals. For any kind of customer support including cancellations, please write to us at reservations@ayatanacoorg.com or call us at +91 9945502000.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Gift voucher worth INR 20,000 from Ayatana Resorts on spends of a minimum of INR 20,00,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Milestone Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "Fuel",
+                    "Rent Payments",
+                    "Utilities payment",
+                    "Insurance premium payment",
+                    "Education payment",
+                    "Government payments"
+                ],
+                "applicableMerchantsOrDomains": [
+                    "Domestic Transactions"
+                ],
+                "cap": {
+                    "amount": 5000,
+                    "period": "monthly"
+                },
+                "rewardDescription": "Get 2% ICICI Bank reward points on all eligible domestic transactions. Capping of 5000 ICICI Bank reward points is present in each statement cycle for the following categories: Utilities payment, Insurance premium payment, Education payment, Government payments like house tax, advance tax, fines, court payments, postal payments etc."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly",
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "ICICI Bank reward points can be tracked & redeemed through the iMobile application and Internet Banking across categories from movie and travel vouchers to lifestyle products, mobiles and appliances.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "iMobile application",
+                    "Internet Banking",
+                    "ICICI Bank Customer Care"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Reward points on transactions converted into EMIs will be reversed. Reward points will not be earned on fuel transactions and rent payments.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "2% ICICI Bank reward points on all eligible domestic transactions with a monthly cap of 5000 points for specific categories.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Reward Point",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": 2.5,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "Fuel",
+                    "Rent Payments"
+                ],
+                "applicableMerchantsOrDomains": [
+                    "International Transactions"
+                ],
+                "rewardDescription": "Get 2.5% ICICI Bank reward points on all eligible international transactions."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly",
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "ICICI Bank reward points can be tracked & redeemed through the iMobile application and Internet Banking across categories from movie and travel vouchers to lifestyle products, mobiles and appliances.",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "iMobile application",
+                    "Internet Banking",
+                    "ICICI Bank Customer Care"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Reward points on transactions converted into EMIs will be reversed. Reward points will not be earned on fuel transactions and rent payments.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "2.5% ICICI Bank reward points on all eligible international transactions.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Reward Point",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Fuel",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Fuel Transactions"
+                ],
+                "cap": {
+                    "amount": 1000,
+                    "period": "monthly"
+                },
+                "rewardDescription": "Fuel surcharge waiver of 1% on all fuel transactions. Maximum waiver of ₹ 1000 per statement cycle can be provided."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly",
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Fuel surcharge waiver is automatically applied to the statement.",
+                "processingTime": "immediate",
+                "eligibleChannels": [
+                    "Fuel Transactions"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": null,
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "1% fuel surcharge waiver on all fuel transactions, capped at ₹ 1000 per statement cycle.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Bank Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": "unlimited",
+                "unit": "fixed",
+                "currency": "NA"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "International Airport Lounges"
+                ],
+                "rewardDescription": "Unlimited international lounge access with Priority Pass Membership for Primary and Add-on Cardholders."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Presentation of the Priority Pass Card at the participating airport lounge is mandatory to avail access.",
+                "processingTime": "immediate",
+                "eligibleChannels": [
+                    "Priority Pass Lounges"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "A Primary Cardholder and an Add-on Cardholder can enjoy unlimited international lounge access with Priority Pass Membership. Presentation of the Priority Pass Card at the participating airport lounge is mandatory to avail access. Guest visits using Priority pass will be charged at USD 29 + GST per visit per guest.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Unlimited international lounge access with Priority Pass Membership.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Bank Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": "unlimited",
+                "unit": "fixed",
+                "currency": "NA"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Domestic Airport Lounges"
+                ],
+                "rewardDescription": "Unlimited complimentary domestic lounge access through Times Black ICICI Bank Credit Card for Primary & Add-on Cardholders."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Swipe the Times Black ICICI Bank Credit Card to avail the complimentary lounge access.",
+                "processingTime": "immediate",
+                "eligibleChannels": [
+                    "Domestic Lounges"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "For lounge visits within India, Primary & Add-on Cardholders can avail unlimited complimentary lounge access through Times Black ICICI Bank Credit Card. Please swipe the Times Black ICICI Bank Credit Card to avail the complimentary lounge access.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Unlimited complimentary domestic lounge access.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Bank Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 12000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Flight Bookings",
+                    "Hotel Bookings"
+                ],
+                "cap": {
+                    "amount": 12000,
+                    "period": "yearly"
+                },
+                "rewardDescription": "Zero cancellation charges on flight and hotel bookings. Maximum indemnification limit per transaction is INR 12000. Maximum indemnification limit per card is INR 12000. Coverage is applicable for first two cancellations (domestic flight/ hotel/ movie)."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Cardholder will raise a claim through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claim (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (including payment) once all the documents are received.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Coverage is applicable for first two cancellations (domestic flight/ hotel/ movie). Coverage is provided till 24 hours before the travel/ stay date. Coverage is applicable for 4 star/ 5 star hotels. Claim reporting timelines for a Cardholder - Intimation of claim to the Bank by the Cardholder should be made within 60 days from the date of the incident. All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event.",
+                "redemptionLimit": {
+                    "limitCount": 2,
+                    "timePeriod": "yearly"
+                },
+                "redemptionCapPeriod": "yearly",
+                "isTransferable": false
+            },
+            "rewardDescription": "Zero cancellation charges on flight and hotel bookings up to INR 12000 per transaction and card, for the first two cancellations. Coverage is applicable for 4 star/ 5 star hotels.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Bank Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Entertainment",
+            "rewardValue": {
+                "amount": 12000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Movie Bookings"
+                ],
+                "cap": {
+                    "amount": 12000,
+                    "period": "yearly"
+                },
+                "rewardDescription": "Zero cancellation charges on movie bookings. Maximum indemnification limit per transaction is INR 12000. Maximum indemnification limit per card is INR 12000. Coverage is applicable for first two cancellations (domestic flight/ hotel/ movie)."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Cardholder will raise a claim through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claim (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (including payment) once all the documents are received.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Coverage is applicable for first two cancellations (domestic flight/ hotel/ movie). Coverage is provided till 24 hours before the travel/ stay date. Claim reporting timelines for a Cardholder - Intimation of claim to the Bank by the Cardholder should be made within 60 days from the date of the incident. Payment for domestic flight/ hotel/ movie ticket bookings should be made only through the Times Black ICICI Bank Credit Card. All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event.",
+                "redemptionLimit": {
+                    "limitCount": 2,
+                    "timePeriod": "yearly"
+                },
+                "redemptionCapPeriod": "yearly",
+                "isTransferable": false
+            },
+            "rewardDescription": "Zero cancellation charges on movie bookings up to INR 12000 per transaction and card, for the first two cancellations. Coverage is applicable for first two cancellations (domestic flight/ hotel/ movie).",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Bank Benefit",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 30000000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Air Travel"
+                ],
+                "rewardDescription": "Personal Accident due to Air (Death only) cover of ₹ 3,00,00,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim to be raised through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claims (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (Including payment) once all the documents are received. Claim documents have to be submitted by ICICI Bank/ Cardholder within <60> days from the date of intimation to ICICI Lombard.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event. All insurance benefits are available on the Primary Card only. There is no insurance cover on the Supplementary Cards. Please ensure that the minimum amount due on the Credit Card is paid at all times to avail insurance benefits. The insurance cover is valid only on the Primary Card. Only the Primary Cardholder is covered. Active Card clause - Cover is applicable only on an active card. An active card is defined as a card with one transaction/ activity on any ATM/ POS/ E-commerce terminal in the last 90 days from the date of loss. All cards should have Chip and PIN technology built in.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Personal Accident due to Air (Death only) cover of ₹ 3,00,00,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Comprehensive Insurance Coverage",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Shopping",
+            "rewardValue": {
+                "amount": 140000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "rewardDescription": "Purchase Protection cover of ₹ 1,40,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim to be raised through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claims (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (Including payment) once all the documents are received. Claim documents have to be submitted by ICICI Bank/ Cardholder within <60> days from the date of intimation to ICICI Lombard.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event. All insurance benefits are available on the Primary Card only. There is no insurance cover on the Supplementary Cards. Please ensure that the minimum amount due on the Credit Card is paid at all times to avail insurance benefits. The insurance cover is valid only on the Primary Card. Only the Primary Cardholder is covered. Active Card clause - Cover is applicable only on an active card. An active card is defined as a card with one transaction/ activity on any ATM/ POS/ E-commerce terminal in the last 90 days from the date of loss. All cards should have Chip and PIN technology built in.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Purchase Protection cover of ₹ 1,40,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Comprehensive Insurance Coverage",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 100000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "rewardDescription": "Credit Shield cover of ₹ 1,00,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim to be raised through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claims (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (Including payment) once all the documents are received. Claim documents have to be submitted by ICICI Bank/ Cardholder within <60> days from the date of intimation to ICICI Lombard.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event. All insurance benefits are available on the Primary Card only. There is no insurance cover on the Supplementary Cards. Please ensure that the minimum amount due on the Credit Card is paid at all times to avail insurance benefits. The insurance cover is valid only on the Primary Card. Only the Primary Cardholder is covered. Active Card clause - Cover is applicable only on an active card. An active card is defined as a card with one transaction/ activity on any ATM/ POS/ E-commerce terminal in the last 90 days from the date of loss. All cards should have Chip and PIN technology built in.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Credit Shield cover of ₹ 1,00,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Comprehensive Insurance Coverage",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 84000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "rewardDescription": "Loss of Checked in Baggage cover of ₹ 84,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim to be raised through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claims (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (Including payment) once all the documents are received. Claim documents have to be submitted by ICICI Bank/ Cardholder within <60> days from the date of intimation to ICICI Lombard.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event. All insurance benefits are available on the Primary Card only. There is no insurance cover on the Supplementary Cards. Please ensure that the minimum amount due on the Credit Card is paid at all times to avail insurance benefits. The insurance cover is valid only on the Primary Card. Only the Primary Cardholder is covered. Active Card clause - Cover is applicable only on an active card. An active card is defined as a card with one transaction/ activity on any ATM/ POS/ E-commerce terminal in the last 90 days from the date of loss. All cards should have Chip and PIN technology built in.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Loss of Checked in Baggage cover of ₹ 84,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Comprehensive Insurance Coverage",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 100000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "rewardDescription": "Plane Hijacking cover of ₹ 1,00,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim to be raised through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claims (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (Including payment) once all the documents are received. Claim documents have to be submitted by ICICI Bank/ Cardholder within <60> days from the date of intimation to ICICI Lombard.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event. All insurance benefits are available on the Primary Card only. There is no insurance cover on the Supplementary Cards. Please ensure that the minimum amount due on the Credit Card is paid at all times to avail insurance benefits. The insurance cover is valid only on the Primary Card. Only the Primary Cardholder is covered. Active Card clause - Cover is applicable only on an active card. An active card is defined as a card with one transaction/ activity on any ATM/ POS/ E-commerce terminal in the last 90 days from the date of loss. All cards should have Chip and PIN technology built in.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Plane Hijacking cover of ₹ 1,00,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Comprehensive Insurance Coverage",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "amount": 50000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "rewardDescription": "Card Liability Cover (Lost Card Liability, Counterfeit/ Skimming/ Phishing and Online Fraud Protection) of ₹ 50,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim to be raised through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claims (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (Including payment) once all the documents are received. Claim documents have to be submitted by ICICI Bank/ Cardholder within <60> days from the date of intimation to ICICI Lombard.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event. All insurance benefits are available on the Primary Card only. There is no insurance cover on the Supplementary Cards. Please ensure that the minimum amount due on the Credit Card is paid at all times to avail insurance benefits. The insurance cover is valid only on the Primary Card. Only the Primary Cardholder is covered. Active Card clause - Cover is applicable only on an active card. An active card is defined as a card with one transaction/ activity on any ATM/ POS/ E-commerce terminal in the last 90 days from the date of loss. All cards should have Chip and PIN technology built in.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Card Liability Cover (Lost Card Liability, Counterfeit/ Skimming/ Phishing and Online Fraud Protection) of ₹ 50,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Comprehensive Insurance Coverage",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Health and Wellness",
+            "rewardValue": {
+                "amount": 50000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "rewardDescription": "Medical Expenses for injury caused by and arising out of Rail/ Road accident cover of ₹ 50,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim to be raised through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claims (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (Including payment) once all the documents are received. Claim documents have to be submitted by ICICI Bank/ Cardholder within <60> days from the date of intimation to ICICI Lombard.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event. All insurance benefits are available on the Primary Card only. There is no insurance cover on the Supplementary Cards. Please ensure that the minimum amount due on the Credit Card is paid at all times to avail insurance benefits. The insurance cover is valid only on the Primary Card. Only the Primary Cardholder is covered. Active Card clause - Cover is applicable only on an active card. An active card is defined as a card with one transaction/ activity on any ATM/ POS/ E-commerce terminal in the last 90 days from the date of loss. All cards should have Chip and PIN technology built in.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Medical Expenses for injury caused by and arising out of Rail/ Road accident cover of ₹ 50,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Comprehensive Insurance Coverage",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 35000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "rewardDescription": "Loss of Passport and travel related documents cover of ₹ 35,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim to be raised through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claims (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (Including payment) once all the documents are received. Claim documents have to be submitted by ICICI Bank/ Cardholder within <60> days from the date of intimation to ICICI Lombard.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event. All insurance benefits are available on the Primary Card only. There is no insurance cover on the Supplementary Cards. Please ensure that the minimum amount due on the Credit Card is paid at all times to avail insurance benefits. The insurance cover is valid only on the Primary Card. Only the Primary Cardholder is covered. Active Card clause - Cover is applicable only on an active card. An active card is defined as a card with one transaction/ activity on any ATM/ POS/ E-commerce terminal in the last 90 days from the date of loss. All cards should have Chip and PIN technology built in.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Loss of Passport and travel related documents cover of ₹ 35,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Comprehensive Insurance Coverage",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 25000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "rewardDescription": "Baggage Insurance cover of ₹ 25,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim to be raised through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claims (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (Including payment) once all the documents are received. Claim documents have to be submitted by ICICI Bank/ Cardholder within <60> days from the date of intimation to ICICI Lombard.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event. All insurance benefits are available on the Primary Card only. There is no insurance cover on the Supplementary Cards. Please ensure that the minimum amount due on the Credit Card is paid at all times to avail insurance benefits. The insurance cover is valid only on the Primary Card. Only the Primary Cardholder is covered. Active Card clause - Cover is applicable only on an active card. An active card is defined as a card with one transaction/ activity on any ATM/ POS/ E-commerce terminal in the last 90 days from the date of loss. All cards should have Chip and PIN technology built in.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Baggage Insurance cover of ₹ 25,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Comprehensive Insurance Coverage",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 21000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "rewardDescription": "Delay of Checked in Baggage cover of ₹ 21,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim to be raised through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claims (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (Including payment) once all the documents are received. Claim documents have to be submitted by ICICI Bank/ Cardholder within <60> days from the date of intimation to ICICI Lombard.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event. All insurance benefits are available on the Primary Card only. There is no insurance cover on the Supplementary Cards. Please ensure that the minimum amount due on the Credit Card is paid at all times to avail insurance benefits. The insurance cover is valid only on the Primary Card. Only the Primary Cardholder is covered. Active Card clause - Cover is applicable only on an active card. An active card is defined as a card with one transaction/ activity on any ATM/ POS/ E-commerce terminal in the last 90 days from the date of loss. All cards should have Chip and PIN technology built in.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Delay of Checked in Baggage cover of ₹ 21,000.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Comprehensive Insurance Coverage",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 21000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "rewardDescription": "Missing of Connecting International Flight during transit cover of ₹ 21,000."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim to be raised through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claims (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (Including payment) once all the documents are received. Claim documents have to be submitted by ICICI Bank/ Cardholder within <60> days from the date of intimation to ICICI Lombard.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "*Applicable for international travel only and not for domestic travel and only when the tickets are purchased using the Times Black ICICI Bank Credit Card. Travel insurance covers international travel only. All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event. All insurance benefits are available on the Primary Card only. There is no insurance cover on the Supplementary Cards. Please ensure that the minimum amount due on the Credit Card is paid at all times to avail insurance benefits. The insurance cover is valid only on the Primary Card. Only the Primary Cardholder is covered. Active Card clause - Cover is applicable only on an active card. An active card is defined as a card with one transaction/ activity on any ATM/ POS/ E-commerce terminal in the last 90 days from the date of loss. All cards should have Chip and PIN technology built in.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Missing of Connecting International Flight during transit cover of ₹ 21,000. Applicable for international travel only and not for domestic travel and only when the tickets are purchased using the Times Black ICICI Bank Credit Card. Travel insurance covers international travel only.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Comprehensive Insurance Coverage",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "amount": 17500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "rewardDescription": "Delay in Flight cover of ₹ 17,500."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Claim to be raised through Call Centre or E-mail (ihealthcare). Claim number will be generated and the Bank executive will send a letter of requirement to process the claim to the claimant. ICICI Lombard will confirm with ICICI Bank the eligibility of the claims (card and purchase details). The Cardholder will share all the documents. If there is a further requirement for documents or details, our claims team will contact the customer. ICICI Lombard will take 14 days to process the claim (Including payment) once all the documents are received. Claim documents have to be submitted by ICICI Bank/ Cardholder within <60> days from the date of intimation to ICICI Lombard.",
+                "processingTime": "14 days",
+                "eligibleChannels": [
+                    "Call Centre",
+                    "E-mail"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "*Applicable for international travel only and not for domestic travel and only when the tickets are purchased using the Times Black ICICI Bank Credit Card. Travel insurance covers international travel only. All insurance benefits will be applicable only in case the Times Black ICICI Bank Credit Card has been used at least once in the last 60 days prior to the event. All insurance benefits are available on the Primary Card only. There is no insurance cover on the Supplementary Cards. Please ensure that the minimum amount due on the Credit Card is paid at all times to avail insurance benefits. The insurance cover is valid only on the Primary Card. Only the Primary Cardholder is covered. Active Card clause - Cover is applicable only on an active card. An active card is defined as a card with one transaction/ activity on any ATM/ POS/ E-commerce terminal in the last 90 days from the date of loss. All cards should have Chip and PIN technology built in.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Delay in Flight cover of ₹ 17,500. Applicable for international travel only and not for domestic travel and only when the tickets are purchased using the Times Black ICICI Bank Credit Card. Travel insurance covers international travel only.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Comprehensive Insurance Coverage",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Others",
+            "rewardValue": {
+                "amount": "various",
+                "unit": "fixed",
+                "currency": "NA"
+            },
+            "conditions": {
+                "rewardDescription": "A range of emergency auto assistance services are available in New Delhi, Mumbai, Kolkata, Hyderabad, Bengaluru and Chennai including towing, repair and alternative travel assistance."
+            },
+            "schedule": {
+                "rewardAccrualFrequency": null,
+                "rewardExpiry": null
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Contact i-Assist team on 1800 26 70731 (Toll-free for MTNL/ BSNL) or 022 6787 2016 (Standard call charges applicable).",
+                "processingTime": null,
+                "eligibleChannels": [
+                    "Phone"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Concierge Services: Our team of service professionals at i-Assist, our 24x7 concierge service takes care of every need right from finding the right gift and making restaurant reservations to travel and hotel reservations and even delivering movie tickets at the Cardholder’s doorstep. The services include: 1. Restaurant referral and reservation 2. Flower & gift assistance 3. Flight referral and reservation 4. Hotel referral and reservation 5. Car rental & limousine service 6. Booking & delivery of movie tickets* 7. Medical concierge privileges ** 8. Emergency auto assistance across India# *This service is currently available in New Delhi, Mumbai, Bengaluru and Chennai. **In case of any unforeseen situation, if the Cardholder needs to be moved to a place where appropriate medical care is available, the i-Assist team can arrange for air and/or surface transportation and communication to move him/her to the required hospital. i-Assist can also connect him/her with the physicians, hospitals, clinics, dentists and dental clinics on request. The Cardholder can also ask to set up appointments with local doctors. #A range of emergency auto assistance services are available in New Delhi, Mumbai, Kolkata, Hyderabad, Bengaluru and Chennai including towing, repair and alternative travel assistance. This service is currently available in New Delhi, Mumbai, Bengaluru and Chennai.",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Concierge Services including Restaurant referral and reservation, Flower & gift assistance, Flight referral and reservation, Hotel referral and reservation, Car rental & limousine service, Booking & delivery of movie tickets, Medical concierge privileges, Emergency auto assistance.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "benefit_availability",
+                    "fieldDescription": "Benefit availability",
+                    "value": "Concierge Services",
+                    "comparison_operator": "eq"
+                }
+            }
+        }
+    ]
+}

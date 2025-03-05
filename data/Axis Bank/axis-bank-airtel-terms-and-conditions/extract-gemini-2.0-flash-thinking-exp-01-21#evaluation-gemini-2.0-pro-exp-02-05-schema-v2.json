@@ -1,0 +1,158 @@
+{
+    "card_info": {
+        "card_name": "AIRTEL AXIS BANK CREDIT CARD",
+        "bank": "AXIS BANK",
+        "effective_date": "2024-04-20",
+        "last_updated": "2024-04-20",
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": [
+            {
+                "transaction_type": "Airtel Bill payments",
+                "fee_type": "percentage",
+                "fee_value": 25,
+                "maximum_cap": 250
+            },
+            {
+                "transaction_type": "Utility payments",
+                "fee_type": "percentage",
+                "fee_value": 10,
+                "maximum_cap": 250
+            }
+        ],
+        "extraction_errors": [
+            "Could not extract 'late_payment_charges' because no information about late payment fee structure is mentioned in the context.",
+            "Could not extract 'finance_charges' because no information about monthly percentage rate applied for revolving credit is mentioned in the context.",
+            "Could not extract 'fuel_surcharge_waiver' because no information about fuel surcharge waiver is mentioned in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "AIRTEL AXIS BANK Credit Card",
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "The 'domestic_lounges' field is required but could not be extracted from the context. The context mentions 'domestic lounge access program' but does not list any specific lounge names.",
+            "The 'international_lounges' field is required but could not be extracted from the context. The context only refers to 'domestic lounge access program' and does not provide any information about international lounge access.",
+            "The 'free_lounge_visits' field is required but could not be extracted from the context. The context describes conditional lounge access based on spending but does not specify a number of free lounge visits.",
+            "The 'eligibility_criteria' field within 'free_night_awards' is required but could not be extracted from the context. The context does not mention any free night award benefits.",
+            "The 'partner_hotels' field within 'free_night_awards' is required but could not be extracted from the context. The context does not mention any free night award benefits or partner hotels.",
+            "The 'value_cap' field within 'free_night_awards' is required but could not be extracted from the context. The context does not mention any free night award benefits or value cap."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "cashback",
+            "Category": "Utilities",
+            "rewardValue": {
+                "amount": 25,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Airtel Bill Payments (Mobile, Broadband, Wi-Fi and DTH) through Airtel Thanks app"
+                ],
+                "cap": {
+                    "amount": 250,
+                    "period": "monthly"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Credited to card statement"
+            },
+            "rewardDescription": "25% cashback on Airtel Bill payments (Mobile, Broadband, Wi-Fi and DTH) through Airtel Thanks app with a capping of Rs.250",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "payment_method",
+                    "fieldDescription": "Payment method for Airtel bills",
+                    "value": "Airtel Thanks app",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "cashback",
+            "Category": "Utilities",
+            "rewardValue": {
+                "amount": 10,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Utility payments (gas, electricity, etc.) through Airtel Thanks app"
+                ],
+                "cap": {
+                    "amount": 250,
+                    "period": "monthly"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Credited to card statement"
+            },
+            "rewardDescription": "10% cashback on Utility payments (gas, electricity, etc.) through Airtel Thanks app with a capping of Rs.250",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "payment_method",
+                    "fieldDescription": "Payment method for utility payments",
+                    "value": "Airtel Thanks app",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": null,
+            "conditions": {
+                "minSpend": 50000,
+                "minSpendPeriod": "Previous 3 calendar months",
+                "applicableMerchantsOrDomains": [
+                    "Domestic Airport Lounges"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Present credit card at participating lounges"
+            },
+            "rewardDescription": "Domestic airport lounge access based on card spends in the previous 3 calendar months.",
+            "customConditions": {
+                "condition": {
+                    "type": "range",
+                    "field": "card_spend",
+                    "fieldDescription": "Card spends in the previous 3 calendar months",
+                    "range": {
+                        "gte": 50000
+                    }
+                }
+            }
+        }
+    ]
+}

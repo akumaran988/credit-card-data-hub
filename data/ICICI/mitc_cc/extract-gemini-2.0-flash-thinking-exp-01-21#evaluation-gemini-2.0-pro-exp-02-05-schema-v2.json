@@ -1,0 +1,1721 @@
+{
+    "card_info": {
+        "card_name": "ICICI Bank Credit Card",
+        "bank": "ICICI Bank",
+        "effective_date": null,
+        "last_updated": "2025-01-28",
+        "extraction_errors": [
+            "Could not find the effective date for the credit card terms and conditions. The document mentions 'w.e.f.' (with effect from) for many specific charges and fees, but not a general effective date for the entire terms and conditions document."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": [
+            {
+                "outstanding_amount_slab": "Between ₹100-₹500",
+                "charge": 100
+            },
+            {
+                "outstanding_amount_slab": "Between ₹501- ₹1,000",
+                "charge": 500
+            },
+            {
+                "outstanding_amount_slab": "Between ₹1,001- ₹5,000",
+                "charge": 600
+            },
+            {
+                "outstanding_amount_slab": "Between ₹5,001-₹10,000",
+                "charge": 750
+            },
+            {
+                "outstanding_amount_slab": "Between ₹10,001-₹25,000",
+                "charge": 900
+            },
+            {
+                "outstanding_amount_slab": "Between ₹25,001- ₹50,000",
+                "charge": 1100
+            },
+            {
+                "outstanding_amount_slab": "More than ₹50,000",
+                "charge": 1300
+            }
+        ],
+        "finance_charges": 3.75,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 4000,
+            "maximum_transaction": 4000,
+            "maximum_waiver": 50000
+        },
+        "special_transaction_fees": [
+            {
+                "transaction_type": "Rent Pay Transactions",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Fuel Transaction (exceeding Rs. 10,000)",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": null,
+                "effective_date": "2024-11-15"
+            },
+            {
+                "transaction_type": "Utility Transaction (exceeding Rs. 50,000)",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": null,
+                "effective_date": "2024-11-15"
+            },
+            {
+                "transaction_type": "Education Payment made through third-party apps",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": null,
+                "effective_date": "2024-11-15"
+            },
+            {
+                "transaction_type": "Cash Advance – Transaction Fee",
+                "fee_type": "percentage",
+                "fee_value": 2.5,
+                "maximum_cap": 500
+            },
+            {
+                "transaction_type": "Foreign Currency Transactions",
+                "fee_type": "percentage",
+                "fee_value": 3.5,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Dynamic Currency Conversion Fee",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": null,
+                "effective_date": "2024-03-01"
+            },
+            {
+                "transaction_type": "Card replacement fee",
+                "fee_type": "flat",
+                "fee_value": 200,
+                "maximum_cap": null,
+                "effective_date": "2024-07-01"
+            },
+            {
+                "transaction_type": "Redemption Handling Fee - Hand-picked Rewards Scheme",
+                "fee_type": "flat",
+                "fee_value": 99,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Redemption Handling Fee - ICICI Bank Rewards Scheme",
+                "fee_type": "flat",
+                "fee_value": 99,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Redemption Handling Fee - Mine Cash Statement Credit Redemptions",
+                "fee_type": "flat",
+                "fee_value": 99,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Redemption Handling Fee - Mine Cash Catalogue Based Redemptions",
+                "fee_type": "flat",
+                "fee_value": 25,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Redemption Handling Fee - Catalogue Based Redemptions",
+                "fee_type": "flat",
+                "fee_value": 99,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Redemption Handling Fee - Online and in-store redemptions at Online Partner Brands",
+                "fee_type": "flat",
+                "fee_value": 25,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Over-limit charges",
+                "fee_type": "percentage",
+                "fee_value": 2.5,
+                "maximum_cap": 550
+            },
+            {
+                "transaction_type": "Fee on cash payment at branches",
+                "fee_type": "flat",
+                "fee_value": 100,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Cheque / Cash pick-up fee",
+                "fee_type": "flat",
+                "fee_value": 100,
+                "maximum_cap": null,
+                "effective_date": "2024-07-01"
+            },
+            {
+                "transaction_type": "Charge slip request",
+                "fee_type": "flat",
+                "fee_value": 100,
+                "maximum_cap": null,
+                "effective_date": "2024-07-01"
+            },
+            {
+                "transaction_type": "Dial-a-draft – transaction fee",
+                "fee_type": "percentage",
+                "fee_value": 3,
+                "maximum_cap": 300,
+                "effective_date": "2024-07-01"
+            },
+            {
+                "transaction_type": "Outstation cheque processing fee",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": 100,
+                "effective_date": "2024-07-01"
+            },
+            {
+                "transaction_type": "Duplicate statement request (beyond 3 months)",
+                "fee_type": "flat",
+                "fee_value": 100,
+                "maximum_cap": null,
+                "effective_date": "2024-07-01"
+            },
+            {
+                "transaction_type": "Railway booking – surcharge - Internet transactions",
+                "fee_type": "percentage",
+                "fee_value": 1.8,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Railway booking – surcharge - Other bookings",
+                "fee_type": "percentage",
+                "fee_value": 2.5,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Railway booking – surcharge - Cards on American Express network",
+                "fee_type": "percentage",
+                "fee_value": 1.8,
+                "maximum_cap": 10
+            },
+            {
+                "transaction_type": "Goods and Services Tax (GST)",
+                "fee_type": "percentage",
+                "fee_value": 18,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Instalment Products ROI - 3 months",
+                "fee_type": "percentage",
+                "fee_value": 15.99,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Instalment Products ROI - 6 months",
+                "fee_type": "percentage",
+                "fee_value": 15.99,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Instalment Products ROI - 9 months",
+                "fee_type": "percentage",
+                "fee_value": 15.99,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Instalment Products ROI - 12 months",
+                "fee_type": "percentage",
+                "fee_value": 15.99,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Instalment Products ROI - 18 months",
+                "fee_type": "percentage",
+                "fee_value": 15.99,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Instalment Products ROI - 24 months",
+                "fee_type": "percentage",
+                "fee_value": 15.99,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "EMI on Call ROI - 3 months",
+                "fee_type": "percentage",
+                "fee_value": 15,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "EMI on Call ROI - 6 months",
+                "fee_type": "percentage",
+                "fee_value": 15,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "EMI on Call ROI - 9 months",
+                "fee_type": "percentage",
+                "fee_value": 15,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "EMI on Call ROI - 12 months",
+                "fee_type": "percentage",
+                "fee_value": 15,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "EMI on Call ROI - 18 months",
+                "fee_type": "percentage",
+                "fee_value": 15,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "EMI on Call ROI - 24 months",
+                "fee_type": "percentage",
+                "fee_value": 15,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Prepayment of Instalment Facility",
+                "fee_type": "percentage",
+                "fee_value": 3,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Card Validation charges – Lounges within India - VISA, MASTERCARD & RUPAY variants",
+                "fee_type": "flat",
+                "fee_value": 2,
+                "maximum_cap": null
+            },
+            {
+                "transaction_type": "Card Validation charges – Lounges within India - AMEX variants",
+                "fee_type": "flat",
+                "fee_value": 1,
+                "maximum_cap": null
+            }
+        ],
+        "extraction_errors": []
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": [],
+            "international_lounges": [],
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": [],
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "elite_status_level: While the context mentions various card variants like 'Times Black ICICI Bank Credit Card', 'ICICI Bank Emeralde Private Metal Credit Card' etc., it does not explicitly define distinct elite status levels such as 'Gold', 'Silver', or 'Platinum'. Therefore, the 'elite_status_level' is set to null as there is no clear indication of a defined elite status tier.",
+            "airport_lounge_access.domestic_lounges: The context mentions 'complimentary airport lounge access' based on spend criteria but does not specify the names of domestic lounges accessible. Therefore, the list of domestic lounges is empty.",
+            "airport_lounge_access.international_lounges: The context does not provide any information about international airport lounge access. Therefore, the details or names of international lounges are missing and the list is empty.",
+            "airport_lounge_access.free_lounge_visits: The context describes eligibility criteria for lounge access based on spending (₹75,000 in the preceding calendar quarter) but does not specify the number of free lounge visits allowed per year. Therefore, 'free_lounge_visits' is set to null as the number of visits is not mentioned.",
+            "free_night_awards.eligibility_criteria: The context does not contain any information about free night awards. Specifically, there is no mention of eligibility criteria to earn free night vouchers. Therefore, 'eligibility_criteria' is set to null.",
+            "free_night_awards.partner_hotels: The context lacks details about free night awards and does not list any partner hotels where free nights can be redeemed. Therefore, the list of partner hotels is empty.",
+            "free_night_awards.value_cap: The context does not provide any information regarding a value cap for free night awards. There is no mention of a maximum room value eligible for redemption. Therefore, 'value_cap' is set to null."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 20000
+            },
+            "conditions": {
+                "minSpend": 2500000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on Times Black ICICI Bank Credit Card if minimum spends of ₹25,00,000 is achieved.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "Times Black ICICI Bank Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 12499
+            },
+            "conditions": {
+                "minSpend": 1000000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank Emeralde Private Metal Credit Card if minimum spends of ₹10,00,000 is achieved.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank Emeralde Private Metal Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 12000
+            },
+            "conditions": {
+                "minSpend": 1000000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank Emeralde Private Credit Card if minimum spends of ₹10,00,000 is achieved.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank Emeralde Private Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 12000
+            },
+            "conditions": {
+                "minSpend": 1000000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank Emeralde Credit Card if minimum spends of ₹10,00,000 is achieved.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank Emeralde Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 3500
+            },
+            "conditions": {
+                "minSpend": 600000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank Sapphiro Credit Card if minimum spends of ₹6,00,000 is achieved.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank Sapphiro Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 2000
+            },
+            "conditions": {
+                "minSpend": 300000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank Rubyx Credit Card if minimum spends of ₹3,00,000 is achieved.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank Rubyx Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 500
+            },
+            "conditions": {
+                "minSpend": 150000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank Coral Credit Card if minimum spends of ₹1,50,000 is achieved.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank Coral Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": null
+            },
+            "conditions": {
+                "minSpend": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank Platinum Chip Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank Platinum Chip Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 2000
+            },
+            "conditions": {
+                "minSpend": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank Signature Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank Signature Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 1000
+            },
+            "conditions": {
+                "minSpend": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank Ascent American Express (R) Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank Ascent American Express (R) Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 750
+            },
+            "conditions": {
+                "minSpend": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank Platinum Identity Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank Platinum Identity Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 199
+            },
+            "conditions": {
+                "minSpend": 150000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank HPCL Platinum Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank HPCL Platinum Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 500
+            },
+            "conditions": {
+                "minSpend": 150000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank HPCL Titanium Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank HPCL Titanium Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 2499
+            },
+            "conditions": {
+                "minSpend": 150000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank HPCL Coral Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank HPCL Coral Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 499
+            },
+            "conditions": {
+                "minSpend": 150000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on Manchester United Signature Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "Manchester United Signature Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 500
+            },
+            "conditions": {
+                "minSpend": 150000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on Chennai Super Kings ICICI Bank Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "Chennai Super Kings ICICI Bank Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 5000
+            },
+            "conditions": {
+                "minSpend": 600000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on Adani One ICICI Bank Signature Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "Adani One ICICI Bank Signature Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 750
+            },
+            "conditions": {
+                "minSpend": 300000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on Adani One ICICI Bank Platinum Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "Adani One ICICI Bank Platinum Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 999
+            },
+            "conditions": {
+                "minSpend": 300000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on MakeMyTrip ICICI Bank Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "MakeMyTrip ICICI Bank Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": null
+            },
+            "conditions": {
+                "minSpend": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on MakeMyTrip ICICI Bank Platinum Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "MakeMyTrip ICICI Bank Platinum Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": null
+            },
+            "conditions": {
+                "minSpend": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on MakeMyTrip ICICI Bank Signature Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "MakeMyTrip ICICI Bank Signature Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": null
+            },
+            "conditions": {
+                "minSpend": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank Parakram Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank Parakram Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": null
+            },
+            "conditions": {
+                "minSpend": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank Parakram Select Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank Parakram Select Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 10000
+            },
+            "conditions": {
+                "minSpend": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on Emirates Skywards ICICI Bank Emerald Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "Emirates Skywards ICICI Bank Emerald Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 5000
+            },
+            "conditions": {
+                "minSpend": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on Emirates Skywards ICICI Bank Sapphiro Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "Emirates Skywards ICICI Bank Sapphiro Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 1000
+            },
+            "conditions": {
+                "minSpend": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on Emirates Skywards ICICI Bank Rubyx Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "Emirates Skywards ICICI Bank Rubyx Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": null
+            },
+            "conditions": {
+                "minSpend": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on Amazon Pay ICICI Bank Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "Amazon Pay ICICI Bank Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 499
+            },
+            "conditions": {
+                "minSpend": 150000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Annual Fee reversal if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Annual Fee reversal on ICICI Bank Expressions Credit Card if minimum spends criteria is met.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardVariant",
+                    "fieldDescription": "Card Variant",
+                    "value": "ICICI Bank Expressions Credit Card",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 49
+            },
+            "conditions": {
+                "minSpend": 10000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Monthly fee reversal in the form of Mine Cash if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Monthly Fee reversal on Mine Credit Card Pro 49 Plan if minimum spends of ₹10,000 is achieved.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "planName",
+                            "fieldDescription": "Monthly Plan Name",
+                            "value": "Pro 49 Plan",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "cardVariant",
+                            "fieldDescription": "Card Variant",
+                            "value": "Mine Credit Card",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "fixed",
+                "currency": "INR",
+                "amount": 149
+            },
+            "conditions": {
+                "minSpend": 20000
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Monthly fee reversal in the form of Mine Cash if minimum spends criteria is met.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Meet minimum spend criteria",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Monthly Fee reversal on Mine Credit Card Premium 149 Plan if minimum spends of ₹20,000 is achieved.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "planName",
+                            "fieldDescription": "Monthly Plan Name",
+                            "value": "Premium 149 Plan",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "cardVariant",
+                            "fieldDescription": "Card Variant",
+                            "value": "Mine Credit Card",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Fuel",
+            "rewardValue": {
+                "unit": "percentage",
+                "currency": "INR",
+                "amount": 1,
+                "referenceValue": 4000
+            },
+            "conditions": {
+                "maxSpend": 50000,
+                "applicableMerchantsOrDomains": [
+                    "HPCL petrol pumps"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Surcharge waiver of 1% of transaction value on HPCL petrol pumps",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Fuel transaction at HPCL petrol pumps by swiping the card on ICICI Merchant Services swipe machines",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": "Monthly",
+                "isTransferable": false
+            },
+            "rewardDescription": "Fuel surcharge waiver of 1% on HPCL petrol pumps for transactions up to ₹4,000, capped at ₹50,000 spends per statement cycle, when payment is made by swiping the card on ICICI Merchant Services swipe machines.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "merchantType",
+                            "fieldDescription": "Merchant Type",
+                            "value": "HPCL petrol pumps",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "range",
+                            "field": "transactionAmount",
+                            "fieldDescription": "Transaction amount for fuel purchase",
+                            "range": {
+                                "lte": 4000
+                            }
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "paymentMethod",
+                            "fieldDescription": "Payment Method",
+                            "value": "swiping the card on ICICI Merchant Services swipe machines",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "cardVariant",
+                            "fieldDescription": "Card Variant",
+                            "value": "select cards",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Fuel",
+            "rewardValue": {
+                "unit": "percentage",
+                "currency": "INR",
+                "amount": 1,
+                "referenceValue": 4000
+            },
+            "conditions": {
+                "maxSpend": 50000,
+                "applicableMerchantsOrDomains": [
+                    "all petrol pumps"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Surcharge waiver of 1% of transaction value on all petrol pumps on select cards.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Fuel transaction at all petrol pumps on select cards",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": "Monthly",
+                "isTransferable": false
+            },
+            "rewardDescription": "Fuel surcharge waiver of 1% on all petrol pumps for transactions up to ₹4,000, capped at ₹50,000 spends per statement cycle on select cards.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "merchantType",
+                            "fieldDescription": "Merchant Type",
+                            "value": "all petrol pumps",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "range",
+                            "field": "transactionAmount",
+                            "fieldDescription": "Transaction amount for fuel purchase",
+                            "range": {
+                                "lte": 4000
+                            }
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "cardVariant",
+                            "fieldDescription": "Card Variant",
+                            "value": "select cards",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "Category": "Fuel",
+            "rewardValue": {
+                "unit": "percentage",
+                "currency": "INR",
+                "amount": 1,
+                "referenceValue": 4000
+            },
+            "conditions": {
+                "maxSpend": 100000,
+                "applicableMerchantsOrDomains": [
+                    "all petrol pumps"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "1% fuel surcharge waiver will be given at all petrol pumps for the maximum transaction size of ₹4,000 for Times Black ICICI Bank & Emeralde Private Metal Credit Card",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Fuel transaction at all petrol pumps for Times Black ICICI Bank & Emeralde Private Metal Credit Card",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": "Monthly",
+                "isTransferable": false
+            },
+            "rewardDescription": "1% fuel surcharge waiver at all petrol pumps for transactions up to ₹4,000, capped at ₹1,00,000 spends per statement cycle for Times Black ICICI Bank & Emeralde Private Metal Credit Card.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "merchantType",
+                            "fieldDescription": "Merchant Type",
+                            "value": "all petrol pumps",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "range",
+                            "field": "transactionAmount",
+                            "fieldDescription": "Transaction amount for fuel purchase",
+                            "range": {
+                                "lte": 4000
+                            }
+                        },
+                        {
+                            "type": "logical",
+                            "logical_operator": "or",
+                            "conditions": [
+                                {
+                                    "type": "comparison",
+                                    "field": "cardVariant",
+                                    "fieldDescription": "Card Variant",
+                                    "value": "Times Black ICICI Bank Credit Card",
+                                    "comparison_operator": "eq"
+                                },
+                                {
+                                    "type": "comparison",
+                                    "field": "cardVariant",
+                                    "fieldDescription": "Card Variant",
+                                    "value": "ICICI Bank Emeralde Private Metal Credit Card",
+                                    "comparison_operator": "eq"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Travel",
+            "rewardValue": {
+                "unit": "fixed",
+                "amount": 1
+            },
+            "conditions": {
+                "minSpend": 75000,
+                "applicableMerchantsOrDomains": [
+                    "Airport Lounges"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Quarterly"
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Present eligible card at lounge entrance.",
+                "processingTime": "Immediate",
+                "eligibleChannels": [
+                    "Participating Airport Lounges"
+                ],
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Spend ₹75,000 in the preceding calendar quarter",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "rewardDescription": "Complimentary airport lounge access on spending ₹75,000 in the preceding calendar quarter, applicable for all eligible ICICI Bank Credit Cards except a specified list.",
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "not",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "cardVariant",
+                            "fieldDescription": "Card Variant",
+                            "value": [
+                                "ICICI Bank Diamant Credit Card",
+                                "ICICI Bank Emeralde Private Metal Credit Card",
+                                "ICICI Bank Emeralde Private Credit Card",
+                                "ICICI Bank Emeralde Credit Card",
+                                "ICICI Bank Emirates Emeralde Credit Card",
+                                "Adani One ICICI Bank Signature Credit Card",
+                                "Adani One ICICI Bank Platinum Credit Card",
+                                "MakeMyTrip ICICI Bank Credit Card",
+                                "Times Black ICICI Bank Credit Card"
+                            ],
+                            "comparison_operator": "in"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "service",
+            "Category": "Financial Services",
+            "rewardValue": {
+                "unit": "certificate"
+            },
+            "rewardDescription": "Free insurance cover on certain ICICI Bank credit cards.",
+            "conditions": {},
+            "schedule": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Refer to Insurance Claim Process for claim details.",
+                "processingTime": null,
+                "eligibleChannels": null,
+                "costOfRedemption": null,
+                "eligibilityCriteria": "Cardholder of certain ICICI Bank credit cards",
+                "redemptionLimit": null,
+                "redemptionCapPeriod": null,
+                "isTransferable": false
+            },
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "cardEligibility",
+                    "fieldDescription": "Card eligibility for insurance cover",
+                    "value": "certain ICICI Bank credit cards",
+                    "comparison_operator": "eq"
+                }
+            }
+        }
+    ]
+}
