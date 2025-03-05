@@ -1,0 +1,158 @@
+
+{
+  "card_info": {
+    "card_name": "CASHBACK SBI Card",
+    "bank": "SBI CARDS AND PAYMENT SERVICES LIMITED",
+    "effective_date": null,
+    "last_updated": null
+  },
+  "fees_and_charges": {
+    "late_payment_charges": null,
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": 500,
+      "maximum_transaction": 3000,
+      "maximum_waiver": 100
+    },
+    "special_transaction_fees": null
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": {
+      "domestic_lounges": null,
+      "international_lounges": null,
+      "free_lounge_visits": null
+    },
+    "free_night_awards": {
+      "eligibility_criteria": null,
+      "partner_hotels": null,
+      "value_cap": null
+    }
+  },
+  "rewards": [
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 5,
+        "unit": "percentage",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          {
+            "domain": "online",
+            "rewardPercent": 5
+          }
+        ],
+        "excludedMerchantsOrDomains": [
+          {
+            "domain": "Fuel"
+          },
+          {
+            "domain": "Wallet"
+          },
+          {
+            "domain": "Rental"
+          },
+          {
+            "domain": "Jewelry"
+          },
+          {
+            "domain": "School & Educational Services"
+          },
+          {
+            "domain": "Utility"
+          },
+          {
+            "domain": "Insurance"
+          },
+          {
+            "domain": "Card, Gift, Novelty & Souvenir Shops"
+          },
+          {
+            "domain": "Railways"
+          },
+          {
+            "domain": "Member Financial Institution/Quasi Cash"
+          }
+        ],
+        "cap": {
+          "amount": 5000,
+          "period": "monthly"
+        },
+        "minSpend": 100
+      },
+      "schedule": {
+        "rewardAccrualFrequency": "Monthly",
+        "rewardExpiry": null
+      },
+      "redemptionMethod": {
+        "methodType": "automatic",
+        "details": "Card Cashback will be automatically credited to your SBI Card account and will reflect in your monthly statement."
+      },
+      "rewardDescription": "Earn 5% cashback on online transactions."
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "percentage",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          {
+            "domain": "offline",
+            "rewardPercent": 1
+          }
+        ],
+        "excludedMerchantsOrDomains": [
+          {
+            "domain": "Fuel"
+          },
+          {
+            "domain": "Wallet"
+          },
+          {
+            "domain": "Rental"
+          },
+          {
+            "domain": "Jewelry"
+          },
+          {
+            "domain": "School & Educational Services"
+          },
+          {
+            "domain": "Utility"
+          },
+          {
+            "domain": "Insurance"
+          },
+          {
+            "domain": "Card, Gift, Novelty & Souvenir Shops"
+          },
+          {
+            "domain": "Railways"
+          },
+          {
+            "domain": "Member Financial Institution/Quasi Cash"
+          }
+        ],
+        "cap": {
+          "amount": 5000,
+          "period": "monthly"
+        },
+        "minSpend": 100
+      },
+      "schedule": {
+        "rewardAccrualFrequency": "Monthly",
+        "rewardExpiry": null
+      },
+      "redemptionMethod": {
+        "methodType": "automatic",
+        "details": "Card Cashback will be automatically credited to your SBI Card account and will reflect in your monthly statement."
+      },
+      "rewardDescription": "Earn 1% cashback on offline transactions."
+    }
+  ]
+}

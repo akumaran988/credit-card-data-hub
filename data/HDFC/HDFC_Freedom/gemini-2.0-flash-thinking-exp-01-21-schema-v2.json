@@ -1,0 +1,201 @@
+
+{
+  "card_info": {
+    "card_name": "HDFC Bank Freedom Credit Card",
+    "bank": "HDFC Bank",
+    "effective_date": null,
+    "last_updated": "2024-08-13"
+  },
+  "fees_and_charges": {
+    "late_payment_charges": [
+      {
+        "outstanding_amount_slab": "<= ₹ 100",
+        "charge": 0
+      },
+      {
+        "outstanding_amount_slab": "₹ 101 - 500",
+        "charge": 100
+      },
+      {
+        "outstanding_amount_slab": "₹ 501 - 1000",
+        "charge": 500
+      },
+      {
+        "outstanding_amount_slab": "₹ 1001 - 5000",
+        "charge": 600
+      },
+      {
+        "outstanding_amount_slab": "₹ 5001 - 10000",
+        "charge": 750
+      },
+      {
+        "outstanding_amount_slab": "₹ 10001 - 25000",
+        "charge": 900
+      },
+      {
+        "outstanding_amount_slab": "₹ 25001 - 50000",
+        "charge": 1100
+      },
+      {
+        "outstanding_amount_slab": "> ₹ 50000",
+        "charge": 1300
+      }
+    ],
+    "finance_charges": 3.75,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": 400,
+      "maximum_transaction": 5000,
+      "maximum_waiver": 250
+    },
+    "special_transaction_fees": [
+      {
+        "transaction_type": "Rent",
+        "fee_type": "percentage",
+        "fee_value": 1,
+        "maximum_cap": 3000,
+        "customConditions": {
+          "condition": {
+            "type": "comparison",
+            "field": "payment_method",
+            "value": "third-party apps",
+            "comparison_operator": "eq",
+            "description": "Fee applies when rent is paid using third-party apps like CRED, PayTM, Cheq, MobiKwik, Freecharge, and others"
+          }
+        }
+      },
+      {
+        "transaction_type": "Fuel",
+        "fee_type": "percentage",
+        "fee_value": 1,
+        "maximum_cap": 3000,
+        "customConditions": {
+          "condition": {
+            "type": "comparison",
+            "field": "transaction_amount",
+            "value": 15000,
+            "comparison_operator": "gt",
+            "description": "Fee applies when transaction amount is greater than ₹15,000 per transaction"
+          }
+        }
+      },
+      {
+        "transaction_type": "Utility",
+        "fee_type": "percentage",
+        "fee_value": 1,
+        "maximum_cap": 3000,
+        "customConditions": {
+          "condition": {
+            "type": "comparison",
+            "field": "transaction_amount",
+            "value": 50000,
+            "comparison_operator": "gt",
+            "description": "Fee applies when transaction amount is greater than ₹50,000 per transaction"
+          }
+        }
+      },
+      {
+        "transaction_type": "Education",
+        "fee_type": "percentage",
+        "fee_value": 1,
+        "maximum_cap": 3000,
+        "customConditions": {
+          "condition": {
+            "type": "logical",
+            "logical_operator": "and",
+            "description": "Fee applies when education payments are made through third-party apps and excludes international education payments",
+            "conditions": [
+              {
+                "type": "comparison",
+                "field": "payment_method",
+                "value": "third-party apps",
+                "comparison_operator": "eq",
+                "description": "Fee applies when payment method is third-party apps"
+              },
+              {
+                "type": "comparison",
+                "field": "transaction_type",
+                "value": "International education payments",
+                "comparison_operator": "neq",
+                "description": "Fee does not apply for international education payments"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": null,
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 10,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "BigBasket",
+          "BookMyShow",
+          "OYO",
+          "Swiggy",
+          "Uber"
+        ],
+        "cap": {
+          "amount": 2500,
+          "period": "monthly"
+        }
+      },
+      "rewardDescription": "Earn 10X CashPoints i.e., 10 CashPoints per ₹150 spent on BigBasket, BookMyShow, OYO, Swiggy & Uber. Applicable for non-Emi spends."
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "minSpend": 150,
+        "applicableMerchantsOrDomains": [
+          "other spends"
+        ],
+        "excludedMerchantsOrDomains": [
+          "Fuel",
+          "EMI",
+          "Rent payments",
+          "Govt Related Transactions",
+          "Wallet",
+          "Gift",
+          "Prepaid Card loads",
+          "Voucher Purchase transactions"
+        ]
+      },
+      "rewardDescription": "Earn 1 CashPoint per ₹150 spent on other spends except Fuel, EMI, Rent payments, Govt Related Transactions and Wallet / Gift / Prepaid Card loads & Voucher Purchase transactions."
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 500,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "minSpend": "joining membership fee"
+      },
+      "rewardDescription": "Welcome Benefit of 500 CashPoints will be given to the cardholder if the joining membership fee is paid"
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 500,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "minSpend": "renewal membership fee"
+      },
+      "rewardDescription": "Renewal Benefit of 500 CashPoints will be given to the cardholder if the renewal membership fee is paid"
+    }
+  ]
+}

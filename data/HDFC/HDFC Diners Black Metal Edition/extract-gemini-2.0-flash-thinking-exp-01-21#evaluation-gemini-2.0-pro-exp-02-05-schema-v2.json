@@ -1,0 +1,593 @@
+{
+    "card_info": {
+        "card_name": "HDFC Bank Diners Club Black Metal Edition Credit Card",
+        "bank": "HDFC Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": [
+            "Effective date of the credit card terms and conditions was not found in the context.",
+            "Publication or last modification date for the terms and conditions was not found in the context."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the context.",
+            "Could not find information about finance charges in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Black Metal",
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not find information about domestic airport lounges.",
+            "Could not find information about international airport lounges.",
+            "Could not find information about free lounge visits.",
+            "Could not find information about eligibility criteria for free night awards.",
+            "Could not find information about partner hotels for free night awards.",
+            "Could not find information about value cap for free night awards."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year",
+                "Category": "Subscriptions and Memberships"
+            },
+            "conditions": {
+                "minSpend": 150000,
+                "customConditions": {
+                    "condition": {
+                        "type": "range",
+                        "field": "card_issuance_period",
+                        "fieldDescription": "Period from card issuance",
+                        "range": {
+                            "lte": 90
+                        }
+                    }
+                }
+            },
+            "rewardDescription": "Complimentary Annual Memberships of Club Marriott on achieving net retail spends of Rs 1,50,000 within 90 days of card issuance.",
+            "extraction_errors": [
+                "voucherCode is missing for Club Marriott Membership, but it is implied in the context that it will be provided separately."
+            ]
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year",
+                "Category": "Subscriptions and Memberships"
+            },
+            "conditions": {
+                "minSpend": 150000,
+                "customConditions": {
+                    "condition": {
+                        "type": "range",
+                        "field": "card_issuance_period",
+                        "fieldDescription": "Period from card issuance",
+                        "range": {
+                            "lte": 90
+                        }
+                    }
+                }
+            },
+            "rewardDescription": "Complimentary Annual Memberships of Amazon Prime on achieving net retail spends of Rs 1,50,000 within 90 days of card issuance.",
+            "extraction_errors": [
+                "voucherCode is missing for Amazon Prime Membership, but it is implied in the context that it will be provided separately."
+            ]
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year",
+                "Category": "Subscriptions and Memberships"
+            },
+            "conditions": {
+                "minSpend": 150000,
+                "customConditions": {
+                    "condition": {
+                        "type": "range",
+                        "field": "card_issuance_period",
+                        "fieldDescription": "Period from card issuance",
+                        "range": {
+                            "lte": 90
+                        }
+                    }
+                }
+            },
+            "rewardDescription": "Complimentary Annual Memberships of Swiggy One on achieving net retail spends of Rs 1,50,000 within 90 days of card issuance.",
+            "extraction_errors": [
+                "voucherCode is missing for Swiggy One Membership, but it is implied in the context that it will be provided separately."
+            ]
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 10000
+            },
+            "conditions": {
+                "minSpend": 400000,
+                "customConditions": {
+                    "condition": {
+                        "type": "range",
+                        "field": "calendar_quarter",
+                        "fieldDescription": "Calendar quarter",
+                        "range": {}
+                    }
+                }
+            },
+            "rewardDescription": "Get 10,000 reward points upon spending Rs. 4,00,000 or more in a calendar quarter"
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 10,
+                "unit": "multiplier",
+                "referenceValue": 5
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "standalone restaurants",
+                        "mcc": [
+                            "5812",
+                            "5813",
+                            "5814"
+                        ]
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "or",
+                        "conditions": [
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "day_of_week",
+                                    "fieldDescription": "Day of the week",
+                                    "value": "Saturday",
+                                    "comparison_operator": "eq"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "comparison",
+                                    "field": "day_of_week",
+                                    "fieldDescription": "Day of the week",
+                                    "value": "Sunday",
+                                    "comparison_operator": "eq"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "minSpend": 150
+            },
+            "rewardDescription": "2X Reward Points i.e. 10 Reward points per Rs. 150 spend at standalone restaurants during weekend – Saturday and Sunday"
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 25,
+                "unit": "percentage",
+                "Category": "Dining"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "participating hotels in India"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Club Marriott",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "Up to a 25% off on the food and beverage bill at participating hotels* in India, for a maximum of twenty (20) guests."
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 20,
+                "unit": "percentage",
+                "Category": "Dining"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "participating Marriott Hotels in Asia Pacific (excluding India)"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Club Marriott",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "Up to a 20% off on Food & Beverage at participating Marriott Hotels in Asia Pacific (excluding India) for a maximum of 10 guests."
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 20,
+                "unit": "percentage",
+                "Category": "Travel"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "participating Marriott hotels in India and Asia-Pacific"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Club Marriott",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "Up to a 20% off on the Best Available Rates on rooms at participating Marriott hotels in India and on Weekend Rates at participating hotels* in Asia-Pacific."
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 20,
+                "unit": "percentage",
+                "Category": "Health and Wellness"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "select participating Marriott Hotels in India"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Club Marriott",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "Up to a 20% off on Spa services at select participating Marriott Hotels in India."
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 15,
+                "unit": "percentage",
+                "Category": "Dining"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "Marriott Bonvoy on Wheels"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Club Marriott",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "Up to a 15% off on all orders through Marriott Bonvoy on Wheels."
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "certificate",
+                "Category": "Travel"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "participating hotels in India"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Club Marriott",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "One (1) certificate offering an upgrade to next category of room, subject to availability at check in – (max. 2 nights stay). This certificate is valid at participating hotels in India."
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 30,
+                "unit": "percentage",
+                "Category": "Travel",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "participating hotels in India"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Club Marriott",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "One (1) certificate offering a 30% off on Best Available Rate (BAR) – subject to availability on Marriott online codes for a maximum of two (2) consecutive nights."
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 40,
+                "unit": "percentage",
+                "Category": "Dining"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "Dineout"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Swiggy One",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "Upto 40% flat off on Dineout"
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "amount": 150,
+                "currency": "INR",
+                "Category": "Dining",
+                "voucherCode": "ONE150"
+            },
+            "conditions": {
+                "minSpend": 1500,
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "Dineout"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Swiggy One",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "2 Flat Rs. 150 coupons per month applicable on bills above Rs 1500"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 100,
+                "unit": "percentage",
+                "Category": "Food",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": 149,
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "all restaurants up to 10 Kms"
+                    }
+                ],
+                "excludedMerchantsOrDomains": [
+                    {
+                        "domain": "Dominos"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Swiggy One",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "Free delivery on orders above Rs. 149. Applicable on all restaurants up to 10 Kms"
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 30,
+                "unit": "percentage",
+                "Category": "Dining"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "select restaurants"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Swiggy One",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "Up to 30% extra discounts on select restaurants"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 100,
+                "unit": "percentage",
+                "Category": "Food",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Swiggy One",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "No Surge fee, even during peak hours and holidays"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 100,
+                "unit": "percentage",
+                "Category": "Groceries",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "minSpend": 199,
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "Instamart"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Swiggy One",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "Free delivery on orders above Rs. 199"
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "Category": "Groceries"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "popular items"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Swiggy One",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "One exclusive discount on popular items"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 100,
+                "unit": "percentage",
+                "Category": "Groceries",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "Instamart"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Swiggy One",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "No Surge fee, even during peak hours and holidays"
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 10,
+                "unit": "percentage",
+                "Category": "Others"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "Genie"
+                    }
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "membership",
+                        "fieldDescription": "Membership",
+                        "value": "Swiggy One",
+                        "comparison_operator": "eq"
+                    }
+                }
+            },
+            "rewardDescription": "Flat 10% off on delivery fee for ALL orders"
+        }
+    ]
+}

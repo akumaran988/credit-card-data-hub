@@ -1,0 +1,330 @@
+{
+    "card_info": {
+        "card_name": "PIXEL Go Credit Card",
+        "bank": "HDFC BANK",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": [
+            "The effective date of the credit card terms and conditions was not found in the context.",
+            "The last updated or publication date of the credit card terms and conditions was not found in the context."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": [],
+        "finance_charges": null,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 400,
+            "maximum_transaction": 5000,
+            "maximum_waiver": 250
+        },
+        "special_transaction_fees": [],
+        "extraction_errors": [
+            "Could not find information about late payment charges in the context.",
+            "Could not find information about finance charges in the context.",
+            "Could not find information about special transaction fees in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not find information about the elite status level for this credit card in the provided context.",
+            "Could not find information about airport lounge access benefits in the provided context.",
+            "Could not find information about free night awards or hotel benefits in the provided context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": "INR",
+                "Category": "Others"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": {
+                    "type": "array",
+                    "items": [
+                        "Fuel Spends",
+                        "Wallet Spends",
+                        "Rent payments",
+                        "Government related transactions",
+                        "EMI Transactions",
+                        "Purchases converted to EMI post facto",
+                        "Cash Advances",
+                        "Payment of Outstanding Balances",
+                        "Payment of card fees and other charges"
+                    ],
+                    "description": "List of excluded spends for general cashback"
+                }
+            },
+            "rewardDescription": "1% CashPoints on All spends except for excluded categories like Fuel, Wallet, Rent, Government, EMI, etc.",
+            "customConditions": {
+                "condition": [
+                    {
+                        "type": "comparison",
+                        "field": "transaction_amount_for_cashback_eligibility",
+                        "fieldDescription": "Minimum transaction amount for cashback eligibility",
+                        "value": 100,
+                        "comparison_operator": "gte"
+                    },
+                    {
+                        "type": "comparison",
+                        "field": "insurance_spends_cashback_cap_per_day",
+                        "fieldDescription": "Cashback cap for Insurance Spends per day",
+                        "value": 2000,
+                        "comparison_operator": "lte"
+                    }
+                ]
+            },
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": "INR",
+                "Category": "Shopping"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": {
+                    "type": "array",
+                    "items": [
+                        "SmartBuy Platform (IGP, Flights, Hotels, Bus, Rail, Instant Vouchers, Apple Imagine Tresor)"
+                    ],
+                    "description": "Applicable platforms for 5% cashback"
+                },
+                "cap": {
+                    "amount": 500,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "5% Cashback on SmartBuy Platform, capped at 500 points per month.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": "INR",
+                "Category": "Others"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": {
+                    "type": "array",
+                    "items": [
+                        "UPI Spends"
+                    ],
+                    "description": "Applicable for UPI spends"
+                },
+                "cap": {
+                    "amount": 500,
+                    "period": "monthly"
+                },
+                "excludedMerchantsOrDomains": {
+                    "type": "array",
+                    "items": [
+                        "Fuel Spends",
+                        "Wallet Spends/ Gift or Prepaid Card load/Voucher purchase",
+                        "Rent payments",
+                        "Government related transactions",
+                        "EMI Transactions",
+                        "Purchases converted to EMI post facto",
+                        "Cash Advances",
+                        "Payment of Outstanding Balances",
+                        "Payment of card fees and other charges"
+                    ],
+                    "description": "List of excluded spends for UPI cashback"
+                },
+                "customConditions": {
+                    "condition": [
+                        {
+                            "type": "comparison",
+                            "field": "card_network_for_upi_cashback",
+                            "fieldDescription": "Card Network for UPI cashback",
+                            "value": "RuPay",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "mcc_exclusion_for_upi_cashback",
+                            "fieldDescription": "Merchant Category Code exclusion for UPI cashback",
+                            "value": [
+                                "1361",
+                                "5172",
+                                "5541",
+                                "5542",
+                                "5983",
+                                "9752",
+                                "6513",
+                                "7349",
+                                "9211",
+                                "9222",
+                                "9223",
+                                "9311",
+                                "9399",
+                                "9402",
+                                "9405",
+                                "9950"
+                            ],
+                            "comparison_operator": "neq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "restricted_categories_merchant_for_upi_cashback",
+                            "fieldDescription": "Restricted categories merchant for UPI cashback",
+                            "value": [
+                                "P2P",
+                                "P2PM",
+                                "digital account opening",
+                                "lending platform",
+                                "cash withdrawal at merchant",
+                                "cash withdrawal at ATM",
+                                "ERUPI",
+                                "IPO",
+                                "Foreign Inward Remittances",
+                                "Mutual Funds"
+                            ],
+                            "comparison_operator": "neq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "amount_limit_per_day_per_card_for_first_24_hours",
+                            "fieldDescription": "Amount limit per day per card for first 24 hours",
+                            "value": 5000,
+                            "comparison_operator": "lte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "upi_limit_per_day",
+                            "fieldDescription": "UPI limit per day",
+                            "value": 100000,
+                            "comparison_operator": "lte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "upi_limit_per_day_for_special_mcc_codes",
+                            "fieldDescription": "UPI limit per day for some special MCC codes",
+                            "value": 200000,
+                            "comparison_operator": "lte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "special_mcc_codes_for_upi_cashback",
+                            "fieldDescription": "Special MCC codes for UPI cashback",
+                            "value": [
+                                "5960",
+                                "6300",
+                                "6529"
+                            ],
+                            "comparison_operator": "in"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "transaction_amount_for_upi_cashback_eligibility",
+                            "fieldDescription": "Minimum transaction amount for UPI cashback eligibility",
+                            "value": 100,
+                            "comparison_operator": "gte"
+                        }
+                    ]
+                }
+            },
+            "rewardDescription": "1% Cashback on UPI Spends, capped at 500 points per month. Applicable for PIXEL RuPay Credit card holders.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "unit": "percentage",
+                "amount": 1,
+                "referenceValue": 100,
+                "currency": "INR",
+                "Category": "Fuel"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": {
+                    "type": "array",
+                    "items": [
+                        "Fuel Transactions"
+                    ],
+                    "description": "Applicable for fuel transactions"
+                },
+                "minSpend": 400,
+                "maxSpend": 5000,
+                "cap": {
+                    "amount": 250,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "1% Fuel Surcharge waiver on fuel transactions (Minimum transaction of ₹400, Maximum transaction of ₹5,000 & Maximum waiver of ₹250 per statement cycle).",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "unit": "percentage",
+                "amount": 25,
+                "currency": "INR",
+                "Category": "Dining"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": {
+                    "type": "array",
+                    "items": [
+                        "Restaurant bills via Dineout Pay"
+                    ],
+                    "description": "Applicable for restaurant bills paid via Dineout Pay"
+                },
+                "cap": {
+                    "amount": 300,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "Save up to 25% on restaurant bills using the HDFC Bank PIXEL Go credit card via Dineout Pay. Maximum benefit of ₹300 per month. Valid till 31st December 2024.",
+            "schedule": {
+                "rewardExpiry": {
+                    "unit": "days",
+                    "value": 224
+                }
+            },
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "currency": "INR",
+                "Category": "Financial Services"
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "CashPoints will be transferred to the PayZapp Cashpoints account post placing the redemption request in the app.",
+                "eligibilityCriteria": "Minimum CashPoints balance required for redemption is 500 CashPoints."
+            },
+            "schedule": {
+                "rewardExpiry": {
+                    "unit": "years",
+                    "value": 2
+                }
+            },
+            "rewardDescription": "Redemption of CashPoints at the rate of 1 CashPoint = ₹1 PayZapp Cash points. Minimum 500 CashPoints required for redemption. Unredeemed CashPoints expire after two years.",
+            "extraction_errors": []
+        }
+    ]
+}

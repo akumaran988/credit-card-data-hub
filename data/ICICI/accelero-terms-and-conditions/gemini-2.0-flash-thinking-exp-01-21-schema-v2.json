@@ -1,0 +1,100 @@
+
+{
+  "card_info": {
+    "card_name": "Accelero ICICI Bank Credit Card",
+    "bank": "ICICI Bank",
+    "effective_date": null,
+    "last_updated": "2023-02-03"
+  },
+  "fees_and_charges": {
+    "late_payment_charges": null,
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": null,
+      "maximum_transaction": 4000,
+      "maximum_waiver": null
+    },
+    "special_transaction_fees": [
+      {
+        "transaction_type": "Fuel",
+        "fee_type": "percentage",
+        "fee_value": 2.5,
+        "maximum_cap": 200.0
+      }
+    ]
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": {
+      "domestic_lounges": null,
+      "international_lounges": null,
+      "free_lounge_visits": null,
+      "extraction_error": "Required properties 'domestic_lounges', 'international_lounges', and 'free_lounge_visits' are missing from the context, but 'airport_lounge_access' object is expected."
+    },
+    "free_night_awards": {
+      "eligibility_criteria": null,
+      "partner_hotels": null,
+      "value_cap": null,
+      "extraction_error": "Required properties 'eligibility_criteria' and 'partner_hotels' are missing from the context, but 'free_night_awards' object is expected."
+    }
+  },
+  "rewards": [
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1500,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "minSpend": "annual fee payment"
+      },
+      "rewardDescription": "Annual Gift"
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 2,
+        "unit": "fixed",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": null
+      },
+      "rewardDescription": "Reward Points on transactions",
+      "customConditions": {
+        "condition": {
+          "type": "logical",
+          "logical_operator": "or",
+          "conditions": [
+            {
+              "type": "comparison",
+              "field": "transaction_category",
+              "value": "Domestic transactions",
+              "comparison_operator": "eq"
+            },
+            {
+              "type": "comparison",
+              "field": "transaction_category",
+              "value": "International transactions",
+              "comparison_operator": "eq"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 2.5,
+        "unit": "percentage",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "HPCL petrol pumps"
+        ]
+      },
+      "rewardDescription": "Fuel cashback at HPCL"
+    }
+  ]
+}

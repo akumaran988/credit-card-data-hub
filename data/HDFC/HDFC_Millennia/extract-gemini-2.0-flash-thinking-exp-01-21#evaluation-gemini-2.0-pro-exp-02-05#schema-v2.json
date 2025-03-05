@@ -1,0 +1,225 @@
+{
+    "card_info": {
+        "card_name": "Millennia Credit Card",
+        "bank": "HDFC Bank",
+        "effective_date": null,
+        "last_updated": "2024-11-26",
+        "extraction_errors": [
+            "The document does not specify a single effective date for all terms and conditions. While individual terms and conditions have specific effective dates (e.g., 'Effective 1st December 2023', 'Effective 1ˢᵗ September 2024', 'Effective 1st August, 2024', 'With effect from 1st January 2023', 'With effect from 1st February 2023'), there is no overarching effective date for the entire set of terms and conditions provided in the context."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": [
+            {
+                "outstanding_amount_slab": "₹10",
+                "charge": 0
+            },
+            {
+                "outstanding_amount_slab": "₹101 - ₹500",
+                "charge": 100
+            },
+            {
+                "outstanding_amount_slab": "₹501 - ₹1000",
+                "charge": 500
+            },
+            {
+                "outstanding_amount_slab": "₹1001 - ₹5000",
+                "charge": 600
+            },
+            {
+                "outstanding_amount_slab": "₹5001 - ₹10000",
+                "charge": 750
+            },
+            {
+                "outstanding_amount_slab": "₹10001 - ₹25000",
+                "charge": 900
+            },
+            {
+                "outstanding_amount_slab": "₹25001 - ₹50000",
+                "charge": 1100
+            },
+            {
+                "outstanding_amount_slab": "₹50000",
+                "charge": 1300
+            }
+        ],
+        "finance_charges": 3.75,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 400,
+            "maximum_transaction": 5000,
+            "maximum_waiver": 250
+        },
+        "special_transaction_fees": [
+            {
+                "transaction_type": "Rent",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": 3000
+            },
+            {
+                "transaction_type": "Fuel",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": 3000
+            },
+            {
+                "transaction_type": "Utility",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": 3000
+            },
+            {
+                "transaction_type": "Education",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": 3000
+            }
+        ],
+        "extraction_errors": []
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": [],
+            "international_lounges": [],
+            "free_lounge_visits": 0
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not extract 'elite_status_level' from the context as there is no mention of any elite status tier associated with the HDFC Bank Millennia Credit Card.",
+            "Could not extract 'eligibility_criteria' for free night awards as there is no information about free night awards in the provided context.",
+            "Could not extract 'partner_hotels' for free night awards as there is no information about free night awards in the provided context.",
+            "Could not extract 'value_cap' for free night awards as there is no information about free night awards in the provided context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Amazon",
+                    "BookMyShow",
+                    "Cult.fit",
+                    "Flipkart",
+                    "Myntra",
+                    "Sony LIV",
+                    "Swiggy",
+                    "Tata CLiQ",
+                    "Uber",
+                    "Zomato"
+                ],
+                "cap": {
+                    "amount": 1000,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "5% CashBack on spends on Amazon, BookMyShow, Cult.fit, Flipkart, Myntra, Sony LIV, Swiggy, Tata CLiQ, Uber & Zomato. Max CashBack / CashPoints per Cycle: 1000. Valid only for non-emi spends in the 10 online merchants."
+        },
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "Fuel",
+                    "EMI",
+                    "Wallet",
+                    "Rent payments",
+                    "Govt related txns"
+                ],
+                "cap": {
+                    "amount": 1000,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "1% CashBack on Other Spends (except Fuel, EMI, Wallet, Rent payments, Govt related txns). Max CashBack / CashPoints per Cycle: 1000. Gift or Prepaid Card loads & Voucher Purchase transactions will be considered in other spends category."
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 1000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": "joining membership fee"
+            },
+            "rewardDescription": "Welcome Benefit of 1000 CashPoints will be given to the cardholder if the joining membership fee is paid."
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "amount": 1000,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 100000,
+                "cap": {
+                    "amount": 1000,
+                    "period": "quarterly"
+                }
+            },
+            "rewardDescription": "Cardholder will be eligible for a Free Gift Voucher worth INR 1000 if he/she achieves the Netspends (Spends minus Reversals) target of ₹1 lac within the specified calendar quarter (January to March, April to June, July to September, October to December). Voucher message will be triggered to registered phone number & email ID within 30 working days and will be valid for 60 days from the triggered date. To claim, SMS options are provided (e.g., MILNIA A for Big Basket)."
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "fuel"
+                ],
+                "minSpend": 400,
+                "maxSpend": 5000
+            },
+            "rewardDescription": "1% Fuel Surcharge waiver on fuel transactions (Minimum transaction of ₹400, Maximum transaction of ₹5,000 & Maximum waiver of ₹250 per statement cycle)."
+        },
+        {
+            "rewardType": "points",
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly",
+                "rewardExpiry": {
+                    "unit": "years",
+                    "value": 2,
+                    "description": "after accumulation"
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "Redemption against statement balance at a rate of 1 CashPoint = ₹1. CashPoints can also be used for redemption against travel benefits like Flight & Hotel bookings and Rewards Catalogue at the SmartBuy Rewards Portal, at a value of 1 CashPoint = ₹0.30.",
+                "eligibleChannels": [
+                    "Net Banking",
+                    "Phone Banking",
+                    "physical form"
+                ],
+                "costOfRedemption": 50,
+                "eligibilityCriteria": "Minimum 500 CashPoints",
+                "redemptionLimit": {
+                    "limitCount": 3000,
+                    "timePeriod": "monthly",
+                    "description": "for CashBack redemption"
+                },
+                "isTransferable": false
+            },
+            "rewardDescription": "CashPoints can be redeemed as CashBack against outstanding balance at 1 CashPoint = ₹1. Redemption fee of ₹50 applicable for statement credit. Minimum 500 CashPoints required for redemption. Redemption limit of 3,000 CashPoints per month for CashBack redemption. CashPoints expire after 2 years of accumulation."
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+
+{
+  "card_info": {
+    "card_name": "ICICI Bank HPCL Super Saver Credit Card",
+    "bank": "ICICI Bank",
+    "effective_date": "2024-09-11",
+    "last_updated": "2024-09-11"
+  },
+  "fees_and_charges": {
+    "late_payment_charges": null,
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": 400,
+      "maximum_transaction": 4000,
+      "maximum_waiver": 1.0
+    },
+    "special_transaction_fees": null
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": null,
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 4,
+        "unit": "percentage",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "cap": {
+          "amount": 200,
+          "period": "monthly"
+        },
+        "applicableMerchantsOrDomains": {
+          "domain": "fuel"
+        }
+      }
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 20,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "cap": {
+          "amount": 400,
+          "period": "monthly"
+        },
+        "applicableMerchantsOrDomains": {
+          "domain": [
+            "groceries",
+            "telecom",
+            "government",
+            "tax",
+            "departmental stores"
+          ]
+        }
+      }
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 2,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "excludedMerchantsOrDomains": {
+          "domain": [
+            "fuel",
+            "utility",
+            "departmental stores"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,714 @@
+[
+    {
+        "category": "Our Popular Credit Cards",
+        "count": 5,
+        "cards": [
+            {
+                "cardName": "PIXEL Play Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-play-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-play-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-play-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-play-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Millennia Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-cc-new",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-cc-new",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-cc-new/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-cc-new/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "IndianOil HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Freedom Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/freedom-card-new",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/freedom-card-new",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/freedom-card-new/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/freedom-card-new/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Swiggy HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/swiggy-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/swiggy-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/swiggy-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/swiggy-hdfc-bank-credit-card/fees-and-charges"
+                }
+            }
+        ]
+    },
+    {
+        "category": "Pixel Credit Cards",
+        "count": 2,
+        "cards": [
+            {
+                "cardName": "PIXEL Play Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-play-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-play-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-play-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-play-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "PIXEL Go Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-go-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-go-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-go-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/pixel-go-credit-card/fees-and-charges"
+                }
+            }
+        ]
+    },
+    {
+        "category": "Essentials",
+        "count": 4,
+        "cards": [
+            {
+                "cardName": "MoneyBack+ Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/moneyback-plus",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/moneyback-plus",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/moneyback-plus/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/moneyback-plus/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Millennia Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-cc-new",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-cc-new",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-cc-new/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-cc-new/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Freedom Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/freedom-card-new",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/freedom-card-new",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/freedom-card-new/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/freedom-card-new/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "IndianOil HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card/fees-and-charges"
+                }
+            }
+        ]
+    },
+    {
+        "category": "Luxury",
+        "count": 2,
+        "cards": [
+            {
+                "cardName": "Diners Club Black Metal Edition Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-black-metal-edition",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-black-metal-edition",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-black-metal-edition/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-black-metal-edition/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "INFINIA Metal Edition",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/infinia-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/infinia-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/infinia-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/infinia-credit-card/fees-and-charges"
+                }
+            }
+        ]
+    },
+    {
+        "category": "Co Branded",
+        "count": 16,
+        "cards": [
+            {
+                "cardName": "Marriott Bonvoy HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card/eligibility",
+                    "FEES AND CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card/fees-and-charges",
+                    "REDEMPTION": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card/redemption"
+                }
+            },
+            {
+                "cardName": "Swiggy HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/swiggy-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/swiggy-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/swiggy-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/swiggy-hdfc-bank-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "IndianOil HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Tata Neu Infinity HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-hdfc-bank-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Tata Neu Plus HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-plus-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-plus-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-plus-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-plus-hdfc-bank-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "IRCTC HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/irctc-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/irctc-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/irctc-credit-card/eligibility",
+                    "FEES AND CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/irctc-credit-card/fees-and-charges",
+                    "REDEMPTION": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/irctc-credit-card/redemption"
+                }
+            },
+            {
+                "cardName": "Shoppers Stop HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-hdfc-bank-credit-card/fees-and-charges",
+                    "ACTIVATION STEPS": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-hdfc-bank-credit-card/activation-steps"
+                }
+            },
+            {
+                "cardName": "Shoppers Stop Black HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-black-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-black-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-black-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-black-hdfc-bank-credit-card/fees-and-charges",
+                    "ACTIVATION STEPS": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-black-hdfc-bank-credit-card/activation-steps"
+                }
+            },
+            {
+                "cardName": "Paytm HDFC Bank Credit Card.",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-credit-card",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-credit-card/fees-and-charges",
+                    "ACTIVATION STEPS": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-credit-card"
+                }
+            },
+            {
+                "cardName": "Paytm HDFC Bank Select Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-select-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-select-credit-card",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-select-credit-card/fees-and-charges",
+                    "ACTIVATION STEPS": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-select-credit-card/activation-steps"
+                }
+            },
+            {
+                "cardName": "Paytm HDFC Bank Mobile Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-mobile-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-mobile-credit-card",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-mobile-credit-card/fees-and-charges",
+                    "ACTIVATION STEPS": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-mobile-credit-card/activation-steps"
+                }
+            },
+            {
+                "cardName": "Paytm HDFC Bank Digital Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-digital-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/personal/pay/cards/credit-cards/paytm-hdfc-bank-digital-credit-card",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/personal/pay/cards/credit-cards/paytm-hdfc-bank-digital-credit-card/fees-and-charges",
+                    "ACTIVATION STEPS": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/paytm-hdfc-bank-digital-credit-card/activation-steps"
+                }
+            },
+            {
+                "cardName": "6E Rewards - IndiGo HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-indigo-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-indigo-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-indigo-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-indigo-hdfc-bank-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "6E Rewards XL- IndiGo HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-xl-indigo-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": null,
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-xl-indigo-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-xl-indigo-hdfc-bank-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "HDFC Bank H.O.G Diners Club Credit Card\u200b",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/hog-diners-club-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/hog-diners-club-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/hog-diners-club-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/hog-diners-club-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "HDFC Bank Harley-Davidson Diners Club Credit Card \u200b\u200b",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/harley-davidson-diners-club-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/harley-davidson-diners-club-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/harley-davidson-diners-club-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/harley-davidson-diners-club-credit-card/fees-and-charges"
+                }
+            }
+        ]
+    },
+    {
+        "category": "Lifestyle",
+        "count": 6,
+        "cards": [
+            {
+                "cardName": "Regalia Gold Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card/fees-and-charges",
+                    "CARD ACTIVATION": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card/card-activation"
+                }
+            },
+            {
+                "cardName": "Millennia Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-cc-new",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-cc-new",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-cc-new/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-cc-new/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "MoneyBack+ Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/moneyback-plus",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/moneyback-plus",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/moneyback-plus/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/moneyback-plus/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Diners Club Privilege Credit  Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-privilege",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-privilege",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-privilege/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-privilege/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Marriott Bonvoy HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card/eligibility",
+                    "FEES AND CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card/fees-and-charges",
+                    "REDEMPTION": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card/redemption"
+                }
+            },
+            {
+                "cardName": "Tata Neu Infinity HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-hdfc-bank-credit-card/fees-and-charges"
+                }
+            }
+        ]
+    },
+    {
+        "category": "Travel",
+        "count": 5,
+        "cards": [
+            {
+                "cardName": "Regalia Gold Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card/fees-and-charges",
+                    "CARD ACTIVATION": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card/card-activation"
+                }
+            },
+            {
+                "cardName": "IRCTC HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/irctc-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/irctc-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/irctc-credit-card/eligibility",
+                    "FEES AND CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/irctc-credit-card/fees-and-charges",
+                    "REDEMPTION": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/irctc-credit-card/redemption"
+                }
+            },
+            {
+                "cardName": "6E Rewards - IndiGo HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-indigo-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-indigo-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-indigo-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-indigo-hdfc-bank-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "6E Rewards XL- IndiGo HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-xl-indigo-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": null,
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-xl-indigo-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-xl-indigo-hdfc-bank-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Marriott Bonvoy HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card/eligibility",
+                    "FEES AND CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card/fees-and-charges",
+                    "REDEMPTION": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/marriott-bonvoy-credit-card/redemption"
+                }
+            }
+        ]
+    },
+    {
+        "category": "Shopping",
+        "count": 4,
+        "cards": [
+            {
+                "cardName": "Tata Neu Infinity HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-infinity-hdfc-bank-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Tata Neu Plus HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-plus-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-plus-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-plus-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/tata-neu-plus-hdfc-bank-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Shoppers Stop HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-hdfc-bank-credit-card/fees-and-charges",
+                    "ACTIVATION STEPS": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-hdfc-bank-credit-card/activation-steps"
+                }
+            },
+            {
+                "cardName": "Shoppers Stop Black HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-black-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-black-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-black-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-black-hdfc-bank-credit-card/fees-and-charges",
+                    "ACTIVATION STEPS": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/shoppers-stop-black-hdfc-bank-credit-card/activation-steps"
+                }
+            }
+        ]
+    },
+    {
+        "category": "Fuel",
+        "count": 1,
+        "cards": [
+            {
+                "cardName": "IndianOil HDFC Bank Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/indianoil-hdfc-bank-credit-card/fees-and-charges"
+                }
+            }
+        ]
+    },
+    {
+        "category": "EMI",
+        "count": 1,
+        "cards": [
+            {
+                "cardName": "Easy EMI Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-easyemi-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-easyemi-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-easyemi-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/millennia-cards/millennia-easyemi-card/fees-and-charges"
+                }
+            }
+        ]
+    },
+    {
+        "category": "Others",
+        "count": 25,
+        "cards": [
+            {
+                "cardName": "HDFC Bank Times Card Credit Platinum",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/platinum-times-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/platinum-times-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/platinum-times-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/platinum-times-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "HDFC Bank Times Card Credit",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/titanium-times-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/titanium-times-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/titanium-times-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/titanium-times-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "All Miles Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/all-miles-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/all-miles-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/all-miles-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/all-miles-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Bharat Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/bharat-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/bharat-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/bharat-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/bharat-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Diners Club Premium Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-premium",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-premium",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-premium/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-premium/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Diners Club Rewardz Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-rewardz",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-rewardz",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-rewardz/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-rewardz/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Doctor's Regalia Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/doctors-regalia",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/doctors-regalia",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/doctors-regalia/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Doctors Superia Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/doctors-superia",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/doctors-superia",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/doctors-superia/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "JetPrivilege HDFC Bank Select / Titanium",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jetprivilege-hdfc-bank-titanium-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jetprivilege-hdfc-bank-titanium-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jetprivilege-hdfc-bank-titanium-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jetprivilege-hdfc-bank-titanium-credit-card/fees-and-charges",
+                    "EMV CHIP": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jetprivilege-hdfc-bank-titanium-credit-card/emv-chip"
+                }
+            },
+            {
+                "cardName": "Platinum Edge Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/platinum-edge",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/platinum-edge",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/platinum-edge/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/platinum-edge/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Platinum Plus Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/platinum-plus",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/platinum-plus",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/platinum-plus/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/platinum-plus/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Solitaire Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/solitaire",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/soliltaire",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/solitaire/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Superia Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/superia",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/superia",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/superia/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/superia/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Teachers Platinum Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/teachers-platinum",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/teachers-platinum",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/teachers-platinum/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Titanium Edge Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/titanium-edge",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/titanium-edge",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/titanium-edge/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/titanium-edge/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Visa Signature Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/visa-signature",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/visa-signature",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/visa-signature/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/visa-signature/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "World MasterCard Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/world-mastercard",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/world-mastercard",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/world-mastercard/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/world-mastercard/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "MoneyBack Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/money-back",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/money-back",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/money-back/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/money-back/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Regalia First Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-first",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-first",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-first/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Diners ClubMiles Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-miles",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-miles",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-miles/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-miles/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Regalia Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "InterMiles HDFC Bank Diners Club Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jet-privilege-hdfc-bank-diners-club",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jet-privilege-hdfc-bank-diners-club",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jet-privilege-hdfc-bank-diners-club/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jet-privilege-hdfc-bank-diners-club/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "InterMiles HDFC Bank Signature Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jet-privilege-hdfc-bank-world",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jet-privilege-hdfc-bank-world",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jet-privilege-hdfc-bank-world/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jet-privilege-hdfc-bank-world/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "InterMiles HDFC Bank Platinum Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jetprivilege-hdfc-bank-platinum-credit-card",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jetprivilege-hdfc-bank-platinum-credit-card",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jetprivilege-hdfc-bank-platinum-credit-card/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/jetprivilege-hdfc-bank-platinum-credit-card/fees-and-charges"
+                }
+            },
+            {
+                "cardName": "Diners Club Black Credit Card",
+                "card_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-black",
+                "section_details": {
+                    "FEATURES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-black",
+                    "ELIGIBILITY": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-black/eligibility",
+                    "FEES & CHARGES": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-black/fees-and-charges"
+                }
+            }
+        ]
+    }
+]

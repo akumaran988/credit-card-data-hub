@@ -1,0 +1,212 @@
+
+{
+  "card_info": {
+    "card_name": "Freedom Credit Card",
+    "bank": "HDFC Bank",
+    "effective_date": null,
+    "last_updated": "2024-08-13"
+  },
+  "fees_and_charges": {
+    "late_payment_charges": [
+      {
+        "outstanding_amount_slab": "<= ₹ 100",
+        "charge": 0
+      },
+      {
+        "outstanding_amount_slab": "₹ 101 - 500",
+        "charge": 100
+      },
+      {
+        "outstanding_amount_slab": "₹ 501 - 1000",
+        "charge": 500
+      },
+      {
+        "outstanding_amount_slab": "₹ 1001 - 5000",
+        "charge": 600
+      },
+      {
+        "outstanding_amount_slab": "₹ 5001 - 10000",
+        "charge": 750
+      },
+      {
+        "outstanding_amount_slab": "₹ 10001 - 25000",
+        "charge": 900
+      },
+      {
+        "outstanding_amount_slab": "₹ 25001 - 50000",
+        "charge": 1100
+      },
+      {
+        "outstanding_amount_slab": "> ₹ 50000",
+        "charge": 1300
+      }
+    ],
+    "finance_charges": 3.75,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": 400,
+      "maximum_transaction": 5000,
+      "maximum_waiver": 250
+    },
+    "special_transaction_fees": [
+      {
+        "transaction_type": "Rent",
+        "fee_type": "percentage",
+        "fee_value": 1,
+        "maximum_cap": 3000
+      },
+      {
+        "transaction_type": "Fuel",
+        "fee_type": "percentage",
+        "fee_value": 1,
+        "maximum_cap": 3000,
+        "customConditions": {
+          "condition": {
+            "type": "comparison",
+            "field": "transaction_amount",
+            "comparison_operator": "gt",
+            "value": 15000,
+            "description": "Applies when fuel transaction amount is greater than ₹15,000"
+          }
+        }
+      },
+      {
+        "transaction_type": "Utility",
+        "fee_type": "percentage",
+        "fee_value": 1,
+        "maximum_cap": 3000,
+        "customConditions": {
+          "condition": {
+            "type": "comparison",
+            "field": "transaction_amount",
+            "comparison_operator": "gt",
+            "value": 50000,
+            "description": "Applies when utility transaction amount is greater than ₹50,000"
+          }
+        }
+      },
+      {
+        "transaction_type": "Education",
+        "fee_type": "percentage",
+        "fee_value": 1,
+        "maximum_cap": 3000,
+        "customConditions": {
+          "condition": {
+            "type": "comparison",
+            "field": "payment_method",
+            "comparison_operator": "eq",
+            "value": "third-party apps",
+            "description": "Applies when education payments are made through third-party apps"
+          }
+        }
+      },
+      {
+        "transaction_type": "International / Cross currency",
+        "fee_type": "percentage",
+        "fee_value": 3.5,
+        "maximum_cap": null
+      }
+    ]
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": null,
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 10,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "BigBasket",
+          "BookMyShow",
+          "OYO",
+          "Swiggy",
+          "Uber"
+        ],
+        "cap": {
+          "amount": 2500,
+          "period": "monthly"
+        },
+        "excludedMerchantsOrDomains": [
+          "Fuel",
+          "EMI",
+          "Rent payments",
+          "Govt Related Transactions",
+          "Wallet / Gift / Prepaid Card loads",
+          "Voucher Purchase transactions"
+        ]
+      },
+      "rewardDescription": "Earn 10X CashPoints* i.e., 10 CashPoints per ₹150 spent on -- BigBasket, BookMyShow, OYO, Swiggy & Uber"
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 5,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "cap": {
+          "amount": 2500,
+          "period": "monthly"
+        },
+        "excludedMerchantsOrDomains": [
+          "Fuel",
+          "Rent payments",
+          "Govt Related Transactions",
+          "Wallet loads / Gift or Prepaid Card load/ Voucher purchase",
+          "Cash Advances",
+          "Payment of Outstanding Balances",
+          "Payment of card fees and other charges",
+          "Smart EMI / Dial an EMI transaction"
+        ]
+      },
+      "rewardDescription": "The Freedom 5X feature gives the cardholder 5 times CashPoints for spending on EMIs."
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "excludedMerchantsOrDomains": [
+          "Fuel",
+          "Rent payments",
+          "Govt Related Transactions",
+          "Wallet loads / Gift or Prepaid Card load/ Voucher purchase",
+          "Cash Advances",
+          "Payment of Outstanding Balances",
+          "Payment of card fees and other charges",
+          "EMI transactions"
+        ]
+      },
+      "rewardDescription": "Earn 1 CashPoint per ₹150 spent on other spends"
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 500,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "minSpend": "joining membership fee"
+      },
+      "rewardDescription": "Welcome Benefit of 500 CashPoints will be given to the cardholder if the joining membership fee is paid"
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 500,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "minSpend": "renewal membership fee"
+      },
+      "rewardDescription": "Renewal Benefit of 500 CashPoints will be given to the cardholder if the renewal membership fee is paid"
+    }
+  ]
+}

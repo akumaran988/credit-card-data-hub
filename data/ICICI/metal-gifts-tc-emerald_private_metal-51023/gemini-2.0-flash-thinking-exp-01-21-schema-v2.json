@@ -1,0 +1,218 @@
+
+{
+  "card_info": {
+    "card_name": "ICICI Bank Emeralde Private Metal Credit Card",
+    "bank": "ICICI Bank",
+    "effective_date": null,
+    "last_updated": null
+  },
+  "fees_and_charges": {
+    "late_payment_charges": null,
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": null,
+      "maximum_transaction": null,
+      "maximum_waiver": 1000
+    },
+    "special_transaction_fees": null
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": {
+      "domestic_lounges": [
+        "Unlimited"
+      ],
+      "international_lounges": [
+        "Unlimited with Priority Pass"
+      ],
+      "free_lounge_visits": null,
+      "extraction_error": "The number of free lounge visits is described as 'unlimited' in the context, but the schema expects a numerical value for 'free_lounge_visits'."
+    },
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "voucher",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "fixed"
+      },
+      "rewardDescription": "Complimentary 1-year Taj Epicure Membership with exclusive benefits like complimentary night stay, discounts, perks and much more!"
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 12500,
+        "unit": "fixed"
+      },
+      "rewardDescription": "12,500 ICICI Bank Reward Points as Joining and Annual Bonus"
+    },
+    {
+      "rewardType": "voucher",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "fixed"
+      },
+      "rewardDescription": "Complimentary 12-month EazyDiner Prime Membership"
+    },
+    {
+      "rewardType": "voucher",
+      "rewardValue": {
+        "amount": 6000,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "minSpend": 800000
+      },
+      "rewardDescription": "EaseMyTrip Air Travel Vouchers worth ₹ 6,000 with annual spends of ₹ 8 lakh"
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 6,
+        "unit": "fixed",
+        "referenceValue": 200
+      },
+      "conditions": {
+        "excludedMerchantsOrDomains": [
+          {
+            "domain": "government services"
+          },
+          {
+            "domain": "tax"
+          },
+          {
+            "domain": "rent"
+          },
+          {
+            "domain": "fuel"
+          }
+        ]
+      },
+      "rewardDescription": "Get 6 ICICI Bank Reward Points on every ₹ 200 spent at all eligible retail transactions"
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 5000,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          {
+            "domain": "insurance"
+          }
+        ],
+        "cap": {
+          "amount": 5000,
+          "period": "monthly"
+        }
+      },
+      "rewardDescription": "Reward Points earned on Insurance transactions will be capped at 5,000 Reward Points, per statement cycle."
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1000,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          {
+            "domain": "grocery"
+          }
+        ],
+        "cap": {
+          "amount": 1000,
+          "period": "monthly"
+        }
+      },
+      "rewardDescription": "Reward Points earned on grocery transactions will be capped at 1,000 Reward Points, per statement cycle."
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1000,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          {
+            "domain": "utility"
+          }
+        ],
+        "cap": {
+          "amount": 1000,
+          "period": "monthly"
+        }
+      },
+      "rewardDescription": "Reward Points earned on Utility transactions will be capped at 1,000 Reward Points, per statement cycle."
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1000,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          {
+            "domain": "education"
+          }
+        ],
+        "cap": {
+          "amount": 1000,
+          "period": "monthly"
+        }
+      },
+      "rewardDescription": "Reward Points earned on Education transactions will be capped at 1,000 Reward Points, per statement cycle."
+    },
+    {
+      "rewardType": "discount",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "cap": {
+          "amount": 1000,
+          "period": "monthly"
+        }
+      },
+      "rewardDescription": "Fuel Surcharge waiver of 1% on all fuel transactions"
+    },
+    {
+      "rewardType": "service",
+      "rewardDescription": "No cancellation charges on Air Travel, Hotel and Movie Bookings",
+      "conditions": {
+        "cap": {
+          "amount": 2,
+          "period": "yearly"
+        }
+      }
+    },
+    {
+      "rewardType": "discount",
+      "rewardValue": {
+        "amount": 750,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "rewardDescription": "Buy one ticket and get up to ₹ 750 off on the second ticket, up to 2 times in a month on movies/sport events/theatre/concert tickets through BookMyShow",
+      "conditions": {
+        "cap": {
+          "amount": 2,
+          "period": "monthly"
+        },
+        "applicableMerchantsOrDomains": [
+          "BookMyShow"
+        ]
+      }
+    },
+    {
+      "rewardType": "service",
+      "rewardDescription": "Unlimited complimentary Golf games"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+
+{
+  "card_info": {
+    "card_name": "Emirates Skywards ICICI Bank Credit Card",
+    "bank": "ICICI Bank Limited",
+    "effective_date": "2024-10-01",
+    "last_updated": null
+  },
+  "fees_and_charges": {
+    "late_payment_charges": [],
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": null,
+      "maximum_transaction": null,
+      "maximum_waiver": null
+    },
+    "special_transaction_fees": []
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": {
+      "domestic_lounges": [],
+      "international_lounges": [],
+      "free_lounge_visits": null
+    },
+    "free_night_awards": {
+      "eligibility_criteria": null,
+      "partner_hotels": [],
+      "value_cap": null
+    }
+  },
+  "rewards": [
+    {
+      "rewardType": "discount",
+      "rewardValue": {
+        "amount": null,
+        "unit": null,
+        "currency": null,
+        "referenceValue": "base fare"
+      },
+      "conditions": {
+        "minSpend": null,
+        "maxSpend": null,
+        "cap": null,
+        "applicableMerchantsOrDomains": {
+          "domain": "Emirates",
+          "rewardPercent": null
+        },
+        "excludedMerchantsOrDomains": [
+          "Interline flights (except EK /FZ)"
+        ]
+      },
+      "schedule": {
+        "rewardAccrualFrequency": null,
+        "rewardExpiry": {
+          "unit": null,
+          "value": "2025-09-30"
+        }
+      },
+      "redemptionMethod": {
+        "methodType": "voucher",
+        "details": "use promo code INICI24 on www.emirates.in/INICI24",
+        "processingTime": null,
+        "eligibleChannels": [
+          "www.emirates.in/INICI24"
+        ],
+        "costOfRedemption": null,
+        "eligibilityCriteria": "Emirates Skywards ICICI Bank Credit Cardholders",
+        "redemptionLimit": null,
+        "redemptionCapPeriod": null,
+        "isTransferable": null
+      },
+      "rewardDescription": "discount offer provided by Emirates",
+      "customConditions": {
+        "condition": {
+          "type": "logical",
+          "logical_operator": "and",
+          "conditions": [
+            {
+              "type": "comparison",
+              "field": "card_type",
+              "value": "Emirates Skywards ICICI Bank Credit Cards only",
+              "comparison_operator": "eq"
+            },
+            {
+              "type": "range",
+              "field": "booking_date",
+              "range": {
+                "lte": "2025-09-30"
+              }
+            },
+            {
+              "type": "comparison",
+              "field": "travel_origin",
+              "value": "India",
+              "comparison_operator": "eq"
+            },
+            {
+              "type": "comparison",
+              "field": "fare_type",
+              "value": "all available fares except special fares",
+              "comparison_operator": "eq"
+            },
+            {
+              "type": "comparison",
+              "field": "ticket_type",
+              "value": [
+                "return",
+                "one-way"
+              ],
+              "comparison_operator": "eq"
+            },
+            {
+              "type": "comparison",
+              "field": "offer_clubbable",
+              "value": false,
+              "comparison_operator": "eq"
+            },
+            {
+              "type": "comparison",
+              "field": "booking_channel",
+              "value": "online",
+              "comparison_operator": "eq"
+            },
+            {
+              "type": "comparison",
+              "field": "valid_on",
+              "value": "airfare only",
+              "comparison_operator": "eq"
+            },
+            {
+              "type": "comparison",
+              "field": "infant_child_tickets_excluded",
+              "value": true,
+              "comparison_operator": "eq"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

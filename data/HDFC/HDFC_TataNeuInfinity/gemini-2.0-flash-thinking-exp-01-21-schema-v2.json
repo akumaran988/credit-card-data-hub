@@ -1,0 +1,135 @@
+
+{
+  "card_info": {
+    "card_name": "Tata Neu Infinity HDFC Bank Credit Card",
+    "bank": "HDFC Bank",
+    "effective_date": null,
+    "last_updated": null
+  },
+  "fees_and_charges": {
+    "late_payment_charges": null,
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": 400,
+      "maximum_transaction": 5000,
+      "maximum_waiver": 500
+    },
+    "special_transaction_fees": null
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": null,
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 5,
+        "unit": "percentage",
+        "currency": null,
+        "referenceValue": null
+      },
+      "conditions": null,
+      "schedule": null,
+      "redemptionMethod": null,
+      "rewardDescription": "5% back as NeuCoins on Non-EMI Retail Spends on partner Tata Brands",
+      "customConditions": null
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1.5,
+        "unit": "percentage",
+        "currency": null,
+        "referenceValue": null
+      },
+      "conditions": null,
+      "schedule": null,
+      "redemptionMethod": null,
+      "rewardDescription": "1.5% back as NeuCoins on Non-EMI Retail Spends on Non-Tata Brands",
+      "customConditions": null
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1.5,
+        "unit": "percentage",
+        "currency": null,
+        "referenceValue": null
+      },
+      "conditions": null,
+      "schedule": null,
+      "redemptionMethod": null,
+      "rewardDescription": "1.5% back as NeuCoins on Merchant EMI Spends (Any Brand)",
+      "customConditions": null
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1.5,
+        "unit": "percentage",
+        "currency": null,
+        "referenceValue": null
+      },
+      "conditions": {
+        "cap": {
+          "amount": 500,
+          "period": "monthly"
+        }
+      },
+      "schedule": null,
+      "redemptionMethod": null,
+      "rewardDescription": "1.5% back as NeuCoins on Any UPI Spends on Rupay Credit Card (max of 500 NeuCoins per calendar month)",
+      "customConditions": null
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 0.50,
+        "unit": "percentage",
+        "currency": null,
+        "referenceValue": null
+      },
+      "conditions": {
+        "cap": {
+          "amount": 500,
+          "period": "monthly"
+        }
+      },
+      "schedule": null,
+      "redemptionMethod": null,
+      "rewardDescription": "0.50% back as NeuCoins for transactions done using any UPI ID (Google Pay, PhonePe, Cred, etc.) w.e.f 01-Aug-24 (max of 500 NeuCoins per calendar month)",
+      "customConditions": {
+        "condition": {
+          "type": "comparison",
+          "field": "effective_date",
+          "value": "2024-08-01",
+          "comparison_operator": "gte"
+        }
+      }
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "percentage",
+        "currency": null,
+        "referenceValue": null
+      },
+      "conditions": null,
+      "schedule": null,
+      "redemptionMethod": null,
+      "rewardDescription": "Additional 1% back as NeuCoins if the transaction is done using the Tata Neu UPI ID.",
+      "customConditions": {
+        "condition": {
+          "type": "comparison",
+          "field": "upi_id_type",
+          "value": "Tata Neu UPI ID",
+          "comparison_operator": "eq"
+        }
+      }
+    }
+  ],
+  "extraction_error": "Missing required fields in fees_and_charges (late_payment_charges, finance_charges) and elite_status_benefits (airport_lounge_access, free_night_awards)."
+}

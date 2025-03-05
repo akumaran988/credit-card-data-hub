@@ -1,0 +1,190 @@
+{
+    "card_info": {
+        "card_name": "CASHBACK SBI Card",
+        "bank": "SBI Card",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": [
+            "Could not find the effective date of the credit card terms and conditions in the provided context.",
+            "Could not find the last updated or publication date for the credit card terms and conditions in the provided context."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": [],
+        "finance_charges": null,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 500,
+            "maximum_transaction": 3000,
+            "maximum_waiver": 100
+        },
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Missing information for late_payment_charges: The document mentions a late payment fee will be charged if the minimum amount due is not paid, but it does not specify the fee structure, slabs, or amounts based on outstanding balance.",
+            "Missing information for finance_charges: While the document mentions finance charges are applicable on outstanding balances, it does not explicitly state the monthly percentage rate for these charges."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not find information about the elite status level of the CASHBACK SBI Card in the provided context.",
+            "Could not find details about domestic airport lounge access for the CASHBACK SBI Card in the provided context.",
+            "Could not find details about international airport lounge access for the CASHBACK SBI Card in the provided context.",
+            "Could not find information about free airport lounge visits for the CASHBACK SBI Card in the provided context.",
+            "Could not find eligibility criteria for free night awards for the CASHBACK SBI Card in the provided context.",
+            "Could not find a list of partner hotels for free night awards for the CASHBACK SBI Card in the provided context.",
+            "Could not find information about the value cap for free night awards for the CASHBACK SBI Card in the provided context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "online"
+                    }
+                ],
+                "excludedMerchantsOrDomains": [
+                    {
+                        "domain": "fuel"
+                    },
+                    {
+                        "domain": "wallet"
+                    },
+                    {
+                        "domain": "rental"
+                    },
+                    {
+                        "domain": "jewelry"
+                    },
+                    {
+                        "domain": "school & educational services"
+                    },
+                    {
+                        "domain": "utility"
+                    },
+                    {
+                        "domain": "insurance"
+                    },
+                    {
+                        "domain": "card, gift, novelty & souvenir shops"
+                    },
+                    {
+                        "domain": "railways"
+                    },
+                    {
+                        "domain": "member financial institution/quasi cash"
+                    },
+                    {
+                        "domain": "emi transactions"
+                    },
+                    {
+                        "domain": "payments using standing instructions/fetch and pay"
+                    }
+                ],
+                "cap": {
+                    "amount": 5000,
+                    "period": "monthly"
+                },
+                "minSpend": 100
+            },
+            "rewardDescription": "5% cashback on online transactions, up to ₹5000 per statement cycle. Not applicable on fuel, wallet, rental, jewelry, school & educational services, utility, insurance, card/gift/novelty/souvenir shops, railways, member financial institution/quasi cash, EMI transactions, payments using standing instructions/fetch and pay. Minimum transaction amount for cashback is ₹100."
+        },
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "offline"
+                    }
+                ],
+                "excludedMerchantsOrDomains": [
+                    {
+                        "domain": "fuel"
+                    },
+                    {
+                        "domain": "wallet"
+                    },
+                    {
+                        "domain": "rental"
+                    },
+                    {
+                        "domain": "jewelry"
+                    },
+                    {
+                        "domain": "school & educational services"
+                    },
+                    {
+                        "domain": "utility"
+                    },
+                    {
+                        "domain": "insurance"
+                    },
+                    {
+                        "domain": "card, gift, novelty & souvenir shops"
+                    },
+                    {
+                        "domain": "railways"
+                    },
+                    {
+                        "domain": "member financial institution/quasi cash"
+                    },
+                    {
+                        "domain": "emi transactions"
+                    },
+                    {
+                        "domain": "payments using standing instructions/fetch and pay"
+                    }
+                ],
+                "cap": {
+                    "amount": 5000,
+                    "period": "monthly"
+                },
+                "minSpend": 100
+            },
+            "rewardDescription": "1% cashback on offline transactions, up to ₹5000 per statement cycle. Not applicable on fuel, wallet, rental, jewelry, school & educational services, utility, insurance, card/gift/novelty/souvenir shops, railways, member financial institution/quasi cash, EMI transactions, payments using standing instructions/fetch and pay. Minimum transaction amount for cashback is ₹100."
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    {
+                        "domain": "fuel"
+                    }
+                ],
+                "minSpend": 500,
+                "maxSpend": 3000,
+                "cap": {
+                    "amount": 100,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "1% Fuel Surcharge waiver for each transaction between ₹500 and ₹3,000. Maximum surcharge waiver of ₹100 per statement cycle. Applicable for fuel transactions."
+        }
+    ]
+}

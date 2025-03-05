@@ -1,0 +1,197 @@
+{
+    "card_info": {
+        "card_name": "PIXEL Play Credit Card",
+        "bank": "HDFC Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": [],
+        "finance_charges": null,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 400,
+            "maximum_transaction": 5000,
+            "maximum_waiver": 250
+        },
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the context.",
+            "Could not find information about finance charges in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Elite status level information is not found in the context.",
+            "Airport lounge access details are not found in the context.",
+            "Details about domestic lounges are not found in the context.",
+            "Details about international lounges are not found in the context.",
+            "Number of free lounge visits allowed in a year is not found in the context.",
+            "Free night awards details are not found in the context.",
+            "Eligibility criteria for free night awards is not found in the context.",
+            "List of hotels where free nights can be redeemed is not found in the context.",
+            "Maximum room value eligible for redemption for free night awards is not found in the context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "percentage",
+                "referenceValue": "Spends on choice of any two packs"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Dining & Entertainment Category – BookMyShow & Zomato",
+                    "Travel Category – MakeMyTrip & Uber",
+                    "Grocery Category – Blinkit & Reliance Smart Bazaar",
+                    "Electronics Category – Croma & Reliance Digital",
+                    "Fashion Category – Nykaa & Myntra"
+                ],
+                "cap": {
+                    "amount": 500,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "5% Cashback on choice of any two packs. Maximum 500 points per month."
+        },
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "percentage",
+                "referenceValue": "Spends on SmartBuy Platform"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "SmartBuy Platform (IGP, Flights, Hotels, Bus, Rail, Instant Vouchers, Apple Imagine Tresor)"
+                ],
+                "cap": {
+                    "amount": 500,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "5% Cashback on SmartBuy Platform. Maximum 500 points per month. Valid on Successful Transactions completed on SmartBuy under categories IGP, Flights, Hotels, Bus, Rail, Instant Vouchers, Apple Imagine Tresor only."
+        },
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 3,
+                "unit": "percentage",
+                "referenceValue": "Spends on choice of any one e-commerce platform"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "PayZapp",
+                    "Amazon",
+                    "Flipkart"
+                ],
+                "cap": {
+                    "amount": 500,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "3% Cashback on choice of any one e-commerce platform. Maximum 500 points per month."
+        },
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": "All UPI spends on RuPay credit card"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "UPI spends on RuPay credit card"
+                ],
+                "cap": {
+                    "amount": 500,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "1% Cashback on all UPI spends on RuPay credit card. Maximum 500 points per month. Applicable only for PIXEL RuPay Credit card holders."
+        },
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": "All other spends"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "Fuel Spends",
+                    "Wallet Spends",
+                    "Rent payments",
+                    "Government related transactions",
+                    "EMI Transactions",
+                    "Purchases converted to EMI post facto",
+                    "Cash Advances",
+                    "Payment of Outstanding Balances",
+                    "Payment of card fees and other charges"
+                ]
+            },
+            "rewardDescription": "1% Unlimited Cashback on all other spends, excluding Fuel Spends, Wallet Spends, Rent payments, Government related transactions, EMI Transactions, Purchases converted to EMI post facto, Cash Advances, Payment of Outstanding Balances, Payment of card fees and other charges."
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": "fuel surcharge"
+            },
+            "conditions": {
+                "minSpend": 400,
+                "maxSpend": 5000,
+                "cap": {
+                    "amount": 250,
+                    "period": "monthly"
+                },
+                "applicableMerchantsOrDomains": [
+                    "fuel transactions"
+                ]
+            },
+            "rewardDescription": "1% Fuel Surcharge waiver on fuel transactions. Minimum transaction of ₹400, Maximum transaction of ₹5,000 & Maximum waiver of ₹250 per statement cycle."
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 20,
+                "unit": "percentage",
+                "referenceValue": "HDFC Bank credit card payments via Dineout Pay"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Dineout Pay"
+                ],
+                "cap": {
+                    "amount": 300,
+                    "period": "monthly"
+                },
+                "customConditions": {
+                    "condition": {
+                        "type": "range",
+                        "field": "offer_validity_date",
+                        "fieldDescription": "Offer validity date",
+                        "range": {
+                            "lte": "2024-12-31"
+                        }
+                    }
+                }
+            },
+            "rewardDescription": "Save up to 20% on HDFC Bank credit card payments via Dineout Pay. Maximum of ₹300 per month. Offer valid till 31st December 2024."
+        }
+    ]
+}

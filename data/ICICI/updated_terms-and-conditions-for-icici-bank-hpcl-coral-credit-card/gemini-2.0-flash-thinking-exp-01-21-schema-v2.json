@@ -1,0 +1,96 @@
+
+{
+  "card_info": {
+    "card_name": "ICICI Bank HPCL Coral Credit Card",
+    "bank": "ICICI Bank",
+    "effective_date": null,
+    "last_updated": "2024-09-10"
+  },
+  "fees_and_charges": {
+    "late_payment_charges": [],
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": 400,
+      "maximum_transaction": 4000,
+      "maximum_waiver": null
+    },
+    "special_transaction_fees": []
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": {
+      "domestic_lounges": [],
+      "international_lounges": [],
+      "free_lounge_visits": null
+    },
+    "free_night_awards": {
+      "eligibility_criteria": null,
+      "partner_hotels": [],
+      "value_cap": null
+    }
+  },
+  "rewards": [
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 2.5,
+        "unit": "percentage",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "cap": {
+          "amount": 100,
+          "period": "monthly"
+        },
+        "applicableMerchantsOrDomains": [
+          "HPCL fuel pumps"
+        ]
+      },
+      "rewardDescription": "2.5% cashback on fuel purchases",
+      "customConditions": {
+        "condition": {
+          "type": "comparison",
+          "field": "transaction_amount",
+          "value": 500,
+          "comparison_operator": "gte",
+          "description": "Minimum transaction amount to qualify for cashback is ₹500"
+        }
+      }
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 2,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "excludedMerchantsOrDomains": [
+          "fuel",
+          "groceries",
+          "telecom",
+          "government",
+          "tax",
+          "departmental store"
+        ]
+      },
+      "rewardDescription": "2 ICICI Bank reward points on every ₹100 spent on all other retail spends [except fuel, utility (groceries, telecom, government, tax) and departmental store purchase]"
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "groceries",
+          "telecom",
+          "government",
+          "tax",
+          "departmental store"
+        ]
+      },
+      "rewardDescription": "1 ICICI Bank reward point on every ₹100 spent on utility (groceries, telecom, government, tax) and departmental store transactions."
+    }
+  ]
+}

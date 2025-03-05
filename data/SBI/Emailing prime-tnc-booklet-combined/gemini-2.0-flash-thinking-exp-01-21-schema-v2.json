@@ -1,0 +1,173 @@
+
+{
+  "card_info": {
+    "card_name": "SBI Card PRIME",
+    "bank": "SBI Card",
+    "effective_date": null,
+    "last_updated": "2024-11-01"
+  },
+  "fees_and_charges": {
+    "late_payment_charges": [
+      {
+        "outstanding_amount_slab": "Rs.0-Rs.500",
+        "charge": 0
+      },
+      {
+        "outstanding_amount_slab": "greater than Rs.500 & up to Rs.1,000",
+        "charge": 400
+      },
+      {
+        "outstanding_amount_slab": "greater than Rs.1,000 & up to Rs.10,000",
+        "charge": 750
+      },
+      {
+        "outstanding_amount_slab": "greater than Rs.10,000 & up to Rs.25,000",
+        "charge": 950
+      },
+      {
+        "outstanding_amount_slab": "greater than Rs.25,000 & up to Rs.50,000",
+        "charge": 1100
+      },
+      {
+        "outstanding_amount_slab": "greater than Rs.50,000",
+        "charge": 1300
+      },
+      {
+        "outstanding_amount_slab": "missing payment of Minimum Amount Due (MAD) by the due date for two consecutive cycles",
+        "charge": 100
+      }
+    ],
+    "finance_charges": 3.75,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": null,
+      "maximum_transaction": null,
+      "maximum_waiver": null
+    },
+    "special_transaction_fees": [
+      {
+        "transaction_type": "Cash Payment",
+        "fee_type": "flat",
+        "fee_value": 250,
+        "maximum_cap": null
+      },
+      {
+        "transaction_type": "Rent Payment Transactions",
+        "fee_type": "flat",
+        "fee_value": 199,
+        "maximum_cap": null
+      },
+      {
+        "transaction_type": "Utility Payments",
+        "fee_type": "percentage",
+        "fee_value": 1,
+        "maximum_cap": null,
+        "customConditions": {
+          "condition": {
+            "type": "comparison",
+            "field": "total_utility_payment_amount_in_billing_cycle",
+            "comparison_operator": "gt",
+            "value": 50000,
+            "description": "1% fee applicable if total utility payment amount exceeds Rs. 50,000 in a billing cycle"
+          }
+        }
+      }
+    ]
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": {
+      "domestic_lounges": [],
+      "international_lounges": [
+        "Priority Pass Lounges outside India"
+      ],
+      "free_lounge_visits": 4
+    },
+    "free_night_awards": {
+      "eligibility_criteria": null,
+      "partner_hotels": [],
+      "value_cap": null,
+      "extraction_error": "Free night awards details are not mentioned in the context."
+    }
+  },
+  "rewards": [
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 2,
+        "unit": "points",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "All except excluded categories"
+        ],
+        "excludedMerchantsOrDomains": [
+          "balance transfers",
+          "cash advances",
+          "financial charges",
+          "disputed transactions",
+          "petrol pumps/ service stations",
+          "Merchant EMI",
+          "Flexipay",
+          "Rent Payment transactions",
+          "Govt Related transactions",
+          "Digital Gaming Platforms/Merchants"
+        ]
+      },
+      "rewardDescription": "2 Reward Points for every Rs.100 spent on all categories except excluded ones."
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 10,
+        "unit": "points",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Dining",
+          "Departmental stores",
+          "Grocery",
+          "Movies"
+        ]
+      },
+      "rewardDescription": "10 Reward Points for every Rs.100 spent on Dining, Departmental stores, Grocery, Movies."
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 20,
+        "unit": "points",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Birthday Spends"
+        ],
+        "cap": {
+          "amount": 2000,
+          "period": "yearly"
+        }
+      },
+      "rewardDescription": "20 Reward Points for every Rs.100 spent on Birthday for three days (birthday, a day before & after) with capping of 2,000 Reward Points per year."
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 20,
+        "unit": "points",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Standing Instructions (SI) on utility bill transactions"
+        ],
+        "cap": {
+          "amount": 3000,
+          "period": "monthly"
+        }
+      },
+      "rewardDescription": "20 Reward Points for every Rs.100 spent for Standing Instructions (SI) on utility bill transactions (with capping of 3,000 Reward Points per month)."
+    }
+  ]
+}

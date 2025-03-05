@@ -1,0 +1,244 @@
+
+{
+  "card_info": {
+    "card_name": "MakeMyTrip ICICI Bank Credit Card",
+    "bank": "ICICI Bank",
+    "effective_date": null,
+    "last_updated": null
+  },
+  "fees_and_charges": {
+    "late_payment_charges": [],
+    "finance_charges": null,
+    "fuel_surcharge_waiver": null,
+    "special_transaction_fees": []
+  },
+  "elite_status_benefits": {
+    "elite_status_level": "MMTBLACK Gold membership",
+    "airport_lounge_access": {
+      "domestic_lounges": [
+        "Domestic Lounge List"
+      ],
+      "international_lounges": [
+        "International Lounge List"
+      ],
+      "free_lounge_visits": null,
+      "domestic_free_lounge_visits_per_quarter": 2,
+      "international_free_lounge_visits_per_year": 1
+    },
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "voucher",
+      "rewardValue": {
+        "amount": 1000,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "minSpend": "joining membership fee",
+        "applicableMerchantsOrDomains": [
+          "MakeMyTrip"
+        ]
+      },
+      "rewardDescription": "MakeMyTrip Voucher worth ₹ <1000> (Joining Benefit)"
+    },
+    {
+      "rewardType": "voucher",
+      "rewardValue": {
+        "amount": 1000,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "minSpend": "renewal membership fee",
+        "applicableMerchantsOrDomains": [
+          "MakeMyTrip"
+        ],
+        "excludedMerchantsOrDomains": [
+          "flights",
+          "holiday packages",
+          "buses",
+          "cabs",
+          "trains",
+          "activities/ experiences",
+          "Visas"
+        ]
+      },
+      "rewardDescription": "MakeMyTrip Hotel Voucher worth ₹ <1000> (Renewal Benefit)"
+    },
+    {
+      "rewardType": "service",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "minSpend": "joining membership fee",
+        "applicableMerchantsOrDomains": [
+          "MMTBLACK"
+        ]
+      },
+      "rewardDescription": "MMTBLACK Gold Membership (Joining Benefit)"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 3,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "MakeMyTrip"
+        ],
+        "domain": "Flight bookings"
+      },
+      "rewardDescription": "<3>% myCash on Flight bookings on MakeMyTrip"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 6,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "MakeMyTrip"
+        ],
+        "domain": "Hotel bookings"
+      },
+      "rewardDescription": "<6>% myCash on Hotel bookings on MakeMyTrip"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 3,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "MakeMyTrip"
+        ],
+        "domain": "Holiday bookings"
+      },
+      "rewardDescription": "<3>% myCash on Holiday bookings on MakeMyTrip"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 3,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "MakeMyTrip"
+        ],
+        "domain": "Cab bookings"
+      },
+      "rewardDescription": "<3>% myCash on Cab bookings on MakeMyTrip"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 3,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "MakeMyTrip"
+        ],
+        "domain": "Bus bookings"
+      },
+      "rewardDescription": "<3>% myCash on Bus bookings on MakeMyTrip"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 25,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "MakeMyTrip"
+        ],
+        "domain": "Train bookings"
+      },
+      "rewardDescription": "<25> myCash on every train booking"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "MakeMyTrip"
+        ],
+        "domain": "Other MakeMyTrip spends"
+      },
+      "rewardDescription": "<1>% myCash on other retail spends on MakeMyTrip"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "excludedMerchantsOrDomains": [
+          "rent",
+          "EMI payments"
+        ],
+        "domain": "Domestic spends outside MakeMyTrip"
+      },
+      "rewardDescription": "<1>% myCash excluding rent and EMI payments on Domestic spends outside MakeMyTrip"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "domain": "International spends outside MakeMyTrip"
+      },
+      "rewardDescription": "<1>% myCash on International spends outside MakeMyTrip"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "percentage",
+        "referenceValue": 1000
+      },
+      "conditions": {
+        "domain": "Spends on Insurance",
+        "cap": {
+          "amount": 1000,
+          "period": "yearly"
+        }
+      },
+      "rewardDescription": "<1>% myCash (capped at a maximum of <1,000> myCash per Anniversary Year) on Spends on Insurance"
+    },
+    {
+      "rewardType": "discount",
+      "rewardValue": {
+        "amount": 25,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "maxSpend": 150,
+        "applicableMerchantsOrDomains": [
+          "BookMyShow",
+          "INOX"
+        ],
+        "cap": {
+          "amount": 1,
+          "period": "monthly"
+        }
+      },
+      "rewardDescription": "Buy one ticket and get 25% off up to ₹ <150> on the second ticket on BookMyShow, once a month each on the Mastercard and the RuPay variants"
+    }
+  ]
+}

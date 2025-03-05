@@ -1,0 +1,152 @@
+
+{
+  "card_info": {
+    "card_name": "SBI Card MILES ELITE",
+    "bank": "SBI Cards and Payment Services Limited",
+    "effective_date": null,
+    "last_updated": "2024-02-09"
+  },
+  "fees_and_charges": {
+    "late_payment_charges": [
+      {
+        "outstanding_amount_slab": "Rs.0-Rs.500",
+        "charge": 0
+      },
+      {
+        "outstanding_amount_slab": "greater than Rs.500 & up to Rs.1,000",
+        "charge": 400
+      },
+      {
+        "outstanding_amount_slab": "greater than Rs.1,000 & up to Rs.10,000",
+        "charge": 750
+      },
+      {
+        "outstanding_amount_slab": "greater than Rs.10,000 & up to Rs.25,000",
+        "charge": 950
+      },
+      {
+        "outstanding_amount_slab": "greater than Rs.25,000 & up to Rs.50,000",
+        "charge": 1100
+      },
+      {
+        "outstanding_amount_slab": "greater than Rs.50,000",
+        "charge": 1300
+      }
+    ],
+    "finance_charges": 3.5,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": 500,
+      "maximum_transaction": 3000,
+      "maximum_waiver": 500
+    },
+    "special_transaction_fees": [
+      {
+        "transaction_type": "Rent Payment Transactions",
+        "fee_type": "flat",
+        "fee_value": 199,
+        "maximum_cap": null
+      },
+      {
+        "transaction_type": "Rewards Redemption",
+        "fee_type": "flat",
+        "fee_value": 99,
+        "maximum_cap": null
+      },
+      {
+        "transaction_type": "Foreign Currency Transaction",
+        "fee_type": "percentage",
+        "fee_value": 1.99,
+        "maximum_cap": null
+      },
+      {
+        "transaction_type": "Dynamic & Static Currency Conversion Markup",
+        "fee_type": "percentage",
+        "fee_value": 1.99,
+        "maximum_cap": null
+      }
+    ]
+  },
+  "elite_status_benefits": {
+    "elite_status_level": "ELITE",
+    "airport_lounge_access": {
+      "domestic_lounges": [],
+      "international_lounges": [],
+      "free_lounge_visits": 15
+    },
+    "free_night_awards": {
+      "eligibility_criteria": null,
+      "partner_hotels": [],
+      "value_cap": null
+    }
+  },
+  "rewards": [
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "fixed",
+        "currency": "INR",
+        "referenceValue": null
+      },
+      "conditions": {
+        "minSpend": null,
+        "maxSpend": null,
+        "cap": null,
+        "applicableMerchantsOrDomains": null,
+        "excludedMerchantsOrDomains": [
+          {
+            "domain": "petrol pumps/service stations"
+          },
+          {
+            "domain": "E wallet loading"
+          },
+          {
+            "domain": "Payments towards Rent/property management"
+          },
+          {
+            "domain": "School & Educational Services"
+          },
+          {
+            "domain": "Utility transactions"
+          },
+          {
+            "domain": "Insurance transactions"
+          },
+          {
+            "domain": "Quasi Cash"
+          },
+          "Cash advances",
+          "Financial charges",
+          "Disputed transactions",
+          "Encash",
+          "ATM Withdrawals",
+          "Flexipay Transactions",
+          "Merchant EMI"
+        ]
+      },
+      "schedule": {
+        "rewardAccrualFrequency": "Monthly",
+        "rewardExpiry": {
+          "unit": "years",
+          "value": 2
+        }
+      },
+      "redemptionMethod": {
+        "methodType": "manual",
+        "details": "Travel Credits can be redeemed by converting them into Air MILES, Hotel Points and against SBIC Product Catalogue. Log into SBI Card website or mobile app and choose the redemption option under the Rewards Category.",
+        "processingTime": null,
+        "eligibleChannels": [
+          "SBI Card website",
+          "mobile app"
+        ],
+        "costOfRedemption": null,
+        "eligibilityCriteria": "SBI Card must not be overdue, suspended, blocked, cancelled or terminated at the time of redemption. Minimum 2000 Travel Credits for redemption and in multiples of 2000.",
+        "redemptionLimit": null,
+        "redemptionCapPeriod": null,
+        "isTransferable": false
+      },
+      "rewardDescription": "Earn Travel Credits on all your spends except Cash withdrawals, Balance Transfers, Flexipay, Encash, E-wallet uploads, Cashback transactions and spends on Rentals, Fuel & Utility bills.",
+      "customConditions": null
+    }
+  ]
+}

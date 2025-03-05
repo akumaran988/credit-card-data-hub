@@ -1,0 +1,286 @@
+{
+    "card_info": {
+        "card_name": "Tata Neu Infinity HDFC Bank Credit Card",
+        "bank": "HDFC Bank",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": [
+            "Could not find a single effective date for the entire credit card terms and conditions document. The document contains multiple effective dates that apply to specific terms and conditions, such as 'With effect from 01-Aug-24', 'With effect from 1ˢᵗ Jan 2023', 'With effect from 1ˢᵗ Sep 2024', etc. A general effective date for the entire document is not explicitly stated.",
+            "Could not find a last updated or publication date for the terms and conditions document. The document does not explicitly mention when it was last modified or published. Therefore, the 'last_updated' field is set to null."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": [],
+        "finance_charges": null,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 400,
+            "maximum_transaction": 5000,
+            "maximum_waiver": 500
+        },
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the context.",
+            "Could not find information about finance charges in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Infinity",
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not find information about domestic lounges under airport lounge access.",
+            "Could not find information about international lounges under airport lounge access.",
+            "Could not find information about free lounge visits under airport lounge access.",
+            "Could not find information about eligibility criteria for free night awards.",
+            "Could not find information about partner hotels for free night awards.",
+            "Could not find information about value cap for free night awards."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "Category": "Shopping"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Croma",
+                    "Tata CliQ",
+                    "Westside",
+                    "IHCL",
+                    "Air India Express",
+                    "Air India",
+                    "1Mg",
+                    "Cult",
+                    "Tata Play",
+                    "Tata Pay",
+                    "Big Basket",
+                    "Titan",
+                    "Tanishq",
+                    "Qmin",
+                    "Food Delivery via Tata Neu"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "EMI Spends",
+                    "Fuel Spends",
+                    "Wallet loads / Gift or Prepaid Card load/ Voucher purchase**",
+                    "Cash Advances",
+                    "Payment of Outstanding Balances",
+                    "Payment of card fees and other charges",
+                    "Smart EMI / Dial an EMI transaction",
+                    "Rental and Government related transactions.",
+                    "Education payments made through third-party apps",
+                    "transactions carried out through the Merchant Category Code (MCC) of 6540",
+                    "UPI spends"
+                ]
+            },
+            "rewardDescription": "5% back as NeuCoins on Non-EMI Retail Spends on partner Tata Brands"
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 1.5,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "Category": "Shopping"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "Tata Brands",
+                    "EMI Spends",
+                    "Fuel Spends",
+                    "Wallet loads / Gift or Prepaid Card load/ Voucher purchase**",
+                    "Cash Advances",
+                    "Payment of Outstanding Balances",
+                    "Payment of card fees and other charges",
+                    "Smart EMI / Dial an EMI transaction",
+                    "Rental and Government related transactions.",
+                    "Education payments made through third-party apps",
+                    "transactions carried out through the Merchant Category Code (MCC) of 6540",
+                    "UPI spends"
+                ]
+            },
+            "rewardDescription": "1.5% back as NeuCoins on Non-EMI Retail Spends on Non-Tata Brands"
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 1.5,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "Category": "Financial Services"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Any Brand (Merchant EMI Spends)"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "Fuel Spends",
+                    "Wallet loads / Gift or Prepaid Card load/ Voucher purchase**",
+                    "Cash Advances",
+                    "Payment of Outstanding Balances",
+                    "Payment of card fees and other charges",
+                    "Smart EMI / Dial an EMI transaction",
+                    "Rental and Government related transactions.",
+                    "Education payments made through third-party apps",
+                    "transactions carried out through the Merchant Category Code (MCC) of 6540",
+                    "UPI spends"
+                ]
+            },
+            "rewardDescription": "1.5% back as NeuCoins on Merchant EMI Spends (Any Brand)"
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 1.5,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "Category": "Financial Services"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "UPI Spends on Rupay Credit Card"
+                ],
+                "cap": {
+                    "amount": 500,
+                    "period": "monthly"
+                },
+                "excludedMerchantsOrDomains": [
+                    "Fuel Spends",
+                    "Wallet loads / Gift or Prepaid Card load/ Voucher purchase**",
+                    "Cash Advances",
+                    "Payment of Outstanding Balances",
+                    "Payment of card fees and other charges",
+                    "Smart EMI / Dial an EMI transaction",
+                    "Rental and Government related transactions.",
+                    "Education payments made through third-party apps",
+                    "transactions carried out through the Merchant Category Code (MCC) of 6540"
+                ]
+            },
+            "rewardDescription": "1.5% back as NeuCoins on Any UPI Spends on Rupay Credit Card (max of 500 NeuCoins per calendar month) - Applicable before 01-Aug-24"
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 0.5,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "Category": "Financial Services"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "UPI Spends"
+                ],
+                "cap": {
+                    "amount": 500,
+                    "period": "monthly"
+                },
+                "excludedMerchantsOrDomains": [
+                    "Fuel Spends",
+                    "Wallet loads / Gift or Prepaid Card load/ Voucher purchase**",
+                    "Cash Advances",
+                    "Payment of Outstanding Balances",
+                    "Payment of card fees and other charges",
+                    "Smart EMI / Dial an EMI transaction",
+                    "Rental and Government related transactions.",
+                    "Education payments made through third-party apps",
+                    "transactions carried out through the Merchant Category Code (MCC) of 6540"
+                ]
+            },
+            "rewardDescription": "0.50% back as NeuCoins for transactions done using any UPI ID (Google Pay, PhonePe, Cred, etc.) (max of 500 NeuCoins per calendar month) - Applicable from 01-Aug-24"
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "Category": "Financial Services"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "UPI Spends using Tata Neu UPI ID"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "Fuel Spends",
+                    "Wallet loads / Gift or Prepaid Card load/ Voucher purchase**",
+                    "Cash Advances",
+                    "Payment of Outstanding Balances",
+                    "Payment of card fees and other charges",
+                    "Smart EMI / Dial an EMI transaction",
+                    "Rental and Government related transactions.",
+                    "Education payments made through third-party apps",
+                    "transactions carried out through the Merchant Category Code (MCC) of 6540"
+                ]
+            },
+            "rewardDescription": "Additional 1% back as NeuCoins if the transaction is done using the Tata Neu UPI ID - Applicable from 01-Aug-24"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "Category": "Fuel"
+            },
+            "conditions": {
+                "minSpend": 400,
+                "maxSpend": 5000,
+                "cap": {
+                    "amount": 500,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "1% Fuel Surcharge waiver on fuel transactions (Minimum transaction of ₹400, Maximum transaction of ₹5,000 & Maximum waiver of ₹500 per statement cycle)"
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 1499,
+                "unit": "fixed",
+                "currency": "INR",
+                "Category": "Others"
+            },
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "firstTransactionDaysAfterCardIssuance",
+                            "fieldDescription": "First transaction within days after card issuance",
+                            "comparison_operator": "lte",
+                            "value": 30
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "neuCoinsValidityDays",
+                            "fieldDescription": "Validity of NeuCoins from claim date",
+                            "comparison_operator": "eq",
+                            "value": 365
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "cardEligibility",
+                            "fieldDescription": "Eligibility for Lifetime Free or First Year Free Cards",
+                            "comparison_operator": "neq",
+                            "value": "Lifetime Free or First Year Free Cards"
+                        }
+                    ]
+                }
+            },
+            "rewardDescription": "Welcome Benefit of 1,499 NeuCoins (as reversal of 1st Year Membership Fees) will be given to the cardholder by Tata Digital Private Limited inside Tata Neu App. Welcome Benefit is applicable on 1st Transaction done within 30 days of card issuance and will be available to claim inside Tata Neu App within 60 days of such transaction. The validity of the NeuCoins given against Welcome Benefit will be 365 days from the claim date. Lifetime Free or First Year Free Cards will not be eligible for the Welcome Benefit."
+        }
+    ]
+}

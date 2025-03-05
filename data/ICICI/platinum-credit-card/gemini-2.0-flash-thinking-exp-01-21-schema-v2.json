@@ -1,0 +1,89 @@
+
+{
+  "card_info": {
+    "card_name": "Adani One ICICI Bank Platinum Credit Card",
+    "bank": "ICICI Bank",
+    "effective_date": null,
+    "last_updated": null
+  },
+  "fees_and_charges": {
+    "late_payment_charges": null,
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": 1,
+      "maximum_transaction": 4000,
+      "maximum_waiver": 40
+    },
+    "special_transaction_fees": null
+  },
+  "elite_status_benefits": {
+    "elite_status_level": "Platinum",
+    "airport_lounge_access": {
+      "domestic_lounges": [
+        "Domestic Airport Lounge Access"
+      ],
+      "international_lounges": null,
+      "free_lounge_visits": 8
+    },
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 3,
+        "unit": "fixed",
+        "currency": "INR",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Participating Merchants"
+        ]
+      }
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "fixed",
+        "currency": "INR",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Domestic Spends"
+        ]
+      }
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1.5,
+        "unit": "fixed",
+        "currency": "INR",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "International Transactions"
+        ]
+      }
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 0.5,
+        "unit": "fixed",
+        "currency": "INR",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Utility",
+          "Insurance"
+        ]
+      }
+    }
+  ]
+}

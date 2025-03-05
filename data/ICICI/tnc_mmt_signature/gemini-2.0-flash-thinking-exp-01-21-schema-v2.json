@@ -1,0 +1,155 @@
+
+{
+  "card_info": {
+    "card_name": "MakeMyTrip ICICI Bank Signature Credit Card",
+    "bank": "ICICI Bank",
+    "effective_date": null,
+    "last_updated": null
+  },
+  "fees_and_charges": {
+    "late_payment_charges": null,
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": null,
+      "maximum_transaction": 7500,
+      "maximum_waiver": 75
+    },
+    "special_transaction_fees": null
+  },
+  "elite_status_benefits": {
+    "elite_status_level": "MMTBLACK Exclusive membership",
+    "airport_lounge_access": {
+      "domestic_lounges": [],
+      "international_lounges": [],
+      "free_lounge_visits": 5
+    },
+    "free_night_awards": {
+      "eligibility_criteria": null,
+      "partner_hotels": null,
+      "value_cap": null
+    }
+  },
+  "rewards": [
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1500,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "minSpend": "joining membership fee"
+      },
+      "rewardDescription": "My Cash on Joining Fee payment"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1.25,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Domestic spends outside MakeMyTrip"
+        ]
+      },
+      "rewardDescription": "My Cash on Domestic spends outside MakeMyTrip per Rs 200 spent"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1.50,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "International spends outside MakeMyTrip"
+        ]
+      },
+      "rewardDescription": "My Cash on International spends outside MakeMyTrip per Rs 200 spent"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 2.00,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Spends on flight bookings on MakeMyTrip"
+        ]
+      },
+      "rewardDescription": "My Cash on spends on flight bookings on MakeMyTrip per Rs 200 spent"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 4.00,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Spends on hotel/holiday bookings on MakeMyTrip"
+        ]
+      },
+      "rewardDescription": "My Cash on spends on hotel/holiday bookings on MakeMyTrip per Rs 200 spent"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1100,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "minSpend": 250000,
+        "cap": {
+          "amount": 1100,
+          "period": "yearly"
+        }
+      },
+      "rewardDescription": "Milestone 1 My Cash on spends of Rs 2.5 lakh"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 4000,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "minSpend": 500000,
+        "cap": {
+          "amount": 4000,
+          "period": "yearly"
+        }
+      },
+      "rewardDescription": "Milestone 2 My Cash on spends of Rs 5 lakh"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1500,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "MakeMyTrip platform"
+        ],
+        "domain": "International Travel"
+      },
+      "rewardDescription": "Complimentary My Cash on International Travel"
+    }
+  ],
+  "extraction_error": [
+    "fees_and_charges.late_payment_charges is a required field but not found in the context.",
+    "fees_and_charges.finance_charges is a required field but not found in the context.",
+    "elite_status_benefits.free_night_awards.eligibility_criteria is a required field but not found in the context.",
+    "elite_status_benefits.free_night_awards.partner_hotels is a required field but not found in the context."
+  ]
+}

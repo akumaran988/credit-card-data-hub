@@ -1,0 +1,196 @@
+
+{
+  "card_info": {
+    "card_name": "HDFC Bank Millennia Credit Card",
+    "bank": "HDFC Bank",
+    "effective_date": null,
+    "last_updated": "2024-11-26"
+  },
+  "fees_and_charges": {
+    "late_payment_charges": [
+      {
+        "outstanding_amount_slab": "10",
+        "charge": 0
+      },
+      {
+        "outstanding_amount_slab": "101 - 500",
+        "charge": 100
+      },
+      {
+        "outstanding_amount_slab": "501 - 1000",
+        "charge": 500
+      },
+      {
+        "outstanding_amount_slab": "1001 - 5000",
+        "charge": 600
+      },
+      {
+        "outstanding_amount_slab": "5001 - 10000",
+        "charge": 750
+      },
+      {
+        "outstanding_amount_slab": "10001 - 25000",
+        "charge": 900
+      },
+      {
+        "outstanding_amount_slab": "25001 - 50000",
+        "charge": 1100
+      },
+      {
+        "outstanding_amount_slab": "50000",
+        "charge": 1300
+      }
+    ],
+    "finance_charges": 3.75,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": 400,
+      "maximum_transaction": 5000,
+      "maximum_waiver": 250
+    },
+    "special_transaction_fees": [
+      {
+        "transaction_type": "Rent",
+        "fee_type": "percentage",
+        "fee_value": 1,
+        "maximum_cap": 3000
+      },
+      {
+        "transaction_type": "Fuel (above ₹15000)",
+        "fee_type": "percentage",
+        "fee_value": 1,
+        "maximum_cap": 3000,
+        "customConditions": {
+          "condition": {
+            "type": "comparison",
+            "field": "transaction_amount",
+            "comparison_operator": "gt",
+            "value": 15000,
+            "description": "Apply fee only when transaction amount is greater than 15000"
+          }
+        }
+      },
+      {
+        "transaction_type": "Utility (above ₹50000)",
+        "fee_type": "percentage",
+        "fee_value": 1,
+        "maximum_cap": 3000,
+        "customConditions": {
+          "condition": {
+            "type": "comparison",
+            "field": "transaction_amount",
+            "comparison_operator": "gt",
+            "value": 50000,
+            "description": "Apply fee only when transaction amount is greater than 50000"
+          }
+        }
+      },
+      {
+        "transaction_type": "Education (Third-party Apps)",
+        "fee_type": "percentage",
+        "fee_value": 1,
+        "maximum_cap": 3000,
+        "customConditions": {
+          "condition": {
+            "type": "comparison",
+            "field": "payment_method",
+            "comparison_operator": "eq",
+            "value": "third-party apps",
+            "description": "Apply fee only for education payments through third-party apps"
+          }
+        }
+      }
+    ]
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": {
+      "domestic_lounges": [],
+      "international_lounges": [],
+      "free_lounge_visits": 0
+    },
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 5,
+        "unit": "percentage",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Amazon",
+          "BookMyShow",
+          "Cult.fit",
+          "Flipkart",
+          "Myntra",
+          "Sony LIV",
+          "Swiggy",
+          "Tata CLiQ",
+          "Uber",
+          "Zomato"
+        ],
+        "cap": {
+          "amount": 1000,
+          "period": "monthly"
+        }
+      },
+      "schedule": {
+        "rewardAccrualFrequency": "Monthly"
+      }
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "percentage",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "excludedMerchantsOrDomains": [
+          "Fuel",
+          "EMI",
+          "Wallet",
+          "Rent payments",
+          "Govt related txns"
+        ],
+        "cap": {
+          "amount": 1000,
+          "period": "monthly"
+        }
+      },
+      "schedule": {
+        "rewardAccrualFrequency": "Monthly"
+      }
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1000,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "minSpend": "joining membership fee"
+      }
+    },
+    {
+      "rewardType": "voucher",
+      "rewardValue": {
+        "amount": 1000,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "minSpend": 100000,
+        "cap": {
+          "period": "quarterly"
+        }
+      },
+      "redemptionMethod": {
+        "methodType": "manual",
+        "details": "select from voucher options by replying to SMS or visiting vendor page"
+      }
+    }
+  ]
+}

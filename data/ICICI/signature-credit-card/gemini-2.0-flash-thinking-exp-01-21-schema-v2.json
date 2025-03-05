@@ -1,0 +1,127 @@
+
+{
+  "card_info": {
+    "card_name": "Adani One ICICI Bank Signature Credit Card",
+    "bank": "ICICI Bank",
+    "effective_date": null,
+    "last_updated": null
+  },
+  "fees_and_charges": {
+    "late_payment_charges": null,
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": null,
+      "maximum_transaction": 4000,
+      "maximum_waiver": null
+    },
+    "special_transaction_fees": null
+  },
+  "elite_status_benefits": {
+    "elite_status_level": "Signature",
+    "airport_lounge_access": {
+      "domestic_lounges": null,
+      "international_lounges": null,
+      "free_lounge_visits": null,
+      "customConditions": {
+        "lounge_access_conditions": {
+          "description": "Lounge access conditions, differentiated by type and frequency",
+          "domestic": {
+            "description": "Domestic lounge access",
+            "access_limit": {
+              "type": "comparison",
+              "field": "access_limit",
+              "value": 4,
+              "comparison_operator": "eq",
+              "description": "Access limit per quarter"
+            },
+            "access_frequency": {
+              "type": "comparison",
+              "field": "access_frequency",
+              "value": "quarterly",
+              "comparison_operator": "eq",
+              "description": "Access frequency"
+            }
+          },
+          "international": {
+            "description": "International lounge access",
+            "access_limit": {
+              "type": "comparison",
+              "field": "access_limit",
+              "value": 2,
+              "comparison_operator": "eq",
+              "description": "Access limit per year"
+            },
+            "access_frequency": {
+              "type": "comparison",
+              "field": "access_frequency",
+              "value": "yearly",
+              "comparison_operator": "eq",
+              "description": "Access frequency"
+            }
+          }
+        }
+      }
+    },
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 7,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "participating merchants"
+        ],
+        "minSpend": 100
+      },
+      "rewardDescription": "7 Adani Reward Points on every ₹ 100 spent at participating merchants"
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1.5,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Domestic spends"
+        ],
+        "minSpend": 100
+      },
+      "rewardDescription": "1.5 Adani Reward Points on every ₹ 100 spent on domestic spends"
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 2,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "International transactions"
+        ],
+        "minSpend": 100
+      },
+      "rewardDescription": "2 Adani Reward Points on every ₹ 100 spent on international transactions"
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 0.5,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Utility",
+          "Insurance"
+        ],
+        "minSpend": 100
+      },
+      "rewardDescription": "0.5 Adani Reward Points on every ₹ 100 spent on Utility and Insurance"
+    }
+  ],
+  "extraction_error": "Required field 'fees_and_charges.late_payment_charges' is missing in the context. Required field 'fees_and_charges.finance_charges' is missing in the context."
+}

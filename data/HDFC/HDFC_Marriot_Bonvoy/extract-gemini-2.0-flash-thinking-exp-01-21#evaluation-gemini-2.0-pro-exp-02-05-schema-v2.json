@@ -1,0 +1,289 @@
+{
+    "card_info": {
+        "card_name": "Marriott Bonvoy® HDFC Bank Credit Card",
+        "bank": "HDFC Bank",
+        "effective_date": "2023-12-15",
+        "last_updated": "2023-12-15",
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the provided context.",
+            "Could not find information about finance charges in the provided context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Silver Elite",
+        "airport_lounge_access": {
+            "domestic_lounges": [
+                "Available via Diners travel tools App"
+            ],
+            "international_lounges": [
+                "Available via Diners travel tools App"
+            ],
+            "free_lounge_visits": 24
+        },
+        "free_night_awards": {
+            "eligibility_criteria": "Welcome gift, anniversary year, and spend based (INR 6 lakhs, 9 lakhs, 15 lakhs)",
+            "partner_hotels": [
+                "Hotels participating in Marriott Bonvoy (list available at www.marriott.com), excluding Bulgari, Marriott Executive Apartments and Homes & Villas by Marriott Bonvoy"
+            ],
+            "value_cap": 15000
+        },
+        "extraction_errors": [
+            "The context mentions 12 complimentary domestic lounge visits and 12 complimentary international lounge visits per year, totaling 24. The 'free_lounge_visits' field in the schema is a single number, and based on the schema description 'Number of free lounge visits allowed in a year', we have used 24 to represent the total. However, there might be an alternative interpretation where domestic and international lounge visits should be represented separately if possible, but the schema structure does not allow for separate counts."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 8,
+                "unit": "multiplier",
+                "referenceValue": 150,
+                "Category": "Travel"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "hotels participating in Marriott Bonvoy"
+                ],
+                "maxSpend": 1000000,
+                "cap": {
+                    "amount": 53335,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "Earn 8 Marriott Bonvoy Points per ₹150 on Non EMI Eligible Spends at hotels participating in Marriott Bonvoy up to a monthly spend threshold of INR 10 Lakh."
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "multiplier",
+                "referenceValue": 150,
+                "Category": "Travel"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "hotels participating in Marriott Bonvoy"
+                ],
+                "minSpend": 1000000
+            },
+            "rewardDescription": "Earn 2 Marriott Bonvoy Points per ₹150 on Non EMI Eligible Spends at hotels participating in Marriott Bonvoy for monthly spend above INR 10 Lakh."
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 4,
+                "unit": "multiplier",
+                "referenceValue": 150,
+                "Category": "Dining"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Travel",
+                    "Entertainment",
+                    "Dining"
+                ],
+                "maxSpend": 500000,
+                "cap": {
+                    "amount": 13335,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "Earn 4 Marriott Bonvoy Points per ₹150 on Travel, Entertainment & Dining up to a monthly spend threshold of INR 5 Lakh."
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "multiplier",
+                "referenceValue": 150,
+                "Category": "Dining"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Travel",
+                    "Entertainment",
+                    "Dining"
+                ],
+                "minSpend": 500000
+            },
+            "rewardDescription": "Earn 2 Marriott Bonvoy Points per ₹150 on Travel, Entertainment & Dining for monthly spend above INR 5 Lakh."
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "multiplier",
+                "referenceValue": 150,
+                "Category": "Groceries"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Grocery Store"
+                ],
+                "maxSpend": 150000,
+                "cap": {
+                    "amount": 2000,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "Earn 2 Marriott Bonvoy Points per ₹150 on Grocery Store spends up to a monthly spend threshold of INR 1.5 Lakh."
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "Category": "Travel"
+            },
+            "rewardDescription": "Receive One (1) Free Night Award as a Welcome Gift and on every Anniversary Year.",
+            "conditions": {
+                "cap": {
+                    "amount": 15000,
+                    "period": "per reward"
+                }
+            },
+            "schedule": {
+                "rewardExpiry": {
+                    "unit": "months",
+                    "value": 12
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "Category": "Travel"
+            },
+            "rewardDescription": "Earn 1 Free Night Award (valid for 12 months) with a redemption level up to 15,000 Marriott Bonvoy Points following Eligible Spend of INR 6 lakhs in an Anniversary Year.",
+            "conditions": {
+                "minSpend": 600000,
+                "cap": {
+                    "amount": 15000,
+                    "period": "per reward"
+                }
+            },
+            "schedule": {
+                "rewardExpiry": {
+                    "unit": "months",
+                    "value": 12
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "Category": "Travel"
+            },
+            "rewardDescription": "Earn 1 additional Free Night Award (valid for 12 months) with a redemption level up to 15,000 Marriott Bonvoy Points following Eligible Spend of INR 9 lakhs in an Anniversary Year.",
+            "conditions": {
+                "minSpend": 900000,
+                "cap": {
+                    "amount": 15000,
+                    "period": "per reward"
+                }
+            },
+            "schedule": {
+                "rewardExpiry": {
+                    "unit": "months",
+                    "value": 12
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "fixed",
+                "Category": "Travel"
+            },
+            "rewardDescription": "Earn 1 additional Free Night Award (valid for 12 months) with a redemption level up to 15,000 Marriott Bonvoy Points following Eligible Spend of INR 15 lakhs in an Anniversary Year.",
+            "conditions": {
+                "minSpend": 1500000,
+                "cap": {
+                    "amount": 15000,
+                    "period": "per reward"
+                }
+            },
+            "schedule": {
+                "rewardExpiry": {
+                    "unit": "months",
+                    "value": 12
+                }
+            }
+        },
+        {
+            "rewardType": "offers",
+            "rewardValue": {
+                "amount": 10,
+                "unit": "year",
+                "Category": "Others"
+            },
+            "rewardDescription": "Primary Cardmembers will be credited with 10 Elite Night Credits to their Marriott Bonvoy account as welcome benefit and in each subsequent Anniversary Year.",
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            }
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year",
+                "Category": "Others"
+            },
+            "rewardDescription": "Complimentary Marriott Bonvoy Silver Elite Status Tier upon Card approval and each Anniversary Year as a Cardmember.",
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            }
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 12,
+                "unit": "year",
+                "Category": "Travel"
+            },
+            "rewardDescription": "12 complimentary visits to domestic lounges within India (both at domestic and international terminals) using the Marriott Bonvoy HDFC Bank Credit Card each year.",
+            "conditions": {},
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            }
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 12,
+                "unit": "year",
+                "Category": "Travel"
+            },
+            "rewardDescription": "12 complimentary visits to international lounges outside India using the Marriott Bonvoy HDFC Bank Credit Card each year.",
+            "conditions": {},
+            "schedule": {
+                "rewardAccrualFrequency": "Annually"
+            }
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "quarterly",
+                "Category": "Entertainment"
+            },
+            "rewardDescription": "Complimentary access to select golf courses (Green Fee Waiver) and lessons twice per quarter.",
+            "conditions": {},
+            "schedule": {
+                "rewardAccrualFrequency": "Quarterly"
+            }
+        }
+    ]
+}

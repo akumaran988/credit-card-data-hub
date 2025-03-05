@@ -1,0 +1,170 @@
+{
+    "card_info": {
+        "card_name": "CASHBACK SBI Card",
+        "bank": "SBI Card",
+        "effective_date": null,
+        "last_updated": null,
+        "extraction_errors": [
+            "Could not find the effective date of the terms and conditions in the provided context. Please review the document for terms and conditions effective date.",
+            "Could not find the last updated or publication date for the terms and conditions in the provided context. Please review the document for publication or last modification date."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 500,
+            "maximum_transaction": 3000,
+            "maximum_waiver": 100
+        },
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Late payment charges details are not found in the context.",
+            "Finance charges percentage is not found in the context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not find information about the elite status level of the card in the provided context. The document describes features of CASHBACK SBI Card but does not mention any elite status tier.",
+            "Could not find any details regarding airport lounge access benefits in the provided context. There is no mention of domestic or international lounges accessible or any information about free lounge visits.",
+            "Could not find any information about free night awards or benefits at partner hotels in the provided context. The document does not describe any eligibility criteria, partner hotels, or value cap related to free night awards."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "Category": "Financial Services"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": {
+                    "type": "array",
+                    "items": [
+                        "Fuel",
+                        "Wallet Loading",
+                        "Rental Payments",
+                        "Jewelry",
+                        "School & Educational Services",
+                        "Utility Payments",
+                        "Insurance Payments",
+                        "Card, Gift, Novelty & Souvenir Shops",
+                        "Railways",
+                        "Member Financial Institution/Quasi Cash",
+                        "Flexipay Transactions",
+                        "Merchant EMI"
+                    ],
+                    "description": "List of categories where cashback is not applicable"
+                },
+                "cap": {
+                    "amount": 5000,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "Earn 5% cashback on online transactions."
+        },
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "Category": "Financial Services"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": {
+                    "type": "array",
+                    "items": [
+                        "Fuel",
+                        "Wallet Loading",
+                        "Rental Payments",
+                        "Jewelry",
+                        "School & Educational Services",
+                        "Utility Payments",
+                        "Insurance Payments",
+                        "Card, Gift, Novelty & Souvenir Shops",
+                        "Railways",
+                        "Member Financial Institution/Quasi Cash",
+                        "Flexipay Transactions",
+                        "Merchant EMI"
+                    ],
+                    "description": "List of categories where cashback is not applicable"
+                },
+                "cap": {
+                    "amount": 5000,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "Earn 1% cashback on offline transactions."
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "Category": "Fuel",
+                "currency": null
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Petrol Pumps"
+                ],
+                "minSpend": 500,
+                "maxSpend": 3000,
+                "cap": {
+                    "amount": 100,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "Get 1% Fuel Surcharge Waiver across all Petrol Pumps in India on fuel transaction amount ranging from ₹500 to ₹3,000. Maximum surcharge waiver of ₹100 per billing statement, per credit card account is applicable."
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": null,
+                "unit": "fixed",
+                "Category": "Financial Services"
+            },
+            "rewardDescription": "Balance Transfer facility with low interest rate options to save big by transferring outstanding balances from other credit cards.",
+            "conditions": {
+                "minSpend": 5000,
+                "maxSpend": "75% of your available credit limit"
+            }
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": null,
+                "unit": "fixed",
+                "Category": "Financial Services"
+            },
+            "rewardDescription": "Flexipay facility to convert purchases into easy monthly installments with a low rate of interest.",
+            "conditions": {
+                "applicableTo": "purchases"
+            }
+        },
+        {
+            "rewardType": "offers",
+            "rewardValue": {
+                "amount": null,
+                "unit": "fixed",
+                "Category": "Insurance"
+            },
+            "rewardDescription": "Access to buy Health Insurance, Personal Accident Insurance, Motor Insurance, Additional health covers, Travel Insurance, Life Insurance and other assistance products, at very affordable rates."
+        }
+    ]
+}

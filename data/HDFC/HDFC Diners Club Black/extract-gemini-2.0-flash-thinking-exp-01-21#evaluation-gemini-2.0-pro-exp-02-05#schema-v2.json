@@ -1,0 +1,746 @@
+{
+    "card_info": {
+        "card_name": "Diners Club Black",
+        "bank": "HDFC Bank",
+        "effective_date": "2024-07-03",
+        "last_updated": "2024-07-03",
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the provided context.",
+            "Could not find information about finance charges in the provided context.",
+            "Could not find information about fuel surcharge waiver in the provided context.",
+            "Could not find information about special transaction fees in the provided context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Black Gold",
+        "airport_lounge_access": null,
+        "free_night_awards": null,
+        "extraction_errors": [
+            "Airport lounge access details are not found in the context.",
+            "Free night award details are not found in the context."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "unit": "year",
+                "amount": 1
+            },
+            "conditions": {
+                "minSpend": 150000,
+                "period": "90 days from card issuance or last upgrade/downgrade date",
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "or",
+                        "conditions": [
+                            {
+                                "type": "comparison",
+                                "field": "minSpend",
+                                "fieldDescription": "Minimum Spend within first 90 days",
+                                "comparison_operator": "gte",
+                                "value": 150000
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "joiningFee",
+                                "fieldDescription": "Joining Fee Realization",
+                                "comparison_operator": "eq",
+                                "value": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "Club Marriott Membership"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "unit": "months",
+                "amount": 3
+            },
+            "conditions": {
+                "minSpend": 150000,
+                "period": "90 days from card issuance or last upgrade/downgrade date",
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "or",
+                        "conditions": [
+                            {
+                                "type": "comparison",
+                                "field": "minSpend",
+                                "fieldDescription": "Minimum Spend within first 90 days",
+                                "comparison_operator": "gte",
+                                "value": 150000
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "joiningFee",
+                                "fieldDescription": "Joining Fee Realization",
+                                "comparison_operator": "eq",
+                                "value": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "Swiggy One Membership (3 months)"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "unit": "year",
+                "amount": 1
+            },
+            "conditions": {
+                "minSpend": 150000,
+                "period": "90 days from card issuance or last upgrade/downgrade date",
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "or",
+                        "conditions": [
+                            {
+                                "type": "comparison",
+                                "field": "minSpend",
+                                "fieldDescription": "Minimum Spend within first 90 days",
+                                "comparison_operator": "gte",
+                                "value": 150000
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "joiningFee",
+                                "fieldDescription": "Joining Fee Realization",
+                                "comparison_operator": "eq",
+                                "value": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "MakeMyTrip Black Gold Tier Membership"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "unit": "year",
+                "amount": 1
+            },
+            "conditions": {
+                "minSpend": 150000,
+                "period": "90 days from card issuance or last upgrade/downgrade date",
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "or",
+                        "conditions": [
+                            {
+                                "type": "comparison",
+                                "field": "minSpend",
+                                "fieldDescription": "Minimum Spend within first 90 days",
+                                "comparison_operator": "gte",
+                                "value": 150000
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "joiningFee",
+                                "fieldDescription": "Joining Fee Realization",
+                                "comparison_operator": "eq",
+                                "value": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "Amazon Prime Subscription"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "unit": "year",
+                "amount": 1
+            },
+            "conditions": {
+                "minSpend": 150000,
+                "period": "90 days from card issuance or last upgrade/downgrade date",
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "or",
+                        "conditions": [
+                            {
+                                "type": "comparison",
+                                "field": "minSpend",
+                                "fieldDescription": "Minimum Spend within first 90 days",
+                                "comparison_operator": "gte",
+                                "value": 150000
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "joiningFee",
+                                "fieldDescription": "Joining Fee Realization",
+                                "comparison_operator": "eq",
+                                "value": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "Times Prime Subscription"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "unit": "year",
+                "amount": 1
+            },
+            "conditions": {
+                "minSpend": 800000,
+                "period": "yearly"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "Club Marriott Membership (Annual)"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "unit": "year",
+                "amount": 1
+            },
+            "conditions": {
+                "minSpend": 800000,
+                "period": "yearly"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "Swiggy One Membership (Annual)"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "unit": "year",
+                "amount": 1
+            },
+            "conditions": {
+                "minSpend": 800000,
+                "period": "yearly"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "MakeMyTrip Black Gold Tier Membership (Annual)"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "unit": "year",
+                "amount": 1
+            },
+            "conditions": {
+                "minSpend": 800000,
+                "period": "yearly"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "Amazon Prime Subscription (Annual)"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "unit": "year",
+                "amount": 1
+            },
+            "conditions": {
+                "minSpend": 800000,
+                "period": "yearly"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "Times Prime Subscription (Annual)"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "unit": "months",
+                "amount": 1,
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 80000,
+                "period": "monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "cult.fit Live 1-month subscription"
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "unit": "fixed",
+                "amount": 500,
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 80000,
+                "period": "monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "BookMyShow voucher Rs. 500"
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "unit": "fixed",
+                "amount": 500,
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 80000,
+                "period": "monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "TataCLiQ voucher Rs. 500"
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "unit": "fixed",
+                "amount": 500,
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 80000,
+                "period": "monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Download voucher from Diners Club Black Smartbuy Milestone Page",
+                "eligibleChannels": [
+                    "Diners Club Black Smartbuy Milestone Page"
+                ]
+            },
+            "rewardDescription": "Ola cabs voucher Rs. 500"
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "unit": "multiplier",
+                "amount": 2
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "restaurants"
+                ],
+                "excludedMerchantsOrDomains": [
+                    {
+                        "domain": "wallet payments"
+                    },
+                    {
+                        "domain": "EMI transactions"
+                    }
+                ],
+                "minSpend": 150,
+                "customConditions": {
+                    "condition": {
+                        "type": "range",
+                        "field": "dayOfWeek",
+                        "fieldDescription": "Weekend",
+                        "range": {
+                            "gte": 5,
+                            "lte": 7
+                        }
+                    }
+                },
+                "cap": {
+                    "amount": 1000,
+                    "period": "daily"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "rewardDescription": "2X Reward Points on weekend dining at standalone restaurants, applicable on HDFC Bank Diners Club Black credit cards. Incremental Reward Points will be posted within 90 days from the end of the calendar month in which the transaction was made."
+        },
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "unit": "percentage",
+                "amount": 0.5,
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "flight bookings"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "type": "range",
+                                "field": "travelSpendsLast12Months",
+                                "fieldDescription": "Travel spends in the last 12 months",
+                                "range": {
+                                    "gte": 50000,
+                                    "lte": 200000
+                                }
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "completedTrips",
+                                "fieldDescription": "Total completed trips",
+                                "comparison_operator": "gt",
+                                "value": 4
+                            }
+                        ]
+                    }
+                }
+            },
+            "rewardDescription": "MMTBLACK GOLD members - myCash worth INR 0.5 for every INR 100 spent on flight bookings. Condition to become MMTBLACK GOLD Tier member: If your travel spends in the last 12 months are in the range of INR 50,000 to INR 2,00,000, AND your total completed trips are more than 4"
+        },
+        {
+            "rewardType": "cashback",
+            "rewardValue": {
+                "unit": "percentage",
+                "amount": 1,
+                "referenceValue": 100,
+                "currency": "INR"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "Rail",
+                    "Metro",
+                    "Visa bookings",
+                    "flight bookings"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "type": "range",
+                                "field": "travelSpendsLast12Months",
+                                "fieldDescription": "Travel spends in the last 12 months",
+                                "range": {
+                                    "gte": 50000,
+                                    "lte": 200000
+                                }
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "completedTrips",
+                                "fieldDescription": "Total completed trips",
+                                "comparison_operator": "gt",
+                                "value": 4
+                            }
+                        ]
+                    }
+                }
+            },
+            "rewardDescription": "MMTBLACK GOLD members - myCash worth INR 1 for every INR 100 spent on all other bookings (Excluding Rail, Metro and Visa bookings). Condition to become MMTBLACK GOLD Tier member: If your travel spends in the last 12 months are in the range of INR 50,000 to INR 2,00,000, AND your total completed trips are more than 4"
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "unit": "percentage",
+                "amount": 10
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "select hotels"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "type": "range",
+                                "field": "travelSpendsLast12Months",
+                                "fieldDescription": "Travel spends in the last 12 months",
+                                "range": {
+                                    "gte": 50000,
+                                    "lte": 200000
+                                }
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "completedTrips",
+                                "fieldDescription": "Total completed trips",
+                                "comparison_operator": "gt",
+                                "value": 4
+                            }
+                        ]
+                    }
+                }
+            },
+            "rewardDescription": "MMTBLACK GOLD members - Min. 10% additional discount on select hotels. Condition to become MMTBLACK GOLD Tier member: If your travel spends in the last 12 months are in the range of INR 50,000 to INR 2,00,000, AND your total completed trips are more than 4"
+        },
+        {
+            "rewardType": "service",
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "select hotels"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "type": "range",
+                                "field": "travelSpendsLast12Months",
+                                "fieldDescription": "Travel spends in the last 12 months",
+                                "range": {
+                                    "gte": 50000,
+                                    "lte": 200000
+                                }
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "completedTrips",
+                                "fieldDescription": "Total completed trips",
+                                "comparison_operator": "gt",
+                                "value": 4
+                            }
+                        ]
+                    }
+                }
+            },
+            "rewardDescription": "MMTBLACK GOLD members - Guaranteed Room Upgrade/ Meal Plan Upgrade/ Hotel Credit on select hotels. Condition to become MMTBLACK GOLD Tier member: If your travel spends in the last 12 months are in the range of INR 50,000 to INR 2,00,000, AND your total completed trips are more than 4"
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "unit": "percentage",
+                "amount": 20
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "select hotels"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "type": "range",
+                                "field": "travelSpendsLast12Months",
+                                "fieldDescription": "Travel spends in the last 12 months",
+                                "range": {
+                                    "gte": 50000,
+                                    "lte": 200000
+                                }
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "completedTrips",
+                                "fieldDescription": "Total completed trips",
+                                "comparison_operator": "gt",
+                                "value": 4
+                            }
+                        ]
+                    }
+                }
+            },
+            "rewardDescription": "MMTBLACK GOLD members - Min. 20% off on F&B/SPA at select hotels. Condition to become MMTBLACK GOLD Tier member: If your travel spends in the last 12 months are in the range of INR 50,000 to INR 2,00,000, AND your total completed trips are more than 4"
+        },
+        {
+            "rewardType": "service",
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "type": "range",
+                                "field": "travelSpendsLast12Months",
+                                "fieldDescription": "Travel spends in the last 12 months",
+                                "range": {
+                                    "gte": 50000,
+                                    "lte": 200000
+                                }
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "completedTrips",
+                                "fieldDescription": "Total completed trips",
+                                "comparison_operator": "gt",
+                                "value": 4
+                            }
+                        ]
+                    }
+                }
+            },
+            "rewardDescription": "MMTBLACK GOLD members - Premium Customer Support – 24x7 Priority Helpdesk with call pick-up within 30 seconds. Condition to become MMTBLACK GOLD Tier member: If your travel spends in the last 12 months are in the range of INR 50,000 to INR 2,00,000, AND your total completed trips are more than 4"
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "unit": "percentage",
+                "amount": 25
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "flight add-ons"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "type": "range",
+                                "field": "travelSpendsLast12Months",
+                                "fieldDescription": "Travel spends in the last 12 months",
+                                "range": {
+                                    "gte": 50000,
+                                    "lte": 200000
+                                }
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "completedTrips",
+                                "fieldDescription": "Total completed trips",
+                                "comparison_operator": "gt",
+                                "value": 4
+                            }
+                        ]
+                    }
+                }
+            },
+            "rewardDescription": "MMTBLACK GOLD members - 25% OFF on Ancillaries Services (flight add-ons) like Zero Cancellation, In-Flight Meal, Date Change, Fast Forward. Condition to become MMTBLACK GOLD Tier member: If your travel spends in the last 12 months are in the range of INR 50,000 to INR 2,00,000, AND your total completed trips are more than 4"
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "unit": "fixed",
+                "amount": 3500,
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 75000,
+                "applicableMerchantsOrDomains": [
+                    "Holiday Packages"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "type": "range",
+                                "field": "travelSpendsLast12Months",
+                                "fieldDescription": "Travel spends in the last 12 months",
+                                "range": {
+                                    "gte": 50000,
+                                    "lte": 200000
+                                }
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "completedTrips",
+                                "fieldDescription": "Total completed trips",
+                                "comparison_operator": "gt",
+                                "value": 4
+                            }
+                        ]
+                    }
+                }
+            },
+            "rewardDescription": "MMTBLACK Members - Holiday Package Benefit – Two Holiday vouchers worth flat INR 3,500 OFF* each, which can be utilised to get discount on Holiday Package bookings worth INR 75,000 or more. Condition to become MMTBLACK GOLD Tier member: If your travel spends in the last 12 months are in the range of INR 50,000 to INR 2,00,000, AND your total completed trips are more than 4"
+        }
+    ]
+}

@@ -1,0 +1,296 @@
+{
+    "card_info": {
+        "card_name": "MoneyBack+ Credit Card",
+        "bank": "HDFC BANK",
+        "effective_date": "2024-08-01",
+        "last_updated": "2024-08-13",
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": [
+            {
+                "outstanding_amount_slab": "<= ₹ 100",
+                "charge": 0
+            },
+            {
+                "outstanding_amount_slab": "₹ 101 - 500",
+                "charge": 100
+            },
+            {
+                "outstanding_amount_slab": "₹ 501 - 1000",
+                "charge": 500
+            },
+            {
+                "outstanding_amount_slab": "₹ 1001 - 5000",
+                "charge": 600
+            },
+            {
+                "outstanding_amount_slab": "₹ 5001 - 10000",
+                "charge": 750
+            },
+            {
+                "outstanding_amount_slab": "₹ 10001 - 25000",
+                "charge": 900
+            },
+            {
+                "outstanding_amount_slab": "₹ 25001 - 50000",
+                "charge": 1100
+            },
+            {
+                "outstanding_amount_slab": "> ₹ 50000",
+                "charge": 1300
+            }
+        ],
+        "finance_charges": 3.75,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 400,
+            "maximum_transaction": 5000,
+            "maximum_waiver": 250
+        },
+        "special_transaction_fees": [
+            {
+                "transaction_type": "Rent",
+                "fee_type": "percentage",
+                "fee_value": 1.0,
+                "maximum_cap": 3000
+            },
+            {
+                "transaction_type": "Fuel",
+                "fee_type": "percentage",
+                "fee_value": 1.0,
+                "maximum_cap": 3000
+            },
+            {
+                "transaction_type": "Utility",
+                "fee_type": "percentage",
+                "fee_value": 1.0,
+                "maximum_cap": 3000
+            },
+            {
+                "transaction_type": "Education",
+                "fee_type": "percentage",
+                "fee_value": 1.0,
+                "maximum_cap": 3000
+            }
+        ],
+        "extraction_errors": []
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null,
+            "value_cap": null
+        },
+        "extraction_errors": [
+            "Could not extract 'elite_status_level' from the context as there is no mention of any elite status tier for this credit card.",
+            "Could not extract 'airport_lounge_access' details from the context as there is no information about airport lounge access benefits associated with this credit card.",
+            "Could not extract 'free_night_awards' details from the context as there is no information about free night awards or hotel benefits associated with this credit card."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 20,
+                "Category": "Shopping",
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": 150
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Amazon",
+                    "BigBasket",
+                    "Flipkart",
+                    "Reliance Smart SuperStore",
+                    "Swiggy"
+                ],
+                "cap": {
+                    "amount": 2500,
+                    "period": "monthly"
+                },
+                "excludedMerchantsOrDomains": null
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "CashBack/Reward catalog/SmartBuy Travel"
+            },
+            "rewardDescription": "Earn 10X CashPoints i.e., 20 CashPoints per ₹150 spent on Amazon, BigBasket, Flipkart, Reliance Smart SuperStore & Swiggy. Max 2500 CashPoints per month. Applicable for non-Emi spends.",
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "merchant_terminal_id_availability",
+                    "fieldDescription": "CashPoints of 10X on select merchants are calculated basis the Terminal / merchant IDs (TIDs & MIDs) shared by the respective merchant partners. If in case the TID / MID is not available in the set-up, such transactions will not qualify for the benefit",
+                    "value": "TID / MID available",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 2,
+                "Category": "Others",
+                "unit": "fixed",
+                "currency": "INR",
+                "referenceValue": 150
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "Fuel",
+                    "EMI",
+                    "Rent payments",
+                    "Govt related transactions",
+                    "Wallet/ Gift /Prepaid Card loads",
+                    "Voucher Purchase transactions"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "CashBack/Reward catalog/SmartBuy Travel"
+            },
+            "rewardDescription": "Earn 2 CashPoints per ₹150 spent on other spends. Excludes Fuel, EMI, Rent payments, Govt related transactions and Wallet/ Gift /Prepaid Card loads & Voucher Purchase transactions.",
+            "customConditions": {
+                "condition": [
+                    {
+                        "type": "range",
+                        "field": "grocery_reward_points_cap",
+                        "fieldDescription": "Reward points earned on Grocery transactions will be capped per month to 1,000 reward points.",
+                        "range": {
+                            "lte": 1000
+                        },
+                        "logical_operator": "and"
+                    },
+                    {
+                        "type": "comparison",
+                        "field": "reward_exclusion_effective_date_rent_govt_education_wallet_emi",
+                        "fieldDescription": "Rent payments, Govt Related transactions, Education payments through third-party apps, Wallet loading and Easy EMI transactions will NOT earn Reward Points effective 1st January 2023 and 1st September 2024 respectively.",
+                        "value": "1st January 2023 for Rent payments and Govt Related transactions, 1st September 2024 for Education payments through third-party apps, Wallet loading and Easy EMI transactions",
+                        "comparison_operator": "gte"
+                    }
+                ]
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "amount": 500,
+                "Category": "Others",
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 50000,
+                "schedule": {
+                    "rewardAccrualFrequency": "Quarterly"
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Select from available voucher options via SMS/Email link."
+            },
+            "rewardDescription": "Get a Free Gift Voucher worth INR 500 on achieving spends target of ₹50K within a calendar quarter.",
+            "customConditions": {
+                "condition": [
+                    {
+                        "type": "range",
+                        "field": "voucher_validity",
+                        "fieldDescription": "The voucher message triggered to the customer through SMS & Email will be valid and active only for 60 days from the triggered date.",
+                        "range": {
+                            "lte": 60
+                        },
+                        "unit": "days"
+                    },
+                    {
+                        "type": "comparison",
+                        "field": "voucher_redemption_method",
+                        "fieldDescription": "The cardholder needs to select from the available voucher options. He/she can choose by replying back to the specified number with the option to get the voucher or visit the vendor page by clicking on the link available in the message/email for selecting the voucher of his/her choice.",
+                        "value": "SMS/Email link",
+                        "comparison_operator": "eq"
+                    },
+                    {
+                        "type": "comparison",
+                        "field": "spends_achievement_view_method",
+                        "fieldDescription": "Cardholder can view the spends achievement via Net Banking.",
+                        "value": "Net Banking",
+                        "comparison_operator": "eq"
+                    }
+                ]
+            }
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 500,
+                "Category": "Others",
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": "joining membership fee"
+            },
+            "rewardDescription": "Welcome Benefit of 500 CashPoints will be given to the cardholder if the joining membership fee is paid."
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 500,
+                "Category": "Others",
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": "renewal membership fee"
+            },
+            "rewardDescription": "Renewal Benefit of 500 CashPoints will be given to the cardholder if the membership fee is paid."
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 1,
+                "Category": "Fuel",
+                "unit": "percentage",
+                "referenceValue": 5000
+            },
+            "conditions": {
+                "minSpend": 400,
+                "maxSpend": 5000,
+                "cap": {
+                    "amount": 250,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "1% Fuel Surcharge waiver on fuel transactions (Minimum transaction of ₹400, Maximum transaction of ₹5,000 & Maximum waiver of ₹250 per statement cycle).",
+            "customConditions": {
+                "condition": [
+                    {
+                        "type": "comparison",
+                        "field": "surcharge_rate_variation",
+                        "fieldDescription": "The rate of surcharge may vary depending on the fuel station and their acquiring bank.",
+                        "value": "fuel station and acquiring bank dependent",
+                        "comparison_operator": "eq"
+                    },
+                    {
+                        "type": "comparison",
+                        "field": "maximum_waiver_percentage_in_dispute",
+                        "fieldDescription": "In any case, Bank shall be giving a maximum waiver of 1% in case of any dispute, subject to limit applicable limits.",
+                        "value": "1%",
+                        "comparison_operator": "eq"
+                    }
+                ]
+            }
+        }
+    ]
+}

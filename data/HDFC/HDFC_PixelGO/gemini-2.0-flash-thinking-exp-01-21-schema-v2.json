@@ -1,0 +1,94 @@
+
+{
+  "card_info": {
+    "card_name": "PIXEL Go Credit Card",
+    "bank": "HDFC BANK",
+    "effective_date": null,
+    "last_updated": null
+  },
+  "fees_and_charges": {
+    "late_payment_charges": [],
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": 400,
+      "maximum_transaction": 5000,
+      "maximum_waiver": 250
+    },
+    "special_transaction_fees": []
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": null,
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "excludedMerchantsOrDomains": [
+          "Fuel Spends",
+          "Wallet Spends",
+          "Rent payments",
+          "Government related transactions",
+          "EMI Transactions",
+          "Purchases converted to EMI post facto",
+          "Cash Advances",
+          "Payment of Outstanding Balances",
+          "Payment of card fees and other charges"
+        ]
+      }
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 5,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "SmartBuy Platform"
+        ]
+      },
+      "cap": {
+        "amount": 500,
+        "period": "monthly"
+      }
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "UPI Spends"
+        ]
+      },
+      "cap": {
+        "amount": 500,
+        "period": "monthly"
+      }
+    },
+    {
+      "rewardType": "discount",
+      "rewardValue": {
+        "amount": 25,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "restaurants via Dineout Pay"
+        ]
+      },
+      "cap": {
+        "amount": 300,
+        "period": "monthly"
+      }
+    }
+  ]
+}

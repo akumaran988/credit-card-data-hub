@@ -1,0 +1,306 @@
+{
+    "card_info": {
+        "card_name": "MoneyBack+ Credit Card",
+        "bank": "HDFC BANK",
+        "effective_date": "2024-09-01",
+        "last_updated": "2024-08-13",
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": [
+            {
+                "outstanding_amount_slab": "<= ₹ 100",
+                "charge": 0
+            },
+            {
+                "outstanding_amount_slab": "₹ 101 - 500",
+                "charge": 100
+            },
+            {
+                "outstanding_amount_slab": "₹ 501 - 1000",
+                "charge": 500
+            },
+            {
+                "outstanding_amount_slab": "₹ 1001 - 5000",
+                "charge": 600
+            },
+            {
+                "outstanding_amount_slab": "₹ 5001 - 10000",
+                "charge": 750
+            },
+            {
+                "outstanding_amount_slab": "₹ 10001 - 25000",
+                "charge": 900
+            },
+            {
+                "outstanding_amount_slab": "₹ 25001 - 50000",
+                "charge": 1100
+            },
+            {
+                "outstanding_amount_slab": "> ₹ 50000",
+                "charge": 1300
+            }
+        ],
+        "finance_charges": 3.75,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 400,
+            "maximum_transaction": 5000,
+            "maximum_waiver": 250
+        },
+        "special_transaction_fees": [
+            {
+                "transaction_type": "Rent",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": 3000
+            },
+            {
+                "transaction_type": "Fuel",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": 3000
+            },
+            {
+                "transaction_type": "Utility",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": 3000
+            },
+            {
+                "transaction_type": "Education",
+                "fee_type": "percentage",
+                "fee_value": 1,
+                "maximum_cap": 3000
+            }
+        ],
+        "extraction_errors": []
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "MoneyBack+",
+        "airport_lounge_access": null,
+        "free_night_awards": null,
+        "extraction_errors": [
+            "Could not find information about airport lounge access benefits for the HDFC Bank MoneyBack+ Credit Card in the provided context. Therefore, 'airport_lounge_access' is set to null.",
+            "Could not find information about free night awards benefits for the HDFC Bank MoneyBack+ Credit Card in the provided context. Therefore, 'free_night_awards' is set to null."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 20,
+                "unit": "multiplier",
+                "referenceValue": 150,
+                "currency": "INR"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Amazon",
+                    "BigBasket",
+                    "Flipkart",
+                    "Reliance Smart SuperStore",
+                    "Swiggy"
+                ],
+                "cap": {
+                    "amount": 2500,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "Earn 10X CashPoints* i.e., 20 CashPoints per ₹150 spent on -- Amazon, BigBasket, Flipkart, Reliance Smart SuperStore & Swiggy. Maximum CashPoints per Calendar Month: 2,500.",
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "CashBack/Reward catalog/SmartBuy Travel"
+            }
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "multiplier",
+                "referenceValue": 150,
+                "currency": "INR"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "Fuel",
+                    "EMI",
+                    "Rent payments",
+                    "Govt related transactions",
+                    "Wallet/ Gift /Prepaid Card loads",
+                    "Voucher Purchase transactions"
+                ]
+            },
+            "rewardDescription": "Earn 2 CashPoints per ₹150 spent on other spends** Except Fuel, EMI, Rent payments, Govt related transactions and Wallet/ Gift /Prepaid Card loads & Voucher Purchase transactions.",
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "CashBack/Reward catalog/SmartBuy Travel"
+            }
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "multiplier",
+                "referenceValue": 150,
+                "currency": "INR"
+            },
+            "conditions": {
+                "cap": {
+                    "amount": 2500,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "The MoneyBack+ 5X feature gives the cardholder 5 times CashPoints for spending on EMIs. Maximum CashPoints that can be earned under this feature is 2,500 points per Calendar Month.",
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "CashBack/Reward catalog/SmartBuy Travel"
+            },
+            "customConditions": {
+                "condition": {
+                    "type": "comparison",
+                    "field": "removalDate",
+                    "fieldDescription": "Removal Date",
+                    "value": "2024-09-01",
+                    "comparison_operator": "eq"
+                }
+            }
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "amount": 500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": 50000,
+                "applicableMerchantsOrDomains": [
+                    "Swiggy",
+                    "Myntra",
+                    "Pizza Hut",
+                    "Apollo Pharmacy",
+                    "Bata"
+                ]
+            },
+            "rewardDescription": "Milestone Benefit – Voucher worth INR 500 on achieving spends target of ₹50K within the specified calendar quarter.",
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Cardholder needs to select from the available voucher options by replying back to the specified number with the option to get the voucher or visit the vendor page by clicking on the link available in the message/email for selecting the voucher of his/her choice."
+            },
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "range",
+                            "field": "calendarQuarter",
+                            "fieldDescription": "Calendar Quarter",
+                            "range": {
+                                "gte": "2024-01-01",
+                                "lte": "2024-12-31"
+                            }
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "voucherDeliveryTime",
+                            "fieldDescription": "Voucher Delivery Time",
+                            "value": "60 working days",
+                            "comparison_operator": "lte"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "voucherValidity",
+                            "fieldDescription": "Voucher Validity Period",
+                            "value": "60 days",
+                            "comparison_operator": "eq"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": "joining membership fee"
+            },
+            "rewardDescription": "Welcome Benefit of 500 CashPoints will be given to the cardholder if the joining membership fee is paid.",
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "CashBack/Reward catalog/SmartBuy Travel"
+            }
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 500,
+                "unit": "fixed",
+                "currency": "INR"
+            },
+            "conditions": {
+                "minSpend": "renewal membership fee"
+            },
+            "rewardDescription": "Renewal Benefit of 500 CashPoints will be given to the cardholder if the membership fee is paid.",
+            "redemptionMethod": {
+                "methodType": "manual",
+                "details": "CashBack/Reward catalog/SmartBuy Travel"
+            }
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Fuel Stations"
+                ],
+                "minSpend": 400,
+                "maxSpend": 5000,
+                "cap": {
+                    "amount": 250,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "1% Fuel Surcharge waiver on fuel transactions (Minimum transaction of ₹400, Maximum transaction of ₹5,000 & Maximum waiver of ₹250 per statement cycle).",
+            "redemptionMethod": {
+                "methodType": "manual"
+            },
+            "customConditions": {
+                "condition": {
+                    "type": "logical",
+                    "logical_operator": "and",
+                    "conditions": [
+                        {
+                            "type": "comparison",
+                            "field": "surchargeRateVariation",
+                            "fieldDescription": "Surcharge Rate Variation",
+                            "value": "variable",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "taxesApplicable",
+                            "fieldDescription": "Taxes Applicability",
+                            "value": "applicable",
+                            "comparison_operator": "eq"
+                        },
+                        {
+                            "type": "comparison",
+                            "field": "disputeResolution",
+                            "fieldDescription": "Dispute Resolution Clause",
+                            "value": "1% maximum waiver",
+                            "comparison_operator": "lte"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

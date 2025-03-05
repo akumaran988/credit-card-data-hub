@@ -1,0 +1,111 @@
+
+{
+  "card_info": {
+    "card_name": "Emirates Skywards ICICI Bank Sapphiro Credit Card",
+    "bank": "ICICI Bank",
+    "effective_date": null,
+    "last_updated": null
+  },
+  "fees_and_charges": {
+    "late_payment_charges": [],
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": null,
+      "maximum_transaction": null,
+      "maximum_waiver": null,
+      "customConditions": {
+        "condition": {
+          "type": "comparison",
+          "field": "fuel_surcharge_waiver_percentage",
+          "value": 1,
+          "comparison_operator": "eq",
+          "description": "Percentage of fuel surcharge waived off on fuel transactions"
+        }
+      }
+    },
+    "special_transaction_fees": []
+  },
+  "elite_status_benefits": {
+    "elite_status_level": "Silver Tier",
+    "airport_lounge_access": {
+      "domestic_lounges": [],
+      "international_lounges": [],
+      "free_lounge_visits": null,
+      "customConditions": {
+        "condition": {
+          "type": "logical",
+          "logical_operator": "and",
+          "conditions": [
+            {
+              "type": "comparison",
+              "field": "domestic_lounge_access_per_quarter",
+              "value": 2,
+              "comparison_operator": "eq",
+              "description": "Number of complimentary domestic airport lounge access visits allowed per quarter"
+            },
+            {
+              "type": "comparison",
+              "field": "international_lounge_visits_per_year",
+              "value": 2,
+              "comparison_operator": "eq",
+              "description": "Number of complimentary international airport lounge visits allowed per year"
+            },
+            {
+              "type": "comparison",
+              "field": "spa_sessions_india_per_year",
+              "value": 2,
+              "comparison_operator": "eq",
+              "description": "Number of complimentary spa sessions at selected airports in India per year"
+            }
+          ]
+        }
+      }
+    },
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 2,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "All categories"
+        ]
+      }
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Insurance & Utility"
+        ]
+      }
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 0,
+        "unit": "fixed"
+      },
+      "conditions": {
+        "excludedMerchantsOrDomains": [
+          "Fuel",
+          "cash advance",
+          "ATM withdrawal",
+          "EMI",
+          "balance transfer",
+          "PLCC",
+          "fee",
+          "other charges"
+        ]
+      }
+    }
+  ]
+}

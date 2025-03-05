@@ -1,0 +1,879 @@
+{
+    "card_info": {
+        "card_name": "HDFC Bank Freedom Credit Card",
+        "bank": "HDFC Bank",
+        "effective_date": null,
+        "last_updated": "2024-08-13",
+        "extraction_errors": [
+            "Could not find the effective date for the terms and conditions as a whole. While specific features have effective dates mentioned such as 'Effective 1ˢᵗ September 2024' and 'Effective 1st August, 2024', an overall effective date for the entire terms and conditions document is not explicitly stated."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": [
+            {
+                "outstanding_amount_slab": "<= ₹ 100",
+                "charge": 0
+            },
+            {
+                "outstanding_amount_slab": "₹ 101 - 500",
+                "charge": 100
+            },
+            {
+                "outstanding_amount_slab": "₹ 501 - 1000",
+                "charge": 500
+            },
+            {
+                "outstanding_amount_slab": "₹ 1001 - 5000",
+                "charge": 600
+            },
+            {
+                "outstanding_amount_slab": "₹ 5001 - 10000",
+                "charge": 750
+            },
+            {
+                "outstanding_amount_slab": "₹ 10001 - 25000",
+                "charge": 900
+            },
+            {
+                "outstanding_amount_slab": "₹ 25001 - 50000",
+                "charge": 1100
+            },
+            {
+                "outstanding_amount_slab": "> ₹ 50000",
+                "charge": 1300
+            }
+        ],
+        "finance_charges": 3.75,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 400,
+            "maximum_transaction": 5000,
+            "maximum_waiver": 250
+        },
+        "special_transaction_fees": [
+            {
+                "transaction_type": "Rent",
+                "fee_type": "percentage",
+                "fee_value": 1.0,
+                "maximum_cap": 3000,
+                "conditions": "Applicable when rent is paid through third-party apps like CRED, PayTM, Cheq, MobiKwik, Freecharge and others."
+            },
+            {
+                "transaction_type": "Fuel",
+                "fee_type": "percentage",
+                "fee_value": 1.0,
+                "maximum_cap": 3000,
+                "conditions": "Applicable for consumer cards when spending more than ₹ 15000 per transaction on fuel. No fee for transactions less than or equal to ₹ 15000."
+            },
+            {
+                "transaction_type": "Utility",
+                "fee_type": "percentage",
+                "fee_value": 1.0,
+                "maximum_cap": 3000,
+                "conditions": "Applicable for consumer cards when spending more than ₹ 50,000 per transaction on Utilities. No fee for transactions less than or equal to ₹ 50,000. Insurance transactions are excluded."
+            },
+            {
+                "transaction_type": "Education",
+                "fee_type": "percentage",
+                "fee_value": 1.0,
+                "maximum_cap": 3000,
+                "conditions": "Applicable on education payments through third-party apps like CRED, PayTM, Cheq, MobiKwik and others. No fees for payments through college/school websites or POS machines. International education payments are excluded from no fee condition."
+            },
+            {
+                "transaction_type": "International / Cross Currency",
+                "fee_type": "percentage",
+                "fee_value": 3.5,
+                "maximum_cap": null,
+                "conditions": "Applicable for all International / Cross currency transactions as a markup fee."
+            }
+        ],
+        "extraction_errors": []
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null
+        },
+        "extraction_errors": [
+            "Could not find information about the elite status level of the credit card in the provided context. The context does not mention any elite status tiers like silver, gold, or platinum for this card.",
+            "Could not find information about domestic airport lounge access in the provided context. The context does not specify any domestic lounges accessible with this credit card.",
+            "Could not find information about international airport lounge access in the provided context. The context does not detail any international lounges accessible with this credit card.",
+            "Could not find information about the number of free lounge visits allowed per year in the provided context. The context does not mention any free lounge visits benefit.",
+            "Could not find information about eligibility criteria for free night awards in the provided context. The context does not specify any spending or usage criteria to earn free night vouchers.",
+            "Could not find information about partner hotels for free night awards in the provided context. The context does not list any hotels where free nights can be redeemed.",
+            "Could not find information about the value cap for free night awards in the provided context. The context does not specify the maximum room value eligible for redemption with free night awards."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 10,
+                "unit": "multiplier",
+                "referenceValue": 150,
+                "Category": "Shopping"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "BigBasket",
+                    "BookMyShow",
+                    "OYO",
+                    "Swiggy",
+                    "Uber"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "Fuel",
+                    "EMI",
+                    "Rent payments",
+                    "Govt Related Transactions",
+                    "Wallet / Gift / Prepaid Card loads",
+                    "Voucher Purchase transactions"
+                ],
+                "cap": {
+                    "amount": 2500,
+                    "period": "monthly"
+                },
+                "minSpend": 150
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly",
+                "rewardExpiry": {
+                    "unit": "years",
+                    "value": 2
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "CashPoints will be posted in the card account in the 1st week of the next calendar month.",
+                "eligibleChannels": [
+                    "Statement Balance",
+                    "Reward catalog",
+                    "SmartBuy Travel"
+                ]
+            },
+            "rewardDescription": "Earn 10X CashPoints i.e., 10 CashPoints per ₹150 spent on BigBasket, BookMyShow, OYO, Swiggy & Uber. Maximum CashPoints per Calendar Month is 2,500.",
+            "customConditions": {
+                "condition": {
+                    "type": "description",
+                    "field": "merchant_id_basis",
+                    "fieldDescription": "CashPoints of 10X on select merchants are calculated basis the Terminal / merchant IDs (TIDs & MIDs) shared by the respective merchant partners",
+                    "value": "Transactions will qualify for 10X cashpoints only if Terminal / merchant IDs (TIDs & MIDs) are available in the set-up"
+                }
+            },
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "multiplier",
+                "referenceValue": 150,
+                "Category": "Others"
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "Fuel",
+                    "EMI",
+                    "Rent payments",
+                    "Govt Related Transactions",
+                    "Wallet / Gift / Prepaid Card loads",
+                    "Voucher Purchase transactions",
+                    "BigBasket",
+                    "BookMyShow",
+                    "OYO",
+                    "Swiggy",
+                    "Uber"
+                ],
+                "minSpend": 150
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly",
+                "rewardExpiry": {
+                    "unit": "years",
+                    "value": 2
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "CashPoints will be posted in the card account in the 1st week of the next calendar month.",
+                "eligibleChannels": [
+                    "Statement Balance",
+                    "Reward catalog",
+                    "SmartBuy Travel"
+                ]
+            },
+            "rewardDescription": "Earn 1 CashPoint per ₹150 spent on other spends** Except Fuel, EMI, Rent payments, Govt Related Transactions and Wallet / Gift / Prepaid Card loads & Voucher Purchase transactions.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 500,
+                "unit": "fixed",
+                "Category": "Others"
+            },
+            "conditions": {
+                "minSpend": "joining membership fee"
+            },
+            "rewardDescription": "Welcome Benefit of 500 CashPoints will be given to the cardholder if the joining membership fee is paid",
+            "extraction_errors": [],
+            "schedule": {
+                "rewardExpiry": {
+                    "unit": "years",
+                    "value": 2
+                }
+            }
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 500,
+                "unit": "fixed",
+                "Category": "Others"
+            },
+            "conditions": {
+                "minSpend": "renewal membership fee"
+            },
+            "rewardDescription": "Renewal Benefit of 500 CashPoints will be given to the cardholder if the renewal membership fee is paid",
+            "extraction_errors": [],
+            "schedule": {
+                "rewardExpiry": {
+                    "unit": "years",
+                    "value": 2
+                }
+            }
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "Category": "Fuel"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Fuel"
+                ],
+                "minSpend": 400,
+                "maxSpend": 5000,
+                "cap": {
+                    "amount": 250,
+                    "period": "statement cycle"
+                }
+            },
+            "rewardDescription": "1% Fuel Surcharge waiver on fuel transactions (Minimum transaction of ₹400, Maximum transaction of ₹5,000 & Maximum waiver of ₹250 per statement cycle)",
+            "customConditions": {
+                "condition": {
+                    "type": "description",
+                    "field": "surcharge_rate_variation",
+                    "fieldDescription": "The rate of surcharge may vary depending on the fuel station and their acquiring bank.",
+                    "value": "The rate of surcharge may vary depending on the fuel station and their acquiring bank."
+                }
+            },
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 0.99,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "Category": "Financial Services"
+            },
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "type": "comparison",
+                                "field": "card_issuance_date",
+                                "fieldDescription": "card issuance date",
+                                "range": {
+                                    "gte": "2021-10-01",
+                                    "lt": "2024-02-01"
+                                }
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "period_after_card_issuance_days",
+                                "fieldDescription": "period after card issuance in days",
+                                "range": {
+                                    "gte": 0,
+                                    "lte": 90
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "rewardDescription": "0.99% Interest rate for first 90 days from card issuance date. Post 90 days, regular interest rate of 3.6% per month (i.e. 43.2% annually) will be applicable. Post the offer period, regular interest rate as per Most Important Terms & Conditions (MITC) will be applicable.",
+            "customConditions": {
+                "condition": {
+                    "type": "description",
+                    "field": "taxes_applicable",
+                    "fieldDescription": "Inclusive of applicable taxes",
+                    "value": "Total Outstanding Amount ( Inclusive of applicable taxes )"
+                }
+            },
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 2000,
+                "unit": "fixed",
+                "Category": "Utility"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Utility"
+                ],
+                "cap": {
+                    "amount": 2000,
+                    "period": "monthly"
+                },
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "effective_date",
+                        "fieldDescription": "effective date for the reward cap",
+                        "comparison_operator": "gte",
+                        "value": "2024-09-01"
+                    }
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "CashPoints will be posted in the card account in the 1st week of the next calendar month.",
+                "eligibleChannels": [
+                    "Statement Balance",
+                    "Reward catalog",
+                    "SmartBuy Travel"
+                ]
+            },
+            "rewardDescription": "Effective 1ˢᵗ September 2024, Reward Points earned on Utility transactions will be capped at 2000 Reward Points per calendar month.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 2000,
+                "unit": "fixed",
+                "Category": "Telecom & Cable"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Telecom & Cable"
+                ],
+                "cap": {
+                    "amount": 2000,
+                    "period": "monthly"
+                },
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "effective_date",
+                        "fieldDescription": "effective date for the reward cap",
+                        "comparison_operator": "gte",
+                        "value": "2024-09-01"
+                    }
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "CashPoints will be posted in the card account in the 1st week of the next calendar month.",
+                "eligibleChannels": [
+                    "Statement Balance",
+                    "Reward catalog",
+                    "SmartBuy Travel"
+                ]
+            },
+            "rewardDescription": "Effective 1ˢᵗ September 2024, Reward Points earned on Telecom & Cable transactions will be capped at 2000 Reward Points per calendar month.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 1000,
+                "unit": "fixed",
+                "Category": "Groceries"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Grocery"
+                ],
+                "cap": {
+                    "amount": 1000,
+                    "period": "monthly"
+                },
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "effective_date",
+                        "fieldDescription": "effective date for the reward cap",
+                        "comparison_operator": "gte",
+                        "value": "2023-01-01"
+                    }
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "CashPoints will be posted in the card account in the 1st week of the next calendar month.",
+                "eligibleChannels": [
+                    "Statement Balance",
+                    "Reward catalog",
+                    "SmartBuy Travel"
+                ]
+            },
+            "rewardDescription": "With effect from 1st January 2023, Reward points earned on Grocery transactions will be capped per month to 1,000 reward points",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "offers",
+            "rewardValue": {
+                "amount": 50000,
+                "unit": "fixed",
+                "Category": "Travel"
+            },
+            "conditions": {
+                "redemptionCapPeriod": "monthly",
+                "applicableMerchantsOrDomains": [
+                    "Flights",
+                    "Hotels"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "effective_date",
+                        "fieldDescription": "effective date for the redemption cap",
+                        "comparison_operator": "gte",
+                        "value": "2023-01-01"
+                    }
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Reward points redemption for flights & hotels bookings are capped per calendar month at 50,000.",
+                "eligibleChannels": [
+                    "SmartBuy Travel"
+                ]
+            },
+            "rewardDescription": "With effect from 1st January 2023, Reward points redemption for flights & hotels bookings are capped per calendar month at 50,000.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "offers",
+            "rewardValue": {
+                "amount": 50000,
+                "unit": "fixed",
+                "Category": "Financial Services"
+            },
+            "conditions": {
+                "redemptionCapPeriod": "monthly",
+                "applicableMerchantsOrDomains": [
+                    "CashBack"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "effective_date",
+                        "fieldDescription": "effective date for the cashback redemption cap",
+                        "comparison_operator": "gte",
+                        "value": "2023-02-01"
+                    }
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Reward points redemption for CashBack redemption are capped per calendar month to 50,000 rewards points.",
+                "eligibleChannels": [
+                    "Statement Balance"
+                ]
+            },
+            "rewardDescription": "With effect from 1st February 2023, Reward points redemption for CashBack redemption are capped per calendar month to 50,000 rewards points.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "offers",
+            "rewardValue": {
+                "amount": 70,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "Category": "Shopping"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "select vouchers/products"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "effective_date",
+                        "fieldDescription": "effective date for the redemption limit on vouchers/products",
+                        "comparison_operator": "gte",
+                        "value": "2023-02-01"
+                    }
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "cardmembers can redeem up to 70% of product/Voucher value through Reward points on select vouchers/products and pay the remaining amount via Credit card.",
+                "eligibleChannels": [
+                    "Reward catalog"
+                ]
+            },
+            "rewardDescription": "With effect from 1st February 2023, cardmembers can redeem up to 70% of product/Voucher value through Reward points on select vouchers/products and pay the remaining amount via Credit card.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "offers",
+            "rewardValue": {
+                "amount": 50,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "Category": "Travel"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Flights",
+                    "Hotels"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "redemption_channel",
+                        "fieldDescription": "redemption channel for flights and hotels",
+                        "comparison_operator": "eq",
+                        "value": "SmartBuy"
+                    }
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "For redemption against Flights and Hotels via SmartBuy, Credit Card members can redeem up to a maximum of 50% of the booking value through Cash Points (1 CashPoint = ₹0.15). Rest of the transaction amount will have to be paid via the HDFC Bank Credit Card.",
+                "eligibleChannels": [
+                    "SmartBuy Travel"
+                ]
+            },
+            "rewardDescription": "For redemption against Flights and Hotels via SmartBuy, Credit Card members can redeem up to a maximum of 50% of the booking value through Cash Points.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 50,
+                "unit": "fixed",
+                "currency": "INR",
+                "Category": "Financial Services"
+            },
+            "conditions": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "costOfRedemption": {
+                    "amount": 50,
+                    "currency": "INR",
+                    "unit": "fixed"
+                },
+                "details": "Effective 1st August 2024, if you redeem your rewards towards statement credit (CashBack), a ₹50 redemption fee will be charged.",
+                "eligibleChannels": [
+                    "Statement Balance"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "effective_date",
+                        "fieldDescription": "effective date for the redemption fee",
+                        "comparison_operator": "gte",
+                        "value": "2024-08-01"
+                    }
+                }
+            },
+            "rewardDescription": "Effective 1st August 2024, a ₹50 redemption fee will be charged for rewards redeemed towards statement credit (CashBack).",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 99,
+                "unit": "fixed",
+                "currency": "INR",
+                "Category": "Shopping"
+            },
+            "conditions": {},
+            "redemptionMethod": {
+                "methodType": "manual",
+                "costOfRedemption": {
+                    "amount": 99,
+                    "currency": "INR",
+                    "unit": "fixed"
+                },
+                "details": "If the cardholder opts for redemption of the cashpoints via reward catalogue, there will be debit of ₹99+Taxes towards redemption handling charges.",
+                "eligibleChannels": [
+                    "Reward catalog"
+                ]
+            },
+            "rewardDescription": "If the cardholder opts for redemption of the cashpoints via reward catalogue, there will be debit of ₹99+Taxes towards redemption handling charges.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 15000,
+                "unit": "fixed",
+                "Category": "Others"
+            },
+            "conditions": {
+                "cap": {
+                    "amount": 15000,
+                    "period": "statement cycle"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "The maximum reward points that can be earned in a statement cycle is 15,000.",
+                "eligibleChannels": [
+                    "All"
+                ]
+            },
+            "rewardDescription": "The maximum reward points that can be earned in a statement cycle is 15,000.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "offers",
+            "rewardValue": {
+                "amount": 0,
+                "unit": "fixed",
+                "Category": "Technology and Electronics"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "EMI spends at Merchant locations"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "effective_date",
+                        "fieldDescription": "effective date for the removal of 5X CashPoints on EMI spends",
+                        "comparison_operator": "gte",
+                        "value": "2024-09-01"
+                    }
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Effective 1ˢᵗ September 2024, this feature is removed, which is 5X CashPoints on EMI spends at Merchant locations.",
+                "eligibleChannels": [
+                    "None"
+                ]
+            },
+            "rewardDescription": "Effective 1ˢᵗ September 2024, 5X CashPoints on EMI spends at Merchant locations feature is removed.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "offers",
+            "rewardValue": {
+                "amount": 0,
+                "unit": "fixed",
+                "Category": "Education"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Education payments through third-party apps"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "effective_date",
+                        "fieldDescription": "effective date for no reward points on education payments via third-party apps",
+                        "comparison_operator": "gte",
+                        "value": "2024-09-01"
+                    }
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Effective 1ˢᵗ September 2024, Education payments made through third-party apps will NOT earn Reward Points.",
+                "eligibleChannels": [
+                    "None"
+                ]
+            },
+            "rewardDescription": "Effective 1ˢᵗ September 2024, Education payments made through third-party apps will NOT earn Reward Points.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "offers",
+            "rewardValue": {
+                "amount": 0,
+                "unit": "fixed",
+                "Category": "Financial Services"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Wallet loading",
+                    "Easy EMI transactions"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "effective_date",
+                        "fieldDescription": "effective date for no reward points on wallet loading and easy emi",
+                        "comparison_operator": "gte",
+                        "value": "2024-09-01"
+                    }
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Effective 1ˢᵗ September 2024, Wallet loading and Easy EMI transactions will NOT earn Reward Points.",
+                "eligibleChannels": [
+                    "None"
+                ]
+            },
+            "rewardDescription": "Effective 1ˢᵗ September 2024, Wallet loading and Easy EMI transactions will NOT earn Reward Points.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "offers",
+            "rewardValue": {
+                "amount": 0,
+                "unit": "fixed",
+                "Category": "Financial Services"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Rent payments",
+                    "Govt Related Transactions"
+                ],
+                "customConditions": {
+                    "condition": {
+                        "type": "comparison",
+                        "field": "effective_date",
+                        "fieldDescription": "effective date for no reward points on rent and govt transactions",
+                        "comparison_operator": "gte",
+                        "value": "2023-01-01"
+                    }
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "With effect from 1st January 2023, Rent payments and Govt Related Transactions will NOT earn Reward Points",
+                "eligibleChannels": [
+                    "None"
+                ]
+            },
+            "rewardDescription": "With effect from 1st January 2023, Rent payments and Govt Related Transactions will NOT earn Reward Points",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "schedule",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "years",
+                "Category": "Others"
+            },
+            "conditions": {},
+            "schedule": {
+                "rewardExpiry": {
+                    "unit": "years",
+                    "value": 2
+                }
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "Unredeemed CashPoints will expire/lapse after 2 years of accumulation.",
+                "eligibleChannels": [
+                    "All"
+                ]
+            },
+            "rewardDescription": "Unredeemed CashPoints will expire/lapse after 2 years of accumulation.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 5,
+                "unit": "multiplier",
+                "referenceValue": 150,
+                "Category": "Technology and Electronics"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "EMI spends at Merchant locations"
+                ],
+                "cap": {
+                    "amount": 2500,
+                    "period": "monthly"
+                }
+            },
+            "rewardDescription": "The Freedom 5X feature gives the cardholder 5 times CashPoints for spending on EMIs. The Maximum CashPoints that can be earned under this feature is 2,500 points per Calendar Month.",
+            "customConditions": {
+                "condition": {
+                    "type": "description",
+                    "field": "emi_types",
+                    "fieldDescription": "Types of EMI for 5X CashPoints",
+                    "value": "Merchant/EasyEMI, Aggregator EMI, Brand EMI"
+                }
+            },
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 150,
+                "unit": "fixed",
+                "currency": "INR",
+                "Category": "Financial Services"
+            },
+            "conditions": {},
+            "rewardDescription": "Minimum transaction of ₹150 and multiples of ₹150 is considered for CashPoints posting.",
+            "customConditions": {
+                "condition": {
+                    "type": "description",
+                    "field": "transaction_multiples",
+                    "fieldDescription": "Transaction amount multiples for CashPoints posting",
+                    "value": "multiples of ₹150"
+                }
+            },
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 3334,
+                "unit": "fixed",
+                "Category": "Financial Services"
+            },
+            "conditions": {},
+            "rewardDescription": "The minimum CashPoints balance required for redemption against the statement balance is 3,334 CashPoints or equivalent of ₹500.",
+            "customConditions": {
+                "condition": {
+                    "type": "description",
+                    "field": "minimum_cashpoints_value",
+                    "fieldDescription": "Minimum CashPoints value for redemption",
+                    "value": "equivalent of ₹500"
+                }
+            },
+            "extraction_errors": []
+        }
+    ]
+}

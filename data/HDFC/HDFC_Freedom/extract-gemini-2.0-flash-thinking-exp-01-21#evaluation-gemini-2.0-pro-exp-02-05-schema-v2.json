@@ -1,0 +1,282 @@
+{
+    "card_info": {
+        "card_name": "HDFC Bank Freedom Credit Card",
+        "bank": "HDFC Bank",
+        "effective_date": null,
+        "last_updated": "2024-08-13",
+        "extraction_errors": [
+            "Could not find the effective date for the terms and conditions as a whole. While specific features have effective dates mentioned such as 'Effective 1ˢᵗ September 2024' and 'Effective 1st August, 2024', an overall effective date for the entire terms and conditions document is not explicitly stated."
+        ]
+    },
+    "fees_and_charges": {
+        "late_payment_charges": [
+            {
+                "outstanding_amount_slab": "<= ₹ 100",
+                "charge": 0
+            },
+            {
+                "outstanding_amount_slab": "₹ 101 - 500",
+                "charge": 100
+            },
+            {
+                "outstanding_amount_slab": "₹ 501 - 1000",
+                "charge": 500
+            },
+            {
+                "outstanding_amount_slab": "₹ 1001 - 5000",
+                "charge": 600
+            },
+            {
+                "outstanding_amount_slab": "₹ 5001 - 10000",
+                "charge": 750
+            },
+            {
+                "outstanding_amount_slab": "₹ 10001 - 25000",
+                "charge": 900
+            },
+            {
+                "outstanding_amount_slab": "₹ 25001 - 50000",
+                "charge": 1100
+            },
+            {
+                "outstanding_amount_slab": "> ₹ 50000",
+                "charge": 1300
+            }
+        ],
+        "finance_charges": 3.75,
+        "fuel_surcharge_waiver": {
+            "minimum_transaction": 400,
+            "maximum_transaction": 5000,
+            "maximum_waiver": 250
+        },
+        "special_transaction_fees": [
+            {
+                "transaction_type": "Rent",
+                "fee_type": "percentage",
+                "fee_value": 1.0,
+                "maximum_cap": 3000
+            },
+            {
+                "transaction_type": "Fuel",
+                "fee_type": "percentage",
+                "fee_value": 1.0,
+                "maximum_cap": 3000,
+                "conditions": "Applicable only on transactions greater than ₹15,000. No fee for transactions ₹15,000 or less."
+            },
+            {
+                "transaction_type": "Utility",
+                "fee_type": "percentage",
+                "fee_value": 1.0,
+                "maximum_cap": 3000,
+                "conditions": "Applicable only on transactions greater than ₹50,000. No fee for transactions ₹50,000 or less. Insurance transactions are excluded."
+            },
+            {
+                "transaction_type": "Education",
+                "fee_type": "percentage",
+                "fee_value": 1.0,
+                "maximum_cap": 3000,
+                "conditions": "Applicable only on payments through third-party apps. No fee for payments through college/school websites or POS machines. International education payments are excluded."
+            },
+            {
+                "transaction_type": "International / Cross Currency",
+                "fee_type": "percentage",
+                "fee_value": 3.5,
+                "maximum_cap": null
+            }
+        ],
+        "extraction_errors": []
+    },
+    "elite_status_benefits": {
+        "elite_status_level": null,
+        "airport_lounge_access": {
+            "domestic_lounges": null,
+            "international_lounges": null,
+            "free_lounge_visits": null
+        },
+        "free_night_awards": {
+            "eligibility_criteria": null,
+            "partner_hotels": null
+        },
+        "extraction_errors": [
+            "Could not find information about the elite status level of the credit card in the provided context. The context does not mention any elite status tiers like silver, gold, or platinum for this card.",
+            "Could not find information about domestic airport lounge access in the provided context. The context does not specify any domestic lounges accessible with this credit card.",
+            "Could not find information about international airport lounge access in the provided context. The context does not detail any international lounges accessible with this credit card.",
+            "Could not find information about the number of free lounge visits allowed per year in the provided context. The context does not mention any free lounge visits benefit.",
+            "Could not find information about eligibility criteria for free night awards in the provided context. The context does not specify any spending or usage criteria to earn free night vouchers.",
+            "Could not find information about partner hotels for free night awards in the provided context. The context does not list any hotels where free nights can be redeemed.",
+            "Could not find information about the value cap for free night awards in the provided context. The context does not specify the maximum room value eligible for redemption with free night awards."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 10,
+                "unit": "multiplier",
+                "referenceValue": 1,
+                "currency": null
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "BigBasket",
+                    "BookMyShow",
+                    "OYO",
+                    "Swiggy",
+                    "Uber"
+                ],
+                "excludedMerchantsOrDomains": [
+                    "Fuel",
+                    "EMI",
+                    "Rent payments",
+                    "Govt Related Transactions",
+                    "Wallet / Gift / Prepaid Card loads",
+                    "Voucher Purchase transactions"
+                ],
+                "maxSpend": 2500,
+                "cap": {
+                    "amount": 2500,
+                    "period": "monthly"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "CashPoints will be posted in the card account in the 1st week of the next calendar month.",
+                "eligibleChannels": [
+                    "Statement Balance",
+                    "Reward catalog",
+                    "SmartBuy Travel"
+                ]
+            },
+            "rewardDescription": "Earn 10X CashPoints i.e., 10 CashPoints per ₹150 spent on BigBasket, BookMyShow, OYO, Swiggy & Uber",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "multiplier",
+                "referenceValue": 1,
+                "currency": null
+            },
+            "conditions": {
+                "excludedMerchantsOrDomains": [
+                    "Fuel",
+                    "EMI",
+                    "Rent payments",
+                    "Govt Related Transactions",
+                    "Wallet / Gift / Prepaid Card loads",
+                    "Voucher Purchase transactions",
+                    "BigBasket",
+                    "BookMyShow",
+                    "OYO",
+                    "Swiggy",
+                    "Uber"
+                ]
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "redemptionMethod": {
+                "methodType": "automatic",
+                "details": "CashPoints will be posted in the card account in the 1st week of the next calendar month.",
+                "eligibleChannels": [
+                    "Statement Balance",
+                    "Reward catalog",
+                    "SmartBuy Travel"
+                ]
+            },
+            "rewardDescription": "Earn 1 CashPoint per ₹150 spent on other spends** Except Fuel, EMI, Rent payments, Govt Related Transactions and Wallet / Gift / Prepaid Card loads & Voucher Purchase transactions.",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 500,
+                "unit": "fixed",
+                "currency": null
+            },
+            "conditions": {
+                "minSpend": "joining membership fee"
+            },
+            "rewardDescription": "Welcome Benefit of 500 CashPoints will be given to the cardholder if the joining membership fee is paid",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 500,
+                "unit": "fixed",
+                "currency": null
+            },
+            "conditions": {
+                "minSpend": "renewal membership fee"
+            },
+            "rewardDescription": "Renewal Benefit of 500 CashPoints will be given to the cardholder if the renewal membership fee is paid",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": null
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": [
+                    "Fuel"
+                ],
+                "minSpend": 400,
+                "maxSpend": 5000,
+                "cap": {
+                    "amount": 250,
+                    "period": "statement cycle"
+                }
+            },
+            "rewardDescription": "1% Fuel Surcharge waiver on fuel transactions (Minimum transaction of ₹400, Maximum transaction of ₹5,000 & Maximum waiver of ₹250 per statement cycle)",
+            "extraction_errors": []
+        },
+        {
+            "rewardType": "discount",
+            "rewardValue": {
+                "amount": 0.99,
+                "unit": "percentage",
+                "referenceValue": 100,
+                "currency": null
+            },
+            "conditions": {
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "type": "comparison",
+                                "field": "card_issuance_date_range",
+                                "fieldDescription": "card issuance date",
+                                "range": {
+                                    "gte": "2021-10-01",
+                                    "lt": "2024-02-01"
+                                }
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "period_after_issuance",
+                                "fieldDescription": "period after card issuance",
+                                "range": {
+                                    "gte": 0,
+                                    "lte": 90
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "rewardDescription": "0.99% Interest rate – Terms & Conditions (Not applicable for cards sourced from 1ˢᵗ Feb 2024 onwards). The interest rate of 0.99% is a feature which offers Cardholders 0.99% interest rate on retail / non-EMI spends outstanding. It is applicable only for a period of first 90 days from the card issuance date.",
+            "extraction_errors": []
+        }
+    ]
+}

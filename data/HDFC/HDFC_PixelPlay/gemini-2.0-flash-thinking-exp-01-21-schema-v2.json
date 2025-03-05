@@ -1,0 +1,256 @@
+
+{
+  "card_info": {
+    "card_name": "PIXEL Play Credit Card",
+    "bank": "HDFC Bank",
+    "effective_date": null,
+    "last_updated": null
+  },
+  "fees_and_charges": {
+    "late_payment_charges": null,
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": 400,
+      "maximum_transaction": 5000,
+      "maximum_waiver": 250
+    },
+    "special_transaction_fees": null
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": null,
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 5,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          {
+            "domain": "Dining & Entertainment",
+            "rewardPercent": 5,
+            "merchants": [
+              "BookMyShow",
+              "Zomato"
+            ]
+          },
+          {
+            "domain": "Travel",
+            "rewardPercent": 5,
+            "merchants": [
+              "MakeMyTrip",
+              "Uber"
+            ]
+          },
+          {
+            "domain": "Grocery",
+            "rewardPercent": 5,
+            "merchants": [
+              "Blinkit",
+              "Reliance Smart Bazaar"
+            ]
+          },
+          {
+            "domain": "Electronics",
+            "rewardPercent": 5,
+            "merchants": [
+              "Croma",
+              "Reliance Digital"
+            ]
+          },
+          {
+            "domain": "Fashion",
+            "rewardPercent": 5,
+            "merchants": [
+              "Nykaa",
+              "Myntra"
+            ]
+          }
+        ],
+        "cap": {
+          "amount": 500,
+          "period": "monthly"
+        },
+        "excludedMerchantsOrDomains": {
+          "mcc_codes": [
+            1361,
+            5172,
+            5541,
+            5542,
+            5983,
+            9752,
+            6513,
+            7349,
+            9211,
+            9222,
+            9223,
+            9311,
+            9399,
+            9402,
+            9405,
+            9950
+          ],
+          "description": "fuel, rental payments, Government related payments"
+        }
+      },
+      "schedule": null,
+      "redemptionMethod": null,
+      "rewardDescription": "5% Cashback on choice of any two packs"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 5,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "SmartBuy Platform (IGP, Flights, Hotels, Bus, Rail, Instant Vouchers, Apple Imagine Tresor)"
+        ],
+        "cap": {
+          "amount": 500,
+          "period": "monthly"
+        }
+      },
+      "schedule": null,
+      "redemptionMethod": null,
+      "rewardDescription": "5% Cashback on SmartBuy Platform"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 3,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "PayZapp",
+          "Amazon",
+          "Flipkart"
+        ],
+        "cap": {
+          "amount": 500,
+          "period": "monthly"
+        },
+        "excludedMerchantsOrDomains": {
+          "mcc_codes": [
+            1361,
+            5172,
+            5541,
+            5542,
+            5983,
+            9752,
+            6513,
+            7349,
+            9211,
+            9222,
+            9223,
+            9311,
+            9399,
+            9402,
+            9405,
+            9950
+          ],
+          "description": "fuel, rental payments, Government related payments"
+        }
+      },
+      "schedule": null,
+      "redemptionMethod": null,
+      "rewardDescription": "3% Cashback on choice of any one e-commerce platform"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "UPI spends"
+        ],
+        "cap": {
+          "amount": 500,
+          "period": "monthly"
+        },
+        "excludedMerchantsOrDomains": {
+          "mcc_codes": [
+            1361,
+            5172,
+            5541,
+            5542,
+            5983,
+            9752,
+            6513,
+            7349,
+            9211,
+            9222,
+            9223,
+            9311,
+            9399,
+            9402,
+            9405,
+            9950
+          ],
+          "description": "fuel, rental payments, Government related payments"
+        }
+      },
+      "schedule": null,
+      "redemptionMethod": null,
+      "rewardDescription": "1% Cashback on all UPI spends on RuPay credit card"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "All other spends"
+        ],
+        "cap": {
+          "amount": null
+        },
+        "excludedMerchantsOrDomains": [
+          "Fuel Spends",
+          "Wallet Spends",
+          "Rent payments",
+          "Government related transactions",
+          "EMI Transactions",
+          "Purchases converted to EMI post facto",
+          "Cash Advances",
+          "Payment of Outstanding Balances",
+          "Payment of card fees and other charges",
+          {
+            "mcc_codes": [
+              1361,
+              5172,
+              5541,
+              5542,
+              5983,
+              9752,
+              6513,
+              7349,
+              9211,
+              9222,
+              9223,
+              9311,
+              9399,
+              9402,
+              9405,
+              9950
+            ],
+            "description": "fuel, rental payments, Government related payments"
+          }
+        ]
+      },
+      "schedule": null,
+      "redemptionMethod": null,
+      "rewardDescription": "1% Cashback on all other spends"
+    }
+  ]
+}

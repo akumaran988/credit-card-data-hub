@@ -1,0 +1,143 @@
+
+{
+  "card_info": {
+    "card_name": "MakeMyTrip ICICI Bank Platinum Credit Card",
+    "bank": "ICICI Bank",
+    "effective_date": null,
+    "last_updated": null
+  },
+  "fees_and_charges": {
+    "late_payment_charges": null,
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": null,
+      "maximum_transaction": 5000,
+      "maximum_waiver": 50.0
+    },
+    "special_transaction_fees": null
+  },
+  "elite_status_benefits": {
+    "elite_status_level": "Platinum",
+    "airport_lounge_access": {
+      "domestic_lounges": [],
+      "international_lounges": [],
+      "free_lounge_visits": 4
+    },
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 500,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "minSpend": "joining membership fee"
+      },
+      "rewardDescription": "Rs <500> My Cash as Joining Benefit"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 0.5,
+        "unit": "percentage",
+        "referenceValue": 200,
+        "currency": "INR"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Domestic spends outside MakeMyTrip"
+        ]
+      },
+      "rewardDescription": "Rs <1.00> My Cash (per Rs <200> spent) on Domestic spends outside MakeMyTrip"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 0.625,
+        "unit": "percentage",
+        "referenceValue": 200,
+        "currency": "INR"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "International spends outside MakeMyTrip"
+        ]
+      },
+      "rewardDescription": "Rs <1.25> My Cash (per Rs <200> spent) on International spends outside MakeMyTrip"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "percentage",
+        "referenceValue": 200,
+        "currency": "INR"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Spends on flight bookings on MakeMyTrip"
+        ]
+      },
+      "rewardDescription": "Rs <2.00> My Cash (per Rs <200> spent) on Spends on flight bookings on MakeMyTrip"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1.5,
+        "unit": "percentage",
+        "referenceValue": 200,
+        "currency": "INR"
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Spends on hotel/holiday bookings on MakeMyTrip"
+        ]
+      },
+      "rewardDescription": "Rs <3.00> My Cash (per Rs <200> spent) on Spends on hotel/holiday bookings on MakeMyTrip"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1000,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "minSpend": 50000,
+        "applicableMerchantsOrDomains": [
+          "flights/hotels/holiday bookings on MakeMyTrip"
+        ]
+      },
+      "rewardDescription": "<1,000> My Cash each anniversary year on Spend Rs <50,000> on flights/hotels/holiday bookings on MakeMyTrip"
+    },
+    {
+      "rewardType": "cashback",
+      "rewardValue": {
+        "amount": 1000,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "conditions": {
+        "minSpend": 250000
+      },
+      "rewardDescription": "<1,000> My Cash each anniversary year on Spend Rs <2.5> lakh"
+    },
+    {
+      "rewardType": "discount",
+      "rewardValue": {
+        "amount": 25,
+        "unit": "percentage"
+      },
+      "conditions": {
+        "cap": {
+          "amount": 100,
+          "period": "monthly"
+        }
+      },
+      "rewardDescription": "25% discount of a maximum of up to Rs 100 on movie tickets"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+
+{
+  "card_info": {
+    "card_name": "Times Black ICICI Bank Credit Card",
+    "bank": "ICICI Bank",
+    "effective_date": null,
+    "last_updated": "2024-12-18"
+  },
+  "fees_and_charges": {
+    "late_payment_charges": [],
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": null,
+      "maximum_transaction": null,
+      "maximum_waiver": 1000.0
+    },
+    "special_transaction_fees": []
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": {
+      "domestic_lounges": [
+        "unlimited complimentary lounge access through Times Black ICICI Bank Credit Card for lounge visits within India for Primary & Add-on Cardholders"
+      ],
+      "international_lounges": [
+        "unlimited international lounge access with Priority Pass Membership for Primary and Add-on Cardholders"
+      ],
+      "free_lounge_visits": "unlimited"
+    },
+    "free_night_awards": {
+      "eligibility_criteria": null,
+      "partner_hotels": [],
+      "value_cap": null
+    }
+  },
+  "rewards": [
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 2.0,
+        "unit": "percentage",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "minSpend": null,
+        "maxSpend": null,
+        "cap": {
+          "amount": 5000.0,
+          "period": "statement cycle"
+        },
+        "applicableMerchantsOrDomains": null,
+        "excludedMerchantsOrDomains": []
+      },
+      "schedule": {
+        "rewardAccrualFrequency": null,
+        "rewardExpiry": null
+      },
+      "redemptionMethod": {
+        "methodType": null
+      },
+      "rewardDescription": "Get 2% ICICI Bank reward points on all eligible domestic transactions for Utilities payment, Insurance premium payment, Education payment, Government payments like house tax, advance tax, fines, court payments, postal payments etc.",
+      "customConditions": null
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 2.5,
+        "unit": "percentage",
+        "referenceValue": 100
+      },
+      "conditions": {
+        "minSpend": null,
+        "maxSpend": null,
+        "cap": null,
+        "applicableMerchantsOrDomains": null,
+        "excludedMerchantsOrDomains": []
+      },
+      "schedule": {
+        "rewardAccrualFrequency": null,
+        "rewardExpiry": null
+      },
+      "redemptionMethod": {
+        "methodType": null
+      },
+      "rewardDescription": "Get 2.5% ICICI Bank reward points on all eligible international transactions.",
+      "customConditions": null
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+    "card_info": {
+        "card_name": "Diners Club Black",
+        "bank": "HDFC Bank",
+        "effective_date": "2024-07-03",
+        "last_updated": "2024-07-03",
+        "extraction_errors": []
+    },
+    "fees_and_charges": {
+        "late_payment_charges": null,
+        "finance_charges": null,
+        "fuel_surcharge_waiver": null,
+        "special_transaction_fees": null,
+        "extraction_errors": [
+            "Could not find information about late payment charges in the provided context.",
+            "Could not find information about finance charges in the provided context."
+        ]
+    },
+    "elite_status_benefits": {
+        "elite_status_level": "Black",
+        "airport_lounge_access": null,
+        "free_night_awards": null,
+        "extraction_errors": [
+            "Could not find information about airport lounge access in the provided context for Diners Club Black card.",
+            "Could not find information about free night awards in the provided context for Diners Club Black card."
+        ]
+    },
+    "rewards": [
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year",
+                "Category": "Dining"
+            },
+            "conditions": {
+                "oneOf": [
+                    {
+                        "minSpend": 150000
+                    },
+                    {
+                        "minSpend": "joining membership fee"
+                    }
+                ]
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "Club Marriott Membership"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 3,
+                "unit": "months",
+                "Category": "Subscriptions and Memberships"
+            },
+            "conditions": {
+                "oneOf": [
+                    {
+                        "minSpend": 150000
+                    },
+                    {
+                        "minSpend": "joining membership fee"
+                    }
+                ]
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "Swiggy One Membership (3 months)"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year",
+                "Category": "Travel"
+            },
+            "conditions": {
+                "oneOf": [
+                    {
+                        "minSpend": 150000
+                    },
+                    {
+                        "minSpend": "joining membership fee"
+                    }
+                ]
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "MakeMyTrip Black Gold Tier Membership"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year",
+                "Category": "Entertainment"
+            },
+            "conditions": {
+                "oneOf": [
+                    {
+                        "minSpend": 150000
+                    },
+                    {
+                        "minSpend": "joining membership fee"
+                    }
+                ]
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "Amazon Prime Membership"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year",
+                "Category": "Subscriptions and Memberships"
+            },
+            "conditions": {
+                "oneOf": [
+                    {
+                        "minSpend": 150000
+                    },
+                    {
+                        "minSpend": "joining membership fee"
+                    }
+                ]
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "Times Prime Subscription"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year",
+                "Category": "Dining"
+            },
+            "conditions": {
+                "minSpend": 800000
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "Club Marriott Annual Membership"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year",
+                "Category": "Subscriptions and Memberships"
+            },
+            "conditions": {
+                "minSpend": 800000
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "Swiggy One Annual Membership"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year",
+                "Category": "Travel"
+            },
+            "conditions": {
+                "minSpend": 800000
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "MakeMyTrip Black Gold Tier Annual Membership"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year",
+                "Category": "Entertainment"
+            },
+            "conditions": {
+                "minSpend": 800000
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "Amazon Prime Annual Membership"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "year",
+                "Category": "Subscriptions and Memberships"
+            },
+            "conditions": {
+                "minSpend": 800000
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "Times Prime Annual Subscription"
+        },
+        {
+            "rewardType": "service",
+            "rewardValue": {
+                "amount": 1,
+                "unit": "months",
+                "Category": "Health and Wellness"
+            },
+            "conditions": {
+                "minSpend": 80000
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "cult.fit Live 1-month subscription"
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "amount": 500,
+                "unit": "fixed",
+                "currency": "INR",
+                "Category": "Entertainment"
+            },
+            "conditions": {
+                "minSpend": 80000
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "BookMyShow voucher worth Rs. 500"
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "amount": 500,
+                "unit": "fixed",
+                "currency": "INR",
+                "Category": "Shopping"
+            },
+            "conditions": {
+                "minSpend": 80000
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "TataCLiQ voucher worth Rs. 500"
+        },
+        {
+            "rewardType": "voucher",
+            "rewardValue": {
+                "amount": 500,
+                "unit": "fixed",
+                "currency": "INR",
+                "Category": "Travel"
+            },
+            "conditions": {
+                "minSpend": 80000
+            },
+            "redemptionMethod": {
+                "methodType": "voucher",
+                "details": "Visit Diners Club Black Smartbuy Milestone Page, generate voucher code"
+            },
+            "rewardDescription": "Ola cabs voucher worth Rs. 500"
+        },
+        {
+            "rewardType": "points",
+            "rewardValue": {
+                "amount": 2,
+                "unit": "multiplier",
+                "Category": "Dining"
+            },
+            "conditions": {
+                "applicableMerchantsOrDomains": {
+                    "domain": "restaurants"
+                },
+                "minSpend": 150,
+                "customConditions": {
+                    "condition": {
+                        "type": "logical",
+                        "logical_operator": "and",
+                        "conditions": [
+                            {
+                                "type": "comparison",
+                                "field": "dayOfWeek",
+                                "fieldDescription": "Day of the week",
+                                "value": [
+                                    "Saturday",
+                                    "Sunday"
+                                ],
+                                "comparison_operator": "eq"
+                            },
+                            {
+                                "type": "comparison",
+                                "field": "merchantType",
+                                "fieldDescription": "Type of merchant",
+                                "value": "standalone",
+                                "comparison_operator": "eq"
+                            }
+                        ]
+                    }
+                },
+                "cap": {
+                    "amount": 1000,
+                    "period": "daily"
+                }
+            },
+            "schedule": {
+                "rewardAccrualFrequency": "Monthly"
+            },
+            "rewardDescription": "2X Reward Points on weekend dining at standalone restaurants"
+        }
+    ]
+}

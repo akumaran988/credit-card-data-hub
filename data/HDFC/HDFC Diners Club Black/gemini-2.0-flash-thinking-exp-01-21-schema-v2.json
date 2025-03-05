@@ -1,0 +1,421 @@
+
+{
+  "card_info": {
+    "card_name": "Diners Club Black",
+    "bank": "HDFC bank",
+    "effective_date": null,
+    "last_updated": "2024-07-03"
+  },
+  "fees_and_charges": {
+    "late_payment_charges": null,
+    "finance_charges": null,
+    "fuel_surcharge_waiver": null,
+    "special_transaction_fees": null
+  },
+  "elite_status_benefits": null,
+  "rewards": [
+    {
+      "rewardType": "service",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "year",
+        "currency": null
+      },
+      "rewardDescription": "Club Marriott Membership as welcome benefit",
+      "conditions": {
+        "minSpend": 150000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "logical",
+          "logical_operator": "and",
+          "conditions": [
+            {
+              "condition": {
+                "type": "comparison",
+                "field": "card_age_days",
+                "comparison_operator": "lte",
+                "value": 90
+              }
+            },
+            {
+              "condition": {
+                "type": "comparison",
+                "field": "fee_realization",
+                "comparison_operator": "eq",
+                "value": true
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rewardType": "service",
+      "rewardValue": {
+        "amount": 3,
+        "unit": "month",
+        "currency": null
+      },
+      "rewardDescription": "Swiggy One Membership (3 months) as welcome benefit",
+      "conditions": {
+        "minSpend": 150000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "logical",
+          "logical_operator": "and",
+          "conditions": [
+            {
+              "condition": {
+                "type": "comparison",
+                "field": "card_age_days",
+                "comparison_operator": "lte",
+                "value": 90
+              }
+            },
+            {
+              "condition": {
+                "type": "comparison",
+                "field": "fee_realization",
+                "comparison_operator": "eq",
+                "value": true
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rewardType": "service",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "year",
+        "currency": null
+      },
+      "rewardDescription": "MakeMyTrip Black Gold Tier Membership as welcome benefit",
+      "conditions": {
+        "minSpend": 150000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "logical",
+          "logical_operator": "and",
+          "conditions": [
+            {
+              "condition": {
+                "type": "comparison",
+                "field": "card_age_days",
+                "comparison_operator": "lte",
+                "value": 90
+              }
+            },
+            {
+              "condition": {
+                "type": "comparison",
+                "field": "fee_realization",
+                "comparison_operator": "eq",
+                "value": true
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rewardType": "service",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "year",
+        "currency": null
+      },
+      "rewardDescription": "Amazon Prime Subscription as welcome benefit",
+      "conditions": {
+        "minSpend": 150000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "logical",
+          "logical_operator": "and",
+          "conditions": [
+            {
+              "condition": {
+                "type": "comparison",
+                "field": "card_age_days",
+                "comparison_operator": "lte",
+                "value": 90
+              }
+            },
+            {
+              "condition": {
+                "type": "comparison",
+                "field": "fee_realization",
+                "comparison_operator": "eq",
+                "value": true
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rewardType": "service",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "year",
+        "currency": null
+      },
+      "rewardDescription": "Times Prime Subscription as welcome benefit",
+      "conditions": {
+        "minSpend": 150000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "logical",
+          "logical_operator": "and",
+          "conditions": [
+            {
+              "condition": {
+                "type": "comparison",
+                "field": "card_age_days",
+                "comparison_operator": "lte",
+                "value": 90
+              }
+            },
+            {
+              "condition": {
+                "type": "comparison",
+                "field": "fee_realization",
+                "comparison_operator": "eq",
+                "value": true
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rewardType": "service",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "year",
+        "currency": null
+      },
+      "rewardDescription": "Club Marriott Membership as annual benefit",
+      "conditions": {
+        "minSpend": 800000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "comparison",
+          "field": "card_age_years",
+          "comparison_operator": "gte",
+          "value": 1
+        }
+      }
+    },
+    {
+      "rewardType": "service",
+      "rewardValue": {
+        "amount": 3,
+        "unit": "month",
+        "currency": null
+      },
+      "rewardDescription": "Swiggy One Membership (3 months) as annual benefit",
+      "conditions": {
+        "minSpend": 800000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "comparison",
+          "field": "card_age_years",
+          "comparison_operator": "gte",
+          "value": 1
+        }
+      }
+    },
+    {
+      "rewardType": "service",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "year",
+        "currency": null
+      },
+      "rewardDescription": "MakeMyTrip Black Gold Tier Membership as annual benefit",
+      "conditions": {
+        "minSpend": 800000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "comparison",
+          "field": "card_age_years",
+          "comparison_operator": "gte",
+          "value": 1
+        }
+      }
+    },
+    {
+      "rewardType": "service",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "year",
+        "currency": null
+      },
+      "rewardDescription": "Amazon Prime Subscription as annual benefit",
+      "conditions": {
+        "minSpend": 800000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "comparison",
+          "field": "card_age_years",
+          "comparison_operator": "gte",
+          "value": 1
+        }
+      }
+    },
+    {
+      "rewardType": "service",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "year",
+        "currency": null
+      },
+      "rewardDescription": "Times Prime Subscription as annual benefit",
+      "conditions": {
+        "minSpend": 800000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "comparison",
+          "field": "card_age_years",
+          "comparison_operator": "gte",
+          "value": 1
+        }
+      }
+    },
+    {
+      "rewardType": "service",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "month",
+        "currency": null
+      },
+      "rewardDescription": "cult.fit Live 1-month subscription as monthly milestone benefit",
+      "conditions": {
+        "minSpend": 80000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "comparison",
+          "field": "monthly_spend",
+          "comparison_operator": "gte",
+          "value": 80000
+        }
+      }
+    },
+    {
+      "rewardType": "voucher",
+      "rewardValue": {
+        "amount": 500,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "rewardDescription": "BookMyShow voucher worth Rs. 500 as monthly milestone benefit",
+      "conditions": {
+        "minSpend": 80000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "comparison",
+          "field": "monthly_spend",
+          "comparison_operator": "gte",
+          "value": 80000
+        }
+      }
+    },
+    {
+      "rewardType": "voucher",
+      "rewardValue": {
+        "amount": 500,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "rewardDescription": "TataCLiQ voucher worth Rs. 500 as monthly milestone benefit",
+      "conditions": {
+        "minSpend": 80000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "comparison",
+          "field": "monthly_spend",
+          "comparison_operator": "gte",
+          "value": 80000
+        }
+      }
+    },
+    {
+      "rewardType": "voucher",
+      "rewardValue": {
+        "amount": 250,
+        "unit": "fixed",
+        "currency": "INR"
+      },
+      "rewardDescription": "Ola cabs voucher worth Rs. 250 as monthly milestone benefit",
+      "conditions": {
+        "minSpend": 80000
+      },
+      "customConditions": {
+        "condition": {
+          "type": "comparison",
+          "field": "monthly_spend",
+          "comparison_operator": "gte",
+          "value": 80000
+        }
+      }
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 2,
+        "unit": "times",
+        "currency": null
+      },
+      "rewardDescription": "2X Reward Points on weekend dining",
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          {
+            "domain": "restaurants"
+          }
+        ]
+      },
+      "customConditions": {
+        "condition": {
+          "type": "logical",
+          "logical_operator": "and",
+          "conditions": [
+            {
+              "condition": {
+                "type": "comparison",
+                "field": "day_of_week",
+                "comparison_operator": "enum",
+                "value": [
+                  "Saturday",
+                  "Sunday"
+                ]
+              }
+            },
+            {
+              "condition": {
+                "type": "comparison",
+                "field": "transaction_type",
+                "comparison_operator": "eq",
+                "value": "dining"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

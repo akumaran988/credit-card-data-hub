@@ -1,0 +1,107 @@
+
+{
+  "card_info": {
+    "card_name": "SimplySAVE Advantage SBI Card",
+    "bank": "SBI Card",
+    "effective_date": "2022-03-01",
+    "last_updated": "2022-06-30"
+  },
+  "fees_and_charges": {
+    "late_payment_charges": [],
+    "finance_charges": null,
+    "fuel_surcharge_waiver": {
+      "minimum_transaction": 500,
+      "maximum_transaction": 3000,
+      "maximum_waiver": 100
+    },
+    "special_transaction_fees": [
+      {
+        "transaction_type": "Balance Transfer Processing Fee",
+        "fee_type": "flat",
+        "fee_value": null,
+        "maximum_cap": null
+      },
+      {
+        "transaction_type": "Cash Advance Fee",
+        "fee_type": "flat",
+        "fee_value": null,
+        "maximum_cap": null
+      },
+      {
+        "transaction_type": "Flexipay Processing Fee",
+        "fee_type": "flat",
+        "fee_value": null,
+        "maximum_cap": null
+      }
+    ]
+  },
+  "elite_status_benefits": {
+    "elite_status_level": null,
+    "airport_lounge_access": null,
+    "free_night_awards": null
+  },
+  "rewards": [
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 10,
+        "unit": "fixed",
+        "currency": null,
+        "referenceValue": 150
+      },
+      "conditions": {
+        "applicableMerchantsOrDomains": [
+          "Dining",
+          "Movies",
+          "Groceries",
+          "Departmental Stores"
+        ],
+        "cap": {
+          "amount": 5000,
+          "period": "monthly"
+        }
+      },
+      "schedule": {
+        "rewardExpiry": {
+          "unit": "years",
+          "value": 2
+        }
+      },
+      "redemptionMethod": {
+        "methodType": "voucher",
+        "processingTime": "six to eight weeks",
+        "costOfRedemption": null
+      },
+      "rewardDescription": "Earn 10 Reward Points for every Rs.150 spent on Dining, Movies, Groceries & Departmental Stores"
+    },
+    {
+      "rewardType": "points",
+      "rewardValue": {
+        "amount": 1,
+        "unit": "fixed",
+        "currency": null,
+        "referenceValue": 150
+      },
+      "rewardDescription": "Earn 1 Reward Point per Rs.150 spent on other categories",
+      "schedule": {
+        "rewardExpiry": {
+          "unit": "years",
+          "value": 2
+        }
+      },
+      "redemptionMethod": {
+        "methodType": "voucher",
+        "processingTime": "six to eight weeks",
+        "costOfRedemption": null
+      }
+    }
+  ],
+  "extraction_error": {
+    "card_info.effective_date": "Could not find the exact effective date of the terms and conditions, used the earliest mentioned date related to changes in reward points.",
+    "fees_and_charges.late_payment_charges": "Could not extract specific late payment charge slabs and amounts, even though late payment fee is mentioned.",
+    "fees_and_charges.finance_charges": "Could not extract specific finance charge percentage, even though finance charges are mentioned as 'lowest available'.",
+    "fees_and_charges.special_transaction_fees.fee_value": "Could not extract specific fee values for Balance Transfer, Cash Advance and Flexipay processing fees, mentioned as 'applicable' or 'one-time'.",
+    "fees_and_charges.special_transaction_fees.fee_type": "Fee type for special transaction fees are assumed as 'flat' as percentage or flat fee type is not explicitly mentioned.",
+    "fees_and_charges.special_transaction_fees.maximum_cap": "Maximum cap for special transaction fees are not mentioned."
+  }
+}
